@@ -1,4 +1,4 @@
-# Project Checkpoint 3
+# ECE 350 Final Project
  - Author: William Ding, Trishul Nagenalli, August Ning
  - Date: December 6, 2018
  - Course: ECE/CS 350, Duke University, Durham, NC

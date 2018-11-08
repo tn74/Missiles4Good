@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for skeleton
-Thu Nov 08 18:42:51 2018
+Thu Nov 08 18:57:35 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -112,14 +112,14 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.18        ;
+; Average used               ; 1.16        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   9.1%      ;
-;     Processor 3            ;   4.7%      ;
-;     Processor 4            ;   4.4%      ;
+;     Processor 2            ;   7.9%      ;
+;     Processor 3            ;   4.4%      ;
+;     Processor 4            ;   4.2%      ;
 +----------------------------+-------------+
 
 
@@ -841,8 +841,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; 9.460 ; vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_pmc1:auto_generated|ram_block1a15~porta_address_reg0  ; vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component|altsyncram_89c1:auto_generated|ram_block1a0~porta_address_reg0 ; p1|altpll_component|pll|clk[2] ; p1|altpll_component|pll|clk[2] ; 20.000       ; -0.103     ; 10.467     ;
 ; 9.475 ; vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_pmc1:auto_generated|ram_block1a75~porta_address_reg0  ; vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component|altsyncram_89c1:auto_generated|ram_block1a0~porta_address_reg0 ; p1|altpll_component|pll|clk[2] ; p1|altpll_component|pll|clk[2] ; 20.000       ; -0.094     ; 10.461     ;
 ; 9.475 ; vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_pmc1:auto_generated|ram_block1a164~porta_address_reg0 ; vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component|altsyncram_89c1:auto_generated|ram_block1a0~porta_address_reg0 ; p1|altpll_component|pll|clk[2] ; p1|altpll_component|pll|clk[2] ; 20.000       ; -0.048     ; 10.507     ;
-; 9.482 ; vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_pmc1:auto_generated|ram_block1a78~porta_address_reg0  ; vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component|altsyncram_89c1:auto_generated|ram_block1a0~porta_address_reg0 ; p1|altpll_component|pll|clk[2] ; p1|altpll_component|pll|clk[2] ; 20.000       ; -0.086     ; 10.462     ;
 ; 9.482 ; vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_pmc1:auto_generated|ram_block1a235~porta_address_reg0 ; vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component|altsyncram_89c1:auto_generated|ram_block1a0~porta_address_reg0 ; p1|altpll_component|pll|clk[2] ; p1|altpll_component|pll|clk[2] ; 20.000       ; -0.072     ; 10.476     ;
+; 9.482 ; vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_pmc1:auto_generated|ram_block1a78~porta_address_reg0  ; vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component|altsyncram_89c1:auto_generated|ram_block1a0~porta_address_reg0 ; p1|altpll_component|pll|clk[2] ; p1|altpll_component|pll|clk[2] ; 20.000       ; -0.086     ; 10.462     ;
 ; 9.497 ; vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_pmc1:auto_generated|ram_block1a9~porta_address_reg0   ; vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component|altsyncram_89c1:auto_generated|ram_block1a0~porta_address_reg0 ; p1|altpll_component|pll|clk[2] ; p1|altpll_component|pll|clk[2] ; 20.000       ; -0.105     ; 10.428     ;
 ; 9.503 ; vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_pmc1:auto_generated|ram_block1a171~porta_address_reg0 ; vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component|altsyncram_89c1:auto_generated|ram_block1a0~porta_address_reg0 ; p1|altpll_component|pll|clk[2] ; p1|altpll_component|pll|clk[2] ; 20.000       ; -0.082     ; 10.445     ;
 ; 9.526 ; vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_pmc1:auto_generated|ram_block1a30~porta_address_reg0  ; vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component|altsyncram_89c1:auto_generated|ram_block1a0~porta_address_reg0 ; p1|altpll_component|pll|clk[2] ; p1|altpll_component|pll|clk[2] ; 20.000       ; -0.072     ; 10.432     ;
@@ -1098,20 +1098,20 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; 0.584 ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|data_shift_reg[0]                    ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|received_data[0]                     ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.826      ;
 ; 0.584 ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|data_shift_reg[5]                    ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|data_shift_reg[4]                    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.826      ;
 ; 0.585 ; Reset_Delay:r0|Cont[7]                                                                                        ; Reset_Delay:r0|Cont[7]                                                                                        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.828      ;
-; 0.586 ; Reset_Delay:r0|Cont[13]                                                                                       ; Reset_Delay:r0|Cont[13]                                                                                       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.829      ;
 ; 0.586 ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|data_shift_reg[3]                    ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|data_shift_reg[2]                    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.828      ;
-; 0.587 ; Reset_Delay:r0|Cont[5]                                                                                        ; Reset_Delay:r0|Cont[5]                                                                                        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.830      ;
-; 0.587 ; Reset_Delay:r0|Cont[10]                                                                                       ; Reset_Delay:r0|Cont[10]                                                                                       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.830      ;
+; 0.586 ; Reset_Delay:r0|Cont[13]                                                                                       ; Reset_Delay:r0|Cont[13]                                                                                       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.829      ;
 ; 0.587 ; lcd:mylcd|line2[5][0]                                                                                         ; lcd:mylcd|line1[5][0]                                                                                         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.068      ; 0.826      ;
 ; 0.587 ; lcd:mylcd|delay[6]                                                                                            ; lcd:mylcd|delay[6]                                                                                            ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.070      ; 0.828      ;
 ; 0.587 ; lcd:mylcd|delay[8]                                                                                            ; lcd:mylcd|delay[8]                                                                                            ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.070      ; 0.828      ;
+; 0.587 ; Reset_Delay:r0|Cont[5]                                                                                        ; Reset_Delay:r0|Cont[5]                                                                                        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.830      ;
+; 0.587 ; Reset_Delay:r0|Cont[10]                                                                                       ; Reset_Delay:r0|Cont[10]                                                                                       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.830      ;
+; 0.588 ; lcd:mylcd|delay[4]                                                                                            ; lcd:mylcd|delay[4]                                                                                            ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.070      ; 0.829      ;
+; 0.588 ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|data_shift_reg[6]                    ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|data_shift_reg[5]                    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.830      ;
 ; 0.588 ; Reset_Delay:r0|Cont[6]                                                                                        ; Reset_Delay:r0|Cont[6]                                                                                        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.831      ;
 ; 0.588 ; Reset_Delay:r0|Cont[12]                                                                                       ; Reset_Delay:r0|Cont[12]                                                                                       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.831      ;
 ; 0.588 ; Reset_Delay:r0|Cont[15]                                                                                       ; Reset_Delay:r0|Cont[15]                                                                                       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.831      ;
 ; 0.588 ; Reset_Delay:r0|Cont[16]                                                                                       ; Reset_Delay:r0|Cont[16]                                                                                       ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.831      ;
-; 0.588 ; lcd:mylcd|delay[4]                                                                                            ; lcd:mylcd|delay[4]                                                                                            ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.070      ; 0.829      ;
-; 0.588 ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|data_shift_reg[6]                    ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|data_shift_reg[5]                    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.830      ;
-; 0.589 ; Reset_Delay:r0|Cont[4]                                                                                        ; Reset_Delay:r0|Cont[4]                                                                                        ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.832      ;
+; 0.589 ; lcd:mylcd|delay[7]                                                                                            ; lcd:mylcd|delay[7]                                                                                            ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.070      ; 0.830      ;
 +-------+---------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -2810,7 +2810,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Thu Nov 08 18:42:47 2018
+    Info: Processing started: Thu Nov 08 18:57:32 2018
 Info: Command: quartus_sta skeleton -c skeleton
 Info: qsta_default_script.tcl version: #3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -2907,8 +2907,8 @@ Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 2 warnings
     Info: Peak virtual memory: 4896 megabytes
-    Info: Processing ended: Thu Nov 08 18:42:51 2018
-    Info: Elapsed time: 00:00:04
+    Info: Processing ended: Thu Nov 08 18:57:35 2018
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:04
 
 

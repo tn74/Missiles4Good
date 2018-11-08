@@ -1,5 +1,5 @@
 Analysis & Synthesis report for skeleton
-Thu Nov 08 18:42:23 2018
+Thu Nov 08 18:57:08 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -79,7 +79,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov 08 18:42:23 2018       ;
+; Analysis & Synthesis Status        ; Successful - Thu Nov 08 18:57:08 2018       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; skeleton                                    ;
 ; Top-level Entity Name              ; skeleton                                    ;
@@ -201,53 +201,53 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                          ;
-+----------------------------------+-----------------+----------------------------------+-------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                        ; File Name with Absolute Path                                                  ; Library ;
-+----------------------------------+-----------------+----------------------------------+-------------------------------------------------------------------------------+---------+
-; index_logo.mif                   ; yes             ; User Memory Initialization File  ; C:/Users/TN74/Downloads/lab7_skeleton_restored/index_logo.mif                 ;         ;
-; imem.mif                         ; yes             ; User Memory Initialization File  ; C:/Users/TN74/Downloads/lab7_skeleton_restored/imem.mif                       ;         ;
-; dmem.mif                         ; yes             ; User Memory Initialization File  ; C:/Users/TN74/Downloads/lab7_skeleton_restored/dmem.mif                       ;         ;
-; img_data_logo.mif                ; yes             ; User Memory Initialization File  ; C:/Users/TN74/Downloads/lab7_skeleton_restored/img_data_logo.mif              ;         ;
-; VGA_Audio_PLL.v                  ; yes             ; User Wizard-Generated File       ; C:/Users/TN74/Downloads/lab7_skeleton_restored/VGA_Audio_PLL.v                ;         ;
-; Reset_Delay.v                    ; yes             ; User Verilog HDL File            ; C:/Users/TN74/Downloads/lab7_skeleton_restored/Reset_Delay.v                  ;         ;
-; skeleton.v                       ; yes             ; User Verilog HDL File            ; C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v                     ;         ;
-; PS2_Interface.v                  ; yes             ; User Verilog HDL File            ; C:/Users/TN74/Downloads/lab7_skeleton_restored/PS2_Interface.v                ;         ;
-; PS2_Controller.v                 ; yes             ; User Verilog HDL File            ; C:/Users/TN74/Downloads/lab7_skeleton_restored/PS2_Controller.v               ;         ;
-; processor.v                      ; yes             ; User Verilog HDL File            ; C:/Users/TN74/Downloads/lab7_skeleton_restored/processor.v                    ;         ;
-; pll.v                            ; yes             ; User Wizard-Generated File       ; C:/Users/TN74/Downloads/lab7_skeleton_restored/pll.v                          ;         ;
-; lcd.sv                           ; yes             ; User SystemVerilog HDL File      ; C:/Users/TN74/Downloads/lab7_skeleton_restored/lcd.sv                         ;         ;
-; imem.v                           ; yes             ; User Wizard-Generated File       ; C:/Users/TN74/Downloads/lab7_skeleton_restored/imem.v                         ;         ;
-; Hexadecimal_To_Seven_Segment.v   ; yes             ; User Verilog HDL File            ; C:/Users/TN74/Downloads/lab7_skeleton_restored/Hexadecimal_To_Seven_Segment.v ;         ;
-; dmem.v                           ; yes             ; User Wizard-Generated File       ; C:/Users/TN74/Downloads/lab7_skeleton_restored/dmem.v                         ;         ;
-; Altera_UP_PS2_Data_In.v          ; yes             ; User Verilog HDL File            ; C:/Users/TN74/Downloads/lab7_skeleton_restored/Altera_UP_PS2_Data_In.v        ;         ;
-; Altera_UP_PS2_Command_Out.v      ; yes             ; User Verilog HDL File            ; C:/Users/TN74/Downloads/lab7_skeleton_restored/Altera_UP_PS2_Command_Out.v    ;         ;
-; vga_controller.v                 ; yes             ; User Verilog HDL File            ; C:/Users/TN74/Downloads/lab7_skeleton_restored/vga_controller.v               ;         ;
-; video_sync_generator.v           ; yes             ; User Verilog HDL File            ; C:/Users/TN74/Downloads/lab7_skeleton_restored/video_sync_generator.v         ;         ;
-; img_index.v                      ; yes             ; User Wizard-Generated File       ; C:/Users/TN74/Downloads/lab7_skeleton_restored/img_index.v                    ;         ;
-; img_data.v                       ; yes             ; User Wizard-Generated File       ; C:/Users/TN74/Downloads/lab7_skeleton_restored/img_data.v                     ;         ;
-; altpll.tdf                       ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altpll.tdf             ;         ;
-; aglobal171.inc                   ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/aglobal171.inc         ;         ;
-; stratix_pll.inc                  ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/stratix_pll.inc        ;         ;
-; stratixii_pll.inc                ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/stratixii_pll.inc      ;         ;
-; cycloneii_pll.inc                ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/cycloneii_pll.inc      ;         ;
-; db/pll_altpll.v                  ; yes             ; Auto-Generated Megafunction      ; C:/Users/TN74/Downloads/lab7_skeleton_restored/db/pll_altpll.v                ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altsyncram.tdf         ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/stratix_ram_block.inc  ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_mux.inc            ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_decode.inc         ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/a_rdenreg.inc          ;         ;
-; altrom.inc                       ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altrom.inc             ;         ;
-; altram.inc                       ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altram.inc             ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altdpram.inc           ;         ;
-; db/altsyncram_8vc1.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_8vc1.tdf         ;         ;
-; db/altsyncram_2m81.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_2m81.tdf         ;         ;
-; db/altsyncram_pmc1.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_pmc1.tdf         ;         ;
-; db/decode_aaa.tdf                ; yes             ; Auto-Generated Megafunction      ; C:/Users/TN74/Downloads/lab7_skeleton_restored/db/decode_aaa.tdf              ;         ;
-; db/mux_1pb.tdf                   ; yes             ; Auto-Generated Megafunction      ; C:/Users/TN74/Downloads/lab7_skeleton_restored/db/mux_1pb.tdf                 ;         ;
-; db/altsyncram_89c1.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_89c1.tdf         ;         ;
-+----------------------------------+-----------------+----------------------------------+-------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                ;
++----------------------------------+-----------------+----------------------------------+-----------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                        ; File Name with Absolute Path                                                                        ; Library ;
++----------------------------------+-----------------+----------------------------------+-----------------------------------------------------------------------------------------------------+---------+
+; index_logo.mif                   ; yes             ; User Memory Initialization File  ; C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/index_logo.mif                 ;         ;
+; imem.mif                         ; yes             ; User Memory Initialization File  ; C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/imem.mif                       ;         ;
+; dmem.mif                         ; yes             ; User Memory Initialization File  ; C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/dmem.mif                       ;         ;
+; img_data_logo.mif                ; yes             ; User Memory Initialization File  ; C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/img_data_logo.mif              ;         ;
+; VGA_Audio_PLL.v                  ; yes             ; User Wizard-Generated File       ; C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/VGA_Audio_PLL.v                ;         ;
+; Reset_Delay.v                    ; yes             ; User Verilog HDL File            ; C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/Reset_Delay.v                  ;         ;
+; skeleton.v                       ; yes             ; User Verilog HDL File            ; C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v                     ;         ;
+; PS2_Interface.v                  ; yes             ; User Verilog HDL File            ; C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/PS2_Interface.v                ;         ;
+; PS2_Controller.v                 ; yes             ; User Verilog HDL File            ; C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/PS2_Controller.v               ;         ;
+; processor.v                      ; yes             ; User Verilog HDL File            ; C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/processor.v                    ;         ;
+; pll.v                            ; yes             ; User Wizard-Generated File       ; C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/pll.v                          ;         ;
+; lcd.sv                           ; yes             ; User SystemVerilog HDL File      ; C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/lcd.sv                         ;         ;
+; imem.v                           ; yes             ; User Wizard-Generated File       ; C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/imem.v                         ;         ;
+; Hexadecimal_To_Seven_Segment.v   ; yes             ; User Verilog HDL File            ; C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/Hexadecimal_To_Seven_Segment.v ;         ;
+; dmem.v                           ; yes             ; User Wizard-Generated File       ; C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/dmem.v                         ;         ;
+; Altera_UP_PS2_Data_In.v          ; yes             ; User Verilog HDL File            ; C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/Altera_UP_PS2_Data_In.v        ;         ;
+; Altera_UP_PS2_Command_Out.v      ; yes             ; User Verilog HDL File            ; C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/Altera_UP_PS2_Command_Out.v    ;         ;
+; vga_controller.v                 ; yes             ; User Verilog HDL File            ; C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/vga_controller.v               ;         ;
+; video_sync_generator.v           ; yes             ; User Verilog HDL File            ; C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/video_sync_generator.v         ;         ;
+; img_index.v                      ; yes             ; User Wizard-Generated File       ; C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/img_index.v                    ;         ;
+; img_data.v                       ; yes             ; User Wizard-Generated File       ; C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/img_data.v                     ;         ;
+; altpll.tdf                       ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altpll.tdf                                   ;         ;
+; aglobal171.inc                   ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/aglobal171.inc                               ;         ;
+; stratix_pll.inc                  ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/stratix_pll.inc                              ;         ;
+; stratixii_pll.inc                ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/stratixii_pll.inc                            ;         ;
+; cycloneii_pll.inc                ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/cycloneii_pll.inc                            ;         ;
+; db/pll_altpll.v                  ; yes             ; Auto-Generated Megafunction      ; C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/pll_altpll.v                ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altsyncram.tdf                               ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/stratix_ram_block.inc                        ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_mux.inc                                  ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_decode.inc                               ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/a_rdenreg.inc                                ;         ;
+; altrom.inc                       ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altrom.inc                                   ;         ;
+; altram.inc                       ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altram.inc                                   ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altdpram.inc                                 ;         ;
+; db/altsyncram_8vc1.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_8vc1.tdf         ;         ;
+; db/altsyncram_2m81.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_2m81.tdf         ;         ;
+; db/altsyncram_pmc1.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_pmc1.tdf         ;         ;
+; db/decode_aaa.tdf                ; yes             ; Auto-Generated Megafunction      ; C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/decode_aaa.tdf              ;         ;
+; db/mux_1pb.tdf                   ; yes             ; Auto-Generated Megafunction      ; C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/mux_1pb.tdf                 ;         ;
+; db/altsyncram_89c1.tdf           ; yes             ; Auto-Generated Megafunction      ; C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_89c1.tdf         ;         ;
++----------------------------------+-----------------+----------------------------------+-----------------------------------------------------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------------------------------------------+
@@ -1971,55 +1971,55 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Thu Nov 08 18:42:06 2018
+    Info: Processing started: Thu Nov 08 18:56:53 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off skeleton -c skeleton
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file vga_audio_pll.v
-    Info (12023): Found entity 1: VGA_Audio_PLL File: C:/Users/TN74/Downloads/lab7_skeleton_restored/VGA_Audio_PLL.v Line: 39
+    Info (12023): Found entity 1: VGA_Audio_PLL File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/VGA_Audio_PLL.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file reset_delay.v
-    Info (12023): Found entity 1: Reset_Delay File: C:/Users/TN74/Downloads/lab7_skeleton_restored/Reset_Delay.v Line: 1
+    Info (12023): Found entity 1: Reset_Delay File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/Reset_Delay.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file skeleton.v
-    Info (12023): Found entity 1: skeleton File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 1
+    Info (12023): Found entity 1: skeleton File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file ps2_interface.v
-    Info (12023): Found entity 1: PS2_Interface File: C:/Users/TN74/Downloads/lab7_skeleton_restored/PS2_Interface.v Line: 1
+    Info (12023): Found entity 1: PS2_Interface File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/PS2_Interface.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file ps2_controller.v
-    Info (12023): Found entity 1: PS2_Controller File: C:/Users/TN74/Downloads/lab7_skeleton_restored/PS2_Controller.v Line: 9
+    Info (12023): Found entity 1: PS2_Controller File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/PS2_Controller.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file processor.v
-    Info (12023): Found entity 1: processor File: C:/Users/TN74/Downloads/lab7_skeleton_restored/processor.v Line: 1
+    Info (12023): Found entity 1: processor File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/processor.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file pll.v
-    Info (12023): Found entity 1: pll File: C:/Users/TN74/Downloads/lab7_skeleton_restored/pll.v Line: 39
+    Info (12023): Found entity 1: pll File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/pll.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file lcd.sv
-    Info (12023): Found entity 1: lcd File: C:/Users/TN74/Downloads/lab7_skeleton_restored/lcd.sv Line: 1
+    Info (12023): Found entity 1: lcd File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/lcd.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file imem.v
-    Info (12023): Found entity 1: imem File: C:/Users/TN74/Downloads/lab7_skeleton_restored/imem.v Line: 39
+    Info (12023): Found entity 1: imem File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/imem.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file hexadecimal_to_seven_segment.v
-    Info (12023): Found entity 1: Hexadecimal_To_Seven_Segment File: C:/Users/TN74/Downloads/lab7_skeleton_restored/Hexadecimal_To_Seven_Segment.v Line: 9
+    Info (12023): Found entity 1: Hexadecimal_To_Seven_Segment File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/Hexadecimal_To_Seven_Segment.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file dmem.v
-    Info (12023): Found entity 1: dmem File: C:/Users/TN74/Downloads/lab7_skeleton_restored/dmem.v Line: 39
+    Info (12023): Found entity 1: dmem File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/dmem.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file altera_up_ps2_data_in.v
-    Info (12023): Found entity 1: Altera_UP_PS2_Data_In File: C:/Users/TN74/Downloads/lab7_skeleton_restored/Altera_UP_PS2_Data_In.v Line: 10
+    Info (12023): Found entity 1: Altera_UP_PS2_Data_In File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/Altera_UP_PS2_Data_In.v Line: 10
 Info (12021): Found 1 design units, including 1 entities, in source file altera_up_ps2_command_out.v
-    Info (12023): Found entity 1: Altera_UP_PS2_Command_Out File: C:/Users/TN74/Downloads/lab7_skeleton_restored/Altera_UP_PS2_Command_Out.v Line: 10
+    Info (12023): Found entity 1: Altera_UP_PS2_Command_Out File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/Altera_UP_PS2_Command_Out.v Line: 10
 Info (12021): Found 1 design units, including 1 entities, in source file vga_controller.v
-    Info (12023): Found entity 1: vga_controller File: C:/Users/TN74/Downloads/lab7_skeleton_restored/vga_controller.v Line: 1
+    Info (12023): Found entity 1: vga_controller File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/vga_controller.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file video_sync_generator.v
-    Info (12023): Found entity 1: video_sync_generator File: C:/Users/TN74/Downloads/lab7_skeleton_restored/video_sync_generator.v Line: 1
+    Info (12023): Found entity 1: video_sync_generator File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/video_sync_generator.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file img_index.v
-    Info (12023): Found entity 1: img_index File: C:/Users/TN74/Downloads/lab7_skeleton_restored/img_index.v Line: 40
+    Info (12023): Found entity 1: img_index File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/img_index.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file img_data.v
-    Info (12023): Found entity 1: img_data File: C:/Users/TN74/Downloads/lab7_skeleton_restored/img_data.v Line: 39
-Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(50): created implicit net for "inclock" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 50
-Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(81): created implicit net for "DLY_RST" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 81
-Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(82): created implicit net for "VGA_CTRL_CLK" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 82
-Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(82): created implicit net for "AUD_CTRL_CLK" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 82
-Warning (10236): Verilog HDL Implicit Net warning at processor.v(29): created implicit net for "debug_data" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/processor.v Line: 29
+    Info (12023): Found entity 1: img_data File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/img_data.v Line: 39
+Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(50): created implicit net for "inclock" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 50
+Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(81): created implicit net for "DLY_RST" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 81
+Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(82): created implicit net for "VGA_CTRL_CLK" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 82
+Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(82): created implicit net for "AUD_CTRL_CLK" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 82
+Warning (10236): Verilog HDL Implicit Net warning at processor.v(29): created implicit net for "debug_data" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/processor.v Line: 29
 Info (12127): Elaborating entity "skeleton" for the top level hierarchy
-Warning (10034): Output port "VGA_SYNC" at skeleton.v(21) has no driver File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 21
-Info (12128): Elaborating entity "pll" for hierarchy "pll:div" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 50
-Info (12128): Elaborating entity "altpll" for hierarchy "pll:div|altpll:altpll_component" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/pll.v Line: 90
-Info (12130): Elaborated megafunction instantiation "pll:div|altpll:altpll_component" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/pll.v Line: 90
-Info (12133): Instantiated megafunction "pll:div|altpll:altpll_component" with the following parameter: File: C:/Users/TN74/Downloads/lab7_skeleton_restored/pll.v Line: 90
+Warning (10034): Output port "VGA_SYNC" at skeleton.v(21) has no driver File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 21
+Info (12128): Elaborating entity "pll" for hierarchy "pll:div" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 50
+Info (12128): Elaborating entity "altpll" for hierarchy "pll:div|altpll:altpll_component" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/pll.v Line: 90
+Info (12130): Elaborated megafunction instantiation "pll:div|altpll:altpll_component" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/pll.v Line: 90
+Info (12133): Instantiated megafunction "pll:div|altpll:altpll_component" with the following parameter: File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/pll.v Line: 90
     Info (12134): Parameter "clk0_divide_by" = "5"
     Info (12134): Parameter "clk0_duty_cycle" = "50"
     Info (12134): Parameter "clk0_multiply_by" = "2"
@@ -2071,13 +2071,13 @@ Info (12133): Instantiated megafunction "pll:div|altpll:altpll_component" with t
     Info (12134): Parameter "port_extclk2" = "PORT_UNUSED"
     Info (12134): Parameter "port_extclk3" = "PORT_UNUSED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/pll_altpll.v
-    Info (12023): Found entity 1: pll_altpll File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/pll_altpll.v Line: 29
+    Info (12023): Found entity 1: pll_altpll File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/pll_altpll.v Line: 29
 Info (12128): Elaborating entity "pll_altpll" for hierarchy "pll:div|altpll:altpll_component|pll_altpll:auto_generated" File: c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altpll.tdf Line: 897
-Info (12128): Elaborating entity "processor" for hierarchy "processor:myprocessor" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 57
-Info (12128): Elaborating entity "dmem" for hierarchy "processor:myprocessor|dmem:mydmem" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/processor.v Line: 32
-Info (12128): Elaborating entity "altsyncram" for hierarchy "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/dmem.v Line: 85
-Info (12130): Elaborated megafunction instantiation "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/dmem.v Line: 85
-Info (12133): Instantiated megafunction "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/TN74/Downloads/lab7_skeleton_restored/dmem.v Line: 85
+Info (12128): Elaborating entity "processor" for hierarchy "processor:myprocessor" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 57
+Info (12128): Elaborating entity "dmem" for hierarchy "processor:myprocessor|dmem:mydmem" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/processor.v Line: 32
+Info (12128): Elaborating entity "altsyncram" for hierarchy "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/dmem.v Line: 85
+Info (12130): Elaborated megafunction instantiation "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/dmem.v Line: 85
+Info (12133): Instantiated megafunction "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/dmem.v Line: 85
     Info (12134): Parameter "clock_enable_input_a" = "NORMAL"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "init_file" = "dmem.mif"
@@ -2093,12 +2093,12 @@ Info (12133): Instantiated megafunction "processor:myprocessor|dmem:mydmem|altsy
     Info (12134): Parameter "width_a" = "32"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_8vc1.tdf
-    Info (12023): Found entity 1: altsyncram_8vc1 File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_8vc1 File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_8vc1" for hierarchy "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated" File: c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Info (12128): Elaborating entity "imem" for hierarchy "processor:myprocessor|imem:myimem" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/processor.v Line: 38
-Info (12128): Elaborating entity "altsyncram" for hierarchy "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/imem.v Line: 84
-Info (12130): Elaborated megafunction instantiation "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/imem.v Line: 84
-Info (12133): Instantiated megafunction "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/TN74/Downloads/lab7_skeleton_restored/imem.v Line: 84
+Info (12128): Elaborating entity "imem" for hierarchy "processor:myprocessor|imem:myimem" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/processor.v Line: 38
+Info (12128): Elaborating entity "altsyncram" for hierarchy "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/imem.v Line: 84
+Info (12130): Elaborated megafunction instantiation "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/imem.v Line: 84
+Info (12133): Instantiated megafunction "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/imem.v Line: 84
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "init_file" = "imem.mif"
@@ -2113,21 +2113,21 @@ Info (12133): Instantiated megafunction "processor:myprocessor|imem:myimem|altsy
     Info (12134): Parameter "width_a" = "32"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_2m81.tdf
-    Info (12023): Found entity 1: altsyncram_2m81 File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_2m81 File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_2m81" for hierarchy "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated" File: c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Warning (287013): Variable or input pin "clocken0" is defined but never used. File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 31
-Info (12128): Elaborating entity "PS2_Interface" for hierarchy "PS2_Interface:myps2" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 60
-Info (12128): Elaborating entity "PS2_Controller" for hierarchy "PS2_Interface:myps2|PS2_Controller:PS2" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/PS2_Interface.v Line: 26
-Info (12128): Elaborating entity "Altera_UP_PS2_Data_In" for hierarchy "PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/PS2_Controller.v Line: 248
-Info (12128): Elaborating entity "Altera_UP_PS2_Command_Out" for hierarchy "PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/PS2_Controller.v Line: 268
-Info (12128): Elaborating entity "lcd" for hierarchy "lcd:mylcd" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 63
-Info (12128): Elaborating entity "Hexadecimal_To_Seven_Segment" for hierarchy "Hexadecimal_To_Seven_Segment:hex1" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 66
-Info (12128): Elaborating entity "Reset_Delay" for hierarchy "Reset_Delay:r0" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 81
-Warning (10230): Verilog HDL assignment warning at Reset_Delay.v(10): truncated value with size 32 to match size of target (20) File: C:/Users/TN74/Downloads/lab7_skeleton_restored/Reset_Delay.v Line: 10
-Info (12128): Elaborating entity "VGA_Audio_PLL" for hierarchy "VGA_Audio_PLL:p1" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 82
-Info (12128): Elaborating entity "altpll" for hierarchy "VGA_Audio_PLL:p1|altpll:altpll_component" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/VGA_Audio_PLL.v Line: 107
-Info (12130): Elaborated megafunction instantiation "VGA_Audio_PLL:p1|altpll:altpll_component" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/VGA_Audio_PLL.v Line: 107
-Info (12133): Instantiated megafunction "VGA_Audio_PLL:p1|altpll:altpll_component" with the following parameter: File: C:/Users/TN74/Downloads/lab7_skeleton_restored/VGA_Audio_PLL.v Line: 107
+Warning (287013): Variable or input pin "clocken0" is defined but never used. File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 31
+Info (12128): Elaborating entity "PS2_Interface" for hierarchy "PS2_Interface:myps2" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 60
+Info (12128): Elaborating entity "PS2_Controller" for hierarchy "PS2_Interface:myps2|PS2_Controller:PS2" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/PS2_Interface.v Line: 26
+Info (12128): Elaborating entity "Altera_UP_PS2_Data_In" for hierarchy "PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/PS2_Controller.v Line: 248
+Info (12128): Elaborating entity "Altera_UP_PS2_Command_Out" for hierarchy "PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/PS2_Controller.v Line: 268
+Info (12128): Elaborating entity "lcd" for hierarchy "lcd:mylcd" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 63
+Info (12128): Elaborating entity "Hexadecimal_To_Seven_Segment" for hierarchy "Hexadecimal_To_Seven_Segment:hex1" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 66
+Info (12128): Elaborating entity "Reset_Delay" for hierarchy "Reset_Delay:r0" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 81
+Warning (10230): Verilog HDL assignment warning at Reset_Delay.v(10): truncated value with size 32 to match size of target (20) File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/Reset_Delay.v Line: 10
+Info (12128): Elaborating entity "VGA_Audio_PLL" for hierarchy "VGA_Audio_PLL:p1" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 82
+Info (12128): Elaborating entity "altpll" for hierarchy "VGA_Audio_PLL:p1|altpll:altpll_component" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/VGA_Audio_PLL.v Line: 107
+Info (12130): Elaborated megafunction instantiation "VGA_Audio_PLL:p1|altpll:altpll_component" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/VGA_Audio_PLL.v Line: 107
+Info (12133): Instantiated megafunction "VGA_Audio_PLL:p1|altpll:altpll_component" with the following parameter: File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/VGA_Audio_PLL.v Line: 107
     Info (12134): Parameter "clk0_divide_by" = "2"
     Info (12134): Parameter "clk0_duty_cycle" = "50"
     Info (12134): Parameter "clk0_multiply_by" = "1"
@@ -2186,15 +2186,15 @@ Info (12133): Instantiated megafunction "VGA_Audio_PLL:p1|altpll:altpll_componen
     Info (12134): Parameter "port_extclk1" = "PORT_UNUSED"
     Info (12134): Parameter "port_extclk2" = "PORT_UNUSED"
     Info (12134): Parameter "port_extclk3" = "PORT_UNUSED"
-Info (12128): Elaborating entity "vga_controller" for hierarchy "vga_controller:vga_ins" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 90
-Warning (10230): Verilog HDL assignment warning at vga_controller.v(42): truncated value with size 32 to match size of target (19) File: C:/Users/TN74/Downloads/lab7_skeleton_restored/vga_controller.v Line: 42
-Info (12128): Elaborating entity "video_sync_generator" for hierarchy "vga_controller:vga_ins|video_sync_generator:LTM_ins" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/vga_controller.v Line: 32
-Warning (10230): Verilog HDL assignment warning at video_sync_generator.v(77): truncated value with size 32 to match size of target (10) File: C:/Users/TN74/Downloads/lab7_skeleton_restored/video_sync_generator.v Line: 77
-Warning (10230): Verilog HDL assignment warning at video_sync_generator.v(80): truncated value with size 32 to match size of target (11) File: C:/Users/TN74/Downloads/lab7_skeleton_restored/video_sync_generator.v Line: 80
-Info (12128): Elaborating entity "img_data" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/vga_controller.v Line: 51
-Info (12128): Elaborating entity "altsyncram" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/img_data.v Line: 81
-Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/img_data.v Line: 81
-Info (12133): Instantiated megafunction "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/TN74/Downloads/lab7_skeleton_restored/img_data.v Line: 81
+Info (12128): Elaborating entity "vga_controller" for hierarchy "vga_controller:vga_ins" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 90
+Warning (10230): Verilog HDL assignment warning at vga_controller.v(42): truncated value with size 32 to match size of target (19) File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/vga_controller.v Line: 42
+Info (12128): Elaborating entity "video_sync_generator" for hierarchy "vga_controller:vga_ins|video_sync_generator:LTM_ins" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/vga_controller.v Line: 32
+Warning (10230): Verilog HDL assignment warning at video_sync_generator.v(77): truncated value with size 32 to match size of target (10) File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/video_sync_generator.v Line: 77
+Warning (10230): Verilog HDL assignment warning at video_sync_generator.v(80): truncated value with size 32 to match size of target (11) File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/video_sync_generator.v Line: 80
+Info (12128): Elaborating entity "img_data" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/vga_controller.v Line: 51
+Info (12128): Elaborating entity "altsyncram" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/img_data.v Line: 81
+Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/img_data.v Line: 81
+Info (12133): Instantiated megafunction "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/img_data.v Line: 81
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -2211,18 +2211,18 @@ Info (12133): Instantiated megafunction "vga_controller:vga_ins|img_data:img_dat
     Info (12134): Parameter "width_a" = "8"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_pmc1.tdf
-    Info (12023): Found entity 1: altsyncram_pmc1 File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_pmc1.tdf Line: 31
+    Info (12023): Found entity 1: altsyncram_pmc1 File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_pmc1.tdf Line: 31
 Info (12128): Elaborating entity "altsyncram_pmc1" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_pmc1:auto_generated" File: c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_aaa.tdf
-    Info (12023): Found entity 1: decode_aaa File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/decode_aaa.tdf Line: 22
-Info (12128): Elaborating entity "decode_aaa" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_pmc1:auto_generated|decode_aaa:rden_decode" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_pmc1.tdf Line: 39
+    Info (12023): Found entity 1: decode_aaa File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/decode_aaa.tdf Line: 22
+Info (12128): Elaborating entity "decode_aaa" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_pmc1:auto_generated|decode_aaa:rden_decode" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_pmc1.tdf Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_1pb.tdf
-    Info (12023): Found entity 1: mux_1pb File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/mux_1pb.tdf Line: 22
-Info (12128): Elaborating entity "mux_1pb" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_pmc1:auto_generated|mux_1pb:mux2" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_pmc1.tdf Line: 40
-Info (12128): Elaborating entity "img_index" for hierarchy "vga_controller:vga_ins|img_index:img_index_inst" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/vga_controller.v Line: 61
-Info (12128): Elaborating entity "altsyncram" for hierarchy "vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/img_index.v Line: 82
-Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/img_index.v Line: 82
-Info (12133): Instantiated megafunction "vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/TN74/Downloads/lab7_skeleton_restored/img_index.v Line: 82
+    Info (12023): Found entity 1: mux_1pb File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/mux_1pb.tdf Line: 22
+Info (12128): Elaborating entity "mux_1pb" for hierarchy "vga_controller:vga_ins|img_data:img_data_inst|altsyncram:altsyncram_component|altsyncram_pmc1:auto_generated|mux_1pb:mux2" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_pmc1.tdf Line: 40
+Info (12128): Elaborating entity "img_index" for hierarchy "vga_controller:vga_ins|img_index:img_index_inst" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/vga_controller.v Line: 61
+Info (12128): Elaborating entity "altsyncram" for hierarchy "vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/img_index.v Line: 82
+Info (12130): Elaborated megafunction instantiation "vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/img_index.v Line: 82
+Info (12133): Instantiated megafunction "vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/img_index.v Line: 82
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -2239,179 +2239,179 @@ Info (12133): Instantiated megafunction "vga_controller:vga_ins|img_index:img_in
     Info (12134): Parameter "width_a" = "24"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_89c1.tdf
-    Info (12023): Found entity 1: altsyncram_89c1 File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_89c1.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_89c1 File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_89c1.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_89c1" for hierarchy "vga_controller:vga_ins|img_index:img_index_inst|altsyncram:altsyncram_component|altsyncram_89c1:auto_generated" File: c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following RAM node(s):
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[0]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 35
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[1]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 55
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[2]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 75
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[3]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 95
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[4]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 115
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[5]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 135
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[6]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 155
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[7]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 175
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[8]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 195
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[9]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 215
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[10]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 235
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[11]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 255
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[12]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 275
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[13]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 295
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[14]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 315
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[15]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 335
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[16]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 355
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[17]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 375
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[18]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 395
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[19]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 415
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[20]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 435
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[21]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 455
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[22]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 475
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[23]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 495
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[24]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 515
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[25]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 535
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[26]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 555
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[27]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 575
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[28]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 595
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[29]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 615
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[30]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 635
-        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[31]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 655
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[0]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 36
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[1]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 60
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[2]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 84
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[3]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 108
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[4]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 132
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[5]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 156
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[6]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 180
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[7]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 204
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[8]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 228
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[9]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 252
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[10]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 276
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[11]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 300
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[12]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 324
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[13]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 348
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[14]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 372
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[15]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 396
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[16]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 420
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[17]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 444
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[18]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 468
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[19]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 492
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[20]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 516
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[21]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 540
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[22]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 564
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[23]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 588
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[24]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 612
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[25]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 636
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[26]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 660
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[27]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 684
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[28]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 708
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[29]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 732
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[30]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 756
-        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[31]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 780
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[0]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 35
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[1]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 55
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[2]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 75
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[3]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 95
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[4]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 115
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[5]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 135
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[6]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 155
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[7]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 175
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[8]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 195
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[9]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 215
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[10]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 235
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[11]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 255
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[12]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 275
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[13]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 295
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[14]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 315
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[15]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 335
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[16]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 355
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[17]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 375
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[18]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 395
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[19]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 415
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[20]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 435
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[21]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 455
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[22]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 475
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[23]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 495
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[24]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 515
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[25]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 535
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[26]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 555
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[27]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 575
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[28]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 595
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[29]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 615
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[30]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 635
+        Warning (14320): Synthesized away node "processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated|q_a[31]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_2m81.tdf Line: 655
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[0]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 36
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[1]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 60
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[2]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 84
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[3]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 108
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[4]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 132
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[5]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 156
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[6]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 180
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[7]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 204
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[8]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 228
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[9]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 252
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[10]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 276
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[11]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 300
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[12]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 324
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[13]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 348
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[14]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 372
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[15]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 396
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[16]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 420
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[17]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 444
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[18]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 468
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[19]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 492
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[20]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 516
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[21]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 540
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[22]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 564
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[23]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 588
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[24]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 612
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[25]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 636
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[26]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 660
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[27]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 684
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[28]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 708
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[29]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 732
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[30]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 756
+        Warning (14320): Synthesized away node "processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component|altsyncram_8vc1:auto_generated|q_a[31]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/altsyncram_8vc1.tdf Line: 780
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following PLL node(s):
-        Warning (14320): Synthesized away node "pll:div|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0]" File: C:/Users/TN74/Downloads/lab7_skeleton_restored/db/pll_altpll.v Line: 77
+        Warning (14320): Synthesized away node "pll:div|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0]" File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/db/pll_altpll.v Line: 77
 Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (13000): Registers with preset signals will power-up high File: C:/Users/TN74/Downloads/lab7_skeleton_restored/lcd.sv Line: 48
+Info (13000): Registers with preset signals will power-up high File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/lcd.sv Line: 48
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "debug_data_in[0]" is stuck at VCC File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "debug_data_in[1]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "debug_data_in[2]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "debug_data_in[3]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "debug_data_in[4]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "debug_data_in[5]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "debug_data_in[6]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "debug_data_in[7]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "debug_data_in[8]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "debug_data_in[9]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "debug_data_in[10]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "debug_data_in[11]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "debug_data_in[12]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "debug_data_in[13]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "debug_data_in[14]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "debug_data_in[15]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "debug_data_in[16]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "debug_data_in[17]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "debug_data_in[18]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "debug_data_in[19]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "debug_data_in[20]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "debug_data_in[21]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "debug_data_in[22]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "debug_data_in[23]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "debug_data_in[24]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "debug_data_in[25]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "debug_data_in[26]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "debug_data_in[27]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "debug_data_in[28]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "debug_data_in[29]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "debug_data_in[30]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "debug_data_in[31]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 35
-    Warning (13410): Pin "debug_addr[0]" is stuck at VCC File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 36
-    Warning (13410): Pin "debug_addr[1]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 36
-    Warning (13410): Pin "debug_addr[2]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 36
-    Warning (13410): Pin "debug_addr[3]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 36
-    Warning (13410): Pin "debug_addr[4]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 36
-    Warning (13410): Pin "debug_addr[5]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 36
-    Warning (13410): Pin "debug_addr[6]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 36
-    Warning (13410): Pin "debug_addr[7]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 36
-    Warning (13410): Pin "debug_addr[8]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 36
-    Warning (13410): Pin "debug_addr[9]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 36
-    Warning (13410): Pin "debug_addr[10]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 36
-    Warning (13410): Pin "debug_addr[11]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 36
-    Warning (13410): Pin "leds[0]" is stuck at VCC File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 33
-    Warning (13410): Pin "leds[1]" is stuck at VCC File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 33
-    Warning (13410): Pin "leds[2]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 33
-    Warning (13410): Pin "leds[3]" is stuck at VCC File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 33
-    Warning (13410): Pin "leds[4]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 33
-    Warning (13410): Pin "leds[5]" is stuck at VCC File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 33
-    Warning (13410): Pin "leds[6]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 33
-    Warning (13410): Pin "leds[7]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 33
-    Warning (13410): Pin "lcd_rw" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 32
-    Warning (13410): Pin "lcd_on" is stuck at VCC File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 32
-    Warning (13410): Pin "lcd_blon" is stuck at VCC File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 32
-    Warning (13410): Pin "seg3[0]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "seg3[1]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "seg3[2]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "seg3[3]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "seg3[4]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "seg3[5]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "seg3[6]" is stuck at VCC File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "seg4[0]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "seg4[1]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "seg4[2]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "seg4[3]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "seg4[4]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "seg4[5]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "seg4[6]" is stuck at VCC File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "seg5[0]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "seg5[1]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "seg5[2]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "seg5[3]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "seg5[4]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "seg5[5]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "seg5[6]" is stuck at VCC File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "seg6[0]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "seg6[1]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "seg6[2]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "seg6[3]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "seg6[4]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "seg6[5]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "seg6[6]" is stuck at VCC File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "seg7[0]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "seg7[1]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "seg7[2]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "seg7[3]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "seg7[4]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "seg7[5]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "seg7[6]" is stuck at VCC File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "seg8[0]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "seg8[1]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "seg8[2]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "seg8[3]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "seg8[4]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "seg8[5]" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "seg8[6]" is stuck at VCC File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 34
-    Warning (13410): Pin "VGA_SYNC" is stuck at GND File: C:/Users/TN74/Downloads/lab7_skeleton_restored/skeleton.v Line: 21
+    Warning (13410): Pin "debug_data_in[0]" is stuck at VCC File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 35
+    Warning (13410): Pin "debug_data_in[1]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 35
+    Warning (13410): Pin "debug_data_in[2]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 35
+    Warning (13410): Pin "debug_data_in[3]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 35
+    Warning (13410): Pin "debug_data_in[4]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 35
+    Warning (13410): Pin "debug_data_in[5]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 35
+    Warning (13410): Pin "debug_data_in[6]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 35
+    Warning (13410): Pin "debug_data_in[7]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 35
+    Warning (13410): Pin "debug_data_in[8]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 35
+    Warning (13410): Pin "debug_data_in[9]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 35
+    Warning (13410): Pin "debug_data_in[10]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 35
+    Warning (13410): Pin "debug_data_in[11]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 35
+    Warning (13410): Pin "debug_data_in[12]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 35
+    Warning (13410): Pin "debug_data_in[13]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 35
+    Warning (13410): Pin "debug_data_in[14]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 35
+    Warning (13410): Pin "debug_data_in[15]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 35
+    Warning (13410): Pin "debug_data_in[16]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 35
+    Warning (13410): Pin "debug_data_in[17]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 35
+    Warning (13410): Pin "debug_data_in[18]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 35
+    Warning (13410): Pin "debug_data_in[19]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 35
+    Warning (13410): Pin "debug_data_in[20]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 35
+    Warning (13410): Pin "debug_data_in[21]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 35
+    Warning (13410): Pin "debug_data_in[22]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 35
+    Warning (13410): Pin "debug_data_in[23]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 35
+    Warning (13410): Pin "debug_data_in[24]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 35
+    Warning (13410): Pin "debug_data_in[25]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 35
+    Warning (13410): Pin "debug_data_in[26]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 35
+    Warning (13410): Pin "debug_data_in[27]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 35
+    Warning (13410): Pin "debug_data_in[28]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 35
+    Warning (13410): Pin "debug_data_in[29]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 35
+    Warning (13410): Pin "debug_data_in[30]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 35
+    Warning (13410): Pin "debug_data_in[31]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 35
+    Warning (13410): Pin "debug_addr[0]" is stuck at VCC File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 36
+    Warning (13410): Pin "debug_addr[1]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 36
+    Warning (13410): Pin "debug_addr[2]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 36
+    Warning (13410): Pin "debug_addr[3]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 36
+    Warning (13410): Pin "debug_addr[4]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 36
+    Warning (13410): Pin "debug_addr[5]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 36
+    Warning (13410): Pin "debug_addr[6]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 36
+    Warning (13410): Pin "debug_addr[7]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 36
+    Warning (13410): Pin "debug_addr[8]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 36
+    Warning (13410): Pin "debug_addr[9]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 36
+    Warning (13410): Pin "debug_addr[10]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 36
+    Warning (13410): Pin "debug_addr[11]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 36
+    Warning (13410): Pin "leds[0]" is stuck at VCC File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 33
+    Warning (13410): Pin "leds[1]" is stuck at VCC File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 33
+    Warning (13410): Pin "leds[2]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 33
+    Warning (13410): Pin "leds[3]" is stuck at VCC File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 33
+    Warning (13410): Pin "leds[4]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 33
+    Warning (13410): Pin "leds[5]" is stuck at VCC File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 33
+    Warning (13410): Pin "leds[6]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 33
+    Warning (13410): Pin "leds[7]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 33
+    Warning (13410): Pin "lcd_rw" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 32
+    Warning (13410): Pin "lcd_on" is stuck at VCC File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 32
+    Warning (13410): Pin "lcd_blon" is stuck at VCC File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 32
+    Warning (13410): Pin "seg3[0]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 34
+    Warning (13410): Pin "seg3[1]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 34
+    Warning (13410): Pin "seg3[2]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 34
+    Warning (13410): Pin "seg3[3]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 34
+    Warning (13410): Pin "seg3[4]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 34
+    Warning (13410): Pin "seg3[5]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 34
+    Warning (13410): Pin "seg3[6]" is stuck at VCC File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 34
+    Warning (13410): Pin "seg4[0]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 34
+    Warning (13410): Pin "seg4[1]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 34
+    Warning (13410): Pin "seg4[2]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 34
+    Warning (13410): Pin "seg4[3]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 34
+    Warning (13410): Pin "seg4[4]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 34
+    Warning (13410): Pin "seg4[5]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 34
+    Warning (13410): Pin "seg4[6]" is stuck at VCC File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 34
+    Warning (13410): Pin "seg5[0]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 34
+    Warning (13410): Pin "seg5[1]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 34
+    Warning (13410): Pin "seg5[2]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 34
+    Warning (13410): Pin "seg5[3]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 34
+    Warning (13410): Pin "seg5[4]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 34
+    Warning (13410): Pin "seg5[5]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 34
+    Warning (13410): Pin "seg5[6]" is stuck at VCC File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 34
+    Warning (13410): Pin "seg6[0]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 34
+    Warning (13410): Pin "seg6[1]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 34
+    Warning (13410): Pin "seg6[2]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 34
+    Warning (13410): Pin "seg6[3]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 34
+    Warning (13410): Pin "seg6[4]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 34
+    Warning (13410): Pin "seg6[5]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 34
+    Warning (13410): Pin "seg6[6]" is stuck at VCC File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 34
+    Warning (13410): Pin "seg7[0]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 34
+    Warning (13410): Pin "seg7[1]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 34
+    Warning (13410): Pin "seg7[2]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 34
+    Warning (13410): Pin "seg7[3]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 34
+    Warning (13410): Pin "seg7[4]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 34
+    Warning (13410): Pin "seg7[5]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 34
+    Warning (13410): Pin "seg7[6]" is stuck at VCC File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 34
+    Warning (13410): Pin "seg8[0]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 34
+    Warning (13410): Pin "seg8[1]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 34
+    Warning (13410): Pin "seg8[2]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 34
+    Warning (13410): Pin "seg8[3]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 34
+    Warning (13410): Pin "seg8[4]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 34
+    Warning (13410): Pin "seg8[5]" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 34
+    Warning (13410): Pin "seg8[6]" is stuck at VCC File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 34
+    Warning (13410): Pin "VGA_SYNC" is stuck at GND File: C:/Users/TN74/Documents/ECE350/tests/Missiles/lab7_skeleton_restored/skeleton.v Line: 21
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 17 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -2426,9 +2426,9 @@ Info (21057): Implemented 1465 device resources after synthesis - the final reso
     Info (21064): Implemented 328 RAM segments
     Info (21065): Implemented 1 PLLs
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 183 warnings
-    Info: Peak virtual memory: 4900 megabytes
-    Info: Processing ended: Thu Nov 08 18:42:23 2018
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:26
+    Info: Peak virtual memory: 4825 megabytes
+    Info: Processing ended: Thu Nov 08 18:57:08 2018
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:23
 
 

@@ -37,7 +37,7 @@ module skeleton(resetn,
 	
 	
 	
-	 
+	
 	
 	wire			 clock;
 	wire			 lcd_write_en;

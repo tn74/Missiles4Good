@@ -1,8 +1,1 @@
-*
-!.gitignore
-!*.v
-!*.mif
-!*.sv
-!*.qip
-!*.cmp
-!*.qpf
+**.flock

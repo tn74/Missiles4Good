@@ -69,13 +69,19 @@ class FontGenerator():
 
 
 		# l = 
-		# dummy_string = "".join(l)
-		for i in range(21):
-			mif.write("{0:03d}\t:\t{1};\n\n".format(i, "".join(["0" for j in range(data_width)])))
+		dummy_string = "".join(["0" for j in range(data_width)])
 
+		mifdata = []
+		for i in range(21):
+			mifdata.append(dummy_string)
 		for i in range(len(self.bitvectors)):
-			bitstring = "".join([str(num) for num in self.bitvectors[i]])
-			mif.write("{0:03d}\t:\t{1};\n\n".format(i + 21, bitstring))
+			mifdata.append("".join([str(num) for num in self.bitvectors[i]]))
+		while len(mifdata) < 256:
+			mifdata.append(dummy_string)
+
+		for address, data in enumerate(mifdata):
+			mif.write("{0:03d}\t:\t{1};\n\n".format(address, data))
+		
 		mif.write("END;")
 
 	def produce_font_bitmap(self):

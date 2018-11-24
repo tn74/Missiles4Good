@@ -199,7 +199,6 @@ set_global_assignment -name VERILOG_FILE img_data.v
 set_global_assignment -name MIF_FILE lab7_img_data.mif
 set_global_assignment -name MIF_FILE lab7_img_index.mif
 set_global_assignment -name VERILOG_FILE vga_controller_typer.v
-set_global_assignment -name VERILOG_FILE terminal_renderer.v
 set_global_assignment -name QIP_FILE typer_data.qip
 set_global_assignment -name MIF_FILE typer_indexcolor.mif
 set_global_assignment -name QIP_FILE typer_index.qip

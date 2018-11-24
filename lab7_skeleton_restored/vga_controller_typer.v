@@ -81,7 +81,7 @@ assign VGA_CLK_n = ~iVGA_CLK;
 
 typer_data typer_data_inst (
 	.clock( VGA_CLK_n ),
-	.raddress( ADDR ),
+	.rdaddress( ADDR ),
 	.q( index ),
 	
 	.wren( mem_wenable ),

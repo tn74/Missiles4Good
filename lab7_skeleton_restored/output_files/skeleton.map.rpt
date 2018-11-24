@@ -1,6 +1,6 @@
 Analysis & Synthesis report for skeleton
-Thu Nov 15 17:55:22 2018
-Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Sat Nov 24 13:27:34 2018
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
 ---------------------
@@ -18,7 +18,7 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2017  Intel Corporation. All rights reserved.
+Copyright (C) 2018  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -37,8 +37,8 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Thu Nov 15 17:55:22 2018           ;
-; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
+; Analysis & Synthesis Status        ; Failed - Sat Nov 24 13:27:34 2018           ;
+; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; skeleton                                    ;
 ; Top-level Entity Name              ; skeleton                                    ;
 ; Family                             ; Cyclone IV E                                ;
@@ -54,90 +54,90 @@ refer to the applicable agreement for further details.
 +------------------------------------+---------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                        ;
-+----------------------------------------------------------------------------+--------------------+--------------------+
-; Option                                                                     ; Setting            ; Default Value      ;
-+----------------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                                     ; EP4CE115F29C7      ;                    ;
-; Top-level entity name                                                      ; skeleton           ; skeleton           ;
-; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
-; Use smart compilation                                                      ; Off                ; Off                ;
-; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
-; Enable compact report table                                                ; Off                ; Off                ;
-; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
-; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
-; Preserve fewer node names                                                  ; On                 ; On                 ;
-; Intel FPGA IP Evaluation Mode                                              ; Enable             ; Enable             ;
-; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
-; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
-; State Machine Processing                                                   ; Auto               ; Auto               ;
-; Safe State Machine                                                         ; Off                ; Off                ;
-; Extract Verilog State Machines                                             ; On                 ; On                 ;
-; Extract VHDL State Machines                                                ; On                 ; On                 ;
-; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
-; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
-; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
-; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
-; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
-; Parallel Synthesis                                                         ; On                 ; On                 ;
-; DSP Block Balancing                                                        ; Auto               ; Auto               ;
-; NOT Gate Push-Back                                                         ; On                 ; On                 ;
-; Power-Up Don't Care                                                        ; On                 ; On                 ;
-; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
-; Remove Duplicate Registers                                                 ; On                 ; On                 ;
-; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
-; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
-; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
-; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
-; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
-; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
-; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
-; Optimization Technique                                                     ; Balanced           ; Balanced           ;
-; Carry Chain Length                                                         ; 70                 ; 70                 ;
-; Auto Carry Chains                                                          ; On                 ; On                 ;
-; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
-; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
-; Auto ROM Replacement                                                       ; On                 ; On                 ;
-; Auto RAM Replacement                                                       ; On                 ; On                 ;
-; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
-; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
-; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
-; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
-; Strict RAM Replacement                                                     ; Off                ; Off                ;
-; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
-; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
-; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
-; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
-; Auto Resource Sharing                                                      ; Off                ; Off                ;
-; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
-; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
-; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
-; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
-; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
-; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
-; Report Parameter Settings                                                  ; On                 ; On                 ;
-; Report Source Assignments                                                  ; On                 ; On                 ;
-; Report Connectivity Checks                                                 ; On                 ; On                 ;
-; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
-; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
-; Power Optimization During Synthesis                                        ; Normal compilation ; Normal compilation ;
-; HDL message level                                                          ; Level2             ; Level2             ;
-; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
-; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
-; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
-; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
-; Clock MUX Protection                                                       ; On                 ; On                 ;
-; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
-; Block Design Naming                                                        ; Auto               ; Auto               ;
-; SDC constraint protection                                                  ; Off                ; Off                ;
-; Synthesis Effort                                                           ; Auto               ; Auto               ;
-; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
-; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
-; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
-; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
-; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
-+----------------------------------------------------------------------------+--------------------+--------------------+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EP4CE115F29C7      ;                    ;
+; Top-level entity name                                            ; skeleton           ; skeleton           ;
+; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
 
 
 +------------------------------------------+
@@ -145,8 +145,8 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 2           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -161,15 +161,18 @@ refer to the applicable agreement for further details.
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Thu Nov 15 17:55:13 2018
+    Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+    Info: Processing started: Sat Nov 24 13:27:18 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off skeleton -c skeleton
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file typer_logic.v
+    Info (12023): Found entity 1: typer_logic File: C:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/typer_logic.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file vga_audio_pll.v
     Info (12023): Found entity 1: VGA_Audio_PLL File: C:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/VGA_Audio_PLL.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file reset_delay.v
     Info (12023): Found entity 1: Reset_Delay File: C:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/Reset_Delay.v Line: 1
+Warning (10275): Verilog HDL Module Instantiation warning at skeleton.v(101): ignored dangling comma in List of Port Connections File: C:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/skeleton.v Line: 101
 Info (12021): Found 1 design units, including 1 entities, in source file skeleton.v
     Info (12023): Found entity 1: skeleton File: C:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/skeleton.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file ps2_interface.v
@@ -206,25 +209,28 @@ Info (12021): Found 1 design units, including 1 entities, in source file termina
     Info (12023): Found entity 1: terminal_renderer File: C:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/terminal_renderer.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file typer_data.v
     Info (12023): Found entity 1: typer_data File: C:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/typer_data.v Line: 39
+Info (12021): Found 1 design units, including 1 entities, in source file typer_index.v
+    Info (12023): Found entity 1: typer_index File: C:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/typer_index.v Line: 39
 Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(50): created implicit net for "inclock" File: C:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/skeleton.v Line: 50
-Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(81): created implicit net for "DLY_RST" File: C:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/skeleton.v Line: 81
-Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(82): created implicit net for "VGA_CTRL_CLK" File: C:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/skeleton.v Line: 82
-Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(82): created implicit net for "AUD_CTRL_CLK" File: C:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/skeleton.v Line: 82
+Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(83): created implicit net for "DLY_RST" File: C:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/skeleton.v Line: 83
+Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(84): created implicit net for "VGA_CTRL_CLK" File: C:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/skeleton.v Line: 84
+Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(84): created implicit net for "AUD_CTRL_CLK" File: C:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/skeleton.v Line: 84
 Warning (10236): Verilog HDL Implicit Net warning at processor.v(29): created implicit net for "debug_data" File: C:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/processor.v Line: 29
-Warning (10236): Verilog HDL Implicit Net warning at vga_controller_typer.v(61): created implicit net for "character_array" File: C:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/vga_controller_typer.v Line: 61
-Error (10158): Verilog HDL Module Declaration error at vga_controller_typer.v(12): port "character_array" is not declared as port File: C:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/vga_controller_typer.v Line: 12
-Error (10206): Verilog HDL Module Declaration error at vga_controller_typer.v(24): top module port "ascii_code" is not found in the port list File: C:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/vga_controller_typer.v Line: 24
-Error (10206): Verilog HDL Module Declaration error at vga_controller_typer.v(25): top module port "x" is not found in the port list File: C:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/vga_controller_typer.v Line: 25
-Error (10206): Verilog HDL Module Declaration error at vga_controller_typer.v(25): top module port "y" is not found in the port list File: C:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/vga_controller_typer.v Line: 25
-Error (10206): Verilog HDL Module Declaration error at vga_controller_typer.v(26): top module port "start_printing" is not found in the port list File: C:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/vga_controller_typer.v Line: 26
-Error (10137): Verilog HDL Procedural Assignment error at terminal_renderer.v(53): object "bgr_data" on left-hand side of assignment must have a variable data type File: C:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/terminal_renderer.v Line: 53
-Error (10137): Verilog HDL Procedural Assignment error at terminal_renderer.v(55): object "bgr_data" on left-hand side of assignment must have a variable data type File: C:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/terminal_renderer.v Line: 55
+Warning (10236): Verilog HDL Implicit Net warning at vga_controller_typer.v(72): created implicit net for "mem_waddr" File: C:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/vga_controller_typer.v Line: 72
+Error (10153): Verilog HDL Function Call or Function Declaration error at vga_controller_typer.v(67): identifier "row_num" is not a function File: C:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/vga_controller_typer.v Line: 67
+Error (10153): Verilog HDL Function Call or Function Declaration error at vga_controller_typer.v(68): identifier "col_num" is not a function File: C:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/vga_controller_typer.v Line: 68
+Error (10153): Verilog HDL Function Call or Function Declaration error at vga_controller_typer.v(69): identifier "character_input" is not a function File: C:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/vga_controller_typer.v Line: 69
+Error (10153): Verilog HDL Function Call or Function Declaration error at vga_controller_typer.v(70): identifier "start_writing_character" is not a function File: C:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/vga_controller_typer.v Line: 70
+Error (10153): Verilog HDL Function Call or Function Declaration error at vga_controller_typer.v(71): identifier "finished_saving_char" is not a function File: C:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/vga_controller_typer.v Line: 71
+Error (10153): Verilog HDL Function Call or Function Declaration error at vga_controller_typer.v(72): identifier "mem_waddr" is not a function File: C:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/vga_controller_typer.v Line: 72
+Error (10153): Verilog HDL Function Call or Function Declaration error at vga_controller_typer.v(73): identifier "mem_wdata" is not a function File: C:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/vga_controller_typer.v Line: 73
+Error (10153): Verilog HDL Function Call or Function Declaration error at vga_controller_typer.v(74): identifier "mem_wenable" is not a function File: C:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/vga_controller_typer.v Line: 74
 Info (144001): Generated suppressed messages file C:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/output_files/skeleton.map.smsg
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 7 errors, 7 warnings
-    Error: Peak virtual memory: 4728 megabytes
-    Error: Processing ended: Thu Nov 15 17:55:22 2018
-    Error: Elapsed time: 00:00:09
-    Error: Total CPU time (on all processors): 00:00:19
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 8 errors, 8 warnings
+    Error: Peak virtual memory: 622 megabytes
+    Error: Processing ended: Sat Nov 24 13:27:34 2018
+    Error: Elapsed time: 00:00:16
+    Error: Total CPU time (on all processors): 00:00:24
 
 
 +------------------------------------------+

@@ -76,18 +76,29 @@ module skeleton(resetn,
 	
 	// some LEDs that you could use for debugging if you wanted
 	assign leds = 8'b00101011;
-		
+	
+	
+	wire finished_saving_char;
 	// VGA
 	Reset_Delay			r0	(.iCLK(CLOCK_50),.oRESET(DLY_RST)	);
 	VGA_Audio_PLL 		p1	(.areset(~DLY_RST),.inclk0(CLOCK_50),.c0(VGA_CTRL_CLK),.c1(AUD_CTRL_CLK),.c2(VGA_CLK)	);
-	vga_controller vga_ins(.iRST_n(DLY_RST),
+	vga_controller_typer vga_ins(.iRST_n(DLY_RST),
 								 .iVGA_CLK(VGA_CLK),
 								 .oBLANK_n(VGA_BLANK),
 								 .oHS(VGA_HS),
 								 .oVS(VGA_VS),
 								 .b_data(VGA_B),
 								 .g_data(VGA_G),
-								 .r_data(VGA_R));
+								 .r_data(VGA_R),
+								 
+								 .row_num(8'h00),
+								 .col_num(8'h00),
+								 .character_input(8'd25),
+								 .start_writing_character(1'b1),
+							 
+								 .finished_saving_char(finished_saving_char),
+								 
+								 );
 	
 	
 endmodule

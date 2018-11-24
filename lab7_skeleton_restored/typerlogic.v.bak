@@ -1,0 +1,4 @@
+module typer_logic (
+);
+
+endmodule;

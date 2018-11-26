@@ -22,6 +22,6 @@ DATA_RADIX=HEX;
 
 CONTENT BEGIN
 	0  :   FF0000;
-	1  :   FFFFFF;
+	1  :   0000FF;
 	[2..7]  :   000000;
 END;

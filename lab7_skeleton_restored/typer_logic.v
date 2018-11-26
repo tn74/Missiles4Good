@@ -43,18 +43,6 @@ assign mem_waddr = mem_waddr_reg;
 assign mem_wdata = mem_wdata_reg;
 assign mem_wenable = mem_wenable_reg;
 
-//always @(posedge clock)
-//begin
-//	else if (!busy && start_writing_character)
-//	begin
-//		busy <= 1'b1;
-//		character_start_index <= (270 + row_num * CHAR_HEIGHT) * SCREEN_WIDTH + col_num * CHAR_WIDTH;
-//		character_pixel_index <= character_start_index;
-//		writing_char <= character_input;
-//		char_count <= 0;
-//		row_count <= 0;
-//	end
-//end
 
 character_data character_data_inst(
 	.address(writing_char),
@@ -64,6 +52,11 @@ character_data character_data_inst(
 
 
 assign finished_saving_char = ~busy;
+
+initial 
+begin
+	busy <= 1'b0;
+end
 
 always @(posedge clock)
 begin
@@ -78,6 +71,7 @@ begin
 		writing_char <= character_input;
 		char_count <= 0;
 		row_count <= 0;
+		mem_waddr_reg <= 19'd100;
 	end
 	
 	else if (busy)
@@ -95,6 +89,7 @@ begin
 		end
 		row_count <= row_count + 1;
 		char_count <= char_count + 1;
+		
 	end
 	
 	else if (char_count == 600)
@@ -104,12 +99,5 @@ begin
 	
 end
 
-//always @(negedge clock)
-//begin
-//	if (char_count == 599)
-//	begin
-//		busy <= 1'b0;
-//	end
-//end
 
 endmodule

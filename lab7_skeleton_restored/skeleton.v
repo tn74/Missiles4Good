@@ -98,7 +98,6 @@ module skeleton(resetn,
 								 .start_writing_character(1'b1),
 							 
 								 .finished_saving_char(finished_saving_char),
-								 
 								 );
 	
 	

@@ -1,0 +1,163 @@
+Determining the location of the ModelSim executable...
+
+Using: c:/intelfpga_lite/17.1/modelsim_ase/win32aloem/
+
+To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
+Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-Altera will be used.
+
+**** Generating the ModelSim Testbench ****
+
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off skeleton -c skeleton --vector_source="C:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/Waveform.vwf" --testbench_file="C:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/simulation/qsim/Waveform.vwf.vt"
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+    Info: Copyright (C) 2017  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details.
+    Info: Processing started: Mon Nov 26 13:34:00 2018
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off skeleton -c skeleton --vector_source=C:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/Waveform.vwf --testbench_file=C:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/simulation/qsim/Waveform.vwf.vt
+Info (119006): Selected device EP4CE115F29C7 for design "skeleton"
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+
+riting test bench files
+
+Completed successfully. 
+
+Completed successfully. 
+
+**** Generating the functional simulation netlist ****
+
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/simulation/qsim/" skeleton -c skeleton
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+    Info: Copyright (C) 2017  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details.
+    Info: Processing started: Mon Nov 26 13:34:01 2018
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/simulation/qsim/ skeleton -c skeleton
+Info (119006): Selected device EP4CE115F29C7 for design "skeleton"
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (204019): Generated file skeleton.vo in folder "C:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/simulation/qsim//" for EDA simulation tool
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4674 megabytes
+    Info: Processing ended: Mon Nov 26 13:34:03 2018
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+Completed successfully. 
+
+**** Generating the ModelSim .do script ****
+
+C:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/simulation/qsim/skeleton.do generated.
+
+Completed successfully. 
+
+**** Running the ModelSim simulation ****
+
+c:/intelfpga_lite/17.1/modelsim_ase/win32aloem//vsim -c -do skeleton.do
+
+Reading C:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+# do skeleton.do
+
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:34:04 on Nov 26,2018
+# vlog -work work skeleton.vo 
+# -- Compiling module vga_controller_typer
+
+# 
+# Top level modules:
+# 	vga_controller_typer
+# End time: 13:34:04 on Nov 26,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:34:05 on Nov 26,2018
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module vga_controller_typer_vlg_vec_tst
+# 
+# Top level modules:
+# 	vga_controller_typer_vlg_vec_tst
+
+# End time: 13:34:05 on Nov 26,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+
+# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.vga_controller_typer_vlg_vec_tst 
+# Start time: 13:34:06 on Nov 26,2018
+# Loading work.vga_controller_typer_vlg_vec_tst
+# Loading work.vga_controller_typer
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading altera_ver.dffeas
+# Loading cycloneive_ver.cycloneive_ram_block
+# Loading cycloneive_ver.cycloneive_ram_register
+# Loading cycloneive_ver.cycloneive_ram_pulse_generator
+# Loading altera_ver.PRIM_GDFF_LOW
+# ** Warning: Design size of 22412 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# after#23
+
+# Simulation time: 0 ps
+
+# Simulation time: 0 ps
+
+# Simulation time: 0 ps
+
+# Simulation time: 0 ps
+
+# Simulation time: 0 ps
+
+# Simulation time: 0 ps
+
+# Simulation time: 0 ps
+
+# Simulation time: 0 ps
+
+# ** Note: $finish    : Waveform.vwf.vt(66)
+#    Time: 1 us  Iteration: 0  Instance: /vga_controller_typer_vlg_vec_tst
+# End time: 13:34:29 on Nov 26,2018, Elapsed time: 0:00:23
+# Errors: 0, Warnings: 1
+
+Completed successfully. 
+
+**** Converting ModelSim VCD to vector waveform ****
+
+Reading C:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/Waveform.vwf...
+
+Reading C:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/simulation/qsim/skeleton.msim.vcd...
+
+Processing channel transitions... 
+
+Writing the resulting VWF to C:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/simulation/qsim/skeleton_20181126133430.sim.vwf
+
+Finished VCD to VWF conversion.
+
+Completed successfully. 
+
+All completed.

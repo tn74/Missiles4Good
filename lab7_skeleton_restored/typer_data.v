@@ -90,6 +90,7 @@ module typer_data (
 		altsyncram_component.address_aclr_b = "NONE",
 		altsyncram_component.address_reg_b = "CLOCK0",
 		altsyncram_component.clock_enable_input_a = "BYPASS",
+		altsyncram_component.init_file = "typer_data.mif",
 		altsyncram_component.clock_enable_input_b = "BYPASS",
 		altsyncram_component.clock_enable_output_b = "BYPASS",
 		altsyncram_component.intended_device_family = "Cyclone IV E",

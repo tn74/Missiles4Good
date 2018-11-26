@@ -77,7 +77,8 @@ module skeleton(resetn,
 	// some LEDs that you could use for debugging if you wanted
 	assign leds = 8'b00101011;
 	
-	
+	wire[7:0] redTest;
+	assign redTest = 8'hff;
 	wire finished_saving_char;
 	// VGA
 	Reset_Delay			r0	(.iCLK(CLOCK_50),.oRESET(DLY_RST)	);

@@ -1,26 +1,26 @@
 # do skeleton.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:59:20 on Nov 26,2018
+# Start time: 14:13:29 on Nov 26,2018
 # vlog -work work skeleton.vo 
 # -- Compiling module typer_logic
 # -- Compiling module hard_block
 # 
 # Top level modules:
 # 	typer_logic
-# End time: 13:59:21 on Nov 26,2018, Elapsed time: 0:00:01
+# End time: 14:13:29 on Nov 26,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:59:21 on Nov 26,2018
+# Start time: 14:13:29 on Nov 26,2018
 # vlog -work work Waveform1.vwf.vt 
 # -- Compiling module typer_logic_vlg_vec_tst
 # 
 # Top level modules:
 # 	typer_logic_vlg_vec_tst
-# End time: 13:59:21 on Nov 26,2018, Elapsed time: 0:00:00
+# End time: 14:13:29 on Nov 26,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.typer_logic_vlg_vec_tst 
-# Start time: 13:59:21 on Nov 26,2018
+# Start time: 14:13:29 on Nov 26,2018
 # Loading work.typer_logic_vlg_vec_tst
 # Loading work.typer_logic
 # Loading work.hard_block
@@ -37,6 +37,6 @@
 # Loading altera_ver.PRIM_GDFF_LOW
 # after#26
 # ** Note: $finish    : Waveform1.vwf.vt(58)
-#    Time: 1 us  Iteration: 0  Instance: /typer_logic_vlg_vec_tst
-# End time: 13:59:21 on Nov 26,2018, Elapsed time: 0:00:00
+#    Time: 15 us  Iteration: 0  Instance: /typer_logic_vlg_vec_tst
+# End time: 14:13:30 on Nov 26,2018, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

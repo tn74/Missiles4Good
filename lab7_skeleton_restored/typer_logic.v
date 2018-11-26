@@ -41,7 +41,7 @@ reg mem_wenable_reg;
 
 assign mem_waddr = mem_waddr_reg;
 assign mem_wdata = mem_wdata_reg;
-assign mem_wenable = mem_wenable_reg;
+assign mem_wenable = busy;
 
 
 character_data character_data_inst(
@@ -61,27 +61,25 @@ end
 always @(posedge clock)
 begin
 	mem_wdata_reg[2:1] <= 2'b00; 
-	mem_wenable_reg <= busy;
+//	mem_wenable_reg <= busy;
 	
 	if (!busy && start_writing_character)
 	begin
 		busy <= 1'b1;
-		character_start_index <= (270 + row_num * CHAR_HEIGHT) * SCREEN_WIDTH + col_num * CHAR_WIDTH;
-		character_pixel_index <= character_start_index;
+		character_pixel_index <= (270 + row_num * CHAR_HEIGHT) * SCREEN_WIDTH + col_num * CHAR_WIDTH;
 		writing_char <= character_input;
 		char_count <= 0;
 		row_count <= 0;
-		mem_waddr_reg <= 19'd100;
 	end
 	
-	else if (busy)
+	else if (busy && char_count < 600)
 	begin
 		mem_waddr_reg <= character_pixel_index;
 		mem_wdata_reg[0] <= character_bit_data[char_count];
 		if(row_count == CHAR_WIDTH)
 		begin
 			row_count <= 0;
-			character_pixel_index <= character_pixel_index + SCREEN_WIDTH;
+			character_pixel_index <= character_pixel_index + SCREEN_WIDTH - CHAR_WIDTH;
 		end
 		else
 		begin
@@ -92,7 +90,7 @@ begin
 		
 	end
 	
-	else if (char_count == 600)
+	else
 	begin
 		busy <= 1'b0;
 	end

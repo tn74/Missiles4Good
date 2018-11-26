@@ -15,12 +15,12 @@ module vga_controller_typer(iRST_n,
 							 finished_saving_char
 							 );
 
+// Typing Inputs and Outputs
 input[7:0] row_num, col_num, character_input;
 input start_writing_character;
 output finished_saving_char;
 
-
-	
+// VGA Inputs and Outputs	
 input iRST_n;
 input iVGA_CLK;
 output reg oBLANK_n;
@@ -29,7 +29,13 @@ output reg oVS;
 output [7:0] b_data;
 output [7:0] g_data;  
 output [7:0] r_data;                        
-///////// ////                     
+
+// Address to Index Memory File Writing
+wire[18:0] mem_waddr;
+wire[2:0] mem_wdata;
+wire mem_wenable;
+
+// VGA Wires                
 reg [18:0] ADDR;
 reg [23:0] bgr_data;
 wire VGA_CLK_n;
@@ -37,12 +43,7 @@ wire [2:0] index;
 wire [23:0] bgr_data_raw;
 wire cBLANK_n,cHS,cVS,rst;
 
-//// Address to Index Memory File Writing
-wire[18:0] mem_wadd;
-wire[2:0] mem_wdata;
-wire mem_wenable;
-
-
+// Something...
 assign rst = ~iRST_n;
 video_sync_generator LTM_ins (.vga_clk(iVGA_CLK),
                               .reset(rst),
@@ -50,7 +51,7 @@ video_sync_generator LTM_ins (.vga_clk(iVGA_CLK),
                               .HS(cHS),
                               .VS(cVS));
 
-////Addresss generator
+////Addresss generator. 
 always@(posedge iVGA_CLK,negedge iRST_n)
 begin
   if (!iRST_n)
@@ -62,8 +63,9 @@ begin
 end
 
 
-// Typer Logic for Writing
+// Typer Logic for writing to memory from which address to index translation is done
 typer_logic typer_logic_inst (
+	 .clock(iVGA_CLK),
 	 .row_num(row_num),
 	 .col_num(col_num),
 	 .character_input(character_input),
@@ -78,7 +80,6 @@ typer_logic typer_logic_inst (
 
 //////INDEX addr.
 assign VGA_CLK_n = ~iVGA_CLK;
-
 typer_data typer_data_inst (
 	.clock( VGA_CLK_n ),
 	.rdaddress( ADDR ),
@@ -89,12 +90,6 @@ typer_data typer_data_inst (
 	.data( mem_wdata )
 );
 
-//img_data	img_data_inst (
-//	.address ( ADDR ),
-//	.clock ( VGA_CLK_n ),
-//	.q ( index )
-//	);
-
 	
 //////Color table output
 typer_index typer_index_inst (
@@ -103,12 +98,6 @@ typer_index typer_index_inst (
 	.q ( bgr_data_raw)
 );
 
-//
-//img_index	img_index_inst (
-//	.address ( index ),
-//	.clock ( iVGA_CLK ),
-//	.q ( bgr_data_raw)
-//	);	
 
 
 // Latch valid data at falling edge;

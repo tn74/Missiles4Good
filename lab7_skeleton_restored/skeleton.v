@@ -77,9 +77,23 @@ module skeleton(resetn,
 	// some LEDs that you could use for debugging if you wanted
 	assign leds = 8'b00101011;
 	
-	wire[7:0] redTest;
-	assign redTest = 8'hff;
-	wire finished_saving_char;
+	
+	
+	wire [7:0] typer_row_num, typer_col_num, typer_character_input;
+	wire	typer_start_writing_char, finished_saving_char;
+	
+	input_brain inpbr(
+		.clock(clock),
+	
+		.ps2_key_pressed(ps2_key_pressed), 
+		.ps2_out(ps2_out),
+
+		.row_num(typer_row_num),
+		.col_num(typer_col_num),
+		.character_input(typer_character_input),
+		.start_writing_character(typer_start_writing_char)
+	);
+	
 	// VGA
 	Reset_Delay			r0	(.iCLK(CLOCK_50),.oRESET(DLY_RST)	);
 	VGA_Audio_PLL 		p1	(.areset(~DLY_RST),.inclk0(CLOCK_50),.c0(VGA_CTRL_CLK),.c1(AUD_CTRL_CLK),.c2(VGA_CLK)	);
@@ -92,10 +106,10 @@ module skeleton(resetn,
 								 .g_data(VGA_G),
 								 .r_data(VGA_R),
 								 
-								 .row_num(8'h00),
-								 .col_num(8'h00),
-								 .character_input(8'd25),
-								 .start_writing_character(1'b1),
+								 .row_num(typer_row_num),
+								 .col_num(typer_col_num),
+								 .character_input(typer_character_input),
+								 .start_writing_character(typer_start_writing_char),
 							 
 								 .finished_saving_char(finished_saving_char),
 								 );

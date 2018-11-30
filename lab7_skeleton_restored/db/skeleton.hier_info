@@ -152,7 +152,7 @@ VGA_B[4] << vga_controller_typer:vga_ins.b_data
 VGA_B[5] << vga_controller_typer:vga_ins.b_data
 VGA_B[6] << vga_controller_typer:vga_ins.b_data
 VGA_B[7] << vga_controller_typer:vga_ins.b_data
-CLOCK_50 => clock.IN6
+CLOCK_50 => clock.IN7
 
 
 |skeleton|pll:div
@@ -3621,6 +3621,135 @@ seven_seg_display[3] <= seven_seg_display.DB_MAX_OUTPUT_PORT_TYPE
 seven_seg_display[4] <= seven_seg_display.DB_MAX_OUTPUT_PORT_TYPE
 seven_seg_display[5] <= seven_seg_display.DB_MAX_OUTPUT_PORT_TYPE
 seven_seg_display[6] <= seven_seg_display.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|skeleton|input_brain:inpbr
+clock => start_writing_character~reg0.CLK
+clock => row_num[0]~reg0.CLK
+clock => row_num[1]~reg0.CLK
+clock => row_num[2]~reg0.CLK
+clock => row_num[3]~reg0.CLK
+clock => row_num[4]~reg0.CLK
+clock => row_num[5]~reg0.CLK
+clock => row_num[6]~reg0.CLK
+clock => row_num[7]~reg0.CLK
+clock => col_num[0]~reg0.CLK
+clock => col_num[1]~reg0.CLK
+clock => col_num[2]~reg0.CLK
+clock => col_num[3]~reg0.CLK
+clock => col_num[4]~reg0.CLK
+clock => col_num[5]~reg0.CLK
+clock => col_num[6]~reg0.CLK
+clock => col_num[7]~reg0.CLK
+ps2_key_pressed => start_writing_character~reg0.DATAIN
+ps2_key_pressed => row_num[0]~reg0.ENA
+ps2_key_pressed => row_num[1]~reg0.ENA
+ps2_key_pressed => row_num[2]~reg0.ENA
+ps2_key_pressed => row_num[3]~reg0.ENA
+ps2_key_pressed => row_num[4]~reg0.ENA
+ps2_key_pressed => row_num[5]~reg0.ENA
+ps2_key_pressed => row_num[6]~reg0.ENA
+ps2_key_pressed => row_num[7]~reg0.ENA
+ps2_key_pressed => col_num[0]~reg0.ENA
+ps2_key_pressed => col_num[1]~reg0.ENA
+ps2_key_pressed => col_num[2]~reg0.ENA
+ps2_key_pressed => col_num[3]~reg0.ENA
+ps2_key_pressed => col_num[4]~reg0.ENA
+ps2_key_pressed => col_num[5]~reg0.ENA
+ps2_key_pressed => col_num[6]~reg0.ENA
+ps2_key_pressed => col_num[7]~reg0.ENA
+ps2_out[0] => ps2_out[0].IN1
+ps2_out[1] => ps2_out[1].IN1
+ps2_out[2] => ps2_out[2].IN1
+ps2_out[3] => ps2_out[3].IN1
+ps2_out[4] => ps2_out[4].IN1
+ps2_out[5] => ps2_out[5].IN1
+ps2_out[6] => ps2_out[6].IN1
+ps2_out[7] => ps2_out[7].IN1
+row_num[0] <= row_num[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+row_num[1] <= row_num[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+row_num[2] <= row_num[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+row_num[3] <= row_num[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+row_num[4] <= row_num[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+row_num[5] <= row_num[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+row_num[6] <= row_num[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+row_num[7] <= row_num[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+col_num[0] <= col_num[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+col_num[1] <= col_num[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+col_num[2] <= col_num[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+col_num[3] <= col_num[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+col_num[4] <= col_num[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+col_num[5] <= col_num[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+col_num[6] <= col_num[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+col_num[7] <= col_num[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+character_input[0] <= ps2_to_ascii:converter.port1
+character_input[1] <= ps2_to_ascii:converter.port1
+character_input[2] <= ps2_to_ascii:converter.port1
+character_input[3] <= ps2_to_ascii:converter.port1
+character_input[4] <= ps2_to_ascii:converter.port1
+character_input[5] <= ps2_to_ascii:converter.port1
+character_input[6] <= ps2_to_ascii:converter.port1
+character_input[7] <= ps2_to_ascii:converter.port1
+start_writing_character <= start_writing_character~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|skeleton|input_brain:inpbr|ps2_to_ascii:converter
+in[0] => Equal0.IN7
+in[0] => Equal1.IN7
+in[0] => Equal2.IN1
+in[0] => Equal3.IN2
+in[0] => Equal4.IN7
+in[0] => Equal5.IN7
+in[1] => Equal0.IN6
+in[1] => Equal1.IN2
+in[1] => Equal2.IN7
+in[1] => Equal3.IN1
+in[1] => Equal4.IN6
+in[1] => Equal5.IN2
+in[2] => Equal0.IN2
+in[2] => Equal1.IN6
+in[2] => Equal2.IN6
+in[2] => Equal3.IN7
+in[2] => Equal4.IN1
+in[2] => Equal5.IN1
+in[3] => Equal0.IN1
+in[3] => Equal1.IN5
+in[3] => Equal2.IN5
+in[3] => Equal3.IN6
+in[3] => Equal4.IN5
+in[3] => Equal5.IN6
+in[4] => Equal0.IN0
+in[4] => Equal1.IN1
+in[4] => Equal2.IN4
+in[4] => Equal3.IN5
+in[4] => Equal4.IN4
+in[4] => Equal5.IN5
+in[5] => Equal0.IN5
+in[5] => Equal1.IN0
+in[5] => Equal2.IN0
+in[5] => Equal3.IN0
+in[5] => Equal4.IN0
+in[5] => Equal5.IN0
+in[6] => Equal0.IN4
+in[6] => Equal1.IN4
+in[6] => Equal2.IN3
+in[6] => Equal3.IN4
+in[6] => Equal4.IN3
+in[6] => Equal5.IN4
+in[7] => Equal0.IN3
+in[7] => Equal1.IN3
+in[7] => Equal2.IN2
+in[7] => Equal3.IN3
+in[7] => Equal4.IN2
+in[7] => Equal5.IN3
+out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= <GND>
+out[4] <= <GND>
+out[5] <= <GND>
+out[6] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[7] <= <GND>
 
 
 |skeleton|Reset_Delay:r0

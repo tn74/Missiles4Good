@@ -106,9 +106,13 @@ module skeleton(resetn,
 								 .g_data(VGA_G),
 								 .r_data(VGA_R),
 								 
-								 .row_num(typer_row_num),
-								 .col_num(typer_col_num),
-								 .character_input(typer_character_input),
+//								 .row_num(typer_row_num),
+//								 .col_num(typer_col_num),
+//								 .character_input(typer_character_input),
+								 .row_num(8'h01),
+								 .col_num(8'h01),
+								 .character_input(8'd25),
+								 
 								 .start_writing_character(typer_start_writing_char),
 							 
 								 .finished_saving_char(finished_saving_char),

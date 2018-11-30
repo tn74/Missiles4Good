@@ -3912,6 +3912,27 @@ mem_wdata[0] <= mem_wdata_reg[0].DB_MAX_OUTPUT_PORT_TYPE
 mem_wdata[1] <= mem_wdata_reg[1].DB_MAX_OUTPUT_PORT_TYPE
 mem_wdata[2] <= mem_wdata_reg[2].DB_MAX_OUTPUT_PORT_TYPE
 mem_wenable <= busy.DB_MAX_OUTPUT_PORT_TYPE
+charcount_out[0] <= char_count[0].DB_MAX_OUTPUT_PORT_TYPE
+charcount_out[1] <= char_count[1].DB_MAX_OUTPUT_PORT_TYPE
+charcount_out[2] <= char_count[2].DB_MAX_OUTPUT_PORT_TYPE
+charcount_out[3] <= char_count[3].DB_MAX_OUTPUT_PORT_TYPE
+charcount_out[4] <= char_count[4].DB_MAX_OUTPUT_PORT_TYPE
+charcount_out[5] <= char_count[5].DB_MAX_OUTPUT_PORT_TYPE
+charcount_out[6] <= char_count[6].DB_MAX_OUTPUT_PORT_TYPE
+charcount_out[7] <= char_count[7].DB_MAX_OUTPUT_PORT_TYPE
+charcount_out[8] <= char_count[8].DB_MAX_OUTPUT_PORT_TYPE
+charcount_out[9] <= char_count[9].DB_MAX_OUTPUT_PORT_TYPE
+charcount_out[10] <= char_count[10].DB_MAX_OUTPUT_PORT_TYPE
+charcount_out[11] <= char_count[11].DB_MAX_OUTPUT_PORT_TYPE
+charcount_out[12] <= char_count[12].DB_MAX_OUTPUT_PORT_TYPE
+charcount_out[13] <= char_count[13].DB_MAX_OUTPUT_PORT_TYPE
+charcount_out[14] <= char_count[14].DB_MAX_OUTPUT_PORT_TYPE
+charcount_out[15] <= char_count[15].DB_MAX_OUTPUT_PORT_TYPE
+charcount_out[16] <= char_count[16].DB_MAX_OUTPUT_PORT_TYPE
+charcount_out[17] <= char_count[17].DB_MAX_OUTPUT_PORT_TYPE
+charcount_out[18] <= char_count[18].DB_MAX_OUTPUT_PORT_TYPE
+start_row_counter_out <= start_row_counter.DB_MAX_OUTPUT_PORT_TYPE
+finish_row_counter_out <= screen_row_counter:src.finish
 
 
 |skeleton|vga_controller_typer:vga_ins|typer_logic:typer_logic_inst|character_data:character_data_inst
@@ -11827,7 +11848,7 @@ start => countreg.OUTPUTSELECT
 start => countreg.OUTPUTSELECT
 start => countreg.OUTPUTSELECT
 start => countreg[0].DATAIN
-finish <= countreg[29].DB_MAX_OUTPUT_PORT_TYPE
+finish <= countreg[19].DB_MAX_OUTPUT_PORT_TYPE
 countreg_out[0] <= countreg[0].DB_MAX_OUTPUT_PORT_TYPE
 countreg_out[1] <= countreg[1].DB_MAX_OUTPUT_PORT_TYPE
 countreg_out[2] <= countreg[2].DB_MAX_OUTPUT_PORT_TYPE

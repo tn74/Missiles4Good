@@ -7,9 +7,11 @@ module screen_row_counter(clock, start, finish, countreg_out);
 	wire[31:0] countreg_in;
 	reg[31:0] countreg;
 	
+	parameter CHAR_WIDTH = 20;
+	
 	assign countreg_out = countreg;
 	
-	assign finish = countreg[29];
+	assign finish = countreg[CHAR_WIDTH - 1];
 	assign countreg_in[31:1] = countreg[30:0];
 	assign countreg_in[0] = 1'b0;
 	

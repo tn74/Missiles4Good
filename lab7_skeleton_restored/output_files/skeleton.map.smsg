@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at terminal_renderer.v(36): always construct contains both blocking and non-blocking assignments File: C:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/terminal_renderer.v Line: 36

@@ -19,6 +19,7 @@ module ps2_to_ascii (in, out);
 			
 		else if (in == 8'h26) // F
 			out = 8'h46;
+		
 		else 
 			out = 8'h00;
 	end

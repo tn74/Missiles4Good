@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Fri Nov 30 17:06:48 2018
+Analysis & Synthesis Status : Successful - Fri Nov 30 17:26:18 2018
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 Revision Name : skeleton
 Top-level Entity Name : skeleton
 Family : Cyclone IV E
-Total logic elements : 1,379
-    Total combinational functions : 1,205
-    Dedicated logic registers : 494
-Total registers : 494
+Total logic elements : 1,401
+    Total combinational functions : 1,227
+    Dedicated logic registers : 498
+Total registers : 498
 Total pins : 154
 Total virtual pins : 0
-Total memory bits : 922,992
+Total memory bits : 998,592
 Embedded Multiplier 9-bit elements : 0
 Total PLLs : 1

@@ -57,6 +57,14 @@ begin
 	busy <= 1'b0;
 end
 
+reg start_row_counter;
+wire finish_row_counter;
+
+screen_row_counter src (
+	.clock(clock), 
+	.start(start_row_counter), 
+	.finish(finish_row_counter)
+);
 always @(posedge clock)
 begin
 	mem_wdata_reg[2:1] <= 2'b00; 
@@ -76,18 +84,17 @@ begin
 		mem_waddr_reg <= character_pixel_index;
 		mem_wdata_reg[0] <= character_bit_data[char_count];
 		
-		if(row_count == 19'd20)
+		if(finish_row_counter)
 		begin
-			row_count <= 19'd0;
+			start_row_counter <= 1'b1;
 			character_pixel_index <= character_pixel_index + 10 * SCREEN_WIDTH ;
 		end
 		
 		else
 		begin
+			start_row_counter <= 1'b0;
 			character_pixel_index <= character_pixel_index + 1;
 		end
-		
-		row_count <= row_count + 1;
 		char_count <= char_count + 1;
 		
 	end

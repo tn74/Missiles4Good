@@ -9,31 +9,31 @@ z2
 cModel Technology
 Z0 dC:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/simulation/qsim
 vhard_block
-Z1 !s110 1543259609
+Z1 !s110 1543538519
 !i10b 1
-!s100 CT?G9E2M;C6O4PBHFPW0U0
-IH[4B431nCe3YFZzT3IMiV0
+!s100 31^JVLae?RSNf8GVM^YKM2
+IMQ81PNmN7gO_^];?_lhB_2
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-Z3 w1543259609
+Z3 w1543538518
 Z4 8skeleton.vo
 Z5 Fskeleton.vo
-L0 13861
+L0 1848
 Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1543259609.000000
+Z7 !s108 1543538519.000000
 Z8 !s107 skeleton.vo|
 Z9 !s90 -work|work|skeleton.vo|
 !i113 1
 Z10 o-work work
 Z11 tCvgOpt 0
-vtyper_logic
+vscreen_row_counter
 R1
 !i10b 1
-!s100 ghfDWXAD9D:jH;:<<5=Db1
-IPjH66dePEZMXbIZlKg4i42
+!s100 LK]0RN21HB^?i1K<kH0d12
+I][CNf9XS[H0L=LXR3;F1E3
 R2
 R0
 R3
@@ -50,8 +50,50 @@ R9
 !i113 1
 R10
 R11
-vtyper_logic_vlg_vec_tst
+vscreen_row_counter_vlg_vec_tst
 R1
+!i10b 1
+!s100 3JET@gT=6T_7PFcenm=Af3
+IB=2Y_HT`zgU=b69=aTHMl1
+R2
+R0
+w1543538517
+8Waveform2.vwf.vt
+FWaveform2.vwf.vt
+Z13 L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform2.vwf.vt|
+!s90 -work|work|Waveform2.vwf.vt|
+!i113 1
+R10
+R11
+vtyper_logic
+Z14 !s110 1543259609
+!i10b 1
+!s100 ghfDWXAD9D:jH;:<<5=Db1
+IPjH66dePEZMXbIZlKg4i42
+R2
+R0
+w1543259609
+R4
+R5
+R12
+R6
+r1
+!s85 0
+31
+Z15 !s108 1543259609.000000
+R8
+R9
+!i113 1
+R10
+R11
+vtyper_logic_vlg_vec_tst
+R14
 !i10b 1
 !s100 l7;ZOW^nPR`UU`eQc5a<d0
 IX65S07LF0?o]K47edWmil0
@@ -60,12 +102,12 @@ R0
 w1543259607
 8Waveform1.vwf.vt
 FWaveform1.vwf.vt
-Z13 L0 29
+R13
 R6
 r1
 !s85 0
 31
-R7
+R15
 !s107 Waveform1.vwf.vt|
 !s90 -work|work|Waveform1.vwf.vt|
 !i113 1

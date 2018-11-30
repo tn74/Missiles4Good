@@ -72,7 +72,7 @@ class FontGenerator():
 		dummy_string = "".join(["0" for j in range(data_width)])
 
 		mifdata = []
-		for i in range(21):
+		for i in range(0x21):
 			mifdata.append(dummy_string)
 		for i in range(len(self.bitvectors)):
 			mifdata.append("".join([str(num) for num in self.bitvectors[i]]))

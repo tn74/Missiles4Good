@@ -1,0 +1,157 @@
+// Copyright (C) 2017  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "12/01/2018 17:56:44"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          ps2_cleaner
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module ps2_cleaner_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg clock;
+reg [7:0] ps2_key_received;
+reg [7:0] ps2_last_key_received;
+// wires                                               
+wire [7:0] ascii_character_out;
+wire key_just_pressed;
+
+// assign statements (if any)                          
+ps2_cleaner i1 (
+// port map - connection between master ports and signals/registers   
+	.ascii_character_out(ascii_character_out),
+	.clock(clock),
+	.key_just_pressed(key_just_pressed),
+	.ps2_key_received(ps2_key_received),
+	.ps2_last_key_received(ps2_last_key_received)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+
+// clock
+always
+begin
+	clock = 1'b0;
+	clock = #10000 1'b1;
+	#10000;
+end 
+// ps2_key_received[ 7 ]
+initial
+begin
+	ps2_key_received[7] = 1'b1;
+	ps2_key_received[7] = #120000 1'b0;
+end 
+// ps2_key_received[ 6 ]
+initial
+begin
+	ps2_key_received[6] = 1'b1;
+	ps2_key_received[6] = #120000 1'b0;
+end 
+// ps2_key_received[ 5 ]
+initial
+begin
+	ps2_key_received[5] = 1'b1;
+	ps2_key_received[5] = #120000 1'b0;
+end 
+// ps2_key_received[ 4 ]
+initial
+begin
+	ps2_key_received[4] = 1'b1;
+	ps2_key_received[4] = #220000 1'b0;
+end 
+// ps2_key_received[ 3 ]
+initial
+begin
+	ps2_key_received[3] = 1'b0;
+	ps2_key_received[3] = #120000 1'b1;
+	ps2_key_received[3] = #100000 1'b0;
+end 
+// ps2_key_received[ 2 ]
+initial
+begin
+	ps2_key_received[2] = 1'b0;
+	ps2_key_received[2] = #120000 1'b1;
+	ps2_key_received[2] = #100000 1'b0;
+end 
+// ps2_key_received[ 1 ]
+initial
+begin
+	ps2_key_received[1] = 1'b0;
+end 
+// ps2_key_received[ 0 ]
+initial
+begin
+	ps2_key_received[0] = 1'b0;
+end 
+// ps2_last_key_received[ 7 ]
+initial
+begin
+	ps2_last_key_received[7] = 1'b0;
+	ps2_last_key_received[7] = #120000 1'b1;
+	ps2_last_key_received[7] = #100000 1'b0;
+end 
+// ps2_last_key_received[ 6 ]
+initial
+begin
+	ps2_last_key_received[6] = 1'b0;
+	ps2_last_key_received[6] = #120000 1'b1;
+	ps2_last_key_received[6] = #100000 1'b0;
+end 
+// ps2_last_key_received[ 5 ]
+initial
+begin
+	ps2_last_key_received[5] = 1'b0;
+	ps2_last_key_received[5] = #120000 1'b1;
+	ps2_last_key_received[5] = #100000 1'b0;
+end 
+// ps2_last_key_received[ 4 ]
+initial
+begin
+	ps2_last_key_received[4] = 1'b0;
+	ps2_last_key_received[4] = #120000 1'b1;
+	ps2_last_key_received[4] = #100000 1'b0;
+end 
+// ps2_last_key_received[ 3 ]
+initial
+begin
+	ps2_last_key_received[3] = 1'b0;
+end 
+// ps2_last_key_received[ 2 ]
+initial
+begin
+	ps2_last_key_received[2] = 1'b0;
+end 
+// ps2_last_key_received[ 1 ]
+initial
+begin
+	ps2_last_key_received[1] = 1'b0;
+end 
+// ps2_last_key_received[ 0 ]
+initial
+begin
+	ps2_last_key_received[0] = 1'b0;
+end 
+endmodule
+

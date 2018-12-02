@@ -1,7 +1,0 @@
-module input_brain(
-	ps2_key_pressed, ps2_out,
-	row_num,
-	col_num,
-	character_input,
-	start_writing_character
-);

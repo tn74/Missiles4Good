@@ -1,0 +1,9 @@
+module ps2_cleaner(ps2_key_received, ps2_last_key_received, ascii_character_out, key_just_pressed);
+	input[7:0] ps2_key_received, ps2_last_key_received;
+	
+	output[7:0] ascii_character_out;
+	output key_just_pressed;
+	
+	assign key_just_pressed = (ps2_last_key_received == 8'hf0);
+	ps2_to_ascii(ps2_key_received, ascii_character_out);
+endmodule

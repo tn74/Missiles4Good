@@ -1,8 +1,7 @@
 module typer_logic (
 	 clock,
 	 
-	 row_num,
-	 col_num,
+	 top_left_corner_address,
 	 character_input,
 	 start_writing_character,
 	 
@@ -19,7 +18,8 @@ module typer_logic (
 	 
 );
 
-input [7:0] row_num, col_num, character_input;
+input[7:0] character_input;
+input[18:0] top_left_corner_address;
 input start_writing_character, clock;
 
 output finished_saving_char;
@@ -89,7 +89,7 @@ begin
 	if (!busy && start_writing_character)
 	begin
 		busy <= 1'b1;
-		character_pixel_index <= (270 + row_num * CHAR_HEIGHT) * SCREEN_WIDTH + col_num * CHAR_WIDTH;
+		character_pixel_index <= top_left_corner_address;
 		writing_char <= character_input;
 		char_count <= 19'd0;
 		start_row_counter <= 1'b1;

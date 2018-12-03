@@ -38,7 +38,7 @@ output mem_wenable;
 
 
 reg typer_busy;
-wire[18:0] typer_waddr;
+wire[18:0] typer_waddr, top_left_corner_address;
 wire[2:0] typer_wdata;
 wire typer_wenable;
 reg typer_start;
@@ -54,18 +54,15 @@ begin
 	count <= 32'h00000000;
 end
 
-
-
-//always@(posedge typer_start, negedge typer_finish)
-//begin
-//	typer_busy <= ~typer_busy;
-//end
-
+screencharindex_to_pixeladdress index2pixel(
+	.clock(clock),
+	.count(count),
+	.address(top_left_corner_address)
+);
 
 typer_logic typer_inst(
 	 .clock(clock),
-	 .row_num(8'h00),
-	 .col_num(8'h00),
+	 .top_left_corner_address(top_left_corner_address),
 	 .character_input(8'h41),
 	 .start_writing_character(typer_start),
 	 .finished_saving_char(typer_finish),

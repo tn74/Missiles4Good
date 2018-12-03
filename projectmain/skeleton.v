@@ -127,29 +127,6 @@ module skeleton(resetn,
 	   .targety_3(32'h00000041),
 	   .trajectory_memloc(32'h00001000),
 	   .trajectory_memloc_enable(32'h00000001)
-	);
-//	vga_controller_typer vga_ins(
-//								 .clock(clock),
-//								 .iRST_n(DLY_RST),
-//								 .iVGA_CLK(VGA_CLK),
-//								 .oBLANK_n(VGA_BLANK),
-//								 .oHS(VGA_HS),
-//								 .oVS(VGA_VS),
-//								 .b_data(VGA_B),
-//								 .g_data(VGA_G),
-//								 .r_data(VGA_R),
-//								 
-//								 .row_num(typer_row_num),
-//								 .col_num(typer_col_num),
-//								 .character_input(typer_character_input),
-////								 .row_num(8'h01),
-////								 .col_num(8'h01),
-////								 .character_input(8'h41),
-//								 
-//								 .start_writing_character(typer_start_writing_char),
-//							 
-//								 .finished_saving_char(finished_saving_char),
-//								 );
-	
+	);	
 	
 endmodule

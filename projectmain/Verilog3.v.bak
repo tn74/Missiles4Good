@@ -1,0 +1,4 @@
+module screencharindex_to_pixeladdress(count, address);
+
+	input[31:0] count;
+	output[18:0] address;

@@ -98,7 +98,7 @@ begin
 	else if (busy && char_count < 600)
 	begin
 		mem_waddr_reg <= character_pixel_index;
-		mem_wdata_reg[0] <= ~character_bit_data[599 - char_count];
+		mem_wdata_reg[0] <= character_bit_data[599 - char_count];
 		
 		if(finish_row_counter)
 		begin

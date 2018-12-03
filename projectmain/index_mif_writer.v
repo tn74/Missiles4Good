@@ -72,6 +72,8 @@ begin
 		end else begin
 			typer_start <= 1'b0;
 		end
+	end else begin
+		count <= 32'h00000000;
 	end
 end
 

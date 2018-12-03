@@ -50,7 +50,7 @@ class FontGenerator():
 			bitvector = []
 			for i in range(len(new_im)):
 				for j in range(len(new_im[0])):
-					bitvector.append(int(new_im[i][j]))
+					bitvector.append(1 - int(new_im[i][j]))
 			# print(len(bitvector))
 			self.bitvectors.append(bitvector)
 

@@ -25,5 +25,5 @@ module ps2_cleaner(clock, ps2_key_received, ps2_last_key_received, ascii_charact
 	
 	assign key_just_pressed = counter_finished;
 		
-	ps2_to_ascii(ps2_key_received, ascii_character_out);
+	ps2_to_ascii converter(ps2_key_received, ascii_character_out);
 endmodule

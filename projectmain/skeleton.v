@@ -102,28 +102,54 @@ module skeleton(resetn,
 	// VGA
 	Reset_Delay			r0	(.iCLK(CLOCK_50),.oRESET(DLY_RST)	);
 	VGA_Audio_PLL 		p1	(.areset(~DLY_RST),.inclk0(CLOCK_50),.c0(VGA_CTRL_CLK),.c1(AUD_CTRL_CLK),.c2(VGA_CLK)	);
-	vga_controller_typer vga_ins(
-								 .clock(clock),
-								 .iRST_n(DLY_RST),
-								 .iVGA_CLK(VGA_CLK),
-								 .oBLANK_n(VGA_BLANK),
-								 .oHS(VGA_HS),
-								 .oVS(VGA_VS),
-								 .b_data(VGA_B),
-								 .g_data(VGA_G),
-								 .r_data(VGA_R),
-								 
-								 .row_num(typer_row_num),
-								 .col_num(typer_col_num),
-								 .character_input(typer_character_input),
-//								 .row_num(8'h01),
-//								 .col_num(8'h01),
-//								 .character_input(8'h41),
-								 
-								 .start_writing_character(typer_start_writing_char),
-							 
-								 .finished_saving_char(finished_saving_char),
-								 );
+	
+	display_controller display_controller_inst(
+		.clock(clock),
+		.iRST_n(DLY_RST),
+		.iVGA_CLK(VGA_CLK),
+		.oBLANK_n(VGA_BLANK),
+		.oHS(VGA_HS),
+		.oVS(VGA_VS),
+		.b_data(VGA_B),
+		.g_data(VGA_G),
+		.r_data(VGA_R),
+		
+		.velocity(8'hff),
+	   .fire(1'b0),
+	   .angle(8'd90),
+	   .targetx_0(32'h00000041),
+	   .targetx_1(32'h00000042),
+	   .targetx_2(32'h00000043),
+	   .targetx_3(32'h00000044),
+	   .targety_0(32'h00000041),
+	   .targety_1(32'h00000041),
+	   .targety_2(32'h00000041),
+	   .targety_3(32'h00000041),
+	   .trajectory_memloc(32'h00001000),
+	   .trajectory_memloc_enable(32'h00000001)
+	);
+//	vga_controller_typer vga_ins(
+//								 .clock(clock),
+//								 .iRST_n(DLY_RST),
+//								 .iVGA_CLK(VGA_CLK),
+//								 .oBLANK_n(VGA_BLANK),
+//								 .oHS(VGA_HS),
+//								 .oVS(VGA_VS),
+//								 .b_data(VGA_B),
+//								 .g_data(VGA_G),
+//								 .r_data(VGA_R),
+//								 
+//								 .row_num(typer_row_num),
+//								 .col_num(typer_col_num),
+//								 .character_input(typer_character_input),
+////								 .row_num(8'h01),
+////								 .col_num(8'h01),
+////								 .character_input(8'h41),
+//								 
+//								 .start_writing_character(typer_start_writing_char),
+//							 
+//								 .finished_saving_char(finished_saving_char),
+//								 );
 	
 	
 endmodule

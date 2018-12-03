@@ -1,0 +1,23 @@
+module index_mif_writer(
+	clock,
+	velocity,
+	fire,
+	angle,
+	targetx_0,
+	targetx_1,
+	targetx_2,
+	targetx_3,
+	targetx_0,
+	targetx_1,
+	targetx_2,
+	targetx_3,
+	trajectory_memloc,
+	trajectory_memloc_enable,
+	
+	mem_waddr,
+	mem_wdata,
+	mem_wenable,
+	
+);
+
+endmodule

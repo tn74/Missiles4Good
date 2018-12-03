@@ -1,5 +1,5 @@
 Analysis & Synthesis report for skeleton
-Sun Dec 02 19:43:21 2018
+Mon Dec 03 12:25:47 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -28,46 +28,49 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
  20. Source assignments for processor:myprocessor|imem:myimem|altsyncram:altsyncram_component|altsyncram_2m81:auto_generated
  21. Source assignments for display_controller:display_controller_inst|monitor_index:monitor_index_inst|altsyncram:altsyncram_component|altsyncram_51n1:auto_generated
  22. Source assignments for display_controller:display_controller_inst|monitor_color:monitor_color_inst|altsyncram:altsyncram_component|altsyncram_3va1:auto_generated
- 23. Source assignments for display_controller:display_controller_inst|index_mif_writer:imw|typer_logic:typer_inst|character_data:character_data_inst|altsyncram:altsyncram_component|altsyncram_5sb1:auto_generated
- 24. Parameter Settings for User Entity Instance: pll:div|altpll:altpll_component
- 25. Parameter Settings for User Entity Instance: processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component
- 26. Parameter Settings for User Entity Instance: processor:myprocessor|imem:myimem|altsyncram:altsyncram_component
- 27. Parameter Settings for User Entity Instance: PS2_Interface:myps2|PS2_Controller:PS2
- 28. Parameter Settings for User Entity Instance: PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out
- 29. Parameter Settings for User Entity Instance: ps2_cleaner:cleaner|counter2:counter
- 30. Parameter Settings for User Entity Instance: VGA_Audio_PLL:p1|altpll:altpll_component
- 31. Parameter Settings for User Entity Instance: display_controller:display_controller_inst|video_sync_generator:LTM_ins
- 32. Parameter Settings for User Entity Instance: display_controller:display_controller_inst|monitor_index:monitor_index_inst|altsyncram:altsyncram_component
- 33. Parameter Settings for User Entity Instance: display_controller:display_controller_inst|monitor_color:monitor_color_inst|altsyncram:altsyncram_component
- 34. Parameter Settings for User Entity Instance: display_controller:display_controller_inst|index_mif_writer:imw|screencharindex_to_pixeladdress:index2pixel
- 35. Parameter Settings for User Entity Instance: display_controller:display_controller_inst|index_mif_writer:imw|typer_logic:typer_inst
- 36. Parameter Settings for User Entity Instance: display_controller:display_controller_inst|index_mif_writer:imw|typer_logic:typer_inst|character_data:character_data_inst|altsyncram:altsyncram_component
- 37. Parameter Settings for User Entity Instance: display_controller:display_controller_inst|index_mif_writer:imw|typer_logic:typer_inst|screen_row_counter:src
- 38. Parameter Settings for Inferred Entity Instance: display_controller:display_controller_inst|index_mif_writer:imw|screencharindex_to_pixeladdress:index2pixel|lpm_mult:Mult0
- 39. altpll Parameter Settings by Entity Instance
- 40. altsyncram Parameter Settings by Entity Instance
- 41. lpm_mult Parameter Settings by Entity Instance
- 42. Port Connectivity Checks: "display_controller:display_controller_inst|index_mif_writer:imw|typer_logic:typer_inst|screen_row_counter:src"
- 43. Port Connectivity Checks: "display_controller:display_controller_inst|index_mif_writer:imw|typer_logic:typer_inst"
- 44. Port Connectivity Checks: "display_controller:display_controller_inst|index_mif_writer:imw"
- 45. Port Connectivity Checks: "display_controller:display_controller_inst"
- 46. Port Connectivity Checks: "VGA_Audio_PLL:p1"
- 47. Port Connectivity Checks: "input_brain:inpbr"
- 48. Port Connectivity Checks: "ps2_cleaner:cleaner|counter2:counter"
- 49. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex8"
- 50. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex7"
- 51. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex6"
- 52. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex5"
- 53. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex4"
- 54. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex3"
- 55. Port Connectivity Checks: "PS2_Interface:myps2|PS2_Controller:PS2"
- 56. Port Connectivity Checks: "PS2_Interface:myps2"
- 57. Port Connectivity Checks: "processor:myprocessor|imem:myimem"
- 58. Port Connectivity Checks: "processor:myprocessor|dmem:mydmem"
- 59. Port Connectivity Checks: "pll:div"
- 60. Post-Synthesis Netlist Statistics for Top Partition
- 61. Elapsed Time Per Partition
- 62. Analysis & Synthesis Messages
+ 23. Source assignments for display_controller:display_controller_inst|screencharacter_mif_writer:smw|screenchar_mem:smem|altsyncram:altsyncram_component|altsyncram_73n1:auto_generated
+ 24. Source assignments for display_controller:display_controller_inst|index_mif_writer:imw|typer_logic:typer_inst|character_data:character_data_inst|altsyncram:altsyncram_component|altsyncram_5sb1:auto_generated
+ 25. Parameter Settings for User Entity Instance: pll:div|altpll:altpll_component
+ 26. Parameter Settings for User Entity Instance: processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component
+ 27. Parameter Settings for User Entity Instance: processor:myprocessor|imem:myimem|altsyncram:altsyncram_component
+ 28. Parameter Settings for User Entity Instance: PS2_Interface:myps2|PS2_Controller:PS2
+ 29. Parameter Settings for User Entity Instance: PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out
+ 30. Parameter Settings for User Entity Instance: ps2_cleaner:cleaner|counter2:counter
+ 31. Parameter Settings for User Entity Instance: VGA_Audio_PLL:p1|altpll:altpll_component
+ 32. Parameter Settings for User Entity Instance: display_controller:display_controller_inst|video_sync_generator:LTM_ins
+ 33. Parameter Settings for User Entity Instance: display_controller:display_controller_inst|monitor_index:monitor_index_inst|altsyncram:altsyncram_component
+ 34. Parameter Settings for User Entity Instance: display_controller:display_controller_inst|monitor_color:monitor_color_inst|altsyncram:altsyncram_component
+ 35. Parameter Settings for User Entity Instance: display_controller:display_controller_inst|screencharacter_mif_writer:smw|screenchar_mem:smem|altsyncram:altsyncram_component
+ 36. Parameter Settings for User Entity Instance: display_controller:display_controller_inst|index_mif_writer:imw|screencharindex_to_pixeladdress:index2pixel
+ 37. Parameter Settings for User Entity Instance: display_controller:display_controller_inst|index_mif_writer:imw|typer_logic:typer_inst
+ 38. Parameter Settings for User Entity Instance: display_controller:display_controller_inst|index_mif_writer:imw|typer_logic:typer_inst|character_data:character_data_inst|altsyncram:altsyncram_component
+ 39. Parameter Settings for User Entity Instance: display_controller:display_controller_inst|index_mif_writer:imw|typer_logic:typer_inst|screen_row_counter:src
+ 40. Parameter Settings for Inferred Entity Instance: display_controller:display_controller_inst|index_mif_writer:imw|screencharindex_to_pixeladdress:index2pixel|lpm_mult:Mult0
+ 41. altpll Parameter Settings by Entity Instance
+ 42. altsyncram Parameter Settings by Entity Instance
+ 43. lpm_mult Parameter Settings by Entity Instance
+ 44. Port Connectivity Checks: "display_controller:display_controller_inst|index_mif_writer:imw|typer_logic:typer_inst|screen_row_counter:src"
+ 45. Port Connectivity Checks: "display_controller:display_controller_inst|index_mif_writer:imw|typer_logic:typer_inst"
+ 46. Port Connectivity Checks: "display_controller:display_controller_inst|index_mif_writer:imw"
+ 47. Port Connectivity Checks: "display_controller:display_controller_inst|screencharacter_mif_writer:smw|screenchar_mem:smem"
+ 48. Port Connectivity Checks: "display_controller:display_controller_inst"
+ 49. Port Connectivity Checks: "VGA_Audio_PLL:p1"
+ 50. Port Connectivity Checks: "input_brain:inpbr"
+ 51. Port Connectivity Checks: "ps2_cleaner:cleaner|counter2:counter"
+ 52. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex8"
+ 53. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex7"
+ 54. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex6"
+ 55. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex5"
+ 56. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex4"
+ 57. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex3"
+ 58. Port Connectivity Checks: "PS2_Interface:myps2|PS2_Controller:PS2"
+ 59. Port Connectivity Checks: "PS2_Interface:myps2"
+ 60. Port Connectivity Checks: "processor:myprocessor|imem:myimem"
+ 61. Port Connectivity Checks: "processor:myprocessor|dmem:mydmem"
+ 62. Port Connectivity Checks: "pll:div"
+ 63. Post-Synthesis Netlist Statistics for Top Partition
+ 64. Elapsed Time Per Partition
+ 65. Analysis & Synthesis Messages
 
 
 
@@ -93,18 +96,18 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Dec 02 19:43:21 2018       ;
+; Analysis & Synthesis Status        ; Successful - Mon Dec 03 12:25:47 2018       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; skeleton                                    ;
 ; Top-level Entity Name              ; skeleton                                    ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 1,570                                       ;
-;     Total combinational functions  ; 1,398                                       ;
-;     Dedicated logic registers      ; 564                                         ;
-; Total registers                    ; 564                                         ;
+; Total logic elements               ; 1,579                                       ;
+;     Total combinational functions  ; 1,399                                       ;
+;     Dedicated logic registers      ; 572                                         ;
+; Total registers                    ; 572                                         ;
 ; Total pins                         ; 154                                         ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 922,992                                     ;
+; Total memory bits                  ; 1,077,440                                   ;
 ; Embedded Multiplier 9-bit elements ; 4                                           ;
 ; Total PLLs                         ; 1                                           ;
 +------------------------------------+---------------------------------------------+
@@ -251,6 +254,9 @@ refer to the applicable agreement for further details.
 ; monitor_color.v                   ; yes             ; User Wizard-Generated File       ; C:/Users/tn74/Documents/ECE350/Missiles/projectmain/monitor_color.v                   ;         ;
 ; index_mif_writer.v                ; yes             ; User Verilog HDL File            ; C:/Users/tn74/Documents/ECE350/Missiles/projectmain/index_mif_writer.v                ;         ;
 ; screencharindex_to_pixeladdress.v ; yes             ; User Verilog HDL File            ; C:/Users/tn74/Documents/ECE350/Missiles/projectmain/screencharindex_to_pixeladdress.v ;         ;
+; screencharmap.mif                 ; yes             ; User Memory Initialization File  ; C:/Users/tn74/Documents/ECE350/Missiles/projectmain/screencharmap.mif                 ;         ;
+; screencharacter_mif_writer.v      ; yes             ; User Verilog HDL File            ; C:/Users/tn74/Documents/ECE350/Missiles/projectmain/screencharacter_mif_writer.v      ;         ;
+; screenchar_mem.v                  ; yes             ; User Wizard-Generated File       ; C:/Users/tn74/Documents/ECE350/Missiles/projectmain/screenchar_mem.v                  ;         ;
 ; altpll.tdf                        ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altpll.tdf                     ;         ;
 ; aglobal171.inc                    ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/aglobal171.inc                 ;         ;
 ; stratix_pll.inc                   ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/stratix_pll.inc                ;         ;
@@ -272,6 +278,7 @@ refer to the applicable agreement for further details.
 ; db/decode_aaa.tdf                 ; yes             ; Auto-Generated Megafunction      ; C:/Users/tn74/Documents/ECE350/Missiles/projectmain/db/decode_aaa.tdf                 ;         ;
 ; db/mux_sob.tdf                    ; yes             ; Auto-Generated Megafunction      ; C:/Users/tn74/Documents/ECE350/Missiles/projectmain/db/mux_sob.tdf                    ;         ;
 ; db/altsyncram_3va1.tdf            ; yes             ; Auto-Generated Megafunction      ; C:/Users/tn74/Documents/ECE350/Missiles/projectmain/db/altsyncram_3va1.tdf            ;         ;
+; db/altsyncram_73n1.tdf            ; yes             ; Auto-Generated Megafunction      ; C:/Users/tn74/Documents/ECE350/Missiles/projectmain/db/altsyncram_73n1.tdf            ;         ;
 ; db/altsyncram_5sb1.tdf            ; yes             ; Auto-Generated Megafunction      ; C:/Users/tn74/Documents/ECE350/Missiles/projectmain/db/altsyncram_5sb1.tdf            ;         ;
 ; lpm_mult.tdf                      ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_mult.tdf                   ;         ;
 ; lpm_add_sub.inc                   ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_add_sub.inc                ;         ;
@@ -287,24 +294,24 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 1,570          ;
+; Estimated Total logic elements              ; 1,579          ;
 ;                                             ;                ;
-; Total combinational functions               ; 1398           ;
+; Total combinational functions               ; 1399           ;
 ; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 952            ;
-;     -- 3 input functions                    ; 135            ;
-;     -- <=2 input functions                  ; 311            ;
+;     -- 4 input functions                    ; 953            ;
+;     -- 3 input functions                    ; 133            ;
+;     -- <=2 input functions                  ; 313            ;
 ;                                             ;                ;
 ; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 1178           ;
+;     -- normal mode                          ; 1179           ;
 ;     -- arithmetic mode                      ; 220            ;
 ;                                             ;                ;
-; Total registers                             ; 564            ;
-;     -- Dedicated logic registers            ; 564            ;
+; Total registers                             ; 572            ;
+;     -- Dedicated logic registers            ; 572            ;
 ;     -- I/O registers                        ; 0              ;
 ;                                             ;                ;
 ; I/O pins                                    ; 154            ;
-; Total memory bits                           ; 922992         ;
+; Total memory bits                           ; 1077440        ;
 ;                                             ;                ;
 ; Embedded Multiplier 9-bit elements          ; 4              ;
 ;                                             ;                ;
@@ -312,9 +319,9 @@ refer to the applicable agreement for further details.
 ;     -- PLLs                                 ; 1              ;
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 1203           ;
-; Total fan-out                               ; 11242          ;
-; Average fan-out                             ; 3.73           ;
+; Maximum fan-out                             ; 1219           ;
+; Total fan-out                               ; 16148          ;
+; Average fan-out                             ; 5.33           ;
 +---------------------------------------------+----------------+
 
 
@@ -323,7 +330,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+--------------+
 ; Compilation Hierarchy Node                             ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                ; Entity Name                     ; Library Name ;
 +--------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+--------------+
-; |skeleton                                              ; 1398 (1)            ; 564 (0)                   ; 922992      ; 4            ; 0       ; 2         ; 154  ; 0            ; |skeleton                                                                                                                                                                                          ; skeleton                        ; work         ;
+; |skeleton                                              ; 1399 (1)            ; 572 (0)                   ; 1077440     ; 4            ; 0       ; 2         ; 154  ; 0            ; |skeleton                                                                                                                                                                                          ; skeleton                        ; work         ;
 ;    |Hexadecimal_To_Seven_Segment:hex1|                 ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|Hexadecimal_To_Seven_Segment:hex1                                                                                                                                                        ; Hexadecimal_To_Seven_Segment    ; work         ;
 ;    |Hexadecimal_To_Seven_Segment:hex2|                 ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|Hexadecimal_To_Seven_Segment:hex2                                                                                                                                                        ; Hexadecimal_To_Seven_Segment    ; work         ;
 ;    |PS2_Interface:myps2|                               ; 41 (9)              ; 38 (8)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|PS2_Interface:myps2                                                                                                                                                                      ; PS2_Interface                   ; work         ;
@@ -332,15 +339,15 @@ refer to the applicable agreement for further details.
 ;    |Reset_Delay:r0|                                    ; 27 (27)             ; 21 (21)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|Reset_Delay:r0                                                                                                                                                                           ; Reset_Delay                     ; work         ;
 ;    |VGA_Audio_PLL:p1|                                  ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|VGA_Audio_PLL:p1                                                                                                                                                                         ; VGA_Audio_PLL                   ; work         ;
 ;       |altpll:altpll_component|                        ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|VGA_Audio_PLL:p1|altpll:altpll_component                                                                                                                                                 ; altpll                          ; work         ;
-;    |display_controller:display_controller_inst|        ; 839 (20)            ; 205 (46)                  ; 922992      ; 4            ; 0       ; 2         ; 0    ; 0            ; |skeleton|display_controller:display_controller_inst                                                                                                                                               ; display_controller              ; work         ;
-;       |index_mif_writer:imw|                           ; 599 (45)            ; 129 (33)                  ; 1200        ; 4            ; 0       ; 2         ; 0    ; 0            ; |skeleton|display_controller:display_controller_inst|index_mif_writer:imw                                                                                                                          ; index_mif_writer                ; work         ;
+;    |display_controller:display_controller_inst|        ; 838 (20)            ; 213 (46)                  ; 1077440     ; 4            ; 0       ; 2         ; 0    ; 0            ; |skeleton|display_controller:display_controller_inst                                                                                                                                               ; display_controller              ; work         ;
+;       |index_mif_writer:imw|                           ; 598 (45)            ; 137 (33)                  ; 153600      ; 4            ; 0       ; 2         ; 0    ; 0            ; |skeleton|display_controller:display_controller_inst|index_mif_writer:imw                                                                                                                          ; index_mif_writer                ; work         ;
 ;          |screencharindex_to_pixeladdress:index2pixel| ; 72 (71)             ; 17 (17)                   ; 0           ; 4            ; 0       ; 2         ; 0    ; 0            ; |skeleton|display_controller:display_controller_inst|index_mif_writer:imw|screencharindex_to_pixeladdress:index2pixel                                                                              ; screencharindex_to_pixeladdress ; work         ;
 ;             |lpm_mult:Mult0|                           ; 1 (0)               ; 0 (0)                     ; 0           ; 4            ; 0       ; 2         ; 0    ; 0            ; |skeleton|display_controller:display_controller_inst|index_mif_writer:imw|screencharindex_to_pixeladdress:index2pixel|lpm_mult:Mult0                                                               ; lpm_mult                        ; work         ;
 ;                |mult_tgt:auto_generated|               ; 1 (1)               ; 0 (0)                     ; 0           ; 4            ; 0       ; 2         ; 0    ; 0            ; |skeleton|display_controller:display_controller_inst|index_mif_writer:imw|screencharindex_to_pixeladdress:index2pixel|lpm_mult:Mult0|mult_tgt:auto_generated                                       ; mult_tgt                        ; work         ;
-;          |typer_logic:typer_inst|                      ; 482 (462)           ; 79 (59)                   ; 1200        ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|display_controller:display_controller_inst|index_mif_writer:imw|typer_logic:typer_inst                                                                                                   ; typer_logic                     ; work         ;
-;             |character_data:character_data_inst|       ; 0 (0)               ; 0 (0)                     ; 1200        ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|display_controller:display_controller_inst|index_mif_writer:imw|typer_logic:typer_inst|character_data:character_data_inst                                                                ; character_data                  ; work         ;
-;                |altsyncram:altsyncram_component|       ; 0 (0)               ; 0 (0)                     ; 1200        ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|display_controller:display_controller_inst|index_mif_writer:imw|typer_logic:typer_inst|character_data:character_data_inst|altsyncram:altsyncram_component                                ; altsyncram                      ; work         ;
-;                   |altsyncram_5sb1:auto_generated|     ; 0 (0)               ; 0 (0)                     ; 1200        ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|display_controller:display_controller_inst|index_mif_writer:imw|typer_logic:typer_inst|character_data:character_data_inst|altsyncram:altsyncram_component|altsyncram_5sb1:auto_generated ; altsyncram_5sb1                 ; work         ;
+;          |typer_logic:typer_inst|                      ; 481 (461)           ; 87 (67)                   ; 153600      ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|display_controller:display_controller_inst|index_mif_writer:imw|typer_logic:typer_inst                                                                                                   ; typer_logic                     ; work         ;
+;             |character_data:character_data_inst|       ; 0 (0)               ; 0 (0)                     ; 153600      ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|display_controller:display_controller_inst|index_mif_writer:imw|typer_logic:typer_inst|character_data:character_data_inst                                                                ; character_data                  ; work         ;
+;                |altsyncram:altsyncram_component|       ; 0 (0)               ; 0 (0)                     ; 153600      ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|display_controller:display_controller_inst|index_mif_writer:imw|typer_logic:typer_inst|character_data:character_data_inst|altsyncram:altsyncram_component                                ; altsyncram                      ; work         ;
+;                   |altsyncram_5sb1:auto_generated|     ; 0 (0)               ; 0 (0)                     ; 153600      ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|display_controller:display_controller_inst|index_mif_writer:imw|typer_logic:typer_inst|character_data:character_data_inst|altsyncram:altsyncram_component|altsyncram_5sb1:auto_generated ; altsyncram_5sb1                 ; work         ;
 ;             |screen_row_counter:src|                   ; 20 (20)             ; 20 (20)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|display_controller:display_controller_inst|index_mif_writer:imw|typer_logic:typer_inst|screen_row_counter:src                                                                            ; screen_row_counter              ; work         ;
 ;       |monitor_color:monitor_color_inst|               ; 0 (0)               ; 0 (0)                     ; 192         ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|display_controller:display_controller_inst|monitor_color:monitor_color_inst                                                                                                              ; monitor_color                   ; work         ;
 ;          |altsyncram:altsyncram_component|             ; 0 (0)               ; 0 (0)                     ; 192         ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|display_controller:display_controller_inst|monitor_color:monitor_color_inst|altsyncram:altsyncram_component                                                                              ; altsyncram                      ; work         ;
@@ -351,8 +358,12 @@ refer to the applicable agreement for further details.
 ;                |decode_aaa:rden_decode_b|              ; 44 (44)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|display_controller:display_controller_inst|monitor_index:monitor_index_inst|altsyncram:altsyncram_component|altsyncram_51n1:auto_generated|decode_aaa:rden_decode_b                      ; decode_aaa                      ; work         ;
 ;                |decode_hua:decode2|                    ; 43 (43)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|display_controller:display_controller_inst|monitor_index:monitor_index_inst|altsyncram:altsyncram_component|altsyncram_51n1:auto_generated|decode_hua:decode2                            ; decode_hua                      ; work         ;
 ;                |mux_sob:mux3|                          ; 89 (89)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|display_controller:display_controller_inst|monitor_index:monitor_index_inst|altsyncram:altsyncram_component|altsyncram_51n1:auto_generated|mux_sob:mux3                                  ; mux_sob                         ; work         ;
+;       |screencharacter_mif_writer:smw|                 ; 0 (0)               ; 0 (0)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|display_controller:display_controller_inst|screencharacter_mif_writer:smw                                                                                                                ; screencharacter_mif_writer      ; work         ;
+;          |screenchar_mem:smem|                         ; 0 (0)               ; 0 (0)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|display_controller:display_controller_inst|screencharacter_mif_writer:smw|screenchar_mem:smem                                                                                            ; screenchar_mem                  ; work         ;
+;             |altsyncram:altsyncram_component|          ; 0 (0)               ; 0 (0)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|display_controller:display_controller_inst|screencharacter_mif_writer:smw|screenchar_mem:smem|altsyncram:altsyncram_component                                                            ; altsyncram                      ; work         ;
+;                |altsyncram_73n1:auto_generated|        ; 0 (0)               ; 0 (0)                     ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|display_controller:display_controller_inst|screencharacter_mif_writer:smw|screenchar_mem:smem|altsyncram:altsyncram_component|altsyncram_73n1:auto_generated                             ; altsyncram_73n1                 ; work         ;
 ;       |video_sync_generator:LTM_ins|                   ; 44 (44)             ; 24 (24)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|display_controller:display_controller_inst|video_sync_generator:LTM_ins                                                                                                                  ; video_sync_generator            ; work         ;
-;    |lcd:mylcd|                                         ; 394 (394)           ; 278 (278)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|lcd:mylcd                                                                                                                                                                                ; lcd                             ; work         ;
+;    |lcd:mylcd|                                         ; 396 (396)           ; 278 (278)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|lcd:mylcd                                                                                                                                                                                ; lcd                             ; work         ;
 ;    |ps2_cleaner:cleaner|                               ; 82 (4)              ; 22 (2)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|ps2_cleaner:cleaner                                                                                                                                                                      ; ps2_cleaner                     ; work         ;
 ;       |counter2:counter|                               ; 20 (20)             ; 20 (20)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|ps2_cleaner:cleaner|counter2:counter                                                                                                                                                     ; counter2                        ; work         ;
 ;       |ps2_to_ascii:converter|                         ; 58 (58)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|ps2_cleaner:cleaner|ps2_to_ascii:converter                                                                                                                                               ; ps2_to_ascii                    ; work         ;
@@ -368,6 +379,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; display_controller:display_controller_inst|index_mif_writer:imw|typer_logic:typer_inst|character_data:character_data_inst|altsyncram:altsyncram_component|altsyncram_5sb1:auto_generated|ALTSYNCRAM ; AUTO ; ROM              ; 256          ; 600          ; --           ; --           ; 153600 ; charwidth=20__charheight=30.mif ;
 ; display_controller:display_controller_inst|monitor_color:monitor_color_inst|altsyncram:altsyncram_component|altsyncram_3va1:auto_generated|ALTSYNCRAM                                               ; AUTO ; ROM              ; 8            ; 24           ; --           ; --           ; 192    ; typer_indexcolor.mif            ;
 ; display_controller:display_controller_inst|monitor_index:monitor_index_inst|altsyncram:altsyncram_component|altsyncram_51n1:auto_generated|ALTSYNCRAM                                               ; AUTO ; Simple Dual Port ; 307200       ; 3            ; 307200       ; 3            ; 921600 ; typer_data.mif                  ;
+; display_controller:display_controller_inst|screencharacter_mif_writer:smw|screenchar_mem:smem|altsyncram:altsyncram_component|altsyncram_73n1:auto_generated|ALTSYNCRAM                             ; AUTO ; Simple Dual Port ; 256          ; 8            ; 256          ; 8            ; 2048   ; ../screencharmap.mif            ;
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+--------+---------------------------------+
 
 
@@ -397,6 +409,7 @@ Note: number of Embedded Multiplier Blocks used is only available after a succes
 ; Altera ; ROM: 1-PORT  ; 18.0    ; N/A          ; N/A          ; |skeleton|display_controller:display_controller_inst|index_mif_writer:imw|typer_logic:typer_inst|character_data:character_data_inst ; character_data.v ;
 ; Altera ; ROM: 1-PORT  ; 17.1    ; N/A          ; N/A          ; |skeleton|display_controller:display_controller_inst|monitor_color:monitor_color_inst                                               ; monitor_color.v  ;
 ; Altera ; RAM: 2-PORT  ; 17.1    ; N/A          ; N/A          ; |skeleton|display_controller:display_controller_inst|monitor_index:monitor_index_inst                                               ; monitor_index.v  ;
+; Altera ; RAM: 2-PORT  ; 17.1    ; N/A          ; N/A          ; |skeleton|display_controller:display_controller_inst|screencharacter_mif_writer:smw|screenchar_mem:smem                             ; screenchar_mem.v ;
 ; Altera ; ALTPLL       ; 13.1    ; N/A          ; N/A          ; |skeleton|pll:div                                                                                                                   ; pll.v            ;
 ; Altera ; RAM: 1-PORT  ; 13.1    ; N/A          ; N/A          ; |skeleton|processor:myprocessor|dmem:mydmem                                                                                         ; dmem.v           ;
 ; Altera ; ROM: 1-PORT  ; 13.1    ; N/A          ; N/A          ; |skeleton|processor:myprocessor|imem:myimem                                                                                         ; imem.v           ;
@@ -455,10 +468,6 @@ Encoding Type:  One-Hot
 +---------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+
 ; display_controller:display_controller_inst|index_mif_writer:imw|typer_logic:typer_inst|mem_wdata_reg[1,2]                             ; Stuck at GND due to stuck port data_in                                                                           ;
 ; PS2_Interface:myps2|PS2_Controller:PS2|idle_counter[0..7]                                                                             ; Lost fanout                                                                                                      ;
-; display_controller:display_controller_inst|index_mif_writer:imw|typer_logic:typer_inst|writing_char[0]                                ; Stuck at VCC due to stuck port data_in                                                                           ;
-; display_controller:display_controller_inst|index_mif_writer:imw|typer_logic:typer_inst|writing_char[1..5]                             ; Stuck at GND due to stuck port data_in                                                                           ;
-; display_controller:display_controller_inst|index_mif_writer:imw|typer_logic:typer_inst|writing_char[6]                                ; Stuck at VCC due to stuck port data_in                                                                           ;
-; display_controller:display_controller_inst|index_mif_writer:imw|typer_logic:typer_inst|writing_char[7]                                ; Stuck at GND due to stuck port data_in                                                                           ;
 ; lcd:mylcd|state2[2..30]                                                                                                               ; Merged with lcd:mylcd|state2[31]                                                                                 ;
 ; lcd:mylcd|state1[2..9,11..31]                                                                                                         ; Merged with lcd:mylcd|state1[10]                                                                                 ;
 ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|ps2_command[1..7]                                    ; Merged with PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|ps2_command[0]      ;
@@ -525,7 +534,7 @@ Encoding Type:  One-Hot
 ; display_controller:display_controller_inst|index_mif_writer:imw|typer_logic:typer_inst|character_pixel_index[0]                       ; Merged with display_controller:display_controller_inst|index_mif_writer:imw|typer_logic:typer_inst|char_count[0] ;
 ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|ps2_command[8]                                       ; Lost fanout                                                                                                      ;
 ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|s_ps2_transmitter.PS2_STATE_0_IDLE                   ; Lost fanout                                                                                                      ;
-; Total Number of Removed Registers = 197                                                                                               ;                                                                                                                  ;
+; Total Number of Removed Registers = 189                                                                                               ;                                                                                                                  ;
 +---------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------+
 
 
@@ -621,12 +630,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 564   ;
+; Total registers                              ; 572   ;
 ; Number of registers using Synchronous Clear  ; 61    ;
 ; Number of registers using Synchronous Load   ; 33    ;
 ; Number of registers using Asynchronous Clear ; 318   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 406   ;
+; Number of registers using Clock Enable       ; 414   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -752,6 +761,15 @@ Encoding Type:  One-Hot
 +---------------------------------+--------------------+------+-----------------------------------------------------------------------------------------------------+
 ; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                                                   ;
 +---------------------------------+--------------------+------+-----------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for display_controller:display_controller_inst|screencharacter_mif_writer:smw|screenchar_mem:smem|altsyncram:altsyncram_component|altsyncram_73n1:auto_generated ;
++---------------------------------+--------------------+------+-----------------------------------------------------------------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                                                                                    ;
++---------------------------------+--------------------+------+-----------------------------------------------------------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                                                                     ;
++---------------------------------+--------------------+------+-----------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1818,6 +1836,67 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: display_controller:display_controller_inst|screencharacter_mif_writer:smw|screenchar_mem:smem|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+----------------------------------------------------------------------------------------------------------------+
+; Parameter Name                     ; Value                ; Type                                                                                                           ;
++------------------------------------+----------------------+----------------------------------------------------------------------------------------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                                                                                                        ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                                                                                                     ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                                                                                                   ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                                                                                                   ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                                                                                                 ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                                                                                                        ;
+; OPERATION_MODE                     ; DUAL_PORT            ; Untyped                                                                                                        ;
+; WIDTH_A                            ; 8                    ; Signed Integer                                                                                                 ;
+; WIDTHAD_A                          ; 8                    ; Signed Integer                                                                                                 ;
+; NUMWORDS_A                         ; 256                  ; Signed Integer                                                                                                 ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                                                                                                        ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                                                                                                        ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                                                                                                        ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                                                                                                        ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                                                                                                        ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                                                                                                        ;
+; WIDTH_B                            ; 8                    ; Signed Integer                                                                                                 ;
+; WIDTHAD_B                          ; 8                    ; Signed Integer                                                                                                 ;
+; NUMWORDS_B                         ; 256                  ; Signed Integer                                                                                                 ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                                                                                                        ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                                                                                                        ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                                                                                                        ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                                                                                                        ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                                                                                                        ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                                                                                                        ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                                                                                                        ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                                                                        ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                                                                                                        ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                                                                                                        ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                                                                                                        ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                                                                                                        ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                                                                                                 ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                                                                                                        ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                                                                                                        ;
+; BYTE_SIZE                          ; 8                    ; Untyped                                                                                                        ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                                                                                                        ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                                                                                                        ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                                                                                                        ;
+; INIT_FILE                          ; ../screencharmap.mif ; Untyped                                                                                                        ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                                                                                                        ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                                                                                                        ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                                                                                                        ;
+; CLOCK_ENABLE_INPUT_B               ; BYPASS               ; Untyped                                                                                                        ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL               ; Untyped                                                                                                        ;
+; CLOCK_ENABLE_OUTPUT_B              ; BYPASS               ; Untyped                                                                                                        ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                                                                                                        ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                                                                                                        ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                                                                                                        ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                                                                                                        ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                                                                                                        ;
+; DEVICE_FAMILY                      ; Cyclone IV E         ; Untyped                                                                                                        ;
+; CBXI_PARAMETER                     ; altsyncram_73n1      ; Untyped                                                                                                        ;
++------------------------------------+----------------------+----------------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +----------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: display_controller:display_controller_inst|index_mif_writer:imw|screencharindex_to_pixeladdress:index2pixel ;
 +----------------+-------+---------------------------------------------------------------------------------------------------------------------------------+
@@ -1979,7 +2058,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Name                                      ; Value                                                                                                                                                     ;
 +-------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Number of entity instances                ; 5                                                                                                                                                         ;
+; Number of entity instances                ; 6                                                                                                                                                         ;
 ; Entity Instance                           ; processor:myprocessor|dmem:mydmem|altsyncram:altsyncram_component                                                                                         ;
 ;     -- OPERATION_MODE                     ; SINGLE_PORT                                                                                                                                               ;
 ;     -- WIDTH_A                            ; 32                                                                                                                                                        ;
@@ -2020,6 +2099,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                                                                                                              ;
 ;     -- WIDTH_B                            ; 1                                                                                                                                                         ;
 ;     -- NUMWORDS_B                         ; 1                                                                                                                                                         ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                                                                                                                                    ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                                                                                                              ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                                                                                                      ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                                                                                                                 ;
+; Entity Instance                           ; display_controller:display_controller_inst|screencharacter_mif_writer:smw|screenchar_mem:smem|altsyncram:altsyncram_component                             ;
+;     -- OPERATION_MODE                     ; DUAL_PORT                                                                                                                                                 ;
+;     -- WIDTH_A                            ; 8                                                                                                                                                         ;
+;     -- NUMWORDS_A                         ; 256                                                                                                                                                       ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                                                                                                                              ;
+;     -- WIDTH_B                            ; 8                                                                                                                                                         ;
+;     -- NUMWORDS_B                         ; 256                                                                                                                                                       ;
 ;     -- ADDRESS_REG_B                      ; CLOCK1                                                                                                                                                    ;
 ;     -- OUTDATA_REG_B                      ; UNREGISTERED                                                                                                                                              ;
 ;     -- RAM_BLOCK_TYPE                     ; AUTO                                                                                                                                                      ;
@@ -2072,10 +2162,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------------------+--------+----------+----------------------------------------------------------------------------------------------------------+
 ; Port                   ; Type   ; Severity ; Details                                                                                                  ;
 +------------------------+--------+----------+----------------------------------------------------------------------------------------------------------+
-; character_input[5..1]  ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; character_input[7]     ; Input  ; Info     ; Stuck at GND                                                                                             ;
-; character_input[6]     ; Input  ; Info     ; Stuck at VCC                                                                                             ;
-; character_input[0]     ; Input  ; Info     ; Stuck at VCC                                                                                             ;
 ; charcount_out          ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
 ; start_row_counter_out  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
 ; finish_row_counter_out ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
@@ -2094,60 +2180,79 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------+
-; Port Connectivity Checks: "display_controller:display_controller_inst" ;
-+---------------------------------+-------+----------+-------------------+
-; Port                            ; Type  ; Severity ; Details           ;
-+---------------------------------+-------+----------+-------------------+
-; velocity                        ; Input ; Info     ; Stuck at VCC      ;
-; fire                            ; Input ; Info     ; Stuck at GND      ;
-; angle[4..3]                     ; Input ; Info     ; Stuck at VCC      ;
-; angle[7]                        ; Input ; Info     ; Stuck at GND      ;
-; angle[6]                        ; Input ; Info     ; Stuck at VCC      ;
-; angle[5]                        ; Input ; Info     ; Stuck at GND      ;
-; angle[2]                        ; Input ; Info     ; Stuck at GND      ;
-; angle[1]                        ; Input ; Info     ; Stuck at VCC      ;
-; angle[0]                        ; Input ; Info     ; Stuck at GND      ;
-; targetx_0[31..7]                ; Input ; Info     ; Stuck at GND      ;
-; targetx_0[5..1]                 ; Input ; Info     ; Stuck at GND      ;
-; targetx_0[6]                    ; Input ; Info     ; Stuck at VCC      ;
-; targetx_0[0]                    ; Input ; Info     ; Stuck at VCC      ;
-; targetx_1[31..7]                ; Input ; Info     ; Stuck at GND      ;
-; targetx_1[5..2]                 ; Input ; Info     ; Stuck at GND      ;
-; targetx_1[6]                    ; Input ; Info     ; Stuck at VCC      ;
-; targetx_1[1]                    ; Input ; Info     ; Stuck at VCC      ;
-; targetx_1[0]                    ; Input ; Info     ; Stuck at GND      ;
-; targetx_2[1..0]                 ; Input ; Info     ; Stuck at VCC      ;
-; targetx_2[31..7]                ; Input ; Info     ; Stuck at GND      ;
-; targetx_2[5..2]                 ; Input ; Info     ; Stuck at GND      ;
-; targetx_2[6]                    ; Input ; Info     ; Stuck at VCC      ;
-; targetx_3[31..7]                ; Input ; Info     ; Stuck at GND      ;
-; targetx_3[5..3]                 ; Input ; Info     ; Stuck at GND      ;
-; targetx_3[1..0]                 ; Input ; Info     ; Stuck at GND      ;
-; targetx_3[6]                    ; Input ; Info     ; Stuck at VCC      ;
-; targetx_3[2]                    ; Input ; Info     ; Stuck at VCC      ;
-; targety_0[31..7]                ; Input ; Info     ; Stuck at GND      ;
-; targety_0[5..1]                 ; Input ; Info     ; Stuck at GND      ;
-; targety_0[6]                    ; Input ; Info     ; Stuck at VCC      ;
-; targety_0[0]                    ; Input ; Info     ; Stuck at VCC      ;
-; targety_1[31..7]                ; Input ; Info     ; Stuck at GND      ;
-; targety_1[5..1]                 ; Input ; Info     ; Stuck at GND      ;
-; targety_1[6]                    ; Input ; Info     ; Stuck at VCC      ;
-; targety_1[0]                    ; Input ; Info     ; Stuck at VCC      ;
-; targety_2[31..7]                ; Input ; Info     ; Stuck at GND      ;
-; targety_2[5..1]                 ; Input ; Info     ; Stuck at GND      ;
-; targety_2[6]                    ; Input ; Info     ; Stuck at VCC      ;
-; targety_2[0]                    ; Input ; Info     ; Stuck at VCC      ;
-; targety_3[31..7]                ; Input ; Info     ; Stuck at GND      ;
-; targety_3[5..1]                 ; Input ; Info     ; Stuck at GND      ;
-; targety_3[6]                    ; Input ; Info     ; Stuck at VCC      ;
-; targety_3[0]                    ; Input ; Info     ; Stuck at VCC      ;
-; trajectory_memloc[31..13]       ; Input ; Info     ; Stuck at GND      ;
-; trajectory_memloc[11..0]        ; Input ; Info     ; Stuck at GND      ;
-; trajectory_memloc[12]           ; Input ; Info     ; Stuck at VCC      ;
-; trajectory_memloc_enable[31..1] ; Input ; Info     ; Stuck at GND      ;
-; trajectory_memloc_enable[0]     ; Input ; Info     ; Stuck at VCC      ;
-+---------------------------------+-------+----------+-------------------+
++---------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "display_controller:display_controller_inst|screencharacter_mif_writer:smw|screenchar_mem:smem" ;
++-----------------+-------+----------+--------------------------------------------------------------------------------------+
+; Port            ; Type  ; Severity ; Details                                                                              ;
++-----------------+-------+----------+--------------------------------------------------------------------------------------+
+; data[3..0]      ; Input ; Info     ; Stuck at GND                                                                         ;
+; data[7]         ; Input ; Info     ; Stuck at GND                                                                         ;
+; data[6]         ; Input ; Info     ; Stuck at VCC                                                                         ;
+; data[5]         ; Input ; Info     ; Stuck at GND                                                                         ;
+; data[4]         ; Input ; Info     ; Stuck at VCC                                                                         ;
+; wraddress[5..0] ; Input ; Info     ; Stuck at GND                                                                         ;
+; wraddress[7]    ; Input ; Info     ; Stuck at GND                                                                         ;
+; wraddress[6]    ; Input ; Info     ; Stuck at VCC                                                                         ;
+; wren            ; Input ; Info     ; Stuck at GND                                                                         ;
++-----------------+-------+----------+--------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "display_controller:display_controller_inst"                                                                                                                            ;
++---------------------------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port                            ; Type  ; Severity ; Details                                                                                                                                      ;
++---------------------------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; velocity                        ; Input ; Info     ; Stuck at VCC                                                                                                                                 ;
+; fire                            ; Input ; Info     ; Stuck at GND                                                                                                                                 ;
+; angle[4..3]                     ; Input ; Info     ; Stuck at VCC                                                                                                                                 ;
+; angle[7]                        ; Input ; Info     ; Stuck at GND                                                                                                                                 ;
+; angle[6]                        ; Input ; Info     ; Stuck at VCC                                                                                                                                 ;
+; angle[5]                        ; Input ; Info     ; Stuck at GND                                                                                                                                 ;
+; angle[2]                        ; Input ; Info     ; Stuck at GND                                                                                                                                 ;
+; angle[1]                        ; Input ; Info     ; Stuck at VCC                                                                                                                                 ;
+; angle[0]                        ; Input ; Info     ; Stuck at GND                                                                                                                                 ;
+; targetx_0[31..7]                ; Input ; Info     ; Stuck at GND                                                                                                                                 ;
+; targetx_0[5..1]                 ; Input ; Info     ; Stuck at GND                                                                                                                                 ;
+; targetx_0[6]                    ; Input ; Info     ; Stuck at VCC                                                                                                                                 ;
+; targetx_0[0]                    ; Input ; Info     ; Stuck at VCC                                                                                                                                 ;
+; targetx_1[31..7]                ; Input ; Info     ; Stuck at GND                                                                                                                                 ;
+; targetx_1[5..2]                 ; Input ; Info     ; Stuck at GND                                                                                                                                 ;
+; targetx_1[6]                    ; Input ; Info     ; Stuck at VCC                                                                                                                                 ;
+; targetx_1[1]                    ; Input ; Info     ; Stuck at VCC                                                                                                                                 ;
+; targetx_1[0]                    ; Input ; Info     ; Stuck at GND                                                                                                                                 ;
+; targetx_2[1..0]                 ; Input ; Info     ; Stuck at VCC                                                                                                                                 ;
+; targetx_2[31..7]                ; Input ; Info     ; Stuck at GND                                                                                                                                 ;
+; targetx_2[5..2]                 ; Input ; Info     ; Stuck at GND                                                                                                                                 ;
+; targetx_2[6]                    ; Input ; Info     ; Stuck at VCC                                                                                                                                 ;
+; targetx_3[31..7]                ; Input ; Info     ; Stuck at GND                                                                                                                                 ;
+; targetx_3[5..3]                 ; Input ; Info     ; Stuck at GND                                                                                                                                 ;
+; targetx_3[1..0]                 ; Input ; Info     ; Stuck at GND                                                                                                                                 ;
+; targetx_3[6]                    ; Input ; Info     ; Stuck at VCC                                                                                                                                 ;
+; targetx_3[2]                    ; Input ; Info     ; Stuck at VCC                                                                                                                                 ;
+; targety_0[31..7]                ; Input ; Info     ; Stuck at GND                                                                                                                                 ;
+; targety_0[5..1]                 ; Input ; Info     ; Stuck at GND                                                                                                                                 ;
+; targety_0[6]                    ; Input ; Info     ; Stuck at VCC                                                                                                                                 ;
+; targety_0[0]                    ; Input ; Info     ; Stuck at VCC                                                                                                                                 ;
+; targety_1[31..7]                ; Input ; Info     ; Stuck at GND                                                                                                                                 ;
+; targety_1[5..1]                 ; Input ; Info     ; Stuck at GND                                                                                                                                 ;
+; targety_1[6]                    ; Input ; Info     ; Stuck at VCC                                                                                                                                 ;
+; targety_1[0]                    ; Input ; Info     ; Stuck at VCC                                                                                                                                 ;
+; targety_2[31..7]                ; Input ; Info     ; Stuck at GND                                                                                                                                 ;
+; targety_2[5..1]                 ; Input ; Info     ; Stuck at GND                                                                                                                                 ;
+; targety_2[6]                    ; Input ; Info     ; Stuck at VCC                                                                                                                                 ;
+; targety_2[0]                    ; Input ; Info     ; Stuck at VCC                                                                                                                                 ;
+; targety_3[31..7]                ; Input ; Info     ; Stuck at GND                                                                                                                                 ;
+; targety_3[5..1]                 ; Input ; Info     ; Stuck at GND                                                                                                                                 ;
+; targety_3[6]                    ; Input ; Info     ; Stuck at VCC                                                                                                                                 ;
+; targety_3[0]                    ; Input ; Info     ; Stuck at VCC                                                                                                                                 ;
+; trajectory_memloc[31..13]       ; Input ; Info     ; Stuck at GND                                                                                                                                 ;
+; trajectory_memloc[11..0]        ; Input ; Info     ; Stuck at GND                                                                                                                                 ;
+; trajectory_memloc[12]           ; Input ; Info     ; Stuck at VCC                                                                                                                                 ;
+; trajectory_memloc_enable[31..1] ; Input ; Info     ; Stuck at GND                                                                                                                                 ;
+; trajectory_memloc_enable[0]     ; Input ; Info     ; Stuck at VCC                                                                                                                                 ;
+; ps2_line_content                ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; ps2_line_ready                  ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++---------------------------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------+
@@ -2297,10 +2402,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 154                         ;
-; cycloneiii_ff         ; 564                         ;
+; cycloneiii_ff         ; 572                         ;
 ;     CLR               ; 28                          ;
 ;     CLR SCLR          ; 19                          ;
-;     ENA               ; 98                          ;
+;     ENA               ; 106                         ;
 ;     ENA CLR           ; 253                         ;
 ;     ENA CLR SCLR      ; 18                          ;
 ;     ENA SCLR          ; 19                          ;
@@ -2309,23 +2414,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     SLD               ; 15                          ;
 ;     plain             ; 91                          ;
 ; cycloneiii_io_obuf    ; 2                           ;
-; cycloneiii_lcell_comb ; 1401                        ;
+; cycloneiii_lcell_comb ; 1402                        ;
 ;     arith             ; 220                         ;
 ;         2 data inputs ; 177                         ;
 ;         3 data inputs ; 43                          ;
-;     normal            ; 1181                        ;
+;     normal            ; 1182                        ;
 ;         0 data inputs ; 3                           ;
 ;         1 data inputs ; 17                          ;
-;         2 data inputs ; 117                         ;
-;         3 data inputs ; 92                          ;
-;         4 data inputs ; 952                         ;
+;         2 data inputs ; 119                         ;
+;         3 data inputs ; 90                          ;
+;         4 data inputs ; 953                         ;
 ; cycloneiii_mac_mult   ; 2                           ;
 ; cycloneiii_mac_out    ; 2                           ;
 ; cycloneiii_pll        ; 1                           ;
-; cycloneiii_ram_block  ; 738                         ;
+; cycloneiii_ram_block  ; 746                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 10.00                       ;
-; Average LUT depth     ; 5.22                        ;
+; Average LUT depth     ; 5.18                        ;
 +-----------------------+-----------------------------+
 
 
@@ -2334,7 +2439,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:04     ;
 +----------------+--------------+
 
 
@@ -2344,7 +2449,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Sun Dec 02 19:43:06 2018
+    Info: Processing started: Mon Dec 03 12:25:31 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off skeleton -c skeleton
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -2394,18 +2499,23 @@ Info (12021): Found 1 design units, including 1 entities, in source file screen_
     Info (12023): Found entity 1: screen_row_counter File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/screen_row_counter.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file counter2.v
     Info (12023): Found entity 1: counter2 File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/counter2.v Line: 1
-Warning (10238): Verilog Module Declaration warning at display_controller.v(27): ignored anonymous port(s) indicated by duplicate or dangling comma(s) in the port list for module "display_controller" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/display_controller.v Line: 27
+Warning (10275): Verilog HDL Module Instantiation warning at display_controller.v(176): ignored dangling comma in List of Port Connections File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/display_controller.v Line: 176
 Info (12021): Found 1 design units, including 1 entities, in source file display_controller.v
     Info (12023): Found entity 1: display_controller File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/display_controller.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file monitor_index.v
     Info (12023): Found entity 1: monitor_index File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/monitor_index.v Line: 39
 Info (12021): Found 1 design units, including 1 entities, in source file monitor_color.v
     Info (12023): Found entity 1: monitor_color File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/monitor_color.v Line: 39
-Warning (10238): Verilog Module Declaration warning at index_mif_writer.v(27): ignored anonymous port(s) indicated by duplicate or dangling comma(s) in the port list for module "index_mif_writer" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/index_mif_writer.v Line: 27
+Warning (10238): Verilog Module Declaration warning at index_mif_writer.v(17): ignored anonymous port(s) indicated by duplicate or dangling comma(s) in the port list for module "index_mif_writer" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/index_mif_writer.v Line: 17
 Info (12021): Found 1 design units, including 1 entities, in source file index_mif_writer.v
     Info (12023): Found entity 1: index_mif_writer File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/index_mif_writer.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file screencharindex_to_pixeladdress.v
     Info (12023): Found entity 1: screencharindex_to_pixeladdress File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/screencharindex_to_pixeladdress.v Line: 1
+Warning (10275): Verilog HDL Module Instantiation warning at screencharacter_mif_writer.v(36): ignored dangling comma in List of Port Connections File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/screencharacter_mif_writer.v Line: 36
+Info (12021): Found 1 design units, including 1 entities, in source file screencharacter_mif_writer.v
+    Info (12023): Found entity 1: screencharacter_mif_writer File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/screencharacter_mif_writer.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file screenchar_mem.v
+    Info (12023): Found entity 1: screenchar_mem File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/screenchar_mem.v Line: 39
 Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(50): created implicit net for "inclock" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/skeleton.v Line: 50
 Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(103): created implicit net for "DLY_RST" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/skeleton.v Line: 103
 Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(104): created implicit net for "VGA_CTRL_CLK" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/skeleton.v Line: 104
@@ -2590,11 +2700,11 @@ Info (12133): Instantiated megafunction "VGA_Audio_PLL:p1|altpll:altpll_componen
     Info (12134): Parameter "port_extclk2" = "PORT_UNUSED"
     Info (12134): Parameter "port_extclk3" = "PORT_UNUSED"
 Info (12128): Elaborating entity "display_controller" for hierarchy "display_controller:display_controller_inst" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/skeleton.v Line: 130
-Warning (10230): Verilog HDL assignment warning at display_controller.v(83): truncated value with size 32 to match size of target (19) File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/display_controller.v Line: 83
-Info (12128): Elaborating entity "video_sync_generator" for hierarchy "display_controller:display_controller_inst|video_sync_generator:LTM_ins" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/display_controller.v Line: 73
+Warning (10230): Verilog HDL assignment warning at display_controller.v(87): truncated value with size 32 to match size of target (19) File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/display_controller.v Line: 87
+Info (12128): Elaborating entity "video_sync_generator" for hierarchy "display_controller:display_controller_inst|video_sync_generator:LTM_ins" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/display_controller.v Line: 77
 Warning (10230): Verilog HDL assignment warning at video_sync_generator.v(77): truncated value with size 32 to match size of target (10) File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/video_sync_generator.v Line: 77
 Warning (10230): Verilog HDL assignment warning at video_sync_generator.v(80): truncated value with size 32 to match size of target (11) File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/video_sync_generator.v Line: 80
-Info (12128): Elaborating entity "monitor_index" for hierarchy "display_controller:display_controller_inst|monitor_index:monitor_index_inst" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/display_controller.v Line: 97
+Info (12128): Elaborating entity "monitor_index" for hierarchy "display_controller:display_controller_inst|monitor_index:monitor_index_inst" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/display_controller.v Line: 101
 Info (12128): Elaborating entity "altsyncram" for hierarchy "display_controller:display_controller_inst|monitor_index:monitor_index_inst|altsyncram:altsyncram_component" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/monitor_index.v Line: 90
 Info (12130): Elaborated megafunction instantiation "display_controller:display_controller_inst|monitor_index:monitor_index_inst|altsyncram:altsyncram_component" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/monitor_index.v Line: 90
 Info (12133): Instantiated megafunction "display_controller:display_controller_inst|monitor_index:monitor_index_inst|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/monitor_index.v Line: 90
@@ -2629,7 +2739,7 @@ Info (12128): Elaborating entity "decode_aaa" for hierarchy "display_controller:
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_sob.tdf
     Info (12023): Found entity 1: mux_sob File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/db/mux_sob.tdf Line: 22
 Info (12128): Elaborating entity "mux_sob" for hierarchy "display_controller:display_controller_inst|monitor_index:monitor_index_inst|altsyncram:altsyncram_component|altsyncram_51n1:auto_generated|mux_sob:mux3" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/db/altsyncram_51n1.tdf Line: 48
-Info (12128): Elaborating entity "monitor_color" for hierarchy "display_controller:display_controller_inst|monitor_color:monitor_color_inst" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/display_controller.v Line: 105
+Info (12128): Elaborating entity "monitor_color" for hierarchy "display_controller:display_controller_inst|monitor_color:monitor_color_inst" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/display_controller.v Line: 109
 Info (12128): Elaborating entity "altsyncram" for hierarchy "display_controller:display_controller_inst|monitor_color:monitor_color_inst|altsyncram:altsyncram_component" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/monitor_color.v Line: 81
 Info (12130): Elaborated megafunction instantiation "display_controller:display_controller_inst|monitor_color:monitor_color_inst|altsyncram:altsyncram_component" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/monitor_color.v Line: 81
 Info (12133): Instantiated megafunction "display_controller:display_controller_inst|monitor_color:monitor_color_inst|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/monitor_color.v Line: 81
@@ -2650,11 +2760,39 @@ Info (12133): Instantiated megafunction "display_controller:display_controller_i
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_3va1.tdf
     Info (12023): Found entity 1: altsyncram_3va1 File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/db/altsyncram_3va1.tdf Line: 27
 Info (12128): Elaborating entity "altsyncram_3va1" for hierarchy "display_controller:display_controller_inst|monitor_color:monitor_color_inst|altsyncram:altsyncram_component|altsyncram_3va1:auto_generated" File: c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
-Info (12128): Elaborating entity "index_mif_writer" for hierarchy "display_controller:display_controller_inst|index_mif_writer:imw" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/display_controller.v Line: 145
-Info (12128): Elaborating entity "screencharindex_to_pixeladdress" for hierarchy "display_controller:display_controller_inst|index_mif_writer:imw|screencharindex_to_pixeladdress:index2pixel" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/index_mif_writer.v Line: 61
+Info (12128): Elaborating entity "screencharacter_mif_writer" for hierarchy "display_controller:display_controller_inst|screencharacter_mif_writer:smw" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/display_controller.v Line: 155
+Info (12128): Elaborating entity "screenchar_mem" for hierarchy "display_controller:display_controller_inst|screencharacter_mif_writer:smw|screenchar_mem:smem" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/screencharacter_mif_writer.v Line: 36
+Info (12128): Elaborating entity "altsyncram" for hierarchy "display_controller:display_controller_inst|screencharacter_mif_writer:smw|screenchar_mem:smem|altsyncram:altsyncram_component" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/screenchar_mem.v Line: 90
+Info (12130): Elaborated megafunction instantiation "display_controller:display_controller_inst|screencharacter_mif_writer:smw|screenchar_mem:smem|altsyncram:altsyncram_component" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/screenchar_mem.v Line: 90
+Info (12133): Instantiated megafunction "display_controller:display_controller_inst|screencharacter_mif_writer:smw|screenchar_mem:smem|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/screenchar_mem.v Line: 90
+    Info (12134): Parameter "address_aclr_b" = "NONE"
+    Info (12134): Parameter "address_reg_b" = "CLOCK1"
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_input_b" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_b" = "BYPASS"
+    Info (12134): Parameter "init_file" = "../screencharmap.mif"
+    Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+    Info (12134): Parameter "numwords_a" = "256"
+    Info (12134): Parameter "numwords_b" = "256"
+    Info (12134): Parameter "operation_mode" = "DUAL_PORT"
+    Info (12134): Parameter "outdata_aclr_b" = "NONE"
+    Info (12134): Parameter "outdata_reg_b" = "UNREGISTERED"
+    Info (12134): Parameter "power_up_uninitialized" = "FALSE"
+    Info (12134): Parameter "widthad_a" = "8"
+    Info (12134): Parameter "widthad_b" = "8"
+    Info (12134): Parameter "width_a" = "8"
+    Info (12134): Parameter "width_b" = "8"
+    Info (12134): Parameter "width_byteena_a" = "1"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_73n1.tdf
+    Info (12023): Found entity 1: altsyncram_73n1 File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/db/altsyncram_73n1.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_73n1" for hierarchy "display_controller:display_controller_inst|screencharacter_mif_writer:smw|screenchar_mem:smem|altsyncram:altsyncram_component|altsyncram_73n1:auto_generated" File: c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
+Critical Warning (127005): Memory depth (256) in the design file differs from memory depth (240) in the Memory Initialization File "C:/Users/tn74/Documents/ECE350/Missiles/projectmain/screencharmap.mif" -- setting initial value for remaining addresses to 0 File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/screenchar_mem.v Line: 90
+Info (12128): Elaborating entity "index_mif_writer" for hierarchy "display_controller:display_controller_inst|index_mif_writer:imw" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/display_controller.v Line: 176
+Info (12128): Elaborating entity "screencharindex_to_pixeladdress" for hierarchy "display_controller:display_controller_inst|index_mif_writer:imw|screencharindex_to_pixeladdress:index2pixel" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/index_mif_writer.v Line: 51
 Warning (10230): Verilog HDL assignment warning at screencharindex_to_pixeladdress.v(14): truncated value with size 32 to match size of target (19) File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/screencharindex_to_pixeladdress.v Line: 14
 Warning (10230): Verilog HDL assignment warning at screencharindex_to_pixeladdress.v(16): truncated value with size 32 to match size of target (19) File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/screencharindex_to_pixeladdress.v Line: 16
-Info (12128): Elaborating entity "typer_logic" for hierarchy "display_controller:display_controller_inst|index_mif_writer:imw|typer_logic:typer_inst" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/index_mif_writer.v Line: 73
+Info (12128): Elaborating entity "typer_logic" for hierarchy "display_controller:display_controller_inst|index_mif_writer:imw|typer_logic:typer_inst" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/index_mif_writer.v Line: 63
 Warning (10230): Verilog HDL assignment warning at typer_logic.v(106): truncated value with size 32 to match size of target (19) File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/typer_logic.v Line: 106
 Warning (10230): Verilog HDL assignment warning at typer_logic.v(112): truncated value with size 32 to match size of target (19) File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/typer_logic.v Line: 112
 Warning (10230): Verilog HDL assignment warning at typer_logic.v(114): truncated value with size 32 to match size of target (19) File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/typer_logic.v Line: 114
@@ -2764,7 +2902,7 @@ Info (12133): Instantiated megafunction "display_controller:display_controller_i
     Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mult_tgt.tdf
     Info (12023): Found entity 1: mult_tgt File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/db/mult_tgt.tdf Line: 30
-Warning (12241): 7 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12241): 8 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (13014): Ignored 3 buffer(s)
     Info (13019): Ignored 3 SOFT buffer(s)
 Info (13000): Registers with preset signals will power-up high File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/lcd.sv Line: 48
@@ -2870,23 +3008,22 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "VGA_SYNC" is stuck at GND File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/skeleton.v Line: 21
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 17 registers lost all their fanouts during netlist optimizations.
-Info (17036): Removed 7 MSB VCC or GND address nodes from RAM block "display_controller:display_controller_inst|index_mif_writer:imw|typer_logic:typer_inst|character_data:character_data_inst|altsyncram:altsyncram_component|altsyncram_5sb1:auto_generated|ALTSYNCRAM" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/db/altsyncram_5sb1.tdf Line: 31
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
 Warning (15897): PLL "VGA_Audio_PLL:p1|altpll:altpll_component|pll" has parameter compensate_clock set to clock0 but port CLK[0] is not connected File: c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altpll.tdf Line: 920
 Warning (15899): PLL "VGA_Audio_PLL:p1|altpll:altpll_component|pll" has parameters clk0_multiply_by and clk0_divide_by specified but port CLK[0] is not connected File: c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altpll.tdf Line: 920
-Info (21057): Implemented 2478 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2495 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 150 output pins
     Info (21060): Implemented 2 bidirectional pins
-    Info (21061): Implemented 1581 logic cells
-    Info (21064): Implemented 738 RAM segments
+    Info (21061): Implemented 1590 logic cells
+    Info (21064): Implemented 746 RAM segments
     Info (21065): Implemented 1 PLLs
     Info (21062): Implemented 4 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 192 warnings
-    Info: Peak virtual memory: 4833 megabytes
-    Info: Processing ended: Sun Dec 02 19:43:21 2018
-    Info: Elapsed time: 00:00:15
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 194 warnings
+    Info: Peak virtual memory: 4841 megabytes
+    Info: Processing ended: Mon Dec 03 12:25:47 2018
+    Info: Elapsed time: 00:00:16
     Info: Total CPU time (on all processors): 00:00:25
 
 

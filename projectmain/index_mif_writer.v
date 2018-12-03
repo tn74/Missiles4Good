@@ -1,18 +1,8 @@
 module index_mif_writer(
 	clock,
-	velocity,
-	fire,
-	angle,
-	targetx_0,
-	targetx_1,
-	targetx_2,
-	targetx_3,
-	targety_0,
-	targety_1,
-	targety_2,
-	targety_3,
-	trajectory_memloc,
-	trajectory_memloc_enable,
+	character_address,
+	character_clock,
+	character,
 	
 	mem_waddr,
 	mem_wdata,
@@ -27,11 +17,11 @@ module index_mif_writer(
 );
 
 input clock;
-input[7:0] velocity, angle;
-input fire;
-input[31:0] targetx_0, targetx_1, targetx_2, targetx_3;
-input[31:0] targety_0, targety_1, targety_2, targety_3;
-input[31:0] trajectory_memloc, trajectory_memloc_enable;
+
+input[7:0] character;
+output character_clock;
+output[7:0] character_address;
+
 output[18:0] mem_waddr;
 output[2:0] mem_wdata;
 output mem_wenable; 
@@ -63,7 +53,7 @@ screencharindex_to_pixeladdress index2pixel(
 typer_logic typer_inst(
 	 .clock(clock),
 	 .top_left_corner_address(top_left_corner_address),
-	 .character_input(8'h41),
+	 .character_input(character),
 	 .start_writing_character(typer_start),
 	 .finished_saving_char(typer_finish),
 	 
@@ -71,8 +61,6 @@ typer_logic typer_inst(
 	 .mem_wdata(typer_wdata),
 	 .mem_wenable(typer_wenable)
 );
-
-
 
 
 always@(posedge clock)
@@ -90,6 +78,8 @@ end
 assign mem_waddr = typer_waddr;
 assign mem_wdata = typer_wdata;
 assign mem_wenable = typer_wenable;
+assign character_address = count[7:0];
+assign character_clock = ~clock;
 
 
 // Debugging

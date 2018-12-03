@@ -1,0 +1,13 @@
+module screencharacter_mif_writer (
+clock,
+velocity,
+fire,
+angle,
+x_numbers,
+y_numbers,
+ps2_line_content,
+ps2_line_ready,
+	
+rd_add, 
+rd_clk,		
+rd_out,

@@ -23,6 +23,9 @@ module display_controller(
 	trajectory_memloc,
 	trajectory_memloc_enable,
 	
+	ps2_line_content,
+	ps2_line_ready
+	
    
 );
 
@@ -45,7 +48,8 @@ input fire;
 input[31:0] targetx_0, targetx_1, targetx_2, targetx_3;
 input[31:0] targety_0, targety_1, targety_2, targety_3;
 input[31:0] trajectory_memloc, trajectory_memloc_enable;
-
+input[255:0] ps2_line_content;
+input ps2_line_ready;
 
 // Address to Index Memory File Writing
 wire[18:0] mem_waddr;
@@ -122,26 +126,53 @@ begin
 end
 
 // ---------------------------------------------- End Standard VGA Stuff -----------------------------------------------------------------
+wire[31:0] x_numbers;
+wire[31:0] y_numbers;
+assign x_numbers[31:24] = targetx_3[7:0]; assign x_numbers[23:16] = targetx_2[7:0]; assign x_numbers[15:8] = targetx_1[7:0]; assign x_numbers[7:0] = targetx_0[7:0];
+assign y_numbers[31:24] = targety_3[7:0]; assign y_numbers[23:16] = targety_2[7:0]; assign y_numbers[15:8] = targety_1[7:0]; assign y_numbers[7:0] = targety_0[7:0];
 
-index_mif_writer imw(
+// ---------------------------------------------- Begin Control Information -----------------------------------------------------------------
+
+
+wire[7:0] character_address, character;
+wire character_clock;
+
+screencharacter_mif_writer smw(
+	// Needed write input information
 	.clock(clock),
 	.velocity(velocity),
 	.fire(fire),
 	.angle(angle),
-	.targetx_0(targetx_0),
-	.targetx_1(targetx_1),
-	.targetx_2(targetx_2),
-	.targetx_3(targetx_3),
-	.targety_0(targety_0),
-	.targety_1(targety_1),
-	.targety_2(targety_2),
-	.targety_3(targety_3),
-	.trajectory_memloc(trajectory_memloc),
-	.trajectory_memloc_enable(trajectory_memloc_enable),
+	.targetx(x_numbers),
+	.targety(y_numbers),
+	.ps2_line_content(ps2_line_content),
+	.ps2_line_ready(ps2_line_ready),
 	
+	// Needed read information
+	.rd_add(character_address), 	 // Input
+	.rd_clk(character_clock),		 // Input
+	.rd_out(character)			 // Output
+);
+
+//wire[18:0] trajectory_out
+//trajectory_mif_writer tmw (
+//	.trajectory_memloc(trajectory_memloc),
+//	.trajectory_memloc_enable(trajectory_memloc_enable)
+//	.rd_add(character_address),
+//	.rd_clk(character_clock),
+//	.rd_out(character_out)
+//);
+	
+
+index_mif_writer imw(
+	.clock(clock),
 	.mem_waddr(mem_waddr),
 	.mem_wdata(mem_wdata),
-	.mem_wenable(mem_wenable)
+	.mem_wenable(mem_wenable),
+	
+	.character_address(character_address),
+	.character_clock(character_clock),
+	.character(character),
 );
 
 endmodule

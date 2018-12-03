@@ -9,49 +9,49 @@ z2
 cModel Technology
 Z0 dC:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/simulation/qsim
 vhard_block
-Z1 !s110 1543796386
+Z1 !s110 1543864247
 !i10b 1
-!s100 9<kX]``G:Tj2i?FYG2hlZ1
-Io7d`^`9hd2:nI45R^G`?j0
+!s100 Mbe90`I=Yc1N0NDJ_EDN?0
+IE?=4`S5945F=MR><gQ@LG3
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 Z3 dC:/Users/tn74/Documents/ECE350/Missiles/projectmain/simulation/qsim
-Z4 w1543796385
+Z4 w1543864246
 Z5 8skeleton.vo
 Z6 Fskeleton.vo
-L0 19105
+L0 3080
 Z7 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z8 !s108 1543796386.000000
+Z8 !s108 1543864247.000000
 Z9 !s107 skeleton.vo|
 Z10 !s90 -work|work|skeleton.vo|
 !i113 1
 Z11 o-work work
 Z12 tCvgOpt 0
 vindex_mif_writer
-R1
+Z13 !s110 1543796386
 !i10b 1
 !s100 @UXT:LC>o<80N9?;R0hz>3
 I?8H]z3@=60_GXc[:eM`IY2
 R2
 R3
-R4
+w1543796385
 R5
 R6
-Z13 L0 31
+Z14 L0 31
 R7
 r1
 !s85 0
 31
-R8
+Z15 !s108 1543796386.000000
 R9
 R10
 !i113 1
 R11
 R12
 vindex_mif_writer_vlg_vec_tst
-R1
+R13
 !i10b 1
 !s100 R?]c=>kzcjcW5PUX]S:Ok0
 I:Onf1H^jV]<H<Sz`md?>S2
@@ -60,28 +60,28 @@ R3
 w1543796384
 8Waveform5.vwf.vt
 FWaveform5.vwf.vt
-Z14 L0 29
+Z16 L0 29
 R7
 r1
 !s85 0
 31
-R8
+R15
 !s107 Waveform5.vwf.vt|
 !s90 -work|work|Waveform5.vwf.vt|
 !i113 1
 R11
 R12
 vps2_cleaner
-Z15 !s110 1543705006
+Z17 !s110 1543705006
 !i10b 1
 !s100 YgN1mf]=MMLT;W1KjE11S0
 IGg4LC0dVaPXoGNY2GlSB11
 R2
-Z16 dC:/Users/atn13/Documents/Missiles/projectmain/simulation/qsim
+Z18 dC:/Users/atn13/Documents/Missiles/projectmain/simulation/qsim
 w1543705005
 R5
 R6
-R13
+R14
 R7
 r1
 !s85 0
@@ -93,16 +93,16 @@ R10
 R11
 R12
 vps2_cleaner_vlg_vec_tst
-R15
+R17
 !i10b 1
 !s100 1a0i1^m@zT[PUH=NmMiCJ2
 I:K5]FiQ>0jR394042EBA`1
 R2
-R16
+R18
 w1543705004
 8Waveform4.vwf.vt
 FWaveform4.vwf.vt
-R14
+R16
 R7
 r1
 !s85 0
@@ -114,7 +114,7 @@ r1
 R11
 R12
 vps2_to_ascii
-Z17 !s110 1543609738
+Z19 !s110 1543609738
 !i10b 1
 !s100 oSTJeoc<9LR@]35JBT14c3
 IN6Yj[@WYSQWGD5<hPnRB91
@@ -123,19 +123,19 @@ R0
 w1543609735
 R5
 R6
-R13
+R14
 R7
 r1
 !s85 0
 31
-Z18 !s108 1543609738.000000
+Z20 !s108 1543609738.000000
 R9
 R10
 !i113 1
 R11
 R12
 vps2_to_ascii_vlg_vec_tst
-R17
+R19
 !i10b 1
 !s100 =YB7YZ[kDWRL:Hj<Vd]Vf0
 IJ6WRi_z`YP?JZ0:^1X`YG2
@@ -144,19 +144,19 @@ R0
 w1543609734
 8Waveform3.vwf.vt
 FWaveform3.vwf.vt
-R14
+R16
 R7
 r1
 !s85 0
 31
-R18
+R20
 !s107 Waveform3.vwf.vt|
 !s90 -work|work|Waveform3.vwf.vt|
 !i113 1
 R11
 R12
 vscreen_row_counter
-Z19 !s110 1543538519
+Z21 !s110 1543538519
 !i10b 1
 !s100 LK]0RN21HB^?i1K<kH0d12
 I][CNf9XS[H0L=LXR3;F1E3
@@ -165,19 +165,19 @@ R0
 w1543538518
 R5
 R6
-R13
+R14
 R7
 r1
 !s85 0
 31
-Z20 !s108 1543538519.000000
+Z22 !s108 1543538519.000000
 R9
 R10
 !i113 1
 R11
 R12
 vscreen_row_counter_vlg_vec_tst
-R19
+R21
 !i10b 1
 !s100 3JET@gT=6T_7PFcenm=Af3
 IB=2Y_HT`zgU=b69=aTHMl1
@@ -186,19 +186,61 @@ R0
 w1543538517
 8Waveform2.vwf.vt
 FWaveform2.vwf.vt
-R14
+R16
 R7
 r1
 !s85 0
 31
-R20
+R22
 !s107 Waveform2.vwf.vt|
 !s90 -work|work|Waveform2.vwf.vt|
 !i113 1
 R11
 R12
+vscreencharindex_to_pixeladdress
+R1
+!i10b 1
+!s100 H1V3G@UbMPVgiD9dKLWiW3
+IQ[A^UeSzAe1]Ij:lke3`@3
+R2
+R3
+R4
+R5
+R6
+R14
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+vscreencharindex_to_pixeladdress_vlg_vec_tst
+R1
+!i10b 1
+!s100 02^]i@ii14ejk=9Q62X2o1
+IXIOFf]kkPSPegWM680Mmj3
+R2
+R3
+w1543864245
+8Waveform7.vwf.vt
+FWaveform7.vwf.vt
+R16
+R7
+r1
+!s85 0
+31
+R8
+!s107 Waveform7.vwf.vt|
+!s90 -work|work|Waveform7.vwf.vt|
+!i113 1
+R11
+R12
 vtyper_logic
-Z21 !s110 1543795197
+Z23 !s110 1543795197
 !i10b 1
 !s100 MLk9QKlA:FdQmMU:Z;PO<1
 IYY@KjXVBZRfHo[ihD4LbK1
@@ -207,19 +249,19 @@ R3
 w1543795197
 R5
 R6
-R13
+R14
 R7
 r1
 !s85 0
 31
-Z22 !s108 1543795197.000000
+Z24 !s108 1543795197.000000
 R9
 R10
 !i113 1
 R11
 R12
 vtyper_logic_vlg_vec_tst
-R21
+R23
 !i10b 1
 !s100 VX`Ae73P6T^_=:P9SVUbE0
 Ij_F5MBYC[>Qg97:h8OfAG3
@@ -228,12 +270,12 @@ R3
 w1543795195
 8Waveform6.vwf.vt
 FWaveform6.vwf.vt
-R14
+R16
 R7
 r1
 !s85 0
 31
-R22
+R24
 !s107 Waveform6.vwf.vt|
 !s90 -work|work|Waveform6.vwf.vt|
 !i113 1
@@ -249,7 +291,7 @@ R0
 w1543257243
 R5
 R6
-R13
+R14
 R7
 r1
 !s85 0
@@ -270,7 +312,7 @@ R0
 w1543257241
 8Waveform.vwf.vt
 FWaveform.vwf.vt
-R14
+R16
 R7
 r1
 !s85 0

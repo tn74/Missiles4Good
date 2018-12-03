@@ -65,7 +65,7 @@ typer_logic typer_inst(
 
 always@(posedge clock)
 begin
-	if (count < 32'd238) begin
+	if (count < 32'd256) begin
 		if (typer_finish) begin
 			typer_start <= 1'b1;
 			count <= count + 1;

@@ -41,8 +41,8 @@ output [7:0] r_data;
 
 // Control Inputs and Outputs
 input clock;
-input[7:0] velocity;
-input[7:0] angle;
+input[31:0] velocity;
+input[31:0] angle;
 input fire;
 	
 input[31:0] targetx_0, targetx_1, targetx_2, targetx_3;

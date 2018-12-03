@@ -12,7 +12,6 @@ module screencharindex_to_pixeladdress(clock, count, address);
 	begin
 		if (count < 256) begin
 			address <= (240 + (count / 32) * CHAR_HEIGHT) * SCREEN_WIDTH + (count % 32) * CHAR_WIDTH;
-//			address <= 19'h2cd30;
 		end else begin
 			address <= (240 * SCREEN_WIDTH);
 		end

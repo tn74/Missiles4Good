@@ -30,7 +30,8 @@ reg write_en;
 wire[47:0] velocity_digits, angle_digits;
 
 
-reg terminal_display_finish, terminal_display_start;
+wire terminal_display_finish;
+reg terminal_display_start;
 wire[7:0] terminal_display_char_index, terminal_display_char_data;
 
 always @(posedge clock)
@@ -48,9 +49,10 @@ begin
 	end else if (count == 32'd3) begin
 		write_char <= velocity_digits[31:24];
 		char_index <= 8'b00111100;
+	end
 	
 	// Writing Angle Characters
-	end else if (count == 32'd4) begin
+	else if (count == 32'd4) begin
 		write_char <= angle_digits[7:0];
 		char_index <= 8'b01011111;
 	end else if (count == 32'd5) begin
@@ -59,19 +61,23 @@ begin
 	end else if (count == 32'd6) begin
 		write_char <= angle_digits[23:16];
 		char_index <= 8'b01011101;
+	end 
 	
 	// Writing All Terminal
 	else if (count == 32'd7) begin
 		if(terminal_display_finish) begin
 			terminal_display_start <= 1'b1;
 		end else begin
+//			write_char <= terminal_display_char_data;
+			write_char <= 8'h42;
+			char_index <= terminal_display_char_index;
 			terminal_display_start <= 1'b0;
 			count <= count - 1;
 		end
 	end
 		
 	// Else Reset
-	end else begin
+	else begin
 		count <= 32'hffffffff;
 	end
 	
@@ -85,11 +91,11 @@ number_to_six_digit velconvert(velocity, velocity_digits);
 number_to_six_digit angconvert(angle, angle_digits);
 
 
-commands_printer_traker(
+commands_printer_tracker cpt(
 	.clock(clock), 
-	.start(terminal_display_start);
-	.ps2_line_content(ps2_line_content);
-	.ps2_line_read(ps2_line_ready);
+	.start(terminal_display_start),
+	.ps2_line_content(ps2_line_content),
+	.ps2_line_ready(ps2_line_ready),
 	
 	.finish(terminal_display_finish),
 	.char_index(terminal_display_char_index), 

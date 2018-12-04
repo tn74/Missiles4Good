@@ -21,7 +21,7 @@ def genereat_ps2_line_scroll():
 	lines = []
 	for row in range(1, 8):
 		for col in range(32):
-			lines.append("ps2_line_content[{}][{}] <= ps2_line_content[{}][{}];\n".format(row - 1, col, row, col))
+			lines.append("ps2_lines[{}][{}] <= ps2_lines[{}][{}];\n".format(row - 1, col, row, col))
 
 	with open("lines_scroll.txt", "w") as f:
 		for l in lines:

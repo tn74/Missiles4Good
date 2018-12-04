@@ -28,8 +28,10 @@ reg[7:0] write_char, char_index;
 reg write_en;
 
 wire[47:0] velocity_digits, angle_digits;
-number_to_six_digit velconvert(velocity, velocity_digits);
-number_to_six_digit angconvert(angle, angle_digits);
+
+
+reg terminal_display_finish, terminal_display_start;
+wire[7:0] terminal_display_char_index, terminal_display_char_data;
 
 always @(posedge clock)
 begin
@@ -57,6 +59,16 @@ begin
 	end else if (count == 32'd6) begin
 		write_char <= angle_digits[23:16];
 		char_index <= 8'b01011101;
+	
+	// Writing All Terminal
+	else if (count == 32'd7) begin
+		if(terminal_display_finish) begin
+			terminal_display_start <= 1'b1;
+		end else begin
+			terminal_display_start <= 1'b0;
+			count <= count - 1;
+		end
+	end
 		
 	// Else Reset
 	end else begin
@@ -68,6 +80,21 @@ begin
 end
 
 
+// --------------------------------------- Subciruits ----------------------
+number_to_six_digit velconvert(velocity, velocity_digits);
+number_to_six_digit angconvert(angle, angle_digits);
+
+
+commands_printer_traker(
+	.clock(clock), 
+	.start(terminal_display_start);
+	.ps2_line_content(ps2_line_content);
+	.ps2_line_read(ps2_line_ready);
+	
+	.finish(terminal_display_finish),
+	.char_index(terminal_display_char_index), 
+	.char_data(terminal_display_char_data)
+);
 
 screenchar_mem smem (
 	.rdaddress(rd_add),

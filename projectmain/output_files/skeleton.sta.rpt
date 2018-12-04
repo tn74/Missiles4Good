@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for skeleton
-Mon Dec 03 16:08:09 2018
+Tue Dec 04 10:29:34 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -112,14 +112,14 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.17        ;
+; Average used               ; 1.18        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   8.9%      ;
-;     Processor 3            ;   5.0%      ;
-;     Processor 4            ;   3.5%      ;
+;     Processor 2            ;   9.2%      ;
+;     Processor 3            ;   5.4%      ;
+;     Processor 4            ;   3.7%      ;
 +----------------------------+-------------+
 
 
@@ -332,8 +332,8 @@ HTML report is unavailable in plain text report export.
 ; 9.389  ; display_controller:display_controller_inst|monitor_index:monitor_index_inst|altsyncram:altsyncram_component|altsyncram_51n1:auto_generated|ram_block1a86~portb_address_reg0  ; display_controller:display_controller_inst|monitor_color:monitor_color_inst|altsyncram:altsyncram_component|altsyncram_3va1:auto_generated|ram_block1a0~porta_address_reg0 ; p1|altpll_component|pll|clk[2] ; p1|altpll_component|pll|clk[2] ; 20.000       ; -0.084     ; 10.565     ;
 ; 9.458  ; display_controller:display_controller_inst|monitor_index:monitor_index_inst|altsyncram:altsyncram_component|altsyncram_51n1:auto_generated|ram_block1a75~portb_address_reg0  ; display_controller:display_controller_inst|monitor_color:monitor_color_inst|altsyncram:altsyncram_component|altsyncram_3va1:auto_generated|ram_block1a0~porta_address_reg0 ; p1|altpll_component|pll|clk[2] ; p1|altpll_component|pll|clk[2] ; 20.000       ; -0.018     ; 10.562     ;
 ; 9.504  ; display_controller:display_controller_inst|monitor_index:monitor_index_inst|altsyncram:altsyncram_component|altsyncram_51n1:auto_generated|ram_block1a30~portb_address_reg0  ; display_controller:display_controller_inst|monitor_color:monitor_color_inst|altsyncram:altsyncram_component|altsyncram_3va1:auto_generated|ram_block1a0~porta_address_reg0 ; p1|altpll_component|pll|clk[2] ; p1|altpll_component|pll|clk[2] ; 20.000       ; -0.067     ; 10.467     ;
-; 9.545  ; display_controller:display_controller_inst|monitor_index:monitor_index_inst|altsyncram:altsyncram_component|altsyncram_51n1:auto_generated|ram_block1a31~portb_address_reg0  ; display_controller:display_controller_inst|monitor_color:monitor_color_inst|altsyncram:altsyncram_component|altsyncram_3va1:auto_generated|ram_block1a0~porta_address_reg0 ; p1|altpll_component|pll|clk[2] ; p1|altpll_component|pll|clk[2] ; 20.000       ; -0.067     ; 10.426     ;
 ; 9.545  ; display_controller:display_controller_inst|monitor_index:monitor_index_inst|altsyncram:altsyncram_component|altsyncram_51n1:auto_generated|ram_block1a52~portb_address_reg0  ; display_controller:display_controller_inst|monitor_color:monitor_color_inst|altsyncram:altsyncram_component|altsyncram_3va1:auto_generated|ram_block1a0~porta_address_reg0 ; p1|altpll_component|pll|clk[2] ; p1|altpll_component|pll|clk[2] ; 20.000       ; -0.055     ; 10.438     ;
+; 9.545  ; display_controller:display_controller_inst|monitor_index:monitor_index_inst|altsyncram:altsyncram_component|altsyncram_51n1:auto_generated|ram_block1a31~portb_address_reg0  ; display_controller:display_controller_inst|monitor_color:monitor_color_inst|altsyncram:altsyncram_component|altsyncram_3va1:auto_generated|ram_block1a0~porta_address_reg0 ; p1|altpll_component|pll|clk[2] ; p1|altpll_component|pll|clk[2] ; 20.000       ; -0.067     ; 10.426     ;
 ; 9.578  ; display_controller:display_controller_inst|monitor_index:monitor_index_inst|altsyncram:altsyncram_component|altsyncram_51n1:auto_generated|ram_block1a58~portb_address_reg0  ; display_controller:display_controller_inst|monitor_color:monitor_color_inst|altsyncram:altsyncram_component|altsyncram_3va1:auto_generated|ram_block1a0~porta_address_reg0 ; p1|altpll_component|pll|clk[2] ; p1|altpll_component|pll|clk[2] ; 20.000       ; -0.059     ; 10.401     ;
 ; 9.653  ; display_controller:display_controller_inst|monitor_index:monitor_index_inst|altsyncram:altsyncram_component|altsyncram_51n1:auto_generated|ram_block1a36~portb_address_reg0  ; display_controller:display_controller_inst|monitor_color:monitor_color_inst|altsyncram:altsyncram_component|altsyncram_3va1:auto_generated|ram_block1a0~porta_address_reg0 ; p1|altpll_component|pll|clk[2] ; p1|altpll_component|pll|clk[2] ; 20.000       ; -0.006     ; 10.379     ;
 ; 9.661  ; display_controller:display_controller_inst|monitor_index:monitor_index_inst|altsyncram:altsyncram_component|altsyncram_51n1:auto_generated|ram_block1a37~portb_address_reg0  ; display_controller:display_controller_inst|monitor_color:monitor_color_inst|altsyncram:altsyncram_component|altsyncram_3va1:auto_generated|ram_block1a0~porta_address_reg0 ; p1|altpll_component|pll|clk[2] ; p1|altpll_component|pll|clk[2] ; 20.000       ; -0.027     ; 10.350     ;
@@ -1062,10 +1062,10 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; 0.354 ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|data_count[2]                                     ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|data_count[2]                                                                                      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.597      ;
 ; 0.354 ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|data_count[1]                                     ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|data_count[1]                                                                                      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.597      ;
 ; 0.354 ; display_controller:display_controller_inst|index_mif_writer:imw|typer_logic:typer_inst|start_row_counter                   ; display_controller:display_controller_inst|index_mif_writer:imw|typer_logic:typer_inst|start_row_counter                                                                    ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.597      ;
-; 0.365 ; display_controller:display_controller_inst|screencharacter_mif_writer:smw|count[0]                                         ; display_controller:display_controller_inst|screencharacter_mif_writer:smw|count[0]                                                                                          ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.608      ;
 ; 0.365 ; lcd:mylcd|state1[0]                                                                                                        ; lcd:mylcd|state1[0]                                                                                                                                                         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.608      ;
 ; 0.365 ; lcd:mylcd|state2[0]                                                                                                        ; lcd:mylcd|state2[0]                                                                                                                                                         ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.608      ;
 ; 0.365 ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|data_count[0]                                     ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|data_count[0]                                                                                      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.608      ;
+; 0.365 ; display_controller:display_controller_inst|screencharacter_mif_writer:smw|count[0]                                         ; display_controller:display_controller_inst|screencharacter_mif_writer:smw|count[0]                                                                                          ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.608      ;
 ; 0.365 ; display_controller:display_controller_inst|index_mif_writer:imw|typer_logic:typer_inst|busy                                ; display_controller:display_controller_inst|index_mif_writer:imw|typer_logic:typer_inst|busy                                                                                 ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.072      ; 0.608      ;
 ; 0.366 ; Reset_Delay:r0|Cont[0]                                                                                                     ; Reset_Delay:r0|Cont[0]                                                                                                                                                      ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.071      ; 0.608      ;
 ; 0.380 ; ps2_cleaner:cleaner|counter2:counter|countreg[3]                                                                           ; ps2_cleaner:cleaner|counter2:counter|countreg[4]                                                                                                                            ; CLOCK_50     ; CLOCK_50    ; 0.000        ; 0.073      ; 0.624      ;
@@ -2810,7 +2810,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Mon Dec 03 16:08:06 2018
+    Info: Processing started: Tue Dec 04 10:29:30 2018
 Info: Command: quartus_sta skeleton -c skeleton
 Info: qsta_default_script.tcl version: #3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -2906,9 +2906,9 @@ Info (332146): Worst-case minimum pulse width slack is 9.373
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4895 megabytes
-    Info: Processing ended: Mon Dec 03 16:08:09 2018
-    Info: Elapsed time: 00:00:03
+    Info: Peak virtual memory: 4907 megabytes
+    Info: Processing ended: Tue Dec 04 10:29:34 2018
+    Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:03
 
 

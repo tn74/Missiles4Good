@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for skeleton
-Tue Dec 04 13:03:48 2018
+Tue Dec 04 13:51:18 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -112,14 +112,14 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.17        ;
+; Average used               ; 1.15        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   9.3%      ;
-;     Processor 3            ;   3.8%      ;
-;     Processor 4            ;   3.6%      ;
+;     Processor 2            ;   8.3%      ;
+;     Processor 3            ;   3.4%      ;
+;     Processor 4            ;   3.2%      ;
 +----------------------------+-------------+
 
 
@@ -1539,8 +1539,8 @@ No synchronizer chains to report.
 ; 14.881 ; display_controller:display_controller_inst|monitor_index:monitor_index_inst|altsyncram:altsyncram_component|altsyncram_51n1:auto_generated|ram_block1a82~portb_address_reg0  ; display_controller:display_controller_inst|monitor_color:monitor_color_inst|altsyncram:altsyncram_component|altsyncram_3va1:auto_generated|ram_block1a0~porta_address_reg0 ; p1|altpll_component|pll|clk[2] ; p1|altpll_component|pll|clk[2] ; 20.000       ; -0.043     ; 5.085      ;
 ; 14.888 ; display_controller:display_controller_inst|monitor_index:monitor_index_inst|altsyncram:altsyncram_component|altsyncram_51n1:auto_generated|ram_block1a25~portb_address_reg0  ; display_controller:display_controller_inst|monitor_color:monitor_color_inst|altsyncram:altsyncram_component|altsyncram_3va1:auto_generated|ram_block1a0~porta_address_reg0 ; p1|altpll_component|pll|clk[2] ; p1|altpll_component|pll|clk[2] ; 20.000       ; -0.033     ; 5.088      ;
 ; 14.893 ; display_controller:display_controller_inst|monitor_index:monitor_index_inst|altsyncram:altsyncram_component|altsyncram_51n1:auto_generated|ram_block1a85~portb_address_reg0  ; display_controller:display_controller_inst|monitor_color:monitor_color_inst|altsyncram:altsyncram_component|altsyncram_3va1:auto_generated|ram_block1a0~porta_address_reg0 ; p1|altpll_component|pll|clk[2] ; p1|altpll_component|pll|clk[2] ; 20.000       ; -0.080     ; 5.036      ;
-; 14.898 ; display_controller:display_controller_inst|monitor_index:monitor_index_inst|altsyncram:altsyncram_component|altsyncram_51n1:auto_generated|ram_block1a35~portb_address_reg0  ; display_controller:display_controller_inst|monitor_color:monitor_color_inst|altsyncram:altsyncram_component|altsyncram_3va1:auto_generated|ram_block1a0~porta_address_reg0 ; p1|altpll_component|pll|clk[2] ; p1|altpll_component|pll|clk[2] ; 20.000       ; -0.033     ; 5.078      ;
 ; 14.898 ; display_controller:display_controller_inst|monitor_index:monitor_index_inst|altsyncram:altsyncram_component|altsyncram_51n1:auto_generated|ram_block1a39~portb_address_reg0  ; display_controller:display_controller_inst|monitor_color:monitor_color_inst|altsyncram:altsyncram_component|altsyncram_3va1:auto_generated|ram_block1a0~porta_address_reg0 ; p1|altpll_component|pll|clk[2] ; p1|altpll_component|pll|clk[2] ; 20.000       ; -0.020     ; 5.091      ;
+; 14.898 ; display_controller:display_controller_inst|monitor_index:monitor_index_inst|altsyncram:altsyncram_component|altsyncram_51n1:auto_generated|ram_block1a35~portb_address_reg0  ; display_controller:display_controller_inst|monitor_color:monitor_color_inst|altsyncram:altsyncram_component|altsyncram_3va1:auto_generated|ram_block1a0~porta_address_reg0 ; p1|altpll_component|pll|clk[2] ; p1|altpll_component|pll|clk[2] ; 20.000       ; -0.033     ; 5.078      ;
 ; 14.927 ; display_controller:display_controller_inst|monitor_index:monitor_index_inst|altsyncram:altsyncram_component|altsyncram_51n1:auto_generated|ram_block1a71~portb_address_reg0  ; display_controller:display_controller_inst|monitor_color:monitor_color_inst|altsyncram:altsyncram_component|altsyncram_3va1:auto_generated|ram_block1a0~porta_address_reg0 ; p1|altpll_component|pll|clk[2] ; p1|altpll_component|pll|clk[2] ; 20.000       ; -0.058     ; 5.024      ;
 ; 14.949 ; display_controller:display_controller_inst|monitor_index:monitor_index_inst|altsyncram:altsyncram_component|altsyncram_51n1:auto_generated|ram_block1a40~portb_address_reg0  ; display_controller:display_controller_inst|monitor_color:monitor_color_inst|altsyncram:altsyncram_component|altsyncram_3va1:auto_generated|ram_block1a0~porta_address_reg0 ; p1|altpll_component|pll|clk[2] ; p1|altpll_component|pll|clk[2] ; 20.000       ; -0.079     ; 4.981      ;
 ; 14.953 ; display_controller:display_controller_inst|monitor_index:monitor_index_inst|altsyncram:altsyncram_component|altsyncram_51n1:auto_generated|ram_block1a102~portb_address_reg0 ; display_controller:display_controller_inst|monitor_color:monitor_color_inst|altsyncram:altsyncram_component|altsyncram_3va1:auto_generated|ram_block1a0~porta_address_reg0 ; p1|altpll_component|pll|clk[2] ; p1|altpll_component|pll|clk[2] ; 20.000       ; -0.069     ; 4.987      ;
@@ -2810,7 +2810,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime TimeQuest Timing Analyzer
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Tue Dec 04 13:03:45 2018
+    Info: Processing started: Tue Dec 04 13:51:14 2018
 Info: Command: quartus_sta skeleton -c skeleton
 Info: qsta_default_script.tcl version: #3
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -2906,9 +2906,9 @@ Info (332146): Worst-case minimum pulse width slack is 9.373
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime TimeQuest Timing Analyzer was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4904 megabytes
-    Info: Processing ended: Tue Dec 04 13:03:48 2018
-    Info: Elapsed time: 00:00:03
+    Info: Peak virtual memory: 4898 megabytes
+    Info: Processing ended: Tue Dec 04 13:51:18 2018
+    Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:03
 
 

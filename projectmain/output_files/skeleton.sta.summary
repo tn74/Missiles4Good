@@ -2,100 +2,52 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
-Slack : 0.840
+Type  : Slow 1200mV 85C Model Setup 'clock'
+Slack : -3.771
+TNS   : -266.004
+
+Type  : Slow 1200mV 85C Model Hold 'clock'
+Slack : 0.386
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Setup 'p1|altpll_component|pll|clk[2]'
-Slack : 8.300
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -117.611
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'rd_clk'
+Slack : -3.000
+TNS   : -5.693
+
+Type  : Slow 1200mV 0C Model Setup 'clock'
+Slack : -3.413
+TNS   : -235.836
+
+Type  : Slow 1200mV 0C Model Hold 'clock'
+Slack : 0.338
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
-Slack : 0.305
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -117.523
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'rd_clk'
+Slack : -3.000
+TNS   : -5.649
+
+Type  : Fast 1200mV 0C Model Setup 'clock'
+Slack : -1.306
+TNS   : -86.879
+
+Type  : Fast 1200mV 0C Model Hold 'clock'
+Slack : 0.174
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'p1|altpll_component|pll|clk[2]'
-Slack : 0.473
-TNS   : 0.000
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -95.794
 
-Type  : Slow 1200mV 85C Model Recovery 'p1|altpll_component|pll|clk[2]'
-Slack : 13.293
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Removal 'p1|altpll_component|pll|clk[2]'
-Slack : 5.037
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
-Slack : 9.628
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'p1|altpll_component|pll|clk[2]'
-Slack : 19.710
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
-Slack : 1.568
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Setup 'p1|altpll_component|pll|clk[2]'
-Slack : 9.238
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
-Slack : 0.309
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'p1|altpll_component|pll|clk[2]'
-Slack : 0.426
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Recovery 'p1|altpll_component|pll|clk[2]'
-Slack : 13.951
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Removal 'p1|altpll_component|pll|clk[2]'
-Slack : 4.431
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
-Slack : 9.648
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'p1|altpll_component|pll|clk[2]'
-Slack : 19.710
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
-Slack : 6.037
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Setup 'p1|altpll_component|pll|clk[2]'
-Slack : 14.100
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
-Slack : 0.123
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'p1|altpll_component|pll|clk[2]'
-Slack : 0.216
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Recovery 'p1|altpll_component|pll|clk[2]'
-Slack : 16.365
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Removal 'p1|altpll_component|pll|clk[2]'
-Slack : 2.563
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
-Slack : 9.373
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'p1|altpll_component|pll|clk[2]'
-Slack : 19.753
-TNS   : 0.000
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'rd_clk'
+Slack : -3.000
+TNS   : -4.124
 
 ------------------------------------------------------------

@@ -4,223 +4,459 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "lcd_data[0]",
+					"name" : "rd_out[0]",
 					"strict" : false
 				},
 				{
-					"name" : "lcd_data[1]",
+					"name" : "rd_out[1]",
 					"strict" : false
 				},
 				{
-					"name" : "lcd_data[2]",
+					"name" : "rd_out[2]",
 					"strict" : false
 				},
 				{
-					"name" : "lcd_data[3]",
+					"name" : "rd_out[3]",
 					"strict" : false
 				},
 				{
-					"name" : "lcd_data[4]",
+					"name" : "rd_out[4]",
 					"strict" : false
 				},
 				{
-					"name" : "lcd_data[5]",
+					"name" : "rd_out[5]",
 					"strict" : false
 				},
 				{
-					"name" : "lcd_data[6]",
+					"name" : "rd_out[6]",
 					"strict" : false
 				},
 				{
-					"name" : "lcd_data[7]",
+					"name" : "rd_out[7]",
 					"strict" : false
 				},
 				{
-					"name" : "lcd_en",
+					"name" : "count_out[0]",
 					"strict" : false
 				},
 				{
-					"name" : "lcd_rs",
+					"name" : "count_out[1]",
 					"strict" : false
 				},
 				{
-					"name" : "seg1[0]",
+					"name" : "count_out[2]",
 					"strict" : false
 				},
 				{
-					"name" : "seg1[1]",
+					"name" : "count_out[3]",
 					"strict" : false
 				},
 				{
-					"name" : "seg1[2]",
+					"name" : "count_out[4]",
 					"strict" : false
 				},
 				{
-					"name" : "seg1[3]",
+					"name" : "count_out[5]",
 					"strict" : false
 				},
 				{
-					"name" : "seg1[4]",
+					"name" : "count_out[6]",
 					"strict" : false
 				},
 				{
-					"name" : "seg1[5]",
+					"name" : "count_out[7]",
 					"strict" : false
 				},
 				{
-					"name" : "seg1[6]",
+					"name" : "count_out[8]",
 					"strict" : false
 				},
 				{
-					"name" : "seg2[0]",
+					"name" : "count_out[9]",
 					"strict" : false
 				},
 				{
-					"name" : "seg2[1]",
+					"name" : "count_out[10]",
 					"strict" : false
 				},
 				{
-					"name" : "seg2[2]",
+					"name" : "count_out[11]",
 					"strict" : false
 				},
 				{
-					"name" : "seg2[3]",
+					"name" : "count_out[12]",
 					"strict" : false
 				},
 				{
-					"name" : "seg2[4]",
+					"name" : "count_out[13]",
 					"strict" : false
 				},
 				{
-					"name" : "seg2[5]",
+					"name" : "count_out[14]",
 					"strict" : false
 				},
 				{
-					"name" : "seg2[6]",
+					"name" : "count_out[15]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_HS",
+					"name" : "count_out[16]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_VS",
+					"name" : "count_out[17]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_BLANK",
+					"name" : "count_out[18]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_R[0]",
+					"name" : "count_out[19]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_R[1]",
+					"name" : "count_out[20]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_R[2]",
+					"name" : "count_out[21]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_R[3]",
+					"name" : "count_out[22]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_R[4]",
+					"name" : "count_out[23]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_R[5]",
+					"name" : "count_out[24]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_R[6]",
+					"name" : "count_out[25]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_R[7]",
+					"name" : "count_out[26]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_G[0]",
+					"name" : "count_out[27]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_G[1]",
+					"name" : "count_out[28]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_G[2]",
+					"name" : "count_out[29]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_G[3]",
+					"name" : "count_out[30]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_G[4]",
+					"name" : "count_out[31]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_G[5]",
+					"name" : "clock",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_G[6]",
+					"name" : "rd_clk",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_G[7]",
+					"name" : "rd_add[0]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_B[0]",
+					"name" : "rd_add[1]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_B[1]",
+					"name" : "rd_add[2]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_B[2]",
+					"name" : "rd_add[3]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_B[3]",
+					"name" : "rd_add[4]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_B[4]",
+					"name" : "rd_add[5]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_B[5]",
+					"name" : "rd_add[6]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_B[6]",
+					"name" : "rd_add[7]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_B[7]",
+					"name" : "velocity[31]",
 					"strict" : false
 				},
 				{
-					"name" : "ps2_clock",
+					"name" : "velocity[30]",
 					"strict" : false
 				},
 				{
-					"name" : "ps2_data",
+					"name" : "velocity[29]",
 					"strict" : false
 				},
 				{
-					"name" : "CLOCK_50",
+					"name" : "velocity[28]",
 					"strict" : false
 				},
 				{
-					"name" : "resetn",
+					"name" : "velocity[27]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[26]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[25]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[24]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[23]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[22]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[21]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[20]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[19]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[18]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[17]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[16]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[15]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[14]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[13]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[12]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[11]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[10]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[9]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[8]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[7]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[6]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[5]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[4]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[3]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[2]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[1]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[31]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[30]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[29]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[28]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[27]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[26]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[25]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[24]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[23]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[22]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[21]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[20]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[19]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[18]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[17]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[16]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[15]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[14]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[13]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[12]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[11]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[10]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[9]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[8]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[7]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[6]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[5]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[4]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[3]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[2]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[1]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[0]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[0]",
 					"strict" : false
 				}
 			]

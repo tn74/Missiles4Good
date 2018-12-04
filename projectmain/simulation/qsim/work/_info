@@ -9,21 +9,21 @@ z2
 cModel Technology
 Z0 dC:/Users/tn74/Documents/ECE350/Missiles/lab7_skeleton_restored/simulation/qsim
 vhard_block
-Z1 !s110 1543864247
+Z1 !s110 1543958716
 !i10b 1
-!s100 Mbe90`I=Yc1N0NDJ_EDN?0
-IE?=4`S5945F=MR><gQ@LG3
+!s100 EYa<83akd9<C76z]fiDkl2
+I9lKngW9WUHiP9C^cS3]K_2
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 Z3 dC:/Users/tn74/Documents/ECE350/Missiles/projectmain/simulation/qsim
-Z4 w1543864246
+Z4 w1543958715
 Z5 8skeleton.vo
 Z6 Fskeleton.vo
-L0 3080
+L0 105139
 Z7 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z8 !s108 1543864247.000000
+Z8 !s108 1543958715.000000
 Z9 !s107 skeleton.vo|
 Z10 !s90 -work|work|skeleton.vo|
 !i113 1
@@ -197,11 +197,11 @@ R22
 !i113 1
 R11
 R12
-vscreencharindex_to_pixeladdress
+vscreencharacter_mif_writer
 R1
 !i10b 1
-!s100 H1V3G@UbMPVgiD9dKLWiW3
-IQ[A^UeSzAe1]Ij:lke3`@3
+!s100 RgD3E0Qon`zdC=PbPTj`>0
+Il1elY?USEm4=7ONhTJlD60
 R2
 R3
 R4
@@ -218,8 +218,50 @@ R10
 !i113 1
 R11
 R12
-vscreencharindex_to_pixeladdress_vlg_vec_tst
+vscreencharacter_mif_writer_vlg_vec_tst
 R1
+!i10b 1
+!s100 V0AckGR7M3kNDoIbYN[j>1
+IZOnmdXOzoI5foW6_?T^9U3
+R2
+R3
+w1543958713
+8Waveform9.vwf.vt
+FWaveform9.vwf.vt
+R16
+R7
+r1
+!s85 0
+31
+!s108 1543958716.000000
+!s107 Waveform9.vwf.vt|
+!s90 -work|work|Waveform9.vwf.vt|
+!i113 1
+R11
+R12
+vscreencharindex_to_pixeladdress
+Z23 !s110 1543864247
+!i10b 1
+!s100 H1V3G@UbMPVgiD9dKLWiW3
+IQ[A^UeSzAe1]Ij:lke3`@3
+R2
+R3
+w1543864246
+R5
+R6
+R14
+R7
+r1
+!s85 0
+31
+Z24 !s108 1543864247.000000
+R9
+R10
+!i113 1
+R11
+R12
+vscreencharindex_to_pixeladdress_vlg_vec_tst
+R23
 !i10b 1
 !s100 02^]i@ii14ejk=9Q62X2o1
 IXIOFf]kkPSPegWM680Mmj3
@@ -233,14 +275,14 @@ R7
 r1
 !s85 0
 31
-R8
+R24
 !s107 Waveform7.vwf.vt|
 !s90 -work|work|Waveform7.vwf.vt|
 !i113 1
 R11
 R12
 vtyper_logic
-Z23 !s110 1543795197
+Z25 !s110 1543795197
 !i10b 1
 !s100 MLk9QKlA:FdQmMU:Z;PO<1
 IYY@KjXVBZRfHo[ihD4LbK1
@@ -254,14 +296,14 @@ R7
 r1
 !s85 0
 31
-Z24 !s108 1543795197.000000
+Z26 !s108 1543795197.000000
 R9
 R10
 !i113 1
 R11
 R12
 vtyper_logic_vlg_vec_tst
-R23
+R25
 !i10b 1
 !s100 VX`Ae73P6T^_=:P9SVUbE0
 Ij_F5MBYC[>Qg97:h8OfAG3
@@ -275,7 +317,7 @@ R7
 r1
 !s85 0
 31
-R24
+R26
 !s107 Waveform6.vwf.vt|
 !s90 -work|work|Waveform6.vwf.vt|
 !i113 1

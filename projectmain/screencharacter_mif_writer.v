@@ -10,7 +10,10 @@ module screencharacter_mif_writer (
 		
 	rd_add, 
 	rd_clk,		
-	rd_out
+	rd_out,
+	
+	//Debug
+	count_out
 );
 
 input clock, fire;
@@ -31,8 +34,9 @@ wire[47:0] velocity_digits, angle_digits;
 
 
 wire terminal_display_finish;
-reg terminal_display_start;
+reg terminal_display_start, terminal_display_busy;
 wire[7:0] terminal_display_char_index, terminal_display_char_data;
+
 
 always @(posedge clock)
 begin
@@ -40,49 +44,57 @@ begin
 	if (count == 32'd0) begin
 		write_char <= velocity_digits[7:0];
 		char_index <= 8'b00111111;
+		count <= count + 1;
 	end else if (count == 32'd1) begin
 		write_char <= velocity_digits[15:8];
 		char_index <= 8'b00111110;
+		count <= count + 1;
 	end else if (count == 32'd2) begin
 		write_char <= velocity_digits[23:16];
 		char_index <= 8'b00111101;
+		count <= count + 1;
 	end else if (count == 32'd3) begin
 		write_char <= velocity_digits[31:24];
 		char_index <= 8'b00111100;
+		count <= count + 1;
 	end
 	
 	// Writing Angle Characters
 	else if (count == 32'd4) begin
 		write_char <= angle_digits[7:0];
 		char_index <= 8'b01011111;
+		count <= count + 1;
 	end else if (count == 32'd5) begin
 		write_char <= angle_digits[15:8];
 		char_index <= 8'b01011110;
+		count <= count + 1;
 	end else if (count == 32'd6) begin
 		write_char <= angle_digits[23:16];
 		char_index <= 8'b01011101;
+		count <= count + 1;
 	end 
 	
 	// Writing All Terminal
 	else if (count == 32'd7) begin
-		if(terminal_display_finish) begin
+		if(terminal_display_finish && ~terminal_display_busy) begin
 			terminal_display_start <= 1'b1;
+			terminal_display_busy <= 1'b1;
+		end else if (terminal_display_finish && terminal_display_busy) begin
+			terminal_display_busy <= 1'b0;
+			count <= count + 1;
 		end else begin
 //			write_char <= terminal_display_char_data;
 			write_char <= 8'h42;
 			char_index <= terminal_display_char_index;
 			terminal_display_start <= 1'b0;
-			count <= count - 1;
 		end
 	end
 		
 	// Else Reset
 	else begin
-		count <= 32'hffffffff;
+		count <= 32'd0;
 	end
-	
-	count <= count + 1;
-	write_en = 1'b1;
+
 end
 
 
@@ -112,5 +124,17 @@ screenchar_mem smem (
 	.wrclock(~clock),
 	.wren(write_en),
 );
+
+// Debug
+
+output[31:0] count_out;
+assign count_out = count;
+
+
+// Initialization
+initial
+begin
+	write_en <= 1'b1;
+end
 
 endmodule

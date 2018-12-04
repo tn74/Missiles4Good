@@ -17,21 +17,23 @@ module commands_printer_tracker(clock, start, ps2_line_content, ps2_line_ready, 
 		if (start) begin
 			count <= 32'd0;
 		end else begin
-			if (count < 236) begin
+			if (count < 256) begin
 				if (count % 32 < 12) begin
 					char_index <= count;
 					char_data <= ps2_lines[count / 32][count % 32];
 				end else begin
-					char_index <= (char_index + 32) / 32;
+					count <= (count + 32) / 32;
 				end
+				count <= count + 1;
 			end
-			count <= count + 1;
+			
 		end
 	end
 	
 // ----------------------------------- Updating Bottom line of PS2 -----------------
 	initial
 	begin
+		count <= 32'd256;
 		char_index <= 8'h00;
 		char_data <= 8'h00;
 		ps2_lines[0][0] <= 8'h00;

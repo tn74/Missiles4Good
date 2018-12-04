@@ -173,7 +173,6 @@ set_global_assignment -name MIF_FILE index_logo.mif
 set_global_assignment -name MIF_FILE img_bars.mif
 set_global_assignment -name MIF_FILE imem.mif
 set_global_assignment -name MIF_FILE dmem.mif
-set_global_assignment -name MIF_FILE img_data_logo.mif
 set_global_assignment -name VERILOG_FILE VGA_Audio_PLL.v
 set_global_assignment -name VERILOG_FILE Reset_Delay.v
 set_global_assignment -name VERILOG_FILE skeleton.v

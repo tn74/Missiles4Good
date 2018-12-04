@@ -85,8 +85,7 @@ begin
 			terminal_display_busy <= 1'b0;
 			count <= count + 1;
 		end else begin
-//			write_char <= terminal_display_char_data;
-			write_char <= 8'h42;
+			write_char <= terminal_display_char_data;
 			char_index <= terminal_display_char_index;
 			terminal_display_start <= 1'b0;
 		end

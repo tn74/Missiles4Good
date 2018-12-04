@@ -18,10 +18,10 @@ module commands_printer_tracker(clock, start, ps2_line_content, ps2_line_ready, 
 			count <= 32'd0;
 		end else begin
 			if (count < 256) begin
-				if (count % 32 < 12) begin
+				if (count % 32 < 11) begin
 					char_index <= count;
-//					char_data <= ps2_lines[count / 32][count % 32];
-					char_data <= 8'h41;
+					char_data <= ps2_lines[count / 32][count % 32];
+//					char_data <= 8'h41;
 				end else begin
 					count <= (count + 32) / 32;
 				end
@@ -29,6 +29,12 @@ module commands_printer_tracker(clock, start, ps2_line_content, ps2_line_ready, 
 			end
 			
 		end
+	end
+	
+	
+	always @(posedge ps2_line_ready)
+	begin
+	
 	end
 
 	

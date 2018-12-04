@@ -6,6 +6,7 @@ def generate_ps2_line_updater():
 	with open("line_ready.txt", "w") as f:
 		for l in lines:
 			f.write(l)
+
 def generate_ps2_lines_initiator():
 	lines = []
 	for i in range(8):
@@ -16,5 +17,16 @@ def generate_ps2_lines_initiator():
 		for l in lines:
 			f.write(l) 
 
+def genereat_ps2_line_scroll():
+	lines = []
+	for row in range(1, 8):
+		for col in range(32):
+			lines.append("ps2_line_content[{}][{}] <= ps2_line_content[{}][{}]\n".format(row - 1, col, row, col))
+
+	with open("lines_scroll.txt", "w") as f:
+		for l in lines:
+			f.write(l) 
+
 generate_ps2_line_updater()
 generate_ps2_lines_initiator()
+genereat_ps2_line_scroll()

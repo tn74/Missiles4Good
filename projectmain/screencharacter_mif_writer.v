@@ -13,7 +13,9 @@ module screencharacter_mif_writer (
 	rd_out,
 	
 	//Debug
-	count_out
+	count_out,
+	char_index_out,
+	char_data_out
 );
 
 input clock, fire;
@@ -122,13 +124,16 @@ screenchar_mem smem (
 	.data(write_char),
 	.wraddress(char_index),
 	.wrclock(~clock),
-	.wren(write_en),
+	.wren(1'b1),
 );
 
 // Debug
 
 output[31:0] count_out;
+output[7:0] char_index_out, char_data_out;
 assign count_out = count;
+assign char_index_out = char_index;
+assign char_data_out = write_char;
 
 
 // Initialization

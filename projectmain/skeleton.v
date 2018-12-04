@@ -126,7 +126,7 @@ module skeleton(resetn,
 	   .targety_2(32'h00000041),
 	   .targety_3(32'h00000041),
 		.ps2_line_content(255'h4141414141414141414141414141414141414141414141414141414141414141),
-		.ps2_line_ready(1'b0),
+		.ps2_line_ready(clock),
 	   .trajectory_memloc(32'h00001000),
 	   .trajectory_memloc_enable(32'h00000001)
 	);	

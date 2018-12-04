@@ -34,17 +34,25 @@ module skeleton(resetn,
 	output 	[6:0] 	seg1, seg2, seg3, seg4, seg5, seg6, seg7, seg8;
 	output 	[31:0] 	debug_data_in;
 	output   [11:0]   debug_addr;
-	
-	
-	
-	
-	
+		
 	wire			 clock;
 	wire			 lcd_write_en;
 	wire 	[31:0] lcd_write_data;
 	wire	[7:0]	 ps2_key_data;
 	wire			 ps2_key_pressed;
 	wire	[7:0]	 ps2_out;	
+	
+	
+	
+	/////////////////////// PROJECT TOP LEVEL ITEMS ////////////////////////////////
+	wire[31:0] VELOCITY, ANGLE;
+	wire[255:0] PS2_LINE_CONTENT;
+	wire PS2_LINE_READY;
+	wire[31:0] X0, X1, X2, X3, Y0, Y1, Y2, Y3;
+	wire FIRE;
+	
+	
+	
 	
 	// clock divider (by 5, i.e., 10 MHz)
 	pll div(CLOCK_50,inclock);
@@ -58,8 +66,8 @@ module skeleton(resetn,
 	
 	// keyboard controller
 	PS2_Interface myps2(clock, resetn, ps2_clock, ps2_data, ps2_key_data, ps2_key_pressed, ps2_out);
-	
-
+	ps2_cleaner cleaner(clock, ps2_key_data, ps2_out, input_character, input_made);
+	ps2_processor_module ps2process(clock, input_character, PS2_LINE_CONTENT, PS2_LINE_READY);
 	
 	// example for sending ps2 data to the first two seven segment displays
 	Hexadecimal_To_Seven_Segment hex1(ps2_out[3:0], seg1);
@@ -82,7 +90,6 @@ module skeleton(resetn,
 	wire [7:0] typer_row_num, typer_col_num, typer_character_input;
 	wire	typer_start_writing_char, finished_saving_char;
 	
-	ps2_cleaner cleaner(clock, ps2_key_data, ps2_out, input_character, input_made);
 	
 	// lcd controller
 //	lcd mylcd(clock, ~resetn, ps2_key_pressed, ps2_out, lcd_data, lcd_rw, lcd_en, lcd_rs, lcd_on, lcd_blon);
@@ -115,7 +122,7 @@ module skeleton(resetn,
 		.r_data(VGA_R),
 		
 		.velocity(8'hff),
-	   .fire(1'b0),
+	   .fire(FIRE),
 	   .angle(8'd90),
 	   .targetx_0(32'h00000041),
 	   .targetx_1(32'h00000042),
@@ -125,8 +132,8 @@ module skeleton(resetn,
 	   .targety_1(32'h00000041),
 	   .targety_2(32'h00000041),
 	   .targety_3(32'h00000041),
-		.ps2_line_content(255'h4141414141414141414141414141414141414141414141414141414141414141),
-		.ps2_line_ready(clock),
+		.ps2_line_content(PS2_LINE_CONTENT),
+		.ps2_line_ready(PS2_LINE_READY),
 	   .trajectory_memloc(32'h00001000),
 	   .trajectory_memloc_enable(32'h00000001)
 	);	

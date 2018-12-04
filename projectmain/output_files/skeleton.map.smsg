@@ -1,1 +1,1 @@
-Warning (10268): Verilog HDL information at screencharacter_mif_writer.v(37): always construct contains both blocking and non-blocking assignments File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/screencharacter_mif_writer.v Line: 37
+Warning (10268): Verilog HDL information at ps2_processor_module.v(14): always construct contains both blocking and non-blocking assignments File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/ps2_processor_module.v Line: 14

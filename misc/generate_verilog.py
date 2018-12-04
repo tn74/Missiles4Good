@@ -6,5 +6,15 @@ def generate_ps2_line_updater():
 	with open("line_ready.txt", "w") as f:
 		for l in lines:
 			f.write(l)
+def generate_ps2_lines_initiator():
+	lines = []
+	for i in range(8):
+		for j in range(32):
+			lines.append("\tps2_lines[{}][{}] <= 8'h00;\n".format(i, j))
+	
+	with open("lines_init.txt", "w") as f:
+		for l in lines:
+			f.write(l) 
 
 generate_ps2_line_updater()
+generate_ps2_lines_initiator()

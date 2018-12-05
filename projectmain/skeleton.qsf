@@ -162,6 +162,7 @@ set_location_assignment PIN_H21 -to leds[4]
 set_location_assignment PIN_G20 -to leds[5]
 set_location_assignment PIN_G22 -to leds[6]
 set_location_assignment PIN_G21 -to leds[7]
+set_global_assignment -name VECTOR_WAVEFORM_FILE p2_processor_module.vwf
 set_global_assignment -name VERILOG_FILE commands_printer_tracker.v
 set_global_assignment -name VERILOG_FILE ps2_cleaner.v
 set_global_assignment -name VERILOG_FILE ps2_to_ascii.v
@@ -227,6 +228,7 @@ set_global_assignment -name VERILOG_FILE ascii_to_number.v
 set_global_assignment -name VERILOG_FILE ascii6digit_to_number.v
 set_global_assignment -name VECTOR_WAVEFORM_FILE ascii6digit_test.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE ascii_to_num_test.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE ps2_interpreter_test.vwf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top

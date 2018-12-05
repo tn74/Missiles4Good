@@ -7,7 +7,7 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off skeleton -c skeleton --vector_source="C:/Users/tn74/Documents/ECE350/Missiles/projectmain/ascii6digit_test.vwf" --testbench_file="C:/Users/tn74/Documents/ECE350/Missiles/projectmain/simulation/qsim/ascii6digit_test.vwf.vt"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off skeleton -c skeleton --vector_source="C:/Users/tn74/Documents/ECE350/Missiles/projectmain/p2_processor_module.vwf" --testbench_file="C:/Users/tn74/Documents/ECE350/Missiles/projectmain/simulation/qsim/p2_processor_module.vwf.vt"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -25,11 +25,11 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Tue Dec 04 20:41:54 2018
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off skeleton -c skeleton --vector_source=C:/Users/tn74/Documents/ECE350/Missiles/projectmain/ascii6digit_test.vwf --testbench_file=C:/Users/tn74/Documents/ECE350/Missiles/projectmain/simulation/qsim/ascii6digit_test.vwf.vt
+    Info: Processing started: Wed Dec 05 14:51:53 2018
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off skeleton -c skeleton --vector_source=C:/Users/tn74/Documents/ECE350/Missiles/projectmain/p2_processor_module.vwf --testbench_file=C:/Users/tn74/Documents/ECE350/Missiles/projectmain/simulation/qsim/p2_processor_module.vwf.vt
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
-oring output pin "number[9]" in vector source file when writing test bench files
+n writing test bench files
 
 Completed successfully. 
 
@@ -55,15 +55,15 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Tue Dec 04 20:41:56 2018
+    Info: Processing started: Wed Dec 05 14:51:55 2018
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/tn74/Documents/ECE350/Missiles/projectmain/simulation/qsim/ skeleton -c skeleton
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file skeleton.vo in folder "C:/Users/tn74/Documents/ECE350/Missiles/projectmain/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4662 megabytes
-    Info: Processing ended: Tue Dec 04 20:41:57 2018
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 4712 megabytes
+    Info: Processing ended: Wed Dec 05 14:51:57 2018
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
 
 Completed successfully. 
 
@@ -81,56 +81,724 @@ Reading C:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
 
 # 10.5b
 
-
 # do skeleton.do
 # ** Warning: (vlib-34) Library already exists at "work".
 
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:41:58 on Dec 04,2018
+# Start time: 14:51:58 on Dec 05,2018
 # vlog -work work skeleton.vo 
-# -- Compiling module ascii6digit_to_number
-# -- Compiling module hard_block
+# -- Compiling module skeleton
+
 # 
 # Top level modules:
-# 	ascii6digit_to_number
-# End time: 20:41:58 on Dec 04,2018, Elapsed time: 0:00:00
+# 	skeleton
+# End time: 14:51:59 on Dec 05,2018, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:41:58 on Dec 04,2018
-# vlog -work work ascii6digit_test.vwf.vt 
+# Start time: 14:51:59 on Dec 05,2018
+# vlog -work work p2_processor_module.vwf.vt 
 
-# -- Compiling module ascii6digit_to_number_vlg_vec_tst
+# -- Compiling module skeleton_vlg_vec_tst
+
 # 
 # Top level modules:
-# 	ascii6digit_to_number_vlg_vec_tst
-# End time: 20:41:58 on Dec 04,2018, Elapsed time: 0:00:00
+# 	skeleton_vlg_vec_tst
+# End time: 14:51:59 on Dec 05,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
-# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.ascii6digit_to_number_vlg_vec_tst 
-# Start time: 20:41:58 on Dec 04,2018
-# Loading work.ascii6digit_to_number_vlg_vec_tst
-# Loading work.ascii6digit_to_number
+# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.ps2_processor_module_vlg_vec_tst 
+# Start time: 14:52:00 on Dec 05,2018
+# Loading work.ps2_processor_module_vlg_vec_tst
+# Loading work.ps2_processor_module
 # Loading work.hard_block
 # Loading cycloneive_ver.cycloneive_io_obuf
 # Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
 # Loading cycloneive_ver.cycloneive_lcell_comb
-# after#26
-# ** Note: $finish    : ascii6digit_test.vwf.vt(56)
-#    Time: 1 us  Iteration: 0  Instance: /ascii6digit_to_number_vlg_vec_tst
-# End time: 20:41:58 on Dec 04,2018, Elapsed time: 0:00:00
+# Loading altera_ver.dffeas
+# Loading altera_ver.PRIM_GDFF_LOW
+# after#25
+
+# ** Note: $finish    : p2_processor_module.vwf.vt(54)
+#    Time: 1 us  Iteration: 0  Instance: /ps2_processor_module_vlg_vec_tst
+# End time: 14:52:00 on Dec 05,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading C:/Users/tn74/Documents/ECE350/Missiles/projectmain/ascii6digit_test.vwf...
+Reading C:/Users/tn74/Documents/ECE350/Missiles/projectmain/p2_processor_module.vwf...
 
 Reading C:/Users/tn74/Documents/ECE350/Missiles/projectmain/simulation/qsim/skeleton.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Users/tn74/Documents/ECE350/Missiles/projectmain/simulation/qsim/skeleton_20181204204158.sim.vwf
+Warning: angle[31] - signal not found in VCD.
+
+Warning: angle[30] - signal not found in VCD.
+
+Warning: angle[29] - signal not found in VCD.
+
+Warning: angle[28] - signal not found in VCD.
+
+Warning: angle[27] - signal not found in VCD.
+
+Warning: angle[26] - signal not found in VCD.
+
+Warning: angle[25] - signal not found in VCD.
+
+Warning: angle[24] - signal not found in VCD.
+
+Warning: angle[23] - signal not found in VCD.
+
+Warning: angle[22] - signal not found in VCD.
+
+Warning: angle[21] - signal not found in VCD.
+
+Warning: angle[20] - signal not found in VCD.
+
+Warning: angle[19] - signal not found in VCD.
+
+Warning: angle[18] - signal not found in VCD.
+
+Warning: angle[17] - signal not found in VCD.
+
+Warning: angle[16] - signal not found in VCD.
+
+Warning: angle[15] - signal not found in VCD.
+
+Warning: angle[14] - signal not found in VCD.
+
+Warning: angle[13] - signal not found in VCD.
+
+Warning: angle[12] - signal not found in VCD.
+
+Warning: angle[11] - signal not found in VCD.
+
+Warning: angle[10] - signal not found in VCD.
+
+Warning: angle[9] - signal not found in VCD.
+
+Warning: angle[8] - signal not found in VCD.
+
+Warning: angle[7] - signal not found in VCD.
+
+Warning: angle[6] - signal not found in VCD.
+
+Warning: angle[5] - signal not found in VCD.
+
+Warning: angle[4] - signal not found in VCD.
+
+Warning: angle[3] - signal not found in VCD.
+
+Warning: angle[2] - signal not found in VCD.
+
+Warning: angle[1] - signal not found in VCD.
+
+Warning: angle[0] - signal not found in VCD.
+
+Warning: ps2_line_content[255] - signal not found in VCD.
+
+Warning: ps2_line_content[254] - signal not found in VCD.
+
+Warning: ps2_line_content[253] - signal not found in VCD.
+
+Warning: ps2_line_content[252] - signal not found in VCD.
+
+Warning: ps2_line_content[251] - signal not found in VCD.
+
+Warning: ps2_line_content[250] - signal not found in VCD.
+
+Warning: ps2_line_content[249] - signal not found in VCD.
+
+Warning: ps2_line_content[248] - signal not found in VCD.
+
+Warning: ps2_line_content[247] - signal not found in VCD.
+
+Warning: ps2_line_content[246] - signal not found in VCD.
+
+Warning: ps2_line_content[245] - signal not found in VCD.
+
+Warning: ps2_line_content[244] - signal not found in VCD.
+
+Warning: ps2_line_content[243] - signal not found in VCD.
+
+Warning: ps2_line_content[242] - signal not found in VCD.
+
+Warning: ps2_line_content[241] - signal not found in VCD.
+
+Warning: ps2_line_content[240] - signal not found in VCD.
+
+Warning: ps2_line_content[239] - signal not found in VCD.
+
+Warning: ps2_line_content[238] - signal not found in VCD.
+
+Warning: ps2_line_content[237] - signal not found in VCD.
+
+Warning: ps2_line_content[236] - signal not found in VCD.
+
+Warning: ps2_line_content[235] - signal not found in VCD.
+
+Warning: ps2_line_content[234] - signal not found in VCD.
+
+Warning: ps2_line_content[233] - signal not found in VCD.
+
+Warning: ps2_line_content[232] - signal not found in VCD.
+
+Warning: ps2_line_content[231] - signal not found in VCD.
+
+Warning: ps2_line_content[230] - signal not found in VCD.
+
+Warning: ps2_line_content[229] - signal not found in VCD.
+
+Warning: ps2_line_content[228] - signal not found in VCD.
+
+Warning: ps2_line_content[227] - signal not found in VCD.
+
+Warning: ps2_line_content[226] - signal not found in VCD.
+
+Warning: ps2_line_content[225] - signal not found in VCD.
+
+Warning: ps2_line_content[224] - signal not found in VCD.
+
+Warning: ps2_line_content[223] - signal not found in VCD.
+
+Warning: ps2_line_content[222] - signal not found in VCD.
+
+Warning: ps2_line_content[221] - signal not found in VCD.
+
+Warning: ps2_line_content[220] - signal not found in VCD.
+
+Warning: ps2_line_content[219] - signal not found in VCD.
+
+Warning: ps2_line_content[218] - signal not found in VCD.
+
+Warning: ps2_line_content[217] - signal not found in VCD.
+
+Warning: ps2_line_content[216] - signal not found in VCD.
+
+Warning: ps2_line_content[215] - signal not found in VCD.
+
+Warning: ps2_line_content[214] - signal not found in VCD.
+
+Warning: ps2_line_content[213] - signal not found in VCD.
+
+Warning: ps2_line_content[212] - signal not found in VCD.
+
+Warning: ps2_line_content[211] - signal not found in VCD.
+
+Warning: ps2_line_content[210] - signal not found in VCD.
+
+Warning: ps2_line_content[209] - signal not found in VCD.
+
+Warning: ps2_line_content[208] - signal not found in VCD.
+
+Warning: ps2_line_content[207] - signal not found in VCD.
+
+Warning: ps2_line_content[206] - signal not found in VCD.
+
+Warning: ps2_line_content[205] - signal not found in VCD.
+
+Warning: ps2_line_content[204] - signal not found in VCD.
+
+Warning: ps2_line_content[203] - signal not found in VCD.
+
+Warning: ps2_line_content[202] - signal not found in VCD.
+
+Warning: ps2_line_content[201] - signal not found in VCD.
+
+Warning: ps2_line_content[200] - signal not found in VCD.
+
+Warning: ps2_line_content[199] - signal not found in VCD.
+
+Warning: ps2_line_content[198] - signal not found in VCD.
+
+Warning: ps2_line_content[197] - signal not found in VCD.
+
+Warning: ps2_line_content[196] - signal not found in VCD.
+
+Warning: ps2_line_content[195] - signal not found in VCD.
+
+Warning: ps2_line_content[194] - signal not found in VCD.
+
+Warning: ps2_line_content[193] - signal not found in VCD.
+
+Warning: ps2_line_content[192] - signal not found in VCD.
+
+Warning: ps2_line_content[191] - signal not found in VCD.
+
+Warning: ps2_line_content[190] - signal not found in VCD.
+
+Warning: ps2_line_content[189] - signal not found in VCD.
+
+Warning: ps2_line_content[188] - signal not found in VCD.
+
+Warning: ps2_line_content[187] - signal not found in VCD.
+
+Warning: ps2_line_content[186] - signal not found in VCD.
+
+Warning: ps2_line_content[185] - signal not found in VCD.
+
+Warning: ps2_line_content[184] - signal not found in VCD.
+
+Warning: ps2_line_content[183] - signal not found in VCD.
+
+Warning: ps2_line_content[182] - signal not found in VCD.
+
+Warning: ps2_line_content[181] - signal not found in VCD.
+
+Warning: ps2_line_content[180] - signal not found in VCD.
+
+Warning: ps2_line_content[179] - signal not found in VCD.
+
+Warning: ps2_line_content[178] - signal not found in VCD.
+
+Warning: ps2_line_content[177] - signal not found in VCD.
+
+Warning: ps2_line_content[176] - signal not found in VCD.
+
+Warning: ps2_line_content[175] - signal not found in VCD.
+
+Warning: ps2_line_content[174] - signal not found in VCD.
+
+Warning: ps2_line_content[173] - signal not found in VCD.
+
+Warning: ps2_line_content[172] - signal not found in VCD.
+
+Warning: ps2_line_content[171] - signal not found in VCD.
+
+Warning: ps2_line_content[170] - signal not found in VCD.
+
+Warning: ps2_line_content[169] - signal not found in VCD.
+
+Warning: ps2_line_content[168] - signal not found in VCD.
+
+Warning: ps2_line_content[167] - signal not found in VCD.
+
+Warning: ps2_line_content[166] - signal not found in VCD.
+
+Warning: ps2_line_content[165] - signal not found in VCD.
+
+Warning: ps2_line_content[164] - signal not found in VCD.
+
+Warning: ps2_line_content[163] - signal not found in VCD.
+
+Warning: ps2_line_content[162] - signal not found in VCD.
+
+Warning: ps2_line_content[161] - signal not found in VCD.
+
+Warning: ps2_line_content[160] - signal not found in VCD.
+
+Warning: ps2_line_content[159] - signal not found in VCD.
+
+Warning: ps2_line_content[158] - signal not found in VCD.
+
+Warning: ps2_line_content[157] - signal not found in VCD.
+
+Warning: ps2_line_content[156] - signal not found in VCD.
+
+Warning: ps2_line_content[155] - signal not found in VCD.
+
+Warning: ps2_line_content[154] - signal not found in VCD.
+
+Warning: ps2_line_content[153] - signal not found in VCD.
+
+Warning: ps2_line_content[152] - signal not found in VCD.
+
+Warning: ps2_line_content[151] - signal not found in VCD.
+
+Warning: ps2_line_content[150] - signal not found in VCD.
+
+Warning: ps2_line_content[149] - signal not found in VCD.
+
+Warning: ps2_line_content[148] - signal not found in VCD.
+
+Warning: ps2_line_content[147] - signal not found in VCD.
+
+Warning: ps2_line_content[146] - signal not found in VCD.
+
+Warning: ps2_line_content[145] - signal not found in VCD.
+
+Warning: ps2_line_content[144] - signal not found in VCD.
+
+Warning: ps2_line_content[143] - signal not found in VCD.
+
+Warning: ps2_line_content[142] - signal not found in VCD.
+
+Warning: ps2_line_content[141] - signal not found in VCD.
+
+Warning: ps2_line_content[140] - signal not found in VCD.
+
+Warning: ps2_line_content[139] - signal not found in VCD.
+
+Warning: ps2_line_content[138] - signal not found in VCD.
+
+Warning: ps2_line_content[137] - signal not found in VCD.
+
+Warning: ps2_line_content[136] - signal not found in VCD.
+
+Warning: ps2_line_content[135] - signal not found in VCD.
+
+Warning: ps2_line_content[134] - signal not found in VCD.
+
+Warning: ps2_line_content[133] - signal not found in VCD.
+
+Warning: ps2_line_content[132] - signal not found in VCD.
+
+Warning: ps2_line_content[131] - signal not found in VCD.
+
+Warning: ps2_line_content[130] - signal not found in VCD.
+
+Warning: ps2_line_content[129] - signal not found in VCD.
+
+Warning: ps2_line_content[128] - signal not found in VCD.
+
+Warning: ps2_line_content[127] - signal not found in VCD.
+
+Warning: ps2_line_content[126] - signal not found in VCD.
+
+Warning: ps2_line_content[125] - signal not found in VCD.
+
+Warning: ps2_line_content[124] - signal not found in VCD.
+
+Warning: ps2_line_content[123] - signal not found in VCD.
+
+Warning: ps2_line_content[122] - signal not found in VCD.
+
+Warning: ps2_line_content[121] - signal not found in VCD.
+
+Warning: ps2_line_content[120] - signal not found in VCD.
+
+Warning: ps2_line_content[119] - signal not found in VCD.
+
+Warning: ps2_line_content[118] - signal not found in VCD.
+
+Warning: ps2_line_content[117] - signal not found in VCD.
+
+Warning: ps2_line_content[116] - signal not found in VCD.
+
+Warning: ps2_line_content[115] - signal not found in VCD.
+
+Warning: ps2_line_content[114] - signal not found in VCD.
+
+Warning: ps2_line_content[113] - signal not found in VCD.
+
+Warning: ps2_line_content[112] - signal not found in VCD.
+
+Warning: ps2_line_content[111] - signal not found in VCD.
+
+Warning: ps2_line_content[110] - signal not found in VCD.
+
+Warning: ps2_line_content[109] - signal not found in VCD.
+
+Warning: ps2_line_content[108] - signal not found in VCD.
+
+Warning: ps2_line_content[107] - signal not found in VCD.
+
+Warning: ps2_line_content[106] - signal not found in VCD.
+
+Warning: ps2_line_content[105] - signal not found in VCD.
+
+Warning: ps2_line_content[104] - signal not found in VCD.
+
+Warning: ps2_line_content[103] - signal not found in VCD.
+
+Warning: ps2_line_content[102] - signal not found in VCD.
+
+Warning: ps2_line_content[101] - signal not found in VCD.
+
+Warning: ps2_line_content[100] - signal not found in VCD.
+
+Warning: ps2_line_content[99] - signal not found in VCD.
+
+Warning: ps2_line_content[98] - signal not found in VCD.
+
+Warning: ps2_line_content[97] - signal not found in VCD.
+
+Warning: ps2_line_content[96] - signal not found in VCD.
+
+Warning: ps2_line_content[95] - signal not found in VCD.
+
+Warning: ps2_line_content[94] - signal not found in VCD.
+
+Warning: ps2_line_content[93] - signal not found in VCD.
+
+Warning: ps2_line_content[92] - signal not found in VCD.
+
+Warning: ps2_line_content[91] - signal not found in VCD.
+
+Warning: ps2_line_content[90] - signal not found in VCD.
+
+Warning: ps2_line_content[89] - signal not found in VCD.
+
+Warning: ps2_line_content[88] - signal not found in VCD.
+
+Warning: ps2_line_content[87] - signal not found in VCD.
+
+Warning: ps2_line_content[86] - signal not found in VCD.
+
+Warning: ps2_line_content[85] - signal not found in VCD.
+
+Warning: ps2_line_content[84] - signal not found in VCD.
+
+Warning: ps2_line_content[83] - signal not found in VCD.
+
+Warning: ps2_line_content[82] - signal not found in VCD.
+
+Warning: ps2_line_content[81] - signal not found in VCD.
+
+Warning: ps2_line_content[80] - signal not found in VCD.
+
+Warning: ps2_line_content[79] - signal not found in VCD.
+
+Warning: ps2_line_content[78] - signal not found in VCD.
+
+Warning: ps2_line_content[77] - signal not found in VCD.
+
+Warning: ps2_line_content[76] - signal not found in VCD.
+
+Warning: ps2_line_content[75] - signal not found in VCD.
+
+Warning: ps2_line_content[74] - signal not found in VCD.
+
+Warning: ps2_line_content[73] - signal not found in VCD.
+
+Warning: ps2_line_content[72] - signal not found in VCD.
+
+Warning: ps2_line_content[71] - signal not found in VCD.
+
+Warning: ps2_line_content[70] - signal not found in VCD.
+
+Warning: ps2_line_content[69] - signal not found in VCD.
+
+Warning: ps2_line_content[68] - signal not found in VCD.
+
+Warning: ps2_line_content[67] - signal not found in VCD.
+
+Warning: ps2_line_content[66] - signal not found in VCD.
+
+Warning: ps2_line_content[65] - signal not found in VCD.
+
+Warning: ps2_line_content[64] - signal not found in VCD.
+
+Warning: ps2_line_content[63] - signal not found in VCD.
+
+Warning: ps2_line_content[62] - signal not found in VCD.
+
+Warning: ps2_line_content[61] - signal not found in VCD.
+
+Warning: ps2_line_content[60] - signal not found in VCD.
+
+Warning: ps2_line_content[59] - signal not found in VCD.
+
+Warning: ps2_line_content[58] - signal not found in VCD.
+
+Warning: ps2_line_content[57] - signal not found in VCD.
+
+Warning: ps2_line_content[56] - signal not found in VCD.
+
+Warning: ps2_line_content[55] - signal not found in VCD.
+
+Warning: ps2_line_content[54] - signal not found in VCD.
+
+Warning: ps2_line_content[53] - signal not found in VCD.
+
+Warning: ps2_line_content[52] - signal not found in VCD.
+
+Warning: ps2_line_content[51] - signal not found in VCD.
+
+Warning: ps2_line_content[50] - signal not found in VCD.
+
+Warning: ps2_line_content[49] - signal not found in VCD.
+
+Warning: ps2_line_content[48] - signal not found in VCD.
+
+Warning: ps2_line_content[47] - signal not found in VCD.
+
+Warning: ps2_line_content[46] - signal not found in VCD.
+
+Warning: ps2_line_content[45] - signal not found in VCD.
+
+Warning: ps2_line_content[44] - signal not found in VCD.
+
+Warning: ps2_line_content[43] - signal not found in VCD.
+
+Warning: ps2_line_content[42] - signal not found in VCD.
+
+Warning: ps2_line_content[41] - signal not found in VCD.
+
+Warning: ps2_line_content[40] - signal not found in VCD.
+
+Warning: ps2_line_content[39] - signal not found in VCD.
+
+Warning: ps2_line_content[38] - signal not found in VCD.
+
+Warning: ps2_line_content[37] - signal not found in VCD.
+
+Warning: ps2_line_content[36] - signal not found in VCD.
+
+Warning: ps2_line_content[35] - signal not found in VCD.
+
+Warning: ps2_line_content[34] - signal not found in VCD.
+
+Warning: ps2_line_content[33] - signal not found in VCD.
+
+Warning: ps2_line_content[32] - signal not found in VCD.
+
+Warning: ps2_line_content[31] - signal not found in VCD.
+
+Warning: ps2_line_content[30] - signal not found in VCD.
+
+Warning: ps2_line_content[29] - signal not found in VCD.
+
+Warning: ps2_line_content[28] - signal not found in VCD.
+
+Warning: ps2_line_content[27] - signal not found in VCD.
+
+Warning: ps2_line_content[26] - signal not found in VCD.
+
+Warning: ps2_line_content[25] - signal not found in VCD.
+
+Warning: ps2_line_content[24] - signal not found in VCD.
+
+Warning: ps2_line_content[23] - signal not found in VCD.
+
+Warning: ps2_line_content[22] - signal not found in VCD.
+
+Warning: ps2_line_content[21] - signal not found in VCD.
+
+Warning: ps2_line_content[20] - signal not found in VCD.
+
+Warning: ps2_line_content[19] - signal not found in VCD.
+
+Warning: ps2_line_content[18] - signal not found in VCD.
+
+Warning: ps2_line_content[17] - signal not found in VCD.
+
+Warning: ps2_line_content[16] - signal not found in VCD.
+
+Warning: ps2_line_content[15] - signal not found in VCD.
+
+Warning: ps2_line_content[14] - signal not found in VCD.
+
+Warning: ps2_line_content[13] - signal not found in VCD.
+
+Warning: ps2_line_content[12] - signal not found in VCD.
+
+Warning: ps2_line_content[11] - signal not found in VCD.
+
+Warning: ps2_line_content[10] - signal not found in VCD.
+
+Warning: ps2_line_content[9] - signal not found in VCD.
+
+Warning: ps2_line_content[8] - signal not found in VCD.
+
+Warning: ps2_line_content[7] - signal not found in VCD.
+
+Warning: ps2_line_content[6] - signal not found in VCD.
+
+Warning: ps2_line_content[5] - signal not found in VCD.
+
+Warning: ps2_line_content[4] - signal not found in VCD.
+
+Warning: ps2_line_content[3] - signal not found in VCD.
+
+Warning: ps2_line_content[2] - signal not found in VCD.
+
+Warning: ps2_line_content[1] - signal not found in VCD.
+
+Warning: ps2_line_content[0] - signal not found in VCD.
+
+Warning: velocity[31] - signal not found in VCD.
+
+Warning: velocity[30] - signal not found in VCD.
+
+Warning: velocity[29] - signal not found in VCD.
+
+Warning: velocity[28] - signal not found in VCD.
+
+Warning: velocity[27] - signal not found in VCD.
+
+Warning: velocity[26] - signal not found in VCD.
+
+Warning: velocity[25] - signal not found in VCD.
+
+Warning: velocity[24] - signal not found in VCD.
+
+Warning: velocity[23] - signal not found in VCD.
+
+Warning: velocity[22] - signal not found in VCD.
+
+Warning: velocity[21] - signal not found in VCD.
+
+Warning: velocity[20] - signal not found in VCD.
+
+Warning: velocity[19] - signal not found in VCD.
+
+Warning: velocity[18] - signal not found in VCD.
+
+Warning: velocity[17] - signal not found in VCD.
+
+Warning: velocity[16] - signal not found in VCD.
+
+Warning: velocity[15] - signal not found in VCD.
+
+Warning: velocity[14] - signal not found in VCD.
+
+Warning: velocity[13] - signal not found in VCD.
+
+Warning: velocity[12] - signal not found in VCD.
+
+Warning: velocity[11] - signal not found in VCD.
+
+Warning: velocity[10] - signal not found in VCD.
+
+Warning: velocity[9] - signal not found in VCD.
+
+Warning: velocity[8] - signal not found in VCD.
+
+Warning: velocity[7] - signal not found in VCD.
+
+Warning: velocity[6] - signal not found in VCD.
+
+Warning: velocity[5] - signal not found in VCD.
+
+Warning: velocity[4] - signal not found in VCD.
+
+Warning: velocity[3] - signal not found in VCD.
+
+Warning: velocity[2] - signal not found in VCD.
+
+Warning: velocity[1] - signal not found in VCD.
+
+Warning: velocity[0] - signal not found in VCD.
+
+Warning: ascii_char[7] - signal not found in VCD.
+
+Warning: ascii_char[6] - signal not found in VCD.
+
+Warning: ascii_char[5] - signal not found in VCD.
+
+Warning: ascii_char[4] - signal not found in VCD.
+
+Warning: ascii_char[3] - signal not found in VCD.
+
+Warning: ascii_char[2] - signal not found in VCD.
+
+Warning: ascii_char[1] - signal not found in VCD.
+
+Warning: ascii_char[0] - signal not found in VCD.
+
+Warning: key_pressed - signal not found in VCD.
+
+Warning: clock - signal not found in VCD.
+
+Warning: ps2_line_ready - signal not found in VCD.
+
+Writing the resulting VWF to C:/Users/tn74/Documents/ECE350/Missiles/projectmain/simulation/qsim/skeleton_20181205145200.sim.vwf
 
 Finished VCD to VWF conversion.
 

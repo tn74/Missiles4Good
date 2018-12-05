@@ -21,16 +21,25 @@ module ps2_processor_module(
 	
 	initial
 	begin 
-		count <= 32'hfffffffe;
+		count <= 32'h00000000;// - 32'd4;
 	end
 	
-	always @(posedge key_pressed)
+	
+	always @(posedge clock)
+	begin
+	if (key_pressed & (ascii_char == 8'h0a)) begin
+			count <= 32'h00000000;
+		end else if (key_pressed & ~(ascii_char == 8'h00)) begin
+//		end else if (key_pressed) begin
+			count <= count + 1;	
+		end
+	end
+	
+	always @(negedge clock)
 	begin
 		if (key_pressed & (ascii_char == 8'h0a)) begin
 			ps2_line_ready <= 1'b1;
-			count <= 32'hffffffff;
 		end else begin
-			count <= count + 1;	
 			ps2_line_ready <= 1'b0;
 		end
 	end
@@ -110,5 +119,24 @@ module ps2_processor_module(
 	end
 	
 	wire fire;
-	ps2_interpreter ps2int(clock, ps2_line_content, ps2_line_ready, velocity, angle, fire);
+	
+	
+	
+	reg ready_delay;
+	reg[255:0] saved_content_line;
+	always @(posedge ps2_line_ready) begin
+		saved_content_line <= ps2_line_content;
+	end
+	always @(posedge clock) begin
+		ready_delay <= ps2_line_ready;
+	end
+	
+	ps2_interpreter ps2int(
+		.clock(clock),
+		.input_line(saved_content_line), 
+		.line_ready(ready_delay), 
+		.velocity(velocity), 
+		.angle(angle),
+		.fire(fire)
+	);
 endmodule

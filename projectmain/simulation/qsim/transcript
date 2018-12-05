@@ -1,34 +1,38 @@
 # do skeleton.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:41:58 on Dec 04,2018
+# Start time: 14:51:58 on Dec 05,2018
 # vlog -work work skeleton.vo 
-# -- Compiling module ascii6digit_to_number
-# -- Compiling module hard_block
+# -- Compiling module skeleton
 # 
 # Top level modules:
-# 	ascii6digit_to_number
-# End time: 20:41:58 on Dec 04,2018, Elapsed time: 0:00:00
+# 	skeleton
+# End time: 14:51:59 on Dec 05,2018, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:41:58 on Dec 04,2018
-# vlog -work work ascii6digit_test.vwf.vt 
-# -- Compiling module ascii6digit_to_number_vlg_vec_tst
+# Start time: 14:51:59 on Dec 05,2018
+# vlog -work work p2_processor_module.vwf.vt 
+# -- Compiling module skeleton_vlg_vec_tst
 # 
 # Top level modules:
-# 	ascii6digit_to_number_vlg_vec_tst
-# End time: 20:41:58 on Dec 04,2018, Elapsed time: 0:00:00
+# 	skeleton_vlg_vec_tst
+# End time: 14:51:59 on Dec 05,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.ascii6digit_to_number_vlg_vec_tst 
-# Start time: 20:41:58 on Dec 04,2018
-# Loading work.ascii6digit_to_number_vlg_vec_tst
-# Loading work.ascii6digit_to_number
+# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.ps2_processor_module_vlg_vec_tst 
+# Start time: 14:52:00 on Dec 05,2018
+# Loading work.ps2_processor_module_vlg_vec_tst
+# Loading work.ps2_processor_module
 # Loading work.hard_block
 # Loading cycloneive_ver.cycloneive_io_obuf
 # Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
 # Loading cycloneive_ver.cycloneive_lcell_comb
-# after#26
-# ** Note: $finish    : ascii6digit_test.vwf.vt(56)
-#    Time: 1 us  Iteration: 0  Instance: /ascii6digit_to_number_vlg_vec_tst
-# End time: 20:41:58 on Dec 04,2018, Elapsed time: 0:00:00
+# Loading altera_ver.dffeas
+# Loading altera_ver.PRIM_GDFF_LOW
+# after#25
+# ** Note: $finish    : p2_processor_module.vwf.vt(54)
+#    Time: 1 us  Iteration: 0  Instance: /ps2_processor_module_vlg_vec_tst
+# End time: 14:52:00 on Dec 05,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

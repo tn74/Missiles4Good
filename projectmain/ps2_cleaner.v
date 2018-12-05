@@ -13,6 +13,13 @@ module ps2_cleaner(clock, ps2_key_received, ps2_last_key_received, ascii_charact
 	
 	counter2 counter(.clock(clock), .start(counter_start), .finish(counter_finished));
 	
+	initial
+	begin
+		counter_start <= 1'b0;
+		key_released_reg <= 1'b0;
+		holding <= 1'b0;
+	end
+	
 	always @(posedge clock)
 	begin
 		key_released_reg <= key_released;

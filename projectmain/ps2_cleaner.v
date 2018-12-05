@@ -24,10 +24,6 @@ module ps2_cleaner(clock, ps2_key_received, ps2_last_key_received, ascii_charact
 	begin
 		key_released_reg <= key_released;
 		counter_start <= (key_released_reg & key_released);
-//		if (counter_start)
-//			holding <= 1;
-//		else if (counter_finish)
-//			holding <= 0;
 	end
 	
 	assign key_just_pressed = counter_finished;

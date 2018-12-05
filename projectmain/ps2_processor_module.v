@@ -21,7 +21,7 @@ module ps2_processor_module(
 	
 	initial
 	begin 
-		count <= 32'h00000000;// - 32'd4;
+		count <= 32'h00000000;
 	end
 	
 	
@@ -30,7 +30,6 @@ module ps2_processor_module(
 	if (key_pressed & (ascii_char == 8'h0a)) begin
 			count <= 32'h00000000;
 		end else if (key_pressed & ~(ascii_char == 8'h00)) begin
-//		end else if (key_pressed) begin
 			count <= count + 1;	
 		end
 	end

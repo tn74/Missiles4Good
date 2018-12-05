@@ -56,8 +56,30 @@ module ps2_to_ascii (in, out);
 			out = 8'h59;
 		else if (in == 8'h1A) // z
 			out = 8'h5A;
-		else if (in == 8'h29) // z
+		else if (in == 8'h29) // Space
 			out = 8'h20;
+		else if (in == 8'h5a) // New Line
+			out = 8'h0a;
+		else if (in == 8'h45) // 0
+			out = 8'h30;
+		else if (in == 8'h16) // 1
+			out = 8'h31;
+		else if (in == 8'h1e) // 2
+			out = 8'h32;
+		else if (in == 8'h26) // 3
+			out = 8'h33;
+		else if (in == 8'h25) // 4
+			out = 8'h34;
+		else if (in == 8'h2e) // 5
+			out = 8'h35;
+		else if (in == 8'h36) // 6
+			out = 8'h36;
+		else if (in == 8'h3d) // 7
+			out = 8'h37;
+		else if (in == 8'h3e) // 8
+			out = 8'h38;
+		else if (in == 8'h46) // 9
+			out = 8'h39;
 		else 
 			out = 8'h00;
 	end

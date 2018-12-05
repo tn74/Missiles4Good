@@ -45,39 +45,43 @@ begin
 	// Writing Velocity Characters
 	if (count == 32'd0) begin
 		write_char <= velocity_digits[7:0];
-		char_index <= 8'b00111111;
+		char_index <= 8'd59;
 		count <= count + 1;
 	end else if (count == 32'd1) begin
 		write_char <= velocity_digits[15:8];
-		char_index <= 8'b00111110;
+		char_index <= 8'd58;
 		count <= count + 1;
 	end else if (count == 32'd2) begin
 		write_char <= velocity_digits[23:16];
-		char_index <= 8'b00111101;
+		char_index <= 8'd57;
 		count <= count + 1;
 	end else if (count == 32'd3) begin
 		write_char <= velocity_digits[31:24];
-		char_index <= 8'b00111100;
+		char_index <= 8'd55;
+		count <= count + 1;
+	end else if (count == 32'd4) begin
+		write_char <= velocity_digits[39:32];
+		char_index <= 8'd54;
 		count <= count + 1;
 	end
 	
 	// Writing Angle Characters
-	else if (count == 32'd4) begin
+	else if (count == 32'd5) begin
 		write_char <= angle_digits[7:0];
-		char_index <= 8'b01011111;
-		count <= count + 1;
-	end else if (count == 32'd5) begin
-		write_char <= angle_digits[15:8];
-		char_index <= 8'b01011110;
+		char_index <= 8'h5b;
 		count <= count + 1;
 	end else if (count == 32'd6) begin
+		write_char <= angle_digits[15:8];
+		char_index <= 8'h5a;
+		count <= count + 1;
+	end else if (count == 32'd7) begin
 		write_char <= angle_digits[23:16];
-		char_index <= 8'b01011101;
+		char_index <= 8'h59;
 		count <= count + 1;
 	end 
 	
 	// Writing All Terminal
-	else if (count == 32'd7) begin
+	else if (count == 32'd8) begin
 		if(terminal_display_finish && ~terminal_display_busy) begin
 			terminal_display_start <= 1'b1;
 			terminal_display_busy <= 1'b1;

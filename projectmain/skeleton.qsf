@@ -251,4 +251,5 @@ set_global_assignment -name VERILOG_FILE ascii6digit_to_number.v
 set_global_assignment -name VECTOR_WAVEFORM_FILE ascii6digit_test.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE ascii_to_num_test.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE ps2_interpreter_test.vwf
+set_global_assignment -name VERILOG_FILE targets_printer_tracker.v
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

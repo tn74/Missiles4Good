@@ -39,6 +39,9 @@ wire terminal_display_finish;
 reg terminal_display_start, terminal_display_busy;
 wire[7:0] terminal_display_char_index, terminal_display_char_data;
 
+wire targets_dfinish;
+reg targets_dstart, targets_dbusy;
+wire[7:0] targets_d_char_index, targets_d_char_data;
 
 always @(posedge clock)
 begin
@@ -94,6 +97,21 @@ begin
 			terminal_display_start <= 1'b0;
 		end
 	end
+	
+	// Writing All Terminal
+	else if (count == 32'd9) begin
+		if(targets_dfinish && ~targets_dbusy) begin
+			targets_dstart <= 1'b1;
+			targets_dbusy <= 1'b1;
+		end else if (targets_dfinish && targets_dbusy) begin
+			targets_dbusy <= 1'b0;
+			count <= count + 1;
+		end else begin
+			write_char <= targets_d_char_data;
+			char_index <= targets_d_char_index;
+			targets_dstart <= 1'b0;
+		end
+	end
 		
 	// Else Reset
 	else begin
@@ -117,6 +135,17 @@ commands_printer_tracker cpt(
 	.finish(terminal_display_finish),
 	.char_index(terminal_display_char_index), 
 	.char_data(terminal_display_char_data)
+);
+
+targets_printer_tracker tpt(
+	.clock(clock), 
+	.start(targets_dstart),
+	.targetx(targetx),
+	.targety(targety),
+	
+	.finish(target_dfinish),
+	.char_index(targets_d_char_index), 
+	.char_data(targets_d_char_data)
 );
 
 screenchar_mem smem (
@@ -143,6 +172,7 @@ assign char_data_out = write_char;
 initial
 begin
 	write_en <= 1'b1;
+	count <= 32'd0;
 end
 
 endmodule

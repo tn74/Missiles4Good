@@ -1,5 +1,5 @@
 Analysis & Synthesis report for skeleton
-Wed Dec 05 16:02:20 2018
+Wed Dec 05 16:33:13 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -150,76 +150,77 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 142. Port Connectivity Checks: "display_controller:display_controller_inst|index_mif_writer:imw|typer_logic:typer_inst"
 143. Port Connectivity Checks: "display_controller:display_controller_inst|index_mif_writer:imw"
 144. Port Connectivity Checks: "display_controller:display_controller_inst|screencharacter_mif_writer:smw|screenchar_mem:smem"
-145. Port Connectivity Checks: "display_controller:display_controller_inst|screencharacter_mif_writer:smw|number_to_six_digit:angconvert"
-146. Port Connectivity Checks: "display_controller:display_controller_inst|screencharacter_mif_writer:smw|number_to_six_digit:velconvert"
-147. Port Connectivity Checks: "display_controller:display_controller_inst|screencharacter_mif_writer:smw"
-148. Port Connectivity Checks: "display_controller:display_controller_inst"
-149. Port Connectivity Checks: "VGA_Audio_PLL:p1"
-150. Port Connectivity Checks: "input_brain:inpbr"
-151. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex8"
-152. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex7"
-153. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex6"
-154. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex5"
-155. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex4"
-156. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex3"
-157. Port Connectivity Checks: "ps2_processor_module:ps2process|ps2_interpreter:ps2int|ascii6digit_to_number:comb_204"
-158. Port Connectivity Checks: "ps2_processor_module:ps2process|ps2_interpreter:ps2int|ascii6digit_to_number:comb_90"
-159. Port Connectivity Checks: "ps2_processor_module:ps2process|ps2_interpreter:ps2int"
-160. Port Connectivity Checks: "ps2_cleaner:cleaner|counter2:counter"
-161. Port Connectivity Checks: "PS2_Interface:myps2|PS2_Controller:PS2"
-162. Port Connectivity Checks: "PS2_Interface:myps2"
-163. Port Connectivity Checks: "processor:myprocessor|decoder:wdecoder"
-164. Port Connectivity Checks: "processor:myprocessor|decoder:mdecoder"
-165. Port Connectivity Checks: "processor:myprocessor|range:range|sqrt:_sqrt"
-166. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[31]._dffe"
-167. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[30]._dffe"
-168. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[29]._dffe"
-169. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[28]._dffe"
-170. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[27]._dffe"
-171. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[26]._dffe"
-172. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[25]._dffe"
-173. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[24]._dffe"
-174. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[23]._dffe"
-175. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[22]._dffe"
-176. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[21]._dffe"
-177. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[20]._dffe"
-178. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[19]._dffe"
-179. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[18]._dffe"
-180. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[17]._dffe"
-181. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[16]._dffe"
-182. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[15]._dffe"
-183. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[14]._dffe"
-184. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[13]._dffe"
-185. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[12]._dffe"
-186. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[11]._dffe"
-187. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[10]._dffe"
-188. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[9]._dffe"
-189. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[8]._dffe"
-190. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[7]._dffe"
-191. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[6]._dffe"
-192. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[5]._dffe"
-193. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[4]._dffe"
-194. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[3]._dffe"
-195. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[2]._dffe"
-196. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[1]._dffe"
-197. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:_dffe0"
-198. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|dflipflop:_divyes"
-199. Port Connectivity Checks: "processor:myprocessor|adder:addi"
-200. Port Connectivity Checks: "processor:myprocessor|alu:alu|adder:_diff"
-201. Port Connectivity Checks: "processor:myprocessor|alu:alu|adder:_sum"
-202. Port Connectivity Checks: "processor:myprocessor|alu:alu|decoder:_selop"
-203. Port Connectivity Checks: "processor:myprocessor|adder:pcnadder"
-204. Port Connectivity Checks: "processor:myprocessor|decoder:xdecoder"
-205. Port Connectivity Checks: "processor:myprocessor|decoder:fdecoder"
-206. Port Connectivity Checks: "processor:myprocessor|adder:pcadder|cla4bit:_cla4bit2"
-207. Port Connectivity Checks: "processor:myprocessor|adder:pcadder"
-208. Port Connectivity Checks: "processor:myprocessor|decoder:ddecoder"
-209. Port Connectivity Checks: "processor:myprocessor"
-210. Port Connectivity Checks: "pll:div"
-211. Post-Synthesis Netlist Statistics for Top Partition
-212. Elapsed Time Per Partition
-213. Analysis & Synthesis Messages
-214. Analysis & Synthesis Suppressed Messages
+145. Port Connectivity Checks: "display_controller:display_controller_inst|screencharacter_mif_writer:smw|targets_printer_tracker:tpt"
+146. Port Connectivity Checks: "display_controller:display_controller_inst|screencharacter_mif_writer:smw|number_to_six_digit:angconvert"
+147. Port Connectivity Checks: "display_controller:display_controller_inst|screencharacter_mif_writer:smw|number_to_six_digit:velconvert"
+148. Port Connectivity Checks: "display_controller:display_controller_inst|screencharacter_mif_writer:smw"
+149. Port Connectivity Checks: "display_controller:display_controller_inst"
+150. Port Connectivity Checks: "VGA_Audio_PLL:p1"
+151. Port Connectivity Checks: "input_brain:inpbr"
+152. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex8"
+153. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex7"
+154. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex6"
+155. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex5"
+156. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex4"
+157. Port Connectivity Checks: "Hexadecimal_To_Seven_Segment:hex3"
+158. Port Connectivity Checks: "ps2_processor_module:ps2process|ps2_interpreter:ps2int|ascii6digit_to_number:comb_204"
+159. Port Connectivity Checks: "ps2_processor_module:ps2process|ps2_interpreter:ps2int|ascii6digit_to_number:comb_90"
+160. Port Connectivity Checks: "ps2_processor_module:ps2process|ps2_interpreter:ps2int"
+161. Port Connectivity Checks: "ps2_cleaner:cleaner|counter2:counter"
+162. Port Connectivity Checks: "PS2_Interface:myps2|PS2_Controller:PS2"
+163. Port Connectivity Checks: "PS2_Interface:myps2"
+164. Port Connectivity Checks: "processor:myprocessor|decoder:wdecoder"
+165. Port Connectivity Checks: "processor:myprocessor|decoder:mdecoder"
+166. Port Connectivity Checks: "processor:myprocessor|range:range|sqrt:_sqrt"
+167. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[31]._dffe"
+168. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[30]._dffe"
+169. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[29]._dffe"
+170. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[28]._dffe"
+171. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[27]._dffe"
+172. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[26]._dffe"
+173. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[25]._dffe"
+174. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[24]._dffe"
+175. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[23]._dffe"
+176. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[22]._dffe"
+177. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[21]._dffe"
+178. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[20]._dffe"
+179. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[19]._dffe"
+180. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[18]._dffe"
+181. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[17]._dffe"
+182. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[16]._dffe"
+183. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[15]._dffe"
+184. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[14]._dffe"
+185. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[13]._dffe"
+186. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[12]._dffe"
+187. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[11]._dffe"
+188. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[10]._dffe"
+189. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[9]._dffe"
+190. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[8]._dffe"
+191. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[7]._dffe"
+192. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[6]._dffe"
+193. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[5]._dffe"
+194. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[4]._dffe"
+195. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[3]._dffe"
+196. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[2]._dffe"
+197. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:gen_dffe[1]._dffe"
+198. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|counter:_count|dflipflop:_dffe0"
+199. Port Connectivity Checks: "processor:myprocessor|multdiv:multdiv|dflipflop:_divyes"
+200. Port Connectivity Checks: "processor:myprocessor|adder:addi"
+201. Port Connectivity Checks: "processor:myprocessor|alu:alu|adder:_diff"
+202. Port Connectivity Checks: "processor:myprocessor|alu:alu|adder:_sum"
+203. Port Connectivity Checks: "processor:myprocessor|alu:alu|decoder:_selop"
+204. Port Connectivity Checks: "processor:myprocessor|adder:pcnadder"
+205. Port Connectivity Checks: "processor:myprocessor|decoder:xdecoder"
+206. Port Connectivity Checks: "processor:myprocessor|decoder:fdecoder"
+207. Port Connectivity Checks: "processor:myprocessor|adder:pcadder|cla4bit:_cla4bit2"
+208. Port Connectivity Checks: "processor:myprocessor|adder:pcadder"
+209. Port Connectivity Checks: "processor:myprocessor|decoder:ddecoder"
+210. Port Connectivity Checks: "processor:myprocessor"
+211. Port Connectivity Checks: "pll:div"
+212. Post-Synthesis Netlist Statistics for Top Partition
+213. Elapsed Time Per Partition
+214. Analysis & Synthesis Messages
+215. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -245,13 +246,13 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Dec 05 16:02:20 2018       ;
+; Analysis & Synthesis Status        ; Successful - Wed Dec 05 16:33:13 2018       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; skeleton                                    ;
 ; Top-level Entity Name              ; skeleton                                    ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 6,762                                       ;
-;     Total combinational functions  ; 5,501                                       ;
+; Total logic elements               ; 6,732                                       ;
+;     Total combinational functions  ; 5,471                                       ;
 ;     Dedicated logic registers      ; 1,832                                       ;
 ; Total registers                    ; 1832                                        ;
 ; Total pins                         ; 154                                         ;
@@ -431,6 +432,7 @@ refer to the applicable agreement for further details.
 ; ps2_interpreter.v                 ; yes             ; User Verilog HDL File            ; C:/Users/tn74/Documents/ECE350/Missiles/projectmain/ps2_interpreter.v                 ;         ;
 ; ascii_to_number.v                 ; yes             ; User Verilog HDL File            ; C:/Users/tn74/Documents/ECE350/Missiles/projectmain/ascii_to_number.v                 ;         ;
 ; ascii6digit_to_number.v           ; yes             ; User Verilog HDL File            ; C:/Users/tn74/Documents/ECE350/Missiles/projectmain/ascii6digit_to_number.v           ;         ;
+; targets_printer_tracker.v         ; yes             ; User Verilog HDL File            ; C:/Users/tn74/Documents/ECE350/Missiles/projectmain/targets_printer_tracker.v         ;         ;
 ; altpll.tdf                        ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altpll.tdf                     ;         ;
 ; aglobal171.inc                    ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/aglobal171.inc                 ;         ;
 ; stratix_pll.inc                   ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/stratix_pll.inc                ;         ;
@@ -525,16 +527,16 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 6,762          ;
+; Estimated Total logic elements              ; 6,732          ;
 ;                                             ;                ;
-; Total combinational functions               ; 5501           ;
+; Total combinational functions               ; 5471           ;
 ; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 2264           ;
-;     -- 3 input functions                    ; 1140           ;
-;     -- <=2 input functions                  ; 2097           ;
+;     -- 4 input functions                    ; 2233           ;
+;     -- 3 input functions                    ; 1142           ;
+;     -- <=2 input functions                  ; 2096           ;
 ;                                             ;                ;
 ; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 4156           ;
+;     -- normal mode                          ; 4126           ;
 ;     -- arithmetic mode                      ; 1345           ;
 ;                                             ;                ;
 ; Total registers                             ; 1832           ;
@@ -551,7 +553,7 @@ refer to the applicable agreement for further details.
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
 ; Maximum fan-out                             ; 1586           ;
-; Total fan-out                               ; 30368          ;
+; Total fan-out                               ; 30312          ;
 ; Average fan-out                             ; 3.62           ;
 +---------------------------------------------+----------------+
 
@@ -561,7 +563,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+--------------+
 ; Compilation Hierarchy Node                             ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                ; Entity Name                     ; Library Name ;
 +--------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------+--------------+
-; |skeleton                                              ; 5501 (1)            ; 1832 (0)                  ; 1077440     ; 0            ; 0       ; 0         ; 154  ; 0            ; |skeleton                                                                                                                                                                                                          ; skeleton                        ; work         ;
+; |skeleton                                              ; 5471 (1)            ; 1832 (0)                  ; 1077440     ; 0            ; 0       ; 0         ; 154  ; 0            ; |skeleton                                                                                                                                                                                                          ; skeleton                        ; work         ;
 ;    |Hexadecimal_To_Seven_Segment:hex1|                 ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|Hexadecimal_To_Seven_Segment:hex1                                                                                                                                                                        ; Hexadecimal_To_Seven_Segment    ; work         ;
 ;    |Hexadecimal_To_Seven_Segment:hex2|                 ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|Hexadecimal_To_Seven_Segment:hex2                                                                                                                                                                        ; Hexadecimal_To_Seven_Segment    ; work         ;
 ;    |PS2_Interface:myps2|                               ; 41 (9)              ; 38 (8)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|PS2_Interface:myps2                                                                                                                                                                                      ; PS2_Interface                   ; work         ;
@@ -570,7 +572,7 @@ refer to the applicable agreement for further details.
 ;    |Reset_Delay:r0|                                    ; 27 (27)             ; 21 (21)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|Reset_Delay:r0                                                                                                                                                                                           ; Reset_Delay                     ; work         ;
 ;    |VGA_Audio_PLL:p1|                                  ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|VGA_Audio_PLL:p1                                                                                                                                                                                         ; VGA_Audio_PLL                   ; work         ;
 ;       |altpll:altpll_component|                        ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|VGA_Audio_PLL:p1|altpll:altpll_component                                                                                                                                                                 ; altpll                          ; work         ;
-;    |display_controller:display_controller_inst|        ; 4611 (20)           ; 1204 (46)                 ; 1077440     ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|display_controller:display_controller_inst                                                                                                                                                               ; display_controller              ; work         ;
+;    |display_controller:display_controller_inst|        ; 4581 (20)           ; 1204 (46)                 ; 1077440     ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|display_controller:display_controller_inst                                                                                                                                                               ; display_controller              ; work         ;
 ;       |index_mif_writer:imw|                           ; 579 (41)            ; 137 (33)                  ; 153600      ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|display_controller:display_controller_inst|index_mif_writer:imw                                                                                                                                          ; index_mif_writer                ; work         ;
 ;          |screencharindex_to_pixeladdress:index2pixel| ; 58 (58)             ; 17 (17)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|display_controller:display_controller_inst|index_mif_writer:imw|screencharindex_to_pixeladdress:index2pixel                                                                                              ; screencharindex_to_pixeladdress ; work         ;
 ;          |typer_logic:typer_inst|                      ; 480 (460)           ; 87 (67)                   ; 153600      ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|display_controller:display_controller_inst|index_mif_writer:imw|typer_logic:typer_inst                                                                                                                   ; typer_logic                     ; work         ;
@@ -587,7 +589,7 @@ refer to the applicable agreement for further details.
 ;                |decode_aaa:rden_decode_b|              ; 44 (44)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|display_controller:display_controller_inst|monitor_index:monitor_index_inst|altsyncram:altsyncram_component|altsyncram_51n1:auto_generated|decode_aaa:rden_decode_b                                      ; decode_aaa                      ; work         ;
 ;                |decode_hua:decode2|                    ; 43 (43)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|display_controller:display_controller_inst|monitor_index:monitor_index_inst|altsyncram:altsyncram_component|altsyncram_51n1:auto_generated|decode_hua:decode2                                            ; decode_hua                      ; work         ;
 ;                |mux_sob:mux3|                          ; 89 (89)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|display_controller:display_controller_inst|monitor_index:monitor_index_inst|altsyncram:altsyncram_component|altsyncram_51n1:auto_generated|mux_sob:mux3                                                  ; mux_sob                         ; work         ;
-;       |screencharacter_mif_writer:smw|                 ; 3792 (122)          ; 991 (49)                  ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|display_controller:display_controller_inst|screencharacter_mif_writer:smw                                                                                                                                ; screencharacter_mif_writer      ; work         ;
+;       |screencharacter_mif_writer:smw|                 ; 3762 (92)           ; 991 (49)                  ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|display_controller:display_controller_inst|screencharacter_mif_writer:smw                                                                                                                                ; screencharacter_mif_writer      ; work         ;
 ;          |commands_printer_tracker:cpt|                ; 674 (674)           ; 942 (942)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|display_controller:display_controller_inst|screencharacter_mif_writer:smw|commands_printer_tracker:cpt                                                                                                   ; commands_printer_tracker        ; work         ;
 ;          |number_to_six_digit:angconvert|              ; 744 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|display_controller:display_controller_inst|screencharacter_mif_writer:smw|number_to_six_digit:angconvert                                                                                                 ; number_to_six_digit             ; work         ;
 ;             |lpm_divide:Div0|                          ; 161 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |skeleton|display_controller:display_controller_inst|screencharacter_mif_writer:smw|number_to_six_digit:angconvert|lpm_divide:Div0                                                                                 ; lpm_divide                      ; work         ;
@@ -4054,9 +4056,8 @@ Encoding Type:  One-Hot
 ;                                                                                                                                       ;                           ; ps2_processor_module:ps2process|ps2_interpreter:ps2int|velocity[29],                                                               ;
 ;                                                                                                                                       ;                           ; ps2_processor_module:ps2process|ps2_interpreter:ps2int|velocity[30],                                                               ;
 ;                                                                                                                                       ;                           ; ps2_processor_module:ps2process|ps2_interpreter:ps2int|velocity[31]                                                                ;
-; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|s_ps2_transmitter.PS2_STATE_3_TRANSMIT_DATA          ; Stuck at GND              ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|cur_bit[2],                                       ;
-;                                                                                                                                       ; due to stuck port data_in ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|s_ps2_transmitter.PS2_STATE_4_TRANSMIT_STOP_BIT,  ;
-;                                                                                                                                       ;                           ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|s_ps2_transmitter.PS2_STATE_5_RECEIVE_ACK_BIT,    ;
+; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|s_ps2_transmitter.PS2_STATE_3_TRANSMIT_DATA          ; Stuck at GND              ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|s_ps2_transmitter.PS2_STATE_4_TRANSMIT_STOP_BIT,  ;
+;                                                                                                                                       ; due to stuck port data_in ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|s_ps2_transmitter.PS2_STATE_5_RECEIVE_ACK_BIT,    ;
 ;                                                                                                                                       ;                           ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|transfer_counter[5],                              ;
 ;                                                                                                                                       ;                           ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|transfer_counter[6],                              ;
 ;                                                                                                                                       ;                           ; PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|transfer_counter[7],                              ;
@@ -5946,11 +5947,11 @@ Encoding Type:  One-Hot
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
 ; Total registers                              ; 1832  ;
-; Number of registers using Synchronous Clear  ; 125   ;
+; Number of registers using Synchronous Clear  ; 157   ;
 ; Number of registers using Synchronous Load   ; 33    ;
 ; Number of registers using Asynchronous Clear ; 330   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 587   ;
+; Number of registers using Clock Enable       ; 619   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -6017,74 +6018,74 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                    ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|received_data[6]                           ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|last_data_received[3]                                                                           ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|data_shift_reg[2]                          ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[0][3]                                                                                               ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[1][4]                                                                                               ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|received_data[1]                           ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|last_data_received[2]                                                                           ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|data_shift_reg[1]                          ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[0][2]                                                                                               ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[1][2]                                                                                               ;
 ; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[2][2]                                                                                               ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[3][4]                                                                                               ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[3][2]                                                                                               ;
 ; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[4][6]                                                                                               ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[5][3]                                                                                               ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[6][6]                                                                                               ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[7][1]                                                                                               ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[8][6]                                                                                               ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[5][1]                                                                                               ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[6][1]                                                                                               ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[7][6]                                                                                               ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[8][2]                                                                                               ;
 ; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[9][0]                                                                                               ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[10][1]                                                                                              ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[11][2]                                                                                              ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[12][4]                                                                                              ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[13][0]                                                                                              ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[14][4]                                                                                              ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[15][6]                                                                                              ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |skeleton|lcd:mylcd|ptr[2]                                                                                                    ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |skeleton|lcd:mylcd|mstart                                                                                                    ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[10][4]                                                                                              ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[11][3]                                                                                              ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[12][0]                                                                                              ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[13][1]                                                                                              ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[14][2]                                                                                              ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |skeleton|lcd:mylcd|line2[15][1]                                                                                              ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |skeleton|lcd:mylcd|ptr[3]                                                                                                    ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |skeleton|lcd:mylcd|cdone                                                                                                     ;
 ; 3:1                ; 21 bits   ; 42 LEs        ; 21 LEs               ; 21 LEs                 ; Yes        ; |skeleton|display_controller:display_controller_inst|index_mif_writer:imw|typer_logic:typer_inst|char_count[1]                ;
-; 3:1                ; 17 bits   ; 34 LEs        ; 17 LEs               ; 17 LEs                 ; Yes        ; |skeleton|display_controller:display_controller_inst|index_mif_writer:imw|typer_logic:typer_inst|character_pixel_index[9]     ;
+; 3:1                ; 17 bits   ; 34 LEs        ; 17 LEs               ; 17 LEs                 ; Yes        ; |skeleton|display_controller:display_controller_inst|index_mif_writer:imw|typer_logic:typer_inst|character_pixel_index[16]    ;
 ; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[251]                                                               ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[2]                                                                 ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[14]                                                                ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[22]                                                                ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[29]                                                                ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[38]                                                                ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[40]                                                                ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[48]                                                                ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[57]                                                                ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[69]                                                                ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[4]                                                                 ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[8]                                                                 ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[20]                                                                ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[27]                                                                ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[37]                                                                ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[46]                                                                ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[51]                                                                ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[56]                                                                ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[67]                                                                ;
 ; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[77]                                                                ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[83]                                                                ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[88]                                                                ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[100]                                                               ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[109]                                                               ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[117]                                                               ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[125]                                                               ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[129]                                                               ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[85]                                                                ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[90]                                                                ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[96]                                                                ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[105]                                                               ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[113]                                                               ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[120]                                                               ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[134]                                                               ;
 ; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[142]                                                               ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[145]                                                               ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[157]                                                               ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[160]                                                               ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[173]                                                               ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[182]                                                               ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[186]                                                               ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[198]                                                               ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[148]                                                               ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[153]                                                               ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[165]                                                               ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[174]                                                               ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[180]                                                               ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[185]                                                               ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[196]                                                               ;
 ; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[201]                                                               ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[210]                                                               ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[216]                                                               ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[225]                                                               ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[238]                                                               ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[245]                                                               ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |skeleton|ps2_processor_module:ps2process|count[24]                                                                           ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |skeleton|lcd:mylcd|index[5]                                                                                                  ;
-; 3:1                ; 31 bits   ; 62 LEs        ; 31 LEs               ; 31 LEs                 ; Yes        ; |skeleton|display_controller:display_controller_inst|screencharacter_mif_writer:smw|commands_printer_tracker:cpt|count[11]    ;
-; 4:1                ; 17 bits   ; 34 LEs        ; 17 LEs               ; 17 LEs                 ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|transfer_counter[7]                ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |skeleton|display_controller:display_controller_inst|screencharacter_mif_writer:smw|count[20]                                 ;
-; 4:1                ; 13 bits   ; 26 LEs        ; 13 LEs               ; 13 LEs                 ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|command_initiate_counter[9]        ;
-; 4:1                ; 20 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|waiting_counter[5]                 ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|cur_bit[2]                         ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|data_count[1]                              ;
-; 10:1               ; 11 bits   ; 66 LEs        ; 66 LEs               ; 0 LEs                  ; Yes        ; |skeleton|display_controller:display_controller_inst|screencharacter_mif_writer:smw|char_index[3]                             ;
-; 10:1               ; 4 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; Yes        ; |skeleton|display_controller:display_controller_inst|screencharacter_mif_writer:smw|write_char[1]                             ;
-; 38:1               ; 7 bits    ; 175 LEs       ; 175 LEs              ; 0 LEs                  ; Yes        ; |skeleton|lcd:mylcd|lcd_data[5]                                                                                               ;
-; 256:1              ; 7 bits    ; 1190 LEs      ; 1190 LEs             ; 0 LEs                  ; Yes        ; |skeleton|display_controller:display_controller_inst|screencharacter_mif_writer:smw|commands_printer_tracker:cpt|char_data[3] ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[208]                                                               ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[220]                                                               ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[228]                                                               ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[237]                                                               ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |skeleton|ps2_processor_module:ps2process|ps2_line_content[246]                                                               ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |skeleton|ps2_processor_module:ps2process|count[4]                                                                            ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |skeleton|lcd:mylcd|index[0]                                                                                                  ;
+; 3:1                ; 31 bits   ; 62 LEs        ; 31 LEs               ; 31 LEs                 ; Yes        ; |skeleton|display_controller:display_controller_inst|screencharacter_mif_writer:smw|commands_printer_tracker:cpt|count[28]    ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |skeleton|display_controller:display_controller_inst|screencharacter_mif_writer:smw|count[29]                                 ;
+; 4:1                ; 17 bits   ; 34 LEs        ; 17 LEs               ; 17 LEs                 ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|transfer_counter[1]                ;
+; 4:1                ; 13 bits   ; 26 LEs        ; 13 LEs               ; 13 LEs                 ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|command_initiate_counter[2]        ;
+; 4:1                ; 20 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|waiting_counter[12]                ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Command_Out:PS2_Command_Out|cur_bit[0]                         ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |skeleton|PS2_Interface:myps2|PS2_Controller:PS2|Altera_UP_PS2_Data_In:PS2_Data_In|data_count[0]                              ;
+; 10:1               ; 11 bits   ; 66 LEs        ; 66 LEs               ; 0 LEs                  ; Yes        ; |skeleton|display_controller:display_controller_inst|screencharacter_mif_writer:smw|char_index[6]                             ;
+; 10:1               ; 4 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; Yes        ; |skeleton|display_controller:display_controller_inst|screencharacter_mif_writer:smw|write_char[2]                             ;
+; 38:1               ; 7 bits    ; 175 LEs       ; 175 LEs              ; 0 LEs                  ; Yes        ; |skeleton|lcd:mylcd|lcd_data[1]                                                                                               ;
+; 256:1              ; 7 bits    ; 1190 LEs      ; 1190 LEs             ; 0 LEs                  ; Yes        ; |skeleton|display_controller:display_controller_inst|screencharacter_mif_writer:smw|commands_printer_tracker:cpt|char_data[0] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -8850,6 +8851,19 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+-------------------------------------------------------------------------------------------------+
 
 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "display_controller:display_controller_inst|screencharacter_mif_writer:smw|targets_printer_tracker:tpt"                                                    ;
++------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                                                                                             ;
++------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
+; targetx    ; Input  ; Warning  ; Input port expression (32 bits) is smaller than the input port (33 bits) it drives.  Extra input bit(s) "targetx[32..32]" will be connected to GND. ;
+; targety    ; Input  ; Warning  ; Input port expression (32 bits) is smaller than the input port (33 bits) it drives.  Extra input bit(s) "targety[32..32]" will be connected to GND. ;
+; finish     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                 ;
+; char_index ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                 ;
+; char_data  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                 ;
++------------+--------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
 +--------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "display_controller:display_controller_inst|screencharacter_mif_writer:smw|number_to_six_digit:angconvert" ;
 +----------------+--------+----------+-------------------------------------------------------------------------------------------------+
@@ -9541,28 +9555,28 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA               ; 243                         ;
 ;     ENA CLR           ; 253                         ;
 ;     ENA CLR SCLR      ; 18                          ;
-;     ENA SCLR          ; 51                          ;
+;     ENA SCLR          ; 83                          ;
 ;     ENA SLD           ; 22                          ;
 ;     SCLR              ; 37                          ;
 ;     SLD               ; 11                          ;
-;     plain             ; 1138                        ;
+;     plain             ; 1106                        ;
 ; cycloneiii_io_obuf    ; 2                           ;
-; cycloneiii_lcell_comb ; 5511                        ;
+; cycloneiii_lcell_comb ; 5481                        ;
 ;     arith             ; 1345                        ;
 ;         1 data inputs ; 14                          ;
 ;         2 data inputs ; 346                         ;
 ;         3 data inputs ; 985                         ;
-;     normal            ; 4166                        ;
+;     normal            ; 4136                        ;
 ;         0 data inputs ; 193                         ;
 ;         1 data inputs ; 79                          ;
-;         2 data inputs ; 1475                        ;
-;         3 data inputs ; 155                         ;
-;         4 data inputs ; 2264                        ;
+;         2 data inputs ; 1474                        ;
+;         3 data inputs ; 157                         ;
+;         4 data inputs ; 2233                        ;
 ; cycloneiii_pll        ; 1                           ;
 ; cycloneiii_ram_block  ; 746                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 50.00                       ;
-; Average LUT depth     ; 19.67                       ;
+; Average LUT depth     ; 19.71                       ;
 +-----------------------+-----------------------------+
 
 
@@ -9571,7 +9585,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:13     ;
+; Top            ; 00:00:12     ;
 +----------------+--------------+
 
 
@@ -9581,7 +9595,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Wed Dec 05 16:01:43 2018
+    Info: Processing started: Wed Dec 05 16:32:38 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off skeleton -c skeleton
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -9694,7 +9708,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file index_m
     Info (12023): Found entity 1: index_mif_writer File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/index_mif_writer.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file screencharindex_to_pixeladdress.v
     Info (12023): Found entity 1: screencharindex_to_pixeladdress File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/screencharindex_to_pixeladdress.v Line: 1
-Warning (10275): Verilog HDL Module Instantiation warning at screencharacter_mif_writer.v(131): ignored dangling comma in List of Port Connections File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/screencharacter_mif_writer.v Line: 131
+Warning (10275): Verilog HDL Module Instantiation warning at screencharacter_mif_writer.v(160): ignored dangling comma in List of Port Connections File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/screencharacter_mif_writer.v Line: 160
 Info (12021): Found 1 design units, including 1 entities, in source file screencharacter_mif_writer.v
     Info (12023): Found entity 1: screencharacter_mif_writer File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/screencharacter_mif_writer.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file screenchar_mem.v
@@ -9712,10 +9726,13 @@ Info (12021): Found 1 design units, including 1 entities, in source file ascii_t
 Warning (10275): Verilog HDL Module Instantiation warning at ascii6digit_to_number.v(8): ignored dangling comma in List of Port Connections File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/ascii6digit_to_number.v Line: 8
 Info (12021): Found 1 design units, including 1 entities, in source file ascii6digit_to_number.v
     Info (12023): Found entity 1: ascii6digit_to_number File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/ascii6digit_to_number.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file targets_printer_tracker.v
+    Info (12023): Found entity 1: targets_printer_tracker File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/targets_printer_tracker.v Line: 1
 Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(58): created implicit net for "inclock" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/skeleton.v Line: 58
 Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(110): created implicit net for "DLY_RST" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/skeleton.v Line: 110
 Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(111): created implicit net for "VGA_CTRL_CLK" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/skeleton.v Line: 111
 Warning (10236): Verilog HDL Implicit Net warning at skeleton.v(111): created implicit net for "AUD_CTRL_CLK" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/skeleton.v Line: 111
+Warning (10236): Verilog HDL Implicit Net warning at screencharacter_mif_writer.v(146): created implicit net for "target_dfinish" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/screencharacter_mif_writer.v Line: 146
 Critical Warning (10846): Verilog HDL Instantiation warning at ps2_interpreter.v(37): instance has no name File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/ps2_interpreter.v Line: 37
 Critical Warning (10846): Verilog HDL Instantiation warning at ps2_interpreter.v(45): instance has no name File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/ps2_interpreter.v Line: 45
 Critical Warning (10846): Verilog HDL Instantiation warning at number_to_six_digit.v(14): instance has no name File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/number_to_six_digit.v Line: 14
@@ -9724,6 +9741,14 @@ Critical Warning (10846): Verilog HDL Instantiation warning at number_to_six_dig
 Critical Warning (10846): Verilog HDL Instantiation warning at number_to_six_digit.v(17): instance has no name File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/number_to_six_digit.v Line: 17
 Critical Warning (10846): Verilog HDL Instantiation warning at number_to_six_digit.v(18): instance has no name File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/number_to_six_digit.v Line: 18
 Critical Warning (10846): Verilog HDL Instantiation warning at number_to_six_digit.v(19): instance has no name File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/number_to_six_digit.v Line: 19
+Critical Warning (10846): Verilog HDL Instantiation warning at targets_printer_tracker.v(10): instance has no name File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/targets_printer_tracker.v Line: 10
+Critical Warning (10846): Verilog HDL Instantiation warning at targets_printer_tracker.v(11): instance has no name File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/targets_printer_tracker.v Line: 11
+Critical Warning (10846): Verilog HDL Instantiation warning at targets_printer_tracker.v(12): instance has no name File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/targets_printer_tracker.v Line: 12
+Critical Warning (10846): Verilog HDL Instantiation warning at targets_printer_tracker.v(13): instance has no name File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/targets_printer_tracker.v Line: 13
+Critical Warning (10846): Verilog HDL Instantiation warning at targets_printer_tracker.v(14): instance has no name File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/targets_printer_tracker.v Line: 14
+Critical Warning (10846): Verilog HDL Instantiation warning at targets_printer_tracker.v(15): instance has no name File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/targets_printer_tracker.v Line: 15
+Critical Warning (10846): Verilog HDL Instantiation warning at targets_printer_tracker.v(16): instance has no name File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/targets_printer_tracker.v Line: 16
+Critical Warning (10846): Verilog HDL Instantiation warning at targets_printer_tracker.v(17): instance has no name File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/targets_printer_tracker.v Line: 17
 Info (12127): Elaborating entity "skeleton" for the top level hierarchy
 Warning (10034): Output port "VGA_SYNC" at skeleton.v(21) has no driver File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/skeleton.v Line: 21
 Info (12128): Elaborating entity "pll" for hierarchy "pll:div" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/skeleton.v Line: 58
@@ -10143,13 +10168,25 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/alts
 Info (12128): Elaborating entity "altsyncram_3va1" for hierarchy "display_controller:display_controller_inst|monitor_color:monitor_color_inst|altsyncram:altsyncram_component|altsyncram_3va1:auto_generated" File: c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 791
 Info (12128): Elaborating entity "screencharacter_mif_writer" for hierarchy "display_controller:display_controller_inst|screencharacter_mif_writer:smw" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/display_controller.v Line: 155
 Warning (10036): Verilog HDL or VHDL warning at screencharacter_mif_writer.v(33): object "write_en" assigned a value but never read File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/screencharacter_mif_writer.v Line: 33
-Info (12128): Elaborating entity "number_to_six_digit" for hierarchy "display_controller:display_controller_inst|screencharacter_mif_writer:smw|number_to_six_digit:velconvert" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/screencharacter_mif_writer.v Line: 107
+Warning (10858): Verilog HDL warning at screencharacter_mif_writer.v(42): object targets_dfinish used but never assigned File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/screencharacter_mif_writer.v Line: 42
+Warning (10030): Net "targets_dfinish" at screencharacter_mif_writer.v(42) has no driver or initial value, using a default initial value '0' File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/screencharacter_mif_writer.v Line: 42
+Info (12128): Elaborating entity "number_to_six_digit" for hierarchy "display_controller:display_controller_inst|screencharacter_mif_writer:smw|number_to_six_digit:velconvert" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/screencharacter_mif_writer.v Line: 125
 Info (12128): Elaborating entity "number_to_ascii" for hierarchy "display_controller:display_controller_inst|screencharacter_mif_writer:smw|number_to_six_digit:velconvert|number_to_ascii:comb_182" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/number_to_six_digit.v Line: 14
 Warning (10030): Net "eight_bit_number[7..4]" at number_to_ascii.v(5) has no driver or initial value, using a default initial value '0' File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/number_to_ascii.v Line: 5
-Info (12128): Elaborating entity "commands_printer_tracker" for hierarchy "display_controller:display_controller_inst|screencharacter_mif_writer:smw|commands_printer_tracker:cpt" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/screencharacter_mif_writer.v Line: 120
+Info (12128): Elaborating entity "commands_printer_tracker" for hierarchy "display_controller:display_controller_inst|screencharacter_mif_writer:smw|commands_printer_tracker:cpt" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/screencharacter_mif_writer.v Line: 138
 Warning (10230): Verilog HDL assignment warning at commands_printer_tracker.v(22): truncated value with size 32 to match size of target (8) File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/commands_printer_tracker.v Line: 22
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "ps2_lines" into its bus
-Info (12128): Elaborating entity "screenchar_mem" for hierarchy "display_controller:display_controller_inst|screencharacter_mif_writer:smw|screenchar_mem:smem" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/screencharacter_mif_writer.v Line: 131
+Info (12128): Elaborating entity "targets_printer_tracker" for hierarchy "display_controller:display_controller_inst|screencharacter_mif_writer:smw|targets_printer_tracker:tpt" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/screencharacter_mif_writer.v Line: 149
+Warning (10230): Verilog HDL assignment warning at targets_printer_tracker.v(30): truncated value with size 32 to match size of target (8) File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/targets_printer_tracker.v Line: 30
+Warning (10230): Verilog HDL assignment warning at targets_printer_tracker.v(33): truncated value with size 32 to match size of target (8) File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/targets_printer_tracker.v Line: 33
+Warning (10230): Verilog HDL assignment warning at targets_printer_tracker.v(36): truncated value with size 32 to match size of target (8) File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/targets_printer_tracker.v Line: 36
+Warning (10230): Verilog HDL assignment warning at targets_printer_tracker.v(39): truncated value with size 32 to match size of target (8) File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/targets_printer_tracker.v Line: 39
+Warning (10230): Verilog HDL assignment warning at targets_printer_tracker.v(42): truncated value with size 32 to match size of target (8) File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/targets_printer_tracker.v Line: 42
+Warning (10230): Verilog HDL assignment warning at targets_printer_tracker.v(45): truncated value with size 32 to match size of target (8) File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/targets_printer_tracker.v Line: 45
+Warning (10230): Verilog HDL assignment warning at targets_printer_tracker.v(48): truncated value with size 32 to match size of target (8) File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/targets_printer_tracker.v Line: 48
+Warning (10230): Verilog HDL assignment warning at targets_printer_tracker.v(51): truncated value with size 32 to match size of target (8) File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/targets_printer_tracker.v Line: 51
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "ps2_lines" into its bus
+Info (12128): Elaborating entity "screenchar_mem" for hierarchy "display_controller:display_controller_inst|screencharacter_mif_writer:smw|screenchar_mem:smem" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/screencharacter_mif_writer.v Line: 160
 Info (12128): Elaborating entity "altsyncram" for hierarchy "display_controller:display_controller_inst|screencharacter_mif_writer:smw|screenchar_mem:smem|altsyncram:altsyncram_component" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/screenchar_mem.v Line: 90
 Info (12130): Elaborated megafunction instantiation "display_controller:display_controller_inst|screencharacter_mif_writer:smw|screenchar_mem:smem|altsyncram:altsyncram_component" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/screenchar_mem.v Line: 90
 Info (12133): Instantiated megafunction "display_controller:display_controller_inst|screencharacter_mif_writer:smw|screenchar_mem:smem|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/screenchar_mem.v Line: 90
@@ -10533,7 +10570,7 @@ Info (12131): Elaborated megafunction instantiation "ps2_processor_module:ps2pro
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_ngh.tdf
     Info (12023): Found entity 1: add_sub_ngh File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/db/add_sub_ngh.tdf Line: 22
 Info (12131): Elaborated megafunction instantiation "ps2_processor_module:ps2process|ps2_interpreter:ps2int|ascii6digit_to_number:comb_90|lpm_mult:Mult1|altshift:external_latency_ffs", which is child of megafunction instantiation "ps2_processor_module:ps2process|ps2_interpreter:ps2int|ascii6digit_to_number:comb_90|lpm_mult:Mult1" File: c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_mult.tdf Line: 351
-Warning (12241): 10 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12241): 11 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (13000): Registers with preset signals will power-up high File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/lcd.sv Line: 48
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
@@ -10678,18 +10715,18 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
 Warning (15897): PLL "VGA_Audio_PLL:p1|altpll:altpll_component|pll" has parameter compensate_clock set to clock0 but port CLK[0] is not connected File: c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altpll.tdf Line: 920
 Warning (15899): PLL "VGA_Audio_PLL:p1|altpll:altpll_component|pll" has parameters clk0_multiply_by and clk0_divide_by specified but port CLK[0] is not connected File: c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altpll.tdf Line: 920
-Info (21057): Implemented 7690 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 7660 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 150 output pins
     Info (21060): Implemented 2 bidirectional pins
-    Info (21061): Implemented 6789 logic cells
+    Info (21061): Implemented 6759 logic cells
     Info (21064): Implemented 746 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 266 warnings
-    Info: Peak virtual memory: 4978 megabytes
-    Info: Processing ended: Wed Dec 05 16:02:20 2018
-    Info: Elapsed time: 00:00:37
-    Info: Total CPU time (on all processors): 00:00:47
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 285 warnings
+    Info: Peak virtual memory: 4972 megabytes
+    Info: Processing ended: Wed Dec 05 16:33:13 2018
+    Info: Elapsed time: 00:00:35
+    Info: Total CPU time (on all processors): 00:00:45
 
 
 +------------------------------------------+

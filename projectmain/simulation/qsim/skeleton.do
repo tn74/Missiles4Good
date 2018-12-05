@@ -1,11 +1,11 @@
 onerror {exit -code 1}
 vlib work
 vlog -work work skeleton.vo
-vlog -work work Waveform9.vwf.vt
-vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.screencharacter_mif_writer_vlg_vec_tst
+vlog -work work ascii6digit_test.vwf.vt
+vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.ascii6digit_to_number_vlg_vec_tst
 vcd file -direction skeleton.msim.vcd
-vcd add -internal screencharacter_mif_writer_vlg_vec_tst/*
-vcd add -internal screencharacter_mif_writer_vlg_vec_tst/i1/*
+vcd add -internal ascii6digit_to_number_vlg_vec_tst/*
+vcd add -internal ascii6digit_to_number_vlg_vec_tst/i1/*
 proc simTimestamp {} {
     echo "Simulation time: $::now ps"
     if { [string equal running [runStatus]] } {

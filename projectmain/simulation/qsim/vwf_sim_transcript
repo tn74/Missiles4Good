@@ -7,7 +7,7 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off skeleton -c skeleton --vector_source="C:/Users/tn74/Documents/ECE350/Missiles/projectmain/Waveform9.vwf" --testbench_file="C:/Users/tn74/Documents/ECE350/Missiles/projectmain/simulation/qsim/Waveform9.vwf.vt"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off skeleton -c skeleton --vector_source="C:/Users/tn74/Documents/ECE350/Missiles/projectmain/ascii6digit_test.vwf" --testbench_file="C:/Users/tn74/Documents/ECE350/Missiles/projectmain/simulation/qsim/ascii6digit_test.vwf.vt"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -25,16 +25,11 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Tue Dec 04 16:47:44 2018
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off skeleton -c skeleton --vector_source=C:/Users/tn74/Documents/ECE350/Missiles/projectmain/Waveform9.vwf --testbench_file=C:/Users/tn74/Documents/ECE350/Missiles/projectmain/simulation/qsim/Waveform9.vwf.vt
+    Info: Processing started: Tue Dec 04 20:41:54 2018
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off skeleton -c skeleton --vector_source=C:/Users/tn74/Documents/ECE350/Missiles/projectmain/ascii6digit_test.vwf --testbench_file=C:/Users/tn74/Documents/ECE350/Missiles/projectmain/simulation/qsim/ascii6digit_test.vwf.vt
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
-t for simulation
-Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 61 warnings
-    Info: Peak virtual memory: 4667 megabytes
-    Info: Processing ended: Tue Dec 04 16:47:45 2018
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+oring output pin "number[9]" in vector source file when writing test bench files
 
 Completed successfully. 
 
@@ -60,15 +55,15 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Tue Dec 04 16:47:46 2018
+    Info: Processing started: Tue Dec 04 20:41:56 2018
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/tn74/Documents/ECE350/Missiles/projectmain/simulation/qsim/ skeleton -c skeleton
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file skeleton.vo in folder "C:/Users/tn74/Documents/ECE350/Missiles/projectmain/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4680 megabytes
-    Info: Processing ended: Tue Dec 04 16:47:47 2018
+    Info: Peak virtual memory: 4662 megabytes
+    Info: Processing ended: Tue Dec 04 20:41:57 2018
     Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
 
 Completed successfully. 
 
@@ -84,71 +79,58 @@ c:/intelfpga_lite/17.1/modelsim_ase/win32aloem//vsim -c -do skeleton.do
 
 Reading C:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
 
-
 # 10.5b
+
 
 # do skeleton.do
 # ** Warning: (vlib-34) Library already exists at "work".
 
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:47:48 on Dec 04,2018
+# Start time: 20:41:58 on Dec 04,2018
 # vlog -work work skeleton.vo 
-# -- Compiling module screencharacter_mif_writer
-
+# -- Compiling module ascii6digit_to_number
 # -- Compiling module hard_block
 # 
 # Top level modules:
-# 	screencharacter_mif_writer
-# End time: 16:47:48 on Dec 04,2018, Elapsed time: 0:00:00
+# 	ascii6digit_to_number
+# End time: 20:41:58 on Dec 04,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 16:47:48 on Dec 04,2018
-# vlog -work work Waveform9.vwf.vt 
+# Start time: 20:41:58 on Dec 04,2018
+# vlog -work work ascii6digit_test.vwf.vt 
 
-# -- Compiling module screencharacter_mif_writer_vlg_vec_tst
+# -- Compiling module ascii6digit_to_number_vlg_vec_tst
 # 
 # Top level modules:
-# 	screencharacter_mif_writer_vlg_vec_tst
-# End time: 16:47:48 on Dec 04,2018, Elapsed time: 0:00:00
+# 	ascii6digit_to_number_vlg_vec_tst
+# End time: 20:41:58 on Dec 04,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
-# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.screencharacter_mif_writer_vlg_vec_tst 
-# Start time: 16:47:49 on Dec 04,2018
-# Loading work.screencharacter_mif_writer_vlg_vec_tst
-# Loading work.screencharacter_mif_writer
+# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.ascii6digit_to_number_vlg_vec_tst 
+# Start time: 20:41:58 on Dec 04,2018
+# Loading work.ascii6digit_to_number_vlg_vec_tst
+# Loading work.ascii6digit_to_number
 # Loading work.hard_block
 # Loading cycloneive_ver.cycloneive_io_obuf
 # Loading cycloneive_ver.cycloneive_io_ibuf
-# Loading cycloneive_ver.cycloneive_clkctrl
-# Loading cycloneive_ver.cycloneive_mux41
-# Loading cycloneive_ver.cycloneive_ena_reg
 # Loading cycloneive_ver.cycloneive_lcell_comb
-# Loading altera_ver.dffeas
-# Loading cycloneive_ver.cycloneive_ram_block
-# Loading cycloneive_ver.cycloneive_ram_register
-# Loading cycloneive_ver.cycloneive_ram_pulse_generator
-# Loading altera_ver.PRIM_GDFF_LOW
-# ** Warning: Design size of 13097 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
-# Expect performance to be adversely affected.
-
 # after#26
-
-# ** Note: $finish    : Waveform9.vwf.vt(68)
-#    Time: 10 us  Iteration: 0  Instance: /screencharacter_mif_writer_vlg_vec_tst
-# End time: 16:47:50 on Dec 04,2018, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 1
+# ** Note: $finish    : ascii6digit_test.vwf.vt(56)
+#    Time: 1 us  Iteration: 0  Instance: /ascii6digit_to_number_vlg_vec_tst
+# End time: 20:41:58 on Dec 04,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading C:/Users/tn74/Documents/ECE350/Missiles/projectmain/Waveform9.vwf...
+Reading C:/Users/tn74/Documents/ECE350/Missiles/projectmain/ascii6digit_test.vwf...
 
 Reading C:/Users/tn74/Documents/ECE350/Missiles/projectmain/simulation/qsim/skeleton.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Users/tn74/Documents/ECE350/Missiles/projectmain/simulation/qsim/skeleton_20181204164750.sim.vwf
+Writing the resulting VWF to C:/Users/tn74/Documents/ECE350/Missiles/projectmain/simulation/qsim/skeleton_20181204204158.sim.vwf
 
 Finished VCD to VWF conversion.
 

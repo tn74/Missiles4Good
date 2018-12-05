@@ -110,5 +110,5 @@ module ps2_processor_module(
 	end
 	
 	wire fire;
-	ps2_interpreter ps2int(ps2_line_content, ps2_line_ready, velocity, angle, fire);
+	ps2_interpreter ps2int(clock, ps2_line_content, ps2_line_ready, velocity, angle, fire);
 endmodule

@@ -1,7 +1,7 @@
-module ps2_interpreter (input_line, line_ready, velocity,  angle, fire);
+module ps2_interpreter (clock, input_line, line_ready, velocity,  angle, fire);
 	
 	input[255:0] input_line;
-	input line_ready;
+	input line_ready, clock;
 	
 	output reg[31:0] velocity;
 	output reg[31:0] angle;
@@ -9,7 +9,7 @@ module ps2_interpreter (input_line, line_ready, velocity,  angle, fire);
 	
 	reg vready, aready;
 	wire[47:0] vascii, aascii;
-	wire[31:0] vnum, anum;
+	wire[31:0] vt, at;
 	
 	initial
 	begin
@@ -18,13 +18,13 @@ module ps2_interpreter (input_line, line_ready, velocity,  angle, fire);
 	end
 	
 	// ------------------------- Readys ---------------------------------
-	always @(posedge line_ready) begin
-		if(input_line[255: 255 - 39] == 40'h5345542041) // SET A XXX
+	always @(posedge clock) begin
+		if(line_ready & input_line[255: 255 - 39] == 40'h5345542041) // SET A XXX
 			aready <= 1'b1;
 		else 
 			aready <= 1'b0;
 			
-		if(input_line[255: 255 - 39] == 40'h5345542056) // SET V XXXXX
+		if(line_ready & input_line[255: 255 - 39] == 40'h5345542056) // SET V XXXXX
 			vready <= 1'b1;
 		else 
 			vready <= 1'b0;

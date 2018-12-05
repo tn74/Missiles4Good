@@ -16,6 +16,12 @@ module targets_printer_tracker(clock, start, targetx, targety, char_index, char_
 	number_to_ascii(targety[19:16], y_2);
 	number_to_ascii(targety[27:24], y_3);
 	
+	initial
+	begin
+		char_index <= 8'd00;
+		char_index <= 8'd116;
+	end
+	
 	
 // ----------------------------- Loop for printing to screen ---------------------
 	reg[31:0] count;
@@ -27,31 +33,31 @@ module targets_printer_tracker(clock, start, targetx, targety, char_index, char_
 		end else begin
 			if (count < 9) begin
 				if (count == 32'd1) begin
-					char_index <= 32'd116;
+					char_index <= 8'd116;
 					char_data <= x_3;
 				end else if (count == 32'd2) begin
-					char_index <= 32'd117;
+					char_index <= 8'd117;
 					char_data <= x_2;
 				end else if (count == 32'd3) begin
-					char_index <= 32'd119;
+					char_index <= 8'd119;
 					char_data <= x_1;
 				end else if (count == 32'd4) begin
-					char_index <= 32'd120;
+					char_index <= 8'd120;
 					char_data <= x_0;
 				end else if (count == 32'd5) begin
-					char_index <= 32'd122;
+					char_index <= 8'd122;
 					char_data <= y_3;
 				end else if (count == 32'd6) begin
-					char_index <= 32'd123;
+					char_index <= 8'd123;
 					char_data <= y_2;
 				end else if (count == 32'd7) begin
-					char_index <= 32'd125;
+					char_index <= 8'd125;
 					char_data <= y_1;
 				end else if (count == 32'd8) begin
-					char_index <= 32'd126;
+					char_index <= 8'd126;
 					char_data <= y_0;
 				end
-				count <= count + 32'd1;
+				count <= count + 8'd1;
 			end
 			
 		end

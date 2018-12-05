@@ -83,8 +83,23 @@ begin
 		count <= count + 1;
 	end 
 	
-	// Writing All Terminal
+	// Writing All Impact
 	else if (count == 32'd8) begin
+		if(targets_dfinish && ~targets_dbusy) begin
+			targets_dstart <= 1'b1;
+			targets_dbusy <= 1'b1;
+		end else if (targets_dfinish && targets_dbusy) begin
+			targets_dbusy <= 1'b0;
+			count <= count + 1;
+		end else begin
+			write_char <= targets_d_char_data;
+			char_index <= targets_d_char_index;
+			targets_dstart <= 1'b0;
+		end
+	end
+	
+	// Writing All Terminal
+	else if (count == 32'd9) begin
 		if(terminal_display_finish && ~terminal_display_busy) begin
 			terminal_display_start <= 1'b1;
 			terminal_display_busy <= 1'b1;
@@ -98,20 +113,7 @@ begin
 		end
 	end
 	
-	// Writing All Terminal
-	else if (count == 32'd9) begin
-		if(targets_dfinish && ~targets_dbusy) begin
-			targets_dstart <= 1'b1;
-			targets_dbusy <= 1'b1;
-		end else if (targets_dfinish && targets_dbusy) begin
-			targets_dbusy <= 1'b0;
-			count <= count + 1;
-		end else begin
-			write_char <= targets_d_char_data;
-			char_index <= targets_d_char_index;
-			targets_dstart <= 1'b0;
-		end
-	end
+	
 		
 	// Else Reset
 	else begin
@@ -143,7 +145,7 @@ targets_printer_tracker tpt(
 	.targetx(targetx),
 	.targety(targety),
 	
-	.finish(target_dfinish),
+	.finish(targets_dfinish),
 	.char_index(targets_d_char_index), 
 	.char_data(targets_d_char_data)
 );

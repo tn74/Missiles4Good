@@ -122,7 +122,7 @@ module skeleton(resetn,
 		.r_data(VGA_R),
 				
 		.velocity(VELOCITY),
-	   .fire(1'b0),
+	   .fire(FIRE),
 	   .angle(ANGLE),
 	   .targetx_0(reg23),
 	   .targetx_1(reg24),
@@ -244,4 +244,14 @@ module skeleton(resetn,
 //	   .trajectory_memloc_enable(reg17)
 //	);
 //	
+	 pwm_controller pwm_controller(
+		  arm_signal,
+		  theta_signal,
+		  motor_signal,
+		  clock,
+		  shoot_enable,
+		  ANGLE,
+		  VELOCITY
+	 );
+
 endmodule

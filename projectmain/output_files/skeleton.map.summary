@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Thu Dec 06 00:01:57 2018
+Analysis & Synthesis Status : Successful - Thu Dec 06 00:16:27 2018
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 Revision Name : skeleton
-Top-level Entity Name : skeleton
+Top-level Entity Name : ps2_processor_module
 Family : Cyclone IV E
-Total logic elements : 15,641
-    Total combinational functions : 13,240
-    Dedicated logic registers : 3,433
-Total registers : 3433
-Total pins : 157
+Total logic elements : 696
+    Total combinational functions : 359
+    Dedicated logic registers : 412
+Total registers : 412
+Total pins : 332
 Total virtual pins : 0
-Total memory bits : 1,339,584
-Embedded Multiplier 9-bit elements : 24
-Total PLLs : 1
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

@@ -4,339 +4,1231 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "debug_data_in[0]",
+					"name" : "ps2_line_content[0]",
 					"strict" : false
 				},
 				{
-					"name" : "debug_data_in[1]",
+					"name" : "ps2_line_content[1]",
 					"strict" : false
 				},
 				{
-					"name" : "debug_data_in[2]",
+					"name" : "ps2_line_content[2]",
 					"strict" : false
 				},
 				{
-					"name" : "debug_data_in[3]",
+					"name" : "ps2_line_content[3]",
 					"strict" : false
 				},
 				{
-					"name" : "debug_data_in[4]",
+					"name" : "ps2_line_content[4]",
 					"strict" : false
 				},
 				{
-					"name" : "debug_data_in[5]",
+					"name" : "ps2_line_content[5]",
 					"strict" : false
 				},
 				{
-					"name" : "debug_data_in[6]",
+					"name" : "ps2_line_content[6]",
 					"strict" : false
 				},
 				{
-					"name" : "debug_data_in[7]",
+					"name" : "ps2_line_content[7]",
 					"strict" : false
 				},
 				{
-					"name" : "debug_data_in[8]",
+					"name" : "ps2_line_content[8]",
 					"strict" : false
 				},
 				{
-					"name" : "debug_data_in[9]",
+					"name" : "ps2_line_content[9]",
 					"strict" : false
 				},
 				{
-					"name" : "debug_data_in[10]",
+					"name" : "ps2_line_content[10]",
 					"strict" : false
 				},
 				{
-					"name" : "debug_data_in[11]",
+					"name" : "ps2_line_content[11]",
 					"strict" : false
 				},
 				{
-					"name" : "lcd_data[0]",
+					"name" : "ps2_line_content[12]",
 					"strict" : false
 				},
 				{
-					"name" : "lcd_data[1]",
+					"name" : "ps2_line_content[13]",
 					"strict" : false
 				},
 				{
-					"name" : "lcd_data[2]",
+					"name" : "ps2_line_content[14]",
 					"strict" : false
 				},
 				{
-					"name" : "lcd_data[3]",
+					"name" : "ps2_line_content[15]",
 					"strict" : false
 				},
 				{
-					"name" : "lcd_data[4]",
+					"name" : "ps2_line_content[16]",
 					"strict" : false
 				},
 				{
-					"name" : "lcd_data[5]",
+					"name" : "ps2_line_content[17]",
 					"strict" : false
 				},
 				{
-					"name" : "lcd_data[6]",
+					"name" : "ps2_line_content[18]",
 					"strict" : false
 				},
 				{
-					"name" : "lcd_data[7]",
+					"name" : "ps2_line_content[19]",
 					"strict" : false
 				},
 				{
-					"name" : "lcd_en",
+					"name" : "ps2_line_content[20]",
 					"strict" : false
 				},
 				{
-					"name" : "lcd_rs",
+					"name" : "ps2_line_content[21]",
 					"strict" : false
 				},
 				{
-					"name" : "seg1[0]",
+					"name" : "ps2_line_content[22]",
 					"strict" : false
 				},
 				{
-					"name" : "seg1[1]",
+					"name" : "ps2_line_content[23]",
 					"strict" : false
 				},
 				{
-					"name" : "seg1[2]",
+					"name" : "ps2_line_content[24]",
 					"strict" : false
 				},
 				{
-					"name" : "seg1[3]",
+					"name" : "ps2_line_content[25]",
 					"strict" : false
 				},
 				{
-					"name" : "seg1[4]",
+					"name" : "ps2_line_content[26]",
 					"strict" : false
 				},
 				{
-					"name" : "seg1[5]",
+					"name" : "ps2_line_content[27]",
 					"strict" : false
 				},
 				{
-					"name" : "seg1[6]",
+					"name" : "ps2_line_content[28]",
 					"strict" : false
 				},
 				{
-					"name" : "seg2[0]",
+					"name" : "ps2_line_content[29]",
 					"strict" : false
 				},
 				{
-					"name" : "seg2[1]",
+					"name" : "ps2_line_content[30]",
 					"strict" : false
 				},
 				{
-					"name" : "seg2[2]",
+					"name" : "ps2_line_content[31]",
 					"strict" : false
 				},
 				{
-					"name" : "seg2[3]",
+					"name" : "ps2_line_content[32]",
 					"strict" : false
 				},
 				{
-					"name" : "seg2[4]",
+					"name" : "ps2_line_content[33]",
 					"strict" : false
 				},
 				{
-					"name" : "seg2[5]",
+					"name" : "ps2_line_content[34]",
 					"strict" : false
 				},
 				{
-					"name" : "seg2[6]",
+					"name" : "ps2_line_content[35]",
 					"strict" : false
 				},
 				{
-					"name" : "seg3[0]",
+					"name" : "ps2_line_content[36]",
 					"strict" : false
 				},
 				{
-					"name" : "seg3[1]",
+					"name" : "ps2_line_content[37]",
 					"strict" : false
 				},
 				{
-					"name" : "seg3[2]",
+					"name" : "ps2_line_content[38]",
 					"strict" : false
 				},
 				{
-					"name" : "seg3[3]",
+					"name" : "ps2_line_content[39]",
 					"strict" : false
 				},
 				{
-					"name" : "seg3[4]",
+					"name" : "ps2_line_content[40]",
 					"strict" : false
 				},
 				{
-					"name" : "seg3[5]",
+					"name" : "ps2_line_content[41]",
 					"strict" : false
 				},
 				{
-					"name" : "seg3[6]",
+					"name" : "ps2_line_content[42]",
 					"strict" : false
 				},
 				{
-					"name" : "seg4[0]",
+					"name" : "ps2_line_content[43]",
 					"strict" : false
 				},
 				{
-					"name" : "seg4[1]",
+					"name" : "ps2_line_content[44]",
 					"strict" : false
 				},
 				{
-					"name" : "seg4[2]",
+					"name" : "ps2_line_content[45]",
 					"strict" : false
 				},
 				{
-					"name" : "seg4[3]",
+					"name" : "ps2_line_content[46]",
 					"strict" : false
 				},
 				{
-					"name" : "seg4[4]",
+					"name" : "ps2_line_content[47]",
 					"strict" : false
 				},
 				{
-					"name" : "seg4[5]",
+					"name" : "ps2_line_content[48]",
 					"strict" : false
 				},
 				{
-					"name" : "seg4[6]",
+					"name" : "ps2_line_content[49]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_HS",
+					"name" : "ps2_line_content[50]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_VS",
+					"name" : "ps2_line_content[51]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_BLANK",
+					"name" : "ps2_line_content[52]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_R[0]",
+					"name" : "ps2_line_content[53]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_R[1]",
+					"name" : "ps2_line_content[54]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_R[2]",
+					"name" : "ps2_line_content[55]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_R[3]",
+					"name" : "ps2_line_content[56]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_R[4]",
+					"name" : "ps2_line_content[57]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_R[5]",
+					"name" : "ps2_line_content[58]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_R[6]",
+					"name" : "ps2_line_content[59]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_R[7]",
+					"name" : "ps2_line_content[60]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_G[0]",
+					"name" : "ps2_line_content[61]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_G[1]",
+					"name" : "ps2_line_content[62]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_G[2]",
+					"name" : "ps2_line_content[63]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_G[3]",
+					"name" : "ps2_line_content[64]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_G[4]",
+					"name" : "ps2_line_content[65]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_G[5]",
+					"name" : "ps2_line_content[66]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_G[6]",
+					"name" : "ps2_line_content[67]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_G[7]",
+					"name" : "ps2_line_content[68]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_B[0]",
+					"name" : "ps2_line_content[69]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_B[1]",
+					"name" : "ps2_line_content[70]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_B[2]",
+					"name" : "ps2_line_content[71]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_B[3]",
+					"name" : "ps2_line_content[72]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_B[4]",
+					"name" : "ps2_line_content[73]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_B[5]",
+					"name" : "ps2_line_content[74]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_B[6]",
+					"name" : "ps2_line_content[75]",
 					"strict" : false
 				},
 				{
-					"name" : "VGA_B[7]",
+					"name" : "ps2_line_content[76]",
 					"strict" : false
 				},
 				{
-					"name" : "arm_signal",
+					"name" : "ps2_line_content[77]",
 					"strict" : false
 				},
 				{
-					"name" : "theta_signal",
+					"name" : "ps2_line_content[78]",
 					"strict" : false
 				},
 				{
-					"name" : "motor_signal",
+					"name" : "ps2_line_content[79]",
 					"strict" : false
 				},
 				{
-					"name" : "ps2_clock",
+					"name" : "ps2_line_content[80]",
 					"strict" : false
 				},
 				{
-					"name" : "ps2_data",
+					"name" : "ps2_line_content[81]",
 					"strict" : false
 				},
 				{
-					"name" : "CLOCK_50",
+					"name" : "ps2_line_content[82]",
 					"strict" : false
 				},
 				{
-					"name" : "resetn",
+					"name" : "ps2_line_content[83]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[84]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[85]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[86]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[87]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[88]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[89]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[90]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[91]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[92]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[93]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[94]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[95]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[96]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[97]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[98]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[99]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[100]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[101]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[102]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[103]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[104]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[105]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[106]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[107]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[108]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[109]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[110]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[111]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[112]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[113]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[114]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[115]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[116]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[117]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[118]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[119]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[120]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[121]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[122]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[123]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[124]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[125]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[126]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[127]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[128]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[129]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[130]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[131]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[132]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[133]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[134]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[135]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[136]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[137]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[138]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[139]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[140]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[141]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[142]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[143]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[144]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[145]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[146]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[147]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[148]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[149]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[150]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[151]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[152]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[153]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[154]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[155]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[156]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[157]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[158]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[159]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[160]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[161]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[162]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[163]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[164]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[165]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[166]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[167]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[168]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[169]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[170]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[171]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[172]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[173]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[174]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[175]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[176]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[177]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[178]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[179]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[180]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[181]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[182]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[183]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[184]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[185]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[186]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[187]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[188]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[189]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[190]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[191]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[192]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[193]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[194]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[195]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[196]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[197]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[198]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[199]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[200]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[201]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[202]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[203]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[204]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[205]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[206]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[207]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[208]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[209]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[210]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[211]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[212]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[213]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[214]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[215]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[216]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[217]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[218]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[219]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[220]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[221]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[222]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[223]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[224]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[225]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[226]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[227]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[228]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[229]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[230]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[231]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[232]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[233]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[234]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[235]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[236]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[237]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[238]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[239]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[240]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[241]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[242]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[243]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[244]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[245]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[246]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[247]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[248]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[249]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[250]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[251]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[252]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[253]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[254]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_content[255]",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_line_ready",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[0]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[1]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[2]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[3]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[4]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[5]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[6]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[7]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[8]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[9]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[10]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[11]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[12]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[13]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[14]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[15]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[16]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[17]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[18]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[19]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[20]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[21]",
+					"strict" : false
+				},
+				{
+					"name" : "velocity[22]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[0]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[1]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[2]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[3]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[4]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[5]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[6]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[7]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[8]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[9]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[10]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[11]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[12]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[13]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[14]",
+					"strict" : false
+				},
+				{
+					"name" : "angle[15]",
+					"strict" : false
+				},
+				{
+					"name" : "fire",
+					"strict" : false
+				},
+				{
+					"name" : "ascii_char[0]",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				},
+				{
+					"name" : "key_pressed",
+					"strict" : false
+				},
+				{
+					"name" : "ascii_char[2]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii_char[4]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii_char[5]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii_char[6]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii_char[7]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii_char[1]",
+					"strict" : false
+				},
+				{
+					"name" : "ascii_char[3]",
 					"strict" : false
 				}
 			]

@@ -1,0 +1,7 @@
+*
+!mif_outputs
+!.gitignore
+!*.v
+!*.tex
+!*.vwf
+!*.mif

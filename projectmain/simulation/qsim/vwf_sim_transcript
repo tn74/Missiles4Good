@@ -25,16 +25,11 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Wed Dec 05 15:03:57 2018
+    Info: Processing started: Wed Dec 05 23:58:23 2018
 Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off skeleton -c skeleton --vector_source=C:/Users/tn74/Documents/ECE350/Missiles/projectmain/ps2_interpreter_test.vwf --testbench_file=C:/Users/tn74/Documents/ECE350/Missiles/projectmain/simulation/qsim/ps2_interpreter_test.vwf.vt
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
-og Test Bench File C:/Users/tn74/Documents/ECE350/Missiles/projectmain/simulation/qsim/ps2_interpreter_test.vwf.vt for simulation
-Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 327 warnings
-    Info: Peak virtual memory: 4694 megabytes
-    Info: Processing ended: Wed Dec 05 15:03:58 2018
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+test bench files
 
 Completed successfully. 
 
@@ -60,15 +55,15 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Wed Dec 05 15:03:59 2018
+    Info: Processing started: Wed Dec 05 23:58:25 2018
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/tn74/Documents/ECE350/Missiles/projectmain/simulation/qsim/ skeleton -c skeleton
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file skeleton.vo in folder "C:/Users/tn74/Documents/ECE350/Missiles/projectmain/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4711 megabytes
-    Info: Processing ended: Wed Dec 05 15:04:01 2018
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Peak virtual memory: 4661 megabytes
+    Info: Processing ended: Wed Dec 05 23:58:26 2018
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 Completed successfully. 
 
@@ -86,33 +81,33 @@ Reading C:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
 
 # 10.5b
 
+
 # do skeleton.do
 # ** Warning: (vlib-34) Library already exists at "work".
-
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:04:01 on Dec 05,2018
-# vlog -work work skeleton.vo 
-# -- Compiling module skeleton
 
+# Start time: 23:58:27 on Dec 05,2018
+# vlog -work work skeleton.vo 
+# -- Compiling module ps2_interpreter
+# -- Compiling module hard_block
 # 
 # Top level modules:
-# 	skeleton
-# End time: 15:04:02 on Dec 05,2018, Elapsed time: 0:00:01
+# 	ps2_interpreter
+# End time: 23:58:27 on Dec 05,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:04:02 on Dec 05,2018
+# Start time: 23:58:27 on Dec 05,2018
 # vlog -work work ps2_interpreter_test.vwf.vt 
 
-# -- Compiling module skeleton_vlg_vec_tst
+# -- Compiling module ps2_interpreter_vlg_vec_tst
 # 
 # Top level modules:
-# 	skeleton_vlg_vec_tst
-# End time: 15:04:03 on Dec 05,2018, Elapsed time: 0:00:01
+# 	ps2_interpreter_vlg_vec_tst
+# End time: 23:58:27 on Dec 05,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.ps2_interpreter_vlg_vec_tst 
-# Start time: 15:04:03 on Dec 05,2018
+# Start time: 23:58:28 on Dec 05,2018
 # Loading work.ps2_interpreter_vlg_vec_tst
 # Loading work.ps2_interpreter
 # Loading work.hard_block
@@ -124,10 +119,11 @@ Reading C:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
 # Loading cycloneive_ver.cycloneive_lcell_comb
 # Loading altera_ver.dffeas
 # Loading altera_ver.PRIM_GDFF_LOW
-# after#25
+# after#26
 # ** Note: $finish    : ps2_interpreter_test.vwf.vt(52)
 #    Time: 1 us  Iteration: 0  Instance: /ps2_interpreter_vlg_vec_tst
-# End time: 15:04:03 on Dec 05,2018, Elapsed time: 0:00:00
+
+# End time: 23:58:28 on Dec 05,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
@@ -140,7 +136,7 @@ Reading C:/Users/tn74/Documents/ECE350/Missiles/projectmain/simulation/qsim/skel
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Users/tn74/Documents/ECE350/Missiles/projectmain/simulation/qsim/skeleton_20181205150403.sim.vwf
+Writing the resulting VWF to C:/Users/tn74/Documents/ECE350/Missiles/projectmain/simulation/qsim/skeleton_20181205235828.sim.vwf
 
 Finished VCD to VWF conversion.
 

@@ -80,8 +80,8 @@ module skeleton(resetn,
 	Hexadecimal_To_Seven_Segment hex2(ps2_out[7:4], seg2);
 	
 	// the other seven segment displays are currently set to 0
-	Hexadecimal_To_Seven_Segment hex3(ANGLE[3:0], seg3);
-	Hexadecimal_To_Seven_Segment hex4(ANGLE[7:4], seg4);
+	Hexadecimal_To_Seven_Segment hex3(4'b0, seg3);
+	Hexadecimal_To_Seven_Segment hex4(4'b0, seg4);
 	Hexadecimal_To_Seven_Segment hex5(4'b0, seg5);
 	Hexadecimal_To_Seven_Segment hex6(4'b0, seg6);
 	Hexadecimal_To_Seven_Segment hex7(4'b0, seg7);

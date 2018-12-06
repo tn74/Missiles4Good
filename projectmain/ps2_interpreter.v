@@ -5,7 +5,7 @@ module ps2_interpreter (clock, input_line, line_ready, velocity,  angle, fire);
 	
 	output reg[31:0] velocity;
 	output reg[31:0] angle;
-	output fire;
+	output reg fire;
 	
 	reg vready, aready;
 	wire[47:0] vascii, aascii;
@@ -28,6 +28,11 @@ module ps2_interpreter (clock, input_line, line_ready, velocity,  angle, fire);
 			vready <= 1'b1;
 		else 
 			vready <= 1'b0;
+			
+		if (line_ready & input_line[255: 255 - 31] == 32'h46495245)
+			fire <= 1'b1;
+		else
+			fire <= 1'b0;
 	end
 	
 	
@@ -46,6 +51,7 @@ module ps2_interpreter (clock, input_line, line_ready, velocity,  angle, fire);
 	always @(posedge aready) begin
 		angle <= at;
 	end
+	
 	
 	
 	

@@ -153,6 +153,9 @@ VGA_B[5] <= display_controller:display_controller_inst.b_data
 VGA_B[6] <= display_controller:display_controller_inst.b_data
 VGA_B[7] <= display_controller:display_controller_inst.b_data
 CLOCK_50 => clock.IN13
+arm_signal <= pwm_controller:pwm_controller.port0
+theta_signal <= pwm_controller:pwm_controller.port1
+motor_signal <= pwm_controller:pwm_controller.port2
 
 
 |skeleton|pll:div
@@ -21414,9 +21417,11 @@ angle[28] <= ps2_interpreter:ps2int.angle
 angle[29] <= ps2_interpreter:ps2int.angle
 angle[30] <= ps2_interpreter:ps2int.angle
 angle[31] <= ps2_interpreter:ps2int.angle
+fire <= ps2_interpreter:ps2int.fire
 
 
 |skeleton|ps2_processor_module:ps2process|ps2_interpreter:ps2int
+clock => fire~reg0.CLK
 clock => vready.CLK
 clock => aready.CLK
 input_line[0] => ~NO_FANOUT~
@@ -21653,68 +21658,101 @@ input_line[223] => Equal0.IN34
 input_line[223] => Equal1.IN36
 input_line[224] => Equal0.IN33
 input_line[224] => Equal1.IN35
+input_line[224] => Equal2.IN11
 input_line[225] => Equal0.IN32
 input_line[225] => Equal1.IN34
+input_line[225] => Equal2.IN31
 input_line[226] => Equal0.IN31
 input_line[226] => Equal1.IN33
+input_line[226] => Equal2.IN10
 input_line[227] => Equal0.IN30
 input_line[227] => Equal1.IN32
+input_line[227] => Equal2.IN30
 input_line[228] => Equal0.IN29
 input_line[228] => Equal1.IN31
+input_line[228] => Equal2.IN29
 input_line[229] => Equal0.IN10
 input_line[229] => Equal1.IN10
+input_line[229] => Equal2.IN28
 input_line[230] => Equal0.IN28
 input_line[230] => Equal1.IN30
+input_line[230] => Equal2.IN9
 input_line[231] => Equal0.IN27
 input_line[231] => Equal1.IN29
+input_line[231] => Equal2.IN27
 input_line[232] => Equal0.IN26
 input_line[232] => Equal1.IN28
+input_line[232] => Equal2.IN26
 input_line[233] => Equal0.IN25
 input_line[233] => Equal1.IN27
+input_line[233] => Equal2.IN8
 input_line[234] => Equal0.IN9
 input_line[234] => Equal1.IN9
+input_line[234] => Equal2.IN25
 input_line[235] => Equal0.IN24
 input_line[235] => Equal1.IN26
+input_line[235] => Equal2.IN24
 input_line[236] => Equal0.IN8
 input_line[236] => Equal1.IN8
+input_line[236] => Equal2.IN7
 input_line[237] => Equal0.IN23
 input_line[237] => Equal1.IN25
+input_line[237] => Equal2.IN23
 input_line[238] => Equal0.IN7
 input_line[238] => Equal1.IN7
+input_line[238] => Equal2.IN6
 input_line[239] => Equal0.IN22
 input_line[239] => Equal1.IN24
+input_line[239] => Equal2.IN22
 input_line[240] => Equal0.IN6
 input_line[240] => Equal1.IN6
+input_line[240] => Equal2.IN5
 input_line[241] => Equal0.IN21
 input_line[241] => Equal1.IN23
+input_line[241] => Equal2.IN21
 input_line[242] => Equal0.IN5
 input_line[242] => Equal1.IN5
+input_line[242] => Equal2.IN20
 input_line[243] => Equal0.IN20
 input_line[243] => Equal1.IN22
+input_line[243] => Equal2.IN4
 input_line[244] => Equal0.IN19
 input_line[244] => Equal1.IN21
+input_line[244] => Equal2.IN19
 input_line[245] => Equal0.IN18
 input_line[245] => Equal1.IN20
+input_line[245] => Equal2.IN18
 input_line[246] => Equal0.IN4
 input_line[246] => Equal1.IN4
+input_line[246] => Equal2.IN3
 input_line[247] => Equal0.IN17
 input_line[247] => Equal1.IN19
+input_line[247] => Equal2.IN17
 input_line[248] => Equal0.IN3
 input_line[248] => Equal1.IN3
+input_line[248] => Equal2.IN16
 input_line[249] => Equal0.IN2
 input_line[249] => Equal1.IN2
+input_line[249] => Equal2.IN2
 input_line[250] => Equal0.IN16
 input_line[250] => Equal1.IN18
+input_line[250] => Equal2.IN1
 input_line[251] => Equal0.IN15
 input_line[251] => Equal1.IN17
+input_line[251] => Equal2.IN15
 input_line[252] => Equal0.IN1
 input_line[252] => Equal1.IN1
+input_line[252] => Equal2.IN14
 input_line[253] => Equal0.IN14
 input_line[253] => Equal1.IN16
+input_line[253] => Equal2.IN13
 input_line[254] => Equal0.IN0
 input_line[254] => Equal1.IN0
+input_line[254] => Equal2.IN0
 input_line[255] => Equal0.IN13
 input_line[255] => Equal1.IN15
+input_line[255] => Equal2.IN12
+line_ready => always0.IN1
 line_ready => always0.IN1
 line_ready => always0.IN1
 velocity[0] <= velocity[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -21781,10 +21819,10 @@ angle[28] <= angle[28]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 angle[29] <= angle[29]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 angle[30] <= angle[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 angle[31] <= angle[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-fire <= <GND>
+fire <= fire~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|skeleton|ps2_processor_module:ps2process|ps2_interpreter:ps2int|ascii6digit_to_number:comb_90
+|skeleton|ps2_processor_module:ps2process|ps2_interpreter:ps2int|ascii6digit_to_number:comb_107
 ascii[0] => ascii[0].IN1
 ascii[1] => ascii[1].IN1
 ascii[2] => ascii[2].IN1
@@ -21867,7 +21905,7 @@ number[30] <= Add5.DB_MAX_OUTPUT_PORT_TYPE
 number[31] <= Add5.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|skeleton|ps2_processor_module:ps2process|ps2_interpreter:ps2int|ascii6digit_to_number:comb_90|ascii_to_number:a
+|skeleton|ps2_processor_module:ps2process|ps2_interpreter:ps2int|ascii6digit_to_number:comb_107|ascii_to_number:a
 ascii[0] => number[0].DATAIN
 ascii[1] => number[1].DATAIN
 ascii[2] => number[2].DATAIN
@@ -21910,7 +21948,7 @@ number[30] <= <GND>
 number[31] <= <GND>
 
 
-|skeleton|ps2_processor_module:ps2process|ps2_interpreter:ps2int|ascii6digit_to_number:comb_90|ascii_to_number:b
+|skeleton|ps2_processor_module:ps2process|ps2_interpreter:ps2int|ascii6digit_to_number:comb_107|ascii_to_number:b
 ascii[0] => number[0].DATAIN
 ascii[1] => number[1].DATAIN
 ascii[2] => number[2].DATAIN
@@ -21953,7 +21991,7 @@ number[30] <= <GND>
 number[31] <= <GND>
 
 
-|skeleton|ps2_processor_module:ps2process|ps2_interpreter:ps2int|ascii6digit_to_number:comb_90|ascii_to_number:c
+|skeleton|ps2_processor_module:ps2process|ps2_interpreter:ps2int|ascii6digit_to_number:comb_107|ascii_to_number:c
 ascii[0] => number[0].DATAIN
 ascii[1] => number[1].DATAIN
 ascii[2] => number[2].DATAIN
@@ -21996,7 +22034,7 @@ number[30] <= <GND>
 number[31] <= <GND>
 
 
-|skeleton|ps2_processor_module:ps2process|ps2_interpreter:ps2int|ascii6digit_to_number:comb_90|ascii_to_number:d
+|skeleton|ps2_processor_module:ps2process|ps2_interpreter:ps2int|ascii6digit_to_number:comb_107|ascii_to_number:d
 ascii[0] => number[0].DATAIN
 ascii[1] => number[1].DATAIN
 ascii[2] => number[2].DATAIN
@@ -22039,7 +22077,7 @@ number[30] <= <GND>
 number[31] <= <GND>
 
 
-|skeleton|ps2_processor_module:ps2process|ps2_interpreter:ps2int|ascii6digit_to_number:comb_90|ascii_to_number:e
+|skeleton|ps2_processor_module:ps2process|ps2_interpreter:ps2int|ascii6digit_to_number:comb_107|ascii_to_number:e
 ascii[0] => number[0].DATAIN
 ascii[1] => number[1].DATAIN
 ascii[2] => number[2].DATAIN
@@ -22082,7 +22120,7 @@ number[30] <= <GND>
 number[31] <= <GND>
 
 
-|skeleton|ps2_processor_module:ps2process|ps2_interpreter:ps2int|ascii6digit_to_number:comb_90|ascii_to_number:f
+|skeleton|ps2_processor_module:ps2process|ps2_interpreter:ps2int|ascii6digit_to_number:comb_107|ascii_to_number:f
 ascii[0] => number[0].DATAIN
 ascii[1] => number[1].DATAIN
 ascii[2] => number[2].DATAIN
@@ -22125,7 +22163,7 @@ number[30] <= <GND>
 number[31] <= <GND>
 
 
-|skeleton|ps2_processor_module:ps2process|ps2_interpreter:ps2int|ascii6digit_to_number:comb_204
+|skeleton|ps2_processor_module:ps2process|ps2_interpreter:ps2int|ascii6digit_to_number:comb_221
 ascii[0] => ascii[0].IN1
 ascii[1] => ascii[1].IN1
 ascii[2] => ascii[2].IN1
@@ -22208,7 +22246,7 @@ number[30] <= Add5.DB_MAX_OUTPUT_PORT_TYPE
 number[31] <= Add5.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|skeleton|ps2_processor_module:ps2process|ps2_interpreter:ps2int|ascii6digit_to_number:comb_204|ascii_to_number:a
+|skeleton|ps2_processor_module:ps2process|ps2_interpreter:ps2int|ascii6digit_to_number:comb_221|ascii_to_number:a
 ascii[0] => number[0].DATAIN
 ascii[1] => number[1].DATAIN
 ascii[2] => number[2].DATAIN
@@ -22251,7 +22289,7 @@ number[30] <= <GND>
 number[31] <= <GND>
 
 
-|skeleton|ps2_processor_module:ps2process|ps2_interpreter:ps2int|ascii6digit_to_number:comb_204|ascii_to_number:b
+|skeleton|ps2_processor_module:ps2process|ps2_interpreter:ps2int|ascii6digit_to_number:comb_221|ascii_to_number:b
 ascii[0] => number[0].DATAIN
 ascii[1] => number[1].DATAIN
 ascii[2] => number[2].DATAIN
@@ -22294,7 +22332,7 @@ number[30] <= <GND>
 number[31] <= <GND>
 
 
-|skeleton|ps2_processor_module:ps2process|ps2_interpreter:ps2int|ascii6digit_to_number:comb_204|ascii_to_number:c
+|skeleton|ps2_processor_module:ps2process|ps2_interpreter:ps2int|ascii6digit_to_number:comb_221|ascii_to_number:c
 ascii[0] => number[0].DATAIN
 ascii[1] => number[1].DATAIN
 ascii[2] => number[2].DATAIN
@@ -22337,7 +22375,7 @@ number[30] <= <GND>
 number[31] <= <GND>
 
 
-|skeleton|ps2_processor_module:ps2process|ps2_interpreter:ps2int|ascii6digit_to_number:comb_204|ascii_to_number:d
+|skeleton|ps2_processor_module:ps2process|ps2_interpreter:ps2int|ascii6digit_to_number:comb_221|ascii_to_number:d
 ascii[0] => number[0].DATAIN
 ascii[1] => number[1].DATAIN
 ascii[2] => number[2].DATAIN
@@ -22380,7 +22418,7 @@ number[30] <= <GND>
 number[31] <= <GND>
 
 
-|skeleton|ps2_processor_module:ps2process|ps2_interpreter:ps2int|ascii6digit_to_number:comb_204|ascii_to_number:e
+|skeleton|ps2_processor_module:ps2process|ps2_interpreter:ps2int|ascii6digit_to_number:comb_221|ascii_to_number:e
 ascii[0] => number[0].DATAIN
 ascii[1] => number[1].DATAIN
 ascii[2] => number[2].DATAIN
@@ -22423,7 +22461,7 @@ number[30] <= <GND>
 number[31] <= <GND>
 
 
-|skeleton|ps2_processor_module:ps2process|ps2_interpreter:ps2int|ascii6digit_to_number:comb_204|ascii_to_number:f
+|skeleton|ps2_processor_module:ps2process|ps2_interpreter:ps2int|ascii6digit_to_number:comb_221|ascii_to_number:f
 ascii[0] => number[0].DATAIN
 ascii[1] => number[1].DATAIN
 ascii[2] => number[2].DATAIN

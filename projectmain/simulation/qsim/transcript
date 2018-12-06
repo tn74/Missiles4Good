@@ -1,28 +1,28 @@
 # do skeleton.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:36:48 on Dec 05,2018
+# Start time: 23:58:27 on Dec 05,2018
 # vlog -work work skeleton.vo 
-# -- Compiling module targets_printer_tracker
+# -- Compiling module ps2_interpreter
 # -- Compiling module hard_block
 # 
 # Top level modules:
-# 	targets_printer_tracker
-# End time: 18:36:48 on Dec 05,2018, Elapsed time: 0:00:00
+# 	ps2_interpreter
+# End time: 23:58:27 on Dec 05,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 18:36:48 on Dec 05,2018
-# vlog -work work targets_writer_tester.vwf.vt 
-# -- Compiling module targets_printer_tracker_vlg_vec_tst
+# Start time: 23:58:27 on Dec 05,2018
+# vlog -work work ps2_interpreter_test.vwf.vt 
+# -- Compiling module ps2_interpreter_vlg_vec_tst
 # 
 # Top level modules:
-# 	targets_printer_tracker_vlg_vec_tst
-# End time: 18:36:48 on Dec 05,2018, Elapsed time: 0:00:00
+# 	ps2_interpreter_vlg_vec_tst
+# End time: 23:58:27 on Dec 05,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.targets_printer_tracker_vlg_vec_tst 
-# Start time: 18:36:48 on Dec 05,2018
-# Loading work.targets_printer_tracker_vlg_vec_tst
-# Loading work.targets_printer_tracker
+# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.ps2_interpreter_vlg_vec_tst 
+# Start time: 23:58:28 on Dec 05,2018
+# Loading work.ps2_interpreter_vlg_vec_tst
+# Loading work.ps2_interpreter
 # Loading work.hard_block
 # Loading cycloneive_ver.cycloneive_io_obuf
 # Loading cycloneive_ver.cycloneive_io_ibuf
@@ -33,7 +33,7 @@
 # Loading altera_ver.dffeas
 # Loading altera_ver.PRIM_GDFF_LOW
 # after#26
-# ** Note: $finish    : targets_writer_tester.vwf.vt(54)
-#    Time: 1 us  Iteration: 0  Instance: /targets_printer_tracker_vlg_vec_tst
-# End time: 18:36:48 on Dec 05,2018, Elapsed time: 0:00:00
+# ** Note: $finish    : ps2_interpreter_test.vwf.vt(52)
+#    Time: 1 us  Iteration: 0  Instance: /ps2_interpreter_vlg_vec_tst
+# End time: 23:58:28 on Dec 05,2018, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

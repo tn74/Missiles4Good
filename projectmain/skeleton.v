@@ -11,7 +11,13 @@ module skeleton(resetn,
 	VGA_R,   														//	VGA Red[9:0]
 	VGA_G,	 														//	VGA Green[9:0]
 	VGA_B,															//	VGA Blue[9:0]
-	CLOCK_50);  													// 50 MHz clock
+	CLOCK_50,
+	arm_signal,
+	theta_signal,
+	motor_signal
+	);  													// 50 MHz clock
+	
+	
 		
 	////////////////////////	VGA	////////////////////////////
 	output			VGA_CLK;   				//	VGA Clock
@@ -67,7 +73,7 @@ module skeleton(resetn,
 	// keyboard controller
 	PS2_Interface myps2(clock, resetn, ps2_clock, ps2_data, ps2_key_data, ps2_key_pressed, ps2_out);
 	ps2_cleaner cleaner(clock, ps2_key_data, ps2_out, input_character, input_made);
-	ps2_processor_module ps2process(clock, input_character, input_made, PS2_LINE_CONTENT, PS2_LINE_READY, VELOCITY, ANGLE);
+	ps2_processor_module ps2process(clock, input_character, input_made, PS2_LINE_CONTENT, PS2_LINE_READY, VELOCITY, ANGLE, FIRE);
 	
 	// example for sending ps2 data to the first two seven segment displays
 	Hexadecimal_To_Seven_Segment hex1(ps2_out[3:0], seg1);
@@ -244,14 +250,17 @@ module skeleton(resetn,
 //	   .trajectory_memloc_enable(reg17)
 //	);
 //	
-	 pwm_controller pwm_controller(
-		  arm_signal,
-		  theta_signal,
-		  motor_signal,
-		  clock,
-		  shoot_enable,
-		  ANGLE,
-		  VELOCITY
-	 );
+
+	output arm_signal, theta_signal, motor_signal;
+	
+	pwm_controller pwm_controller(
+		arm_signal,
+		theta_signal,
+		motor_signal,
+		clock,
+		FIRE,
+		ANGLE,
+		VELOCITY
+	);
 
 endmodule

@@ -312,6 +312,18 @@
 					"strict" : false
 				},
 				{
+					"name" : "arm_signal",
+					"strict" : false
+				},
+				{
+					"name" : "theta_signal",
+					"strict" : false
+				},
+				{
+					"name" : "motor_signal",
+					"strict" : false
+				},
+				{
 					"name" : "ps2_clock",
 					"strict" : false
 				},

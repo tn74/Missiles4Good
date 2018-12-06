@@ -6,13 +6,15 @@ module ps2_processor_module(
 	ps2_line_ready,
 	
 	velocity, 
-	angle
+	angle,
+	fire
 );
 	input clock, key_pressed;
 	input[7:0] ascii_char;
 	output reg[255:0] ps2_line_content;
 	output reg ps2_line_ready;
 	output[31:0] velocity, angle;
+	output fire;
 	
 //	assign velocity = 32'hff;
 //	assign angle = 32'hff;
@@ -115,10 +117,7 @@ module ps2_processor_module(
 				ps2_line_content[7:0] <= ascii_char;
 			end
 		end
-	end
-	
-	wire fire;
-	
+	end	
 	
 	
 	reg ready_delay;

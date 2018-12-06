@@ -462,452 +462,452 @@ module angle_to_trig (angle, sin, cos);
 			end
 		else if (angle == 8'd91)
 			begin
-			sin = -32'd17;
+			sin = 32'd17;
 			cos = 32'd1000;
 			end
 		else if (angle == 8'd92)
 			begin
-			sin = -32'd35;
+			sin = 32'd35;
 			cos = 32'd999;
 			end
 		else if (angle == 8'd93)
 			begin
-			sin = -32'd52;
+			sin = 32'd52;
 			cos = 32'd999;
 			end
 		else if (angle == 8'd94)
 			begin
-			sin = -32'd70;
+			sin = 32'd70;
 			cos = 32'd998;
 			end
 		else if (angle == 8'd95)
 			begin
-			sin = -32'd87;
+			sin = 32'd87;
 			cos = 32'd996;
 			end
 		else if (angle == 8'd96)
 			begin
-			sin = -32'd105;
+			sin = 32'd105;
 			cos = 32'd995;
 			end
 		else if (angle == 8'd97)
 			begin
-			sin = -32'd122;
+			sin = 32'd122;
 			cos = 32'd993;
 			end
 		else if (angle == 8'd98)
 			begin
-			sin = -32'd139;
+			sin = 32'd139;
 			cos = 32'd990;
 			end
 		else if (angle == 8'd99)
 			begin
-			sin = -32'd156;
+			sin = 32'd156;
 			cos = 32'd988;
 			end
 		else if (angle == 8'd100)
 			begin
-			sin = -32'd174;
+			sin = 32'd174;
 			cos = 32'd985;
 			end
 		else if (angle == 8'd101)
 			begin
-			sin = -32'd191;
+			sin = 32'd191;
 			cos = 32'd982;
 			end
 		else if (angle == 8'd102)
 			begin
-			sin = -32'd208;
+			sin = 32'd208;
 			cos = 32'd978;
 			end
 		else if (angle == 8'd103)
 			begin
-			sin = -32'd225;
+			sin = 32'd225;
 			cos = 32'd974;
 			end
 		else if (angle == 8'd104)
 			begin
-			sin = -32'd242;
+			sin = 32'd242;
 			cos = 32'd970;
 			end
 		else if (angle == 8'd105)
 			begin
-			sin = -32'd259;
+			sin = 32'd259;
 			cos = 32'd966;
 			end
 		else if (angle == 8'd106)
 			begin
-			sin = -32'd276;
+			sin = 32'd276;
 			cos = 32'd961;
 			end
 		else if (angle == 8'd107)
 			begin
-			sin = -32'd292;
+			sin = 32'd292;
 			cos = 32'd956;
 			end
 		else if (angle == 8'd108)
 			begin
-			sin = -32'd309;
+			sin = 32'd309;
 			cos = 32'd951;
 			end
 		else if (angle == 8'd109)
 			begin
-			sin = -32'd326;
+			sin = 32'd326;
 			cos = 32'd946;
 			end
 		else if (angle == 8'd110)
 			begin
-			sin = -32'd342;
+			sin = 32'd342;
 			cos = 32'd940;
 			end
 		else if (angle == 8'd111)
 			begin
-			sin = -32'd358;
+			sin = 32'd358;
 			cos = 32'd934;
 			end
 		else if (angle == 8'd112)
 			begin
-			sin = -32'd375;
+			sin = 32'd375;
 			cos = 32'd927;
 			end
 		else if (angle == 8'd113)
 			begin
-			sin = -32'd391;
+			sin = 32'd391;
 			cos = 32'd921;
 			end
 		else if (angle == 8'd114)
 			begin
-			sin = -32'd407;
+			sin = 32'd407;
 			cos = 32'd914;
 			end
 		else if (angle == 8'd115)
 			begin
-			sin = -32'd423;
+			sin = 32'd423;
 			cos = 32'd906;
 			end
 		else if (angle == 8'd116)
 			begin
-			sin = -32'd438;
+			sin = 32'd438;
 			cos = 32'd899;
 			end
 		else if (angle == 8'd117)
 			begin
-			sin = -32'd454;
+			sin = 32'd454;
 			cos = 32'd891;
 			end
 		else if (angle == 8'd118)
 			begin
-			sin = -32'd469;
+			sin = 32'd469;
 			cos = 32'd883;
 			end
 		else if (angle == 8'd119)
 			begin
-			sin = -32'd485;
+			sin = 32'd485;
 			cos = 32'd875;
 			end
 		else if (angle == 8'd120)
 			begin
-			sin = -32'd500;
+			sin = 32'd500;
 			cos = 32'd866;
 			end
 		else if (angle == 8'd121)
 			begin
-			sin = -32'd515;
+			sin = 32'd515;
 			cos = 32'd857;
 			end
 		else if (angle == 8'd122)
 			begin
-			sin = -32'd530;
+			sin = 32'd530;
 			cos = 32'd848;
 			end
 		else if (angle == 8'd123)
 			begin
-			sin = -32'd545;
+			sin = 32'd545;
 			cos = 32'd839;
 			end
 		else if (angle == 8'd124)
 			begin
-			sin = -32'd559;
+			sin = 32'd559;
 			cos = 32'd829;
 			end
 		else if (angle == 8'd125)
 			begin
-			sin = -32'd574;
+			sin = 32'd574;
 			cos = 32'd819;
 			end
 		else if (angle == 8'd126)
 			begin
-			sin = -32'd588;
+			sin = 32'd588;
 			cos = 32'd809;
 			end
 		else if (angle == 8'd127)
 			begin
-			sin = -32'd602;
+			sin = 32'd602;
 			cos = 32'd799;
 			end
 		else if (angle == 8'd128)
 			begin
-			sin = -32'd616;
+			sin = 32'd616;
 			cos = 32'd788;
 			end
 		else if (angle == 8'd129)
 			begin
-			sin = -32'd629;
+			sin = 32'd629;
 			cos = 32'd777;
 			end
 		else if (angle == 8'd130)
 			begin
-			sin = -32'd643;
+			sin = 32'd643;
 			cos = 32'd766;
 			end
 		else if (angle == 8'd131)
 			begin
-			sin = -32'd656;
+			sin = 32'd656;
 			cos = 32'd755;
 			end
 		else if (angle == 8'd132)
 			begin
-			sin = -32'd669;
+			sin = 32'd669;
 			cos = 32'd743;
 			end
 		else if (angle == 8'd133)
 			begin
-			sin = -32'd682;
+			sin = 32'd682;
 			cos = 32'd731;
 			end
 		else if (angle == 8'd134)
 			begin
-			sin = -32'd695;
+			sin = 32'd695;
 			cos = 32'd719;
 			end
 		else if (angle == 8'd135)
 			begin
-			sin = -32'd707;
+			sin = 32'd707;
 			cos = 32'd707;
 			end
 		else if (angle == 8'd136)
 			begin
-			sin = -32'd719;
+			sin = 32'd719;
 			cos = 32'd695;
 			end
 		else if (angle == 8'd137)
 			begin
-			sin = -32'd731;
+			sin = 32'd731;
 			cos = 32'd682;
 			end
 		else if (angle == 8'd138)
 			begin
-			sin = -32'd743;
+			sin = 32'd743;
 			cos = 32'd669;
 			end
 		else if (angle == 8'd139)
 			begin
-			sin = -32'd755;
+			sin = 32'd755;
 			cos = 32'd656;
 			end
 		else if (angle == 8'd140)
 			begin
-			sin = -32'd766;
+			sin = 32'd766;
 			cos = 32'd643;
 			end
 		else if (angle == 8'd141)
 			begin
-			sin = -32'd777;
+			sin = 32'd777;
 			cos = 32'd629;
 			end
 		else if (angle == 8'd142)
 			begin
-			sin = -32'd788;
+			sin = 32'd788;
 			cos = 32'd616;
 			end
 		else if (angle == 8'd143)
 			begin
-			sin = -32'd799;
+			sin = 32'd799;
 			cos = 32'd602;
 			end
 		else if (angle == 8'd144)
 			begin
-			sin = -32'd809;
+			sin = 32'd809;
 			cos = 32'd588;
 			end
 		else if (angle == 8'd145)
 			begin
-			sin = -32'd819;
+			sin = 32'd819;
 			cos = 32'd574;
 			end
 		else if (angle == 8'd146)
 			begin
-			sin = -32'd829;
+			sin = 32'd829;
 			cos = 32'd559;
 			end
 		else if (angle == 8'd147)
 			begin
-			sin = -32'd839;
+			sin = 32'd839;
 			cos = 32'd545;
 			end
 		else if (angle == 8'd148)
 			begin
-			sin = -32'd848;
+			sin = 32'd848;
 			cos = 32'd530;
 			end
 		else if (angle == 8'd149)
 			begin
-			sin = -32'd857;
+			sin = 32'd857;
 			cos = 32'd515;
 			end
 		else if (angle == 8'd150)
 			begin
-			sin = -32'd866;
+			sin = 32'd866;
 			cos = 32'd500;
 			end
 		else if (angle == 8'd151)
 			begin
-			sin = -32'd875;
+			sin = 32'd875;
 			cos = 32'd485;
 			end
 		else if (angle == 8'd152)
 			begin
-			sin = -32'd883;
+			sin = 32'd883;
 			cos = 32'd469;
 			end
 		else if (angle == 8'd153)
 			begin
-			sin = -32'd891;
+			sin = 32'd891;
 			cos = 32'd454;
 			end
 		else if (angle == 8'd154)
 			begin
-			sin = -32'd899;
+			sin = 32'd899;
 			cos = 32'd438;
 			end
 		else if (angle == 8'd155)
 			begin
-			sin = -32'd906;
+			sin = 32'd906;
 			cos = 32'd423;
 			end
 		else if (angle == 8'd156)
 			begin
-			sin = -32'd914;
+			sin = 32'd914;
 			cos = 32'd407;
 			end
 		else if (angle == 8'd157)
 			begin
-			sin = -32'd921;
+			sin = 32'd921;
 			cos = 32'd391;
 			end
 		else if (angle == 8'd158)
 			begin
-			sin = -32'd927;
+			sin = 32'd927;
 			cos = 32'd375;
 			end
 		else if (angle == 8'd159)
 			begin
-			sin = -32'd934;
+			sin = 32'd934;
 			cos = 32'd358;
 			end
 		else if (angle == 8'd160)
 			begin
-			sin = -32'd940;
+			sin = 32'd940;
 			cos = 32'd342;
 			end
 		else if (angle == 8'd161)
 			begin
-			sin = -32'd946;
+			sin = 32'd946;
 			cos = 32'd326;
 			end
 		else if (angle == 8'd162)
 			begin
-			sin = -32'd951;
+			sin = 32'd951;
 			cos = 32'd309;
 			end
 		else if (angle == 8'd163)
 			begin
-			sin = -32'd956;
+			sin = 32'd956;
 			cos = 32'd292;
 			end
 		else if (angle == 8'd164)
 			begin
-			sin = -32'd961;
+			sin = 32'd961;
 			cos = 32'd276;
 			end
 		else if (angle == 8'd165)
 			begin
-			sin = -32'd966;
+			sin = 32'd966;
 			cos = 32'd259;
 			end
 		else if (angle == 8'd166)
 			begin
-			sin = -32'd970;
+			sin = 32'd970;
 			cos = 32'd242;
 			end
 		else if (angle == 8'd167)
 			begin
-			sin = -32'd974;
+			sin = 32'd974;
 			cos = 32'd225;
 			end
 		else if (angle == 8'd168)
 			begin
-			sin = -32'd978;
+			sin = 32'd978;
 			cos = 32'd208;
 			end
 		else if (angle == 8'd169)
 			begin
-			sin = -32'd982;
+			sin = 32'd982;
 			cos = 32'd191;
 			end
 		else if (angle == 8'd170)
 			begin
-			sin = -32'd985;
+			sin = 32'd985;
 			cos = 32'd174;
 			end
 		else if (angle == 8'd171)
 			begin
-			sin = -32'd988;
+			sin = 32'd988;
 			cos = 32'd156;
 			end
 		else if (angle == 8'd172)
 			begin
-			sin = -32'd990;
+			sin = 32'd990;
 			cos = 32'd139;
 			end
 		else if (angle == 8'd173)
 			begin
-			sin = -32'd993;
+			sin = 32'd993;
 			cos = 32'd122;
 			end
 		else if (angle == 8'd174)
 			begin
-			sin = -32'd995;
+			sin = 32'd995;
 			cos = 32'd105;
 			end
 		else if (angle == 8'd175)
 			begin
-			sin = -32'd996;
+			sin = 32'd996;
 			cos = 32'd87;
 			end
 		else if (angle == 8'd176)
 			begin
-			sin = -32'd998;
+			sin = 32'd998;
 			cos = 32'd70;
 			end
 		else if (angle == 8'd177)
 			begin
-			sin = -32'd999;
+			sin = 32'd999;
 			cos = 32'd52;
 			end
 		else if (angle == 8'd178)
 			begin
-			sin = -32'd999;
+			sin = 32'd999;
 			cos = 32'd35;
 			end
 		else if (angle == 8'd179)
 			begin
-			sin = -32'd1000;
+			sin = 32'd1000;
 			cos = 32'd17;
 			end
 		else
 			begin
-			sin = -32'd1000;
+			sin = 32'd1000;
 			cos = 32'd0;
 			end
 	end

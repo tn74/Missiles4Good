@@ -3,31 +3,31 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'div|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -166.679
-TNS   : -4247.805
+Slack : -168.116
+TNS   : -4265.905
 
 Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
-Slack : -50.363
-TNS   : -1014.183
+Slack : -50.219
+TNS   : -1072.845
 
 Type  : Slow 1200mV 85C Model Setup 'ps2_processor_module:ps2process|ps2_interpreter:ps2int|vready'
-Slack : -7.375
-TNS   : -133.950
+Slack : -6.691
+TNS   : -119.360
 
 Type  : Slow 1200mV 85C Model Setup 'ps2_processor_module:ps2process|ps2_interpreter:ps2int|aready'
-Slack : -4.824
-TNS   : -58.820
+Slack : -4.486
+TNS   : -53.759
 
 Type  : Slow 1200mV 85C Model Setup 'regfile:my_regfile|register:gen_dffe[17].register|dffe_ref:gen_dffe[0].dffe|q'
-Slack : -2.873
-TNS   : -92.682
+Slack : -3.180
+TNS   : -100.114
 
 Type  : Slow 1200mV 85C Model Setup 'ps2_processor_module:ps2process|ps2_line_ready'
-Slack : -0.902
-TNS   : -160.704
+Slack : -1.077
+TNS   : -165.819
 
 Type  : Slow 1200mV 85C Model Setup 'p1|altpll_component|pll|clk[2]'
-Slack : 8.163
+Slack : 7.700
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
@@ -35,43 +35,43 @@ Slack : 0.385
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'div|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.404
+Slack : 0.402
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'ps2_processor_module:ps2process|ps2_line_ready'
-Slack : 0.415
+Slack : 0.422
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'p1|altpll_component|pll|clk[2]'
-Slack : 0.467
+Slack : 0.476
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'regfile:my_regfile|register:gen_dffe[17].register|dffe_ref:gen_dffe[0].dffe|q'
-Slack : 0.545
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Hold 'ps2_processor_module:ps2process|ps2_interpreter:ps2int|vready'
-Slack : 0.714
+Slack : 0.561
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'ps2_processor_module:ps2process|ps2_interpreter:ps2int|aready'
-Slack : 0.965
+Slack : 0.856
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'ps2_processor_module:ps2process|ps2_interpreter:ps2int|vready'
+Slack : 0.886
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Recovery 'div|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 2.902
+Slack : 3.132
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Recovery 'p1|altpll_component|pll|clk[2]'
-Slack : 13.406
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Removal 'p1|altpll_component|pll|clk[2]'
-Slack : 4.996
+Slack : 9.597
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Removal 'div|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 5.451
+Slack : 5.159
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'p1|altpll_component|pll|clk[2]'
+Slack : 8.441
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'regfile:my_regfile|register:gen_dffe[17].register|dffe_ref:gen_dffe[0].dffe|q'
@@ -91,43 +91,43 @@ Slack : -1.285
 TNS   : -20.560
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
-Slack : 9.625
+Slack : 9.623
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'p1|altpll_component|pll|clk[2]'
-Slack : 19.711
+Slack : 19.714
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'div|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 24.686
+Slack : 24.687
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'div|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -145.542
-TNS   : -3674.809
+Slack : -146.795
+TNS   : -3684.606
 
 Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
-Slack : -45.384
-TNS   : -900.639
+Slack : -45.217
+TNS   : -956.308
 
 Type  : Slow 1200mV 0C Model Setup 'ps2_processor_module:ps2process|ps2_interpreter:ps2int|vready'
-Slack : -6.590
-TNS   : -118.708
+Slack : -5.988
+TNS   : -106.146
 
 Type  : Slow 1200mV 0C Model Setup 'ps2_processor_module:ps2process|ps2_interpreter:ps2int|aready'
-Slack : -4.264
-TNS   : -51.723
+Slack : -3.927
+TNS   : -46.636
 
 Type  : Slow 1200mV 0C Model Setup 'regfile:my_regfile|register:gen_dffe[17].register|dffe_ref:gen_dffe[0].dffe|q'
-Slack : -2.582
-TNS   : -83.319
+Slack : -2.844
+TNS   : -89.796
 
 Type  : Slow 1200mV 0C Model Setup 'ps2_processor_module:ps2process|ps2_line_ready'
-Slack : -0.766
-TNS   : -100.102
+Slack : -0.908
+TNS   : -103.274
 
 Type  : Slow 1200mV 0C Model Setup 'p1|altpll_component|pll|clk[2]'
-Slack : 9.218
+Slack : 8.617
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
@@ -135,43 +135,43 @@ Slack : 0.338
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'div|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.355
+Slack : 0.353
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'ps2_processor_module:ps2process|ps2_line_ready'
-Slack : 0.383
+Slack : 0.390
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'p1|altpll_component|pll|clk[2]'
-Slack : 0.420
+Slack : 0.428
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'regfile:my_regfile|register:gen_dffe[17].register|dffe_ref:gen_dffe[0].dffe|q'
-Slack : 0.493
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'ps2_processor_module:ps2process|ps2_interpreter:ps2int|vready'
-Slack : 0.608
+Slack : 0.500
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'ps2_processor_module:ps2process|ps2_interpreter:ps2int|aready'
-Slack : 0.840
+Slack : 0.734
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'ps2_processor_module:ps2process|ps2_interpreter:ps2int|vready'
+Slack : 0.781
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Recovery 'div|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 3.624
+Slack : 3.867
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Recovery 'p1|altpll_component|pll|clk[2]'
-Slack : 14.121
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Removal 'p1|altpll_component|pll|clk[2]'
-Slack : 4.442
+Slack : 10.502
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Removal 'div|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 4.808
+Slack : 4.593
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'p1|altpll_component|pll|clk[2]'
+Slack : 7.507
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'regfile:my_regfile|register:gen_dffe[17].register|dffe_ref:gen_dffe[0].dffe|q'
@@ -191,87 +191,87 @@ Slack : -1.285
 TNS   : -20.560
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
-Slack : 9.646
+Slack : 9.644
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'p1|altpll_component|pll|clk[2]'
-Slack : 19.712
+Slack : 19.711
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'div|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 24.677
+Slack : 24.680
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'div|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -55.487
-TNS   : -1241.556
+Slack : -56.197
+TNS   : -1253.786
 
 Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
-Slack : -23.716
-TNS   : -365.359
+Slack : -23.767
+TNS   : -399.733
 
 Type  : Fast 1200mV 0C Model Setup 'ps2_processor_module:ps2process|ps2_interpreter:ps2int|vready'
-Slack : -3.093
-TNS   : -54.626
+Slack : -2.708
+TNS   : -46.241
 
 Type  : Fast 1200mV 0C Model Setup 'ps2_processor_module:ps2process|ps2_interpreter:ps2int|aready'
-Slack : -1.733
-TNS   : -20.396
+Slack : -1.772
+TNS   : -19.000
 
 Type  : Fast 1200mV 0C Model Setup 'regfile:my_regfile|register:gen_dffe[17].register|dffe_ref:gen_dffe[0].dffe|q'
-Slack : -1.391
-TNS   : -28.127
+Slack : -1.104
+TNS   : -30.010
 
 Type  : Fast 1200mV 0C Model Setup 'ps2_processor_module:ps2process|ps2_line_ready'
-Slack : 0.016
-TNS   : 0.000
+Slack : -0.061
+TNS   : -0.210
 
 Type  : Fast 1200mV 0C Model Setup 'p1|altpll_component|pll|clk[2]'
-Slack : 14.004
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
-Slack : 0.173
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'ps2_processor_module:ps2process|ps2_line_ready'
-Slack : 0.182
+Slack : 13.727
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'div|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.183
+Slack : 0.125
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.174
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'ps2_processor_module:ps2process|ps2_line_ready'
+Slack : 0.186
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'p1|altpll_component|pll|clk[2]'
-Slack : 0.213
+Slack : 0.220
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'regfile:my_regfile|register:gen_dffe[17].register|dffe_ref:gen_dffe[0].dffe|q'
-Slack : 0.245
+Slack : 0.258
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'ps2_processor_module:ps2process|ps2_interpreter:ps2int|vready'
-Slack : 0.288
+Slack : 0.378
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'ps2_processor_module:ps2process|ps2_interpreter:ps2int|aready'
-Slack : 0.427
+Slack : 0.384
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Recovery 'div|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 6.167
+Slack : 6.219
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Recovery 'p1|altpll_component|pll|clk[2]'
-Slack : 16.391
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Removal 'p1|altpll_component|pll|clk[2]'
-Slack : 2.505
+Slack : 14.353
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Removal 'div|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 2.803
+Slack : 2.735
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'p1|altpll_component|pll|clk[2]'
+Slack : 4.289
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ps2_processor_module:ps2process|ps2_line_ready'
@@ -291,7 +291,7 @@ Slack : -1.000
 TNS   : -16.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
-Slack : 9.372
+Slack : 9.371
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'p1|altpll_component|pll|clk[2]'

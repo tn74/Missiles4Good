@@ -55,7 +55,7 @@ module skeleton(resetn,
 	wire[255:0] PS2_LINE_CONTENT;
 	wire PS2_LINE_READY;
 	wire[31:0] X0, X1, X2, X3, Y0, Y1, Y2, Y3;
-	wire FIRE;
+	wire FIRE, QUEUE;
 	
 	
 	
@@ -130,6 +130,7 @@ module skeleton(resetn,
 		.velocity(VELOCITY),
 	   .fire(FIRE),
 	   .angle(ANGLE),
+		.queue(QUEUE),
 	   .targetx_0(reg23),
 	   .targetx_1(reg24),
 	   .targetx_2(reg25),

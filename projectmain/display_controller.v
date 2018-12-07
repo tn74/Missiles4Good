@@ -12,6 +12,7 @@ module display_controller(
 	velocity,
 	fire,
 	angle,
+	queue,
 	targetx_0,
 	targetx_1,
 	targetx_2,
@@ -45,7 +46,7 @@ output [7:0] r_data;
 input clock;
 input[31:0] velocity;
 input[31:0] angle;
-input fire, reset;
+input fire, reset, queue;
 	
 input[31:0] targetx_0, targetx_1, targetx_2, targetx_3;
 input[31:0] targety_0, targety_1, targety_2, targety_3;
@@ -145,6 +146,7 @@ screencharacter_mif_writer smw(
 	.velocity(velocity),
 	.fire(fire),
 	.angle(angle),
+	.queue(queue),
 	.targetx(x_numbers),
 	.targety(y_numbers),
 	.ps2_line_content(ps2_line_content),

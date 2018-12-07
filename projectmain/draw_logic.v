@@ -29,24 +29,29 @@ reg [31:0] count;
 always @(negedge clock) begin
 	if (start_drawing) begin
 		count <= 32'h0;
-	end else if (count < 5) begin
-		mem_waddr <= pixeladdress + count;
+	end else if (count < 3) begin
+		mem_waddr <= pixeladdress + count + -5*640;
 		mem_wdata <= 3'b001;
 		mem_wenable <= 1'b1;
 		count <= count + 32'd1;
-	end else if (count < 10) begin
-		mem_waddr <= pixeladdress + count + 635;
+	end else if (count < 6) begin
+		mem_waddr <= pixeladdress + count + 637 + -5*640;
+		mem_wdata <= 3'b001;
+		mem_wenable <= 1'b1;
+		count <= count + 32'd1;
+	end else if (count < 9) begin
+		mem_waddr <= pixeladdress + count + 634 + -4*640;
 		mem_wdata <= 3'b001;
 		mem_wenable <= 1'b1;
 		count <= count + 32'd1;
 	end
 end
-assign finished_drawing = (count == 32'd10);
+assign finished_drawing = (count == 32'd9);
 
 // --------------------------------------- Initial -------------------------------------------------------
 initial
 begin
-	count <= 32'd10;
+	count <= 32'd9;
 end
 
 endmodule

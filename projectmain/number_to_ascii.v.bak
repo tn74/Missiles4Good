@@ -1,4 +1,0 @@
-module number_to_ascii(number, ascii_code)
-	input[3:0] number;
-	output ascii_code;
-	

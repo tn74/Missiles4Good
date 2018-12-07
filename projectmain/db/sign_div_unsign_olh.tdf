@@ -20,7 +20,7 @@
 FUNCTION alt_u_div_47f (denominator[3..0], numerator[31..0])
 RETURNS ( quotient[31..0], remainder[3..0]);
 
---synthesis_resources = lut 177 
+--synthesis_resources = lut 4 
 SUBDESIGN sign_div_unsign_olh
 ( 
 	denominator[3..0]	:	input;

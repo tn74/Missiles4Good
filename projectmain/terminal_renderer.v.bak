@@ -1,7 +1,0 @@
-module terminal_renderer(
-	.bgr_data(bgr_data),
-	.address(ADDR),
-	.character_array(character_array)
-);
-
-endmodule

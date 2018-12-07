@@ -38,7 +38,7 @@ reg 				typer_start, 		draw_start;
 wire 				typer_finish, 		draw_finish;
 
 
-reg[31:0] count;
+reg[31:0] count, range, count2;
 reg resetting;
 
 initial
@@ -46,6 +46,8 @@ begin
 	typer_start <= 1'b0;
 	typer_busy <= 1'b0;
 	count <= 32'h00000000;
+	count2 <= 32'h00000000;
+	range <= 32'h00000000;
 	resetting <= 1'b0;
 end
 
@@ -57,6 +59,7 @@ always@(posedge clock) begin
 	if (reset) begin
 		resetting <= 1'b1;
 		count <= 32'd0;
+		range <= 32'h00000000;
 	end else if (resetting) begin
 		if (count < 32'h25800) begin
 			mem_waddr <= count;
@@ -80,17 +83,29 @@ always@(posedge clock) begin
 		mem_wenable <= typer_wenable;
 		
 	end else if (count < 32'd656) begin
-		if (draw_finish) begin
-			draw_start <= 1'b1;
-			count <= count + 1;
+		if (draw_address < range) begin
+			if (draw_finish) begin
+				draw_start <= 1'b1;
+				count <= count + 1;
+			end else begin
+				draw_start <= 1'b0;
+			end
+			mem_waddr <= draw_waddr;
+			mem_wdata <= 3'b010;
+			mem_wenable <= ~draw_finish;
 		end else begin
-			draw_start <= 1'b0;
+			count <= 32'h00000000;
+		   if (count2 > 32'd0) begin
+				range <= range + 1;
+				if (range > 32'd300) begin
+					range <= 32'h00000000;
+				resetting <= 1'b1;
+				end
+				count2 <= 32'h00000000;
+		   end else begin
+				count2 <= count2 + 1;
+			end
 		end
-		mem_waddr <= draw_waddr;
-		mem_wdata <= 3'b010;
-		mem_wenable <= ~draw_finish;
-
-		
 	end else begin
 		count <= 32'h00000000;
 	end

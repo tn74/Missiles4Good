@@ -17,10 +17,10 @@
 --  refer to the applicable agreement for further details.
 
 
-FUNCTION alt_u_div_6af (denominator[13..0], numerator[31..0])
+FUNCTION alt_u_div_7af (denominator[13..0], numerator[31..0])
 RETURNS ( quotient[31..0], remainder[13..0]);
 
---synthesis_resources = lut 402 
+--synthesis_resources = lut 4 
 SUBDESIGN sign_div_unsign_9nh
 ( 
 	denominator[13..0]	:	input;
@@ -29,7 +29,7 @@ SUBDESIGN sign_div_unsign_9nh
 	remainder[13..0]	:	output;
 ) 
 VARIABLE 
-	divider : alt_u_div_6af;
+	divider : alt_u_div_7af;
 	norm_num[31..0]	: WIRE;
 	protect_quotient[31..0]	: WIRE;
 	protect_remainder[13..0]	: WIRE;

@@ -1,2 +1,0 @@
-module interpter (input_line, velocity, write_velocity, angle, write_angle, fire, set fire);
-endmodule

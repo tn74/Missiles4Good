@@ -1,2 +1,0 @@
-module screen_row_counter(input clock, input start, output finish, ):
-endmodule

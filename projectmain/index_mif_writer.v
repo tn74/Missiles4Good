@@ -62,7 +62,7 @@ begin
 		mem_wdata <= typer_wdata;
 		mem_wenable <= typer_wenable;
 		
-	end else if (count < 32'd556) begin
+	end else if (count < 32'd656) begin
 		if (draw_finish) begin
 			draw_start <= 1'b1;
 			count <= count + 1;

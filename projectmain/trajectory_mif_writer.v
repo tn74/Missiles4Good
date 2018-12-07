@@ -36,8 +36,8 @@ module trajectory_mif_writer(
 
 		.data(trajectory_memloc),
 		.wraddress(count[8:0]),
-		.wrclock(~clock),
-		.wren(trajectory_memloc_enable),
+		.wrclock(~trajectory_memloc_enable),
+		.wren(1'b1),
 	);
 
 

@@ -59,104 +59,135 @@ module targets_printer_tracker(clock, start, targetx, targety, char_index, char_
 		if (start) begin
 			count <= 32'd0;
 		end else begin
-			if (count == 0) begin
-				char_index <= 8'd176;
+			if (count == 32'd0) begin
+				char_index <= 8'd175;
 				char_data <= target_regs[0][0];
-			end else if (count == 1) begin
-				char_index <= 8'd177;
+				count <= count + 32'd1;
+			end else if (count == 32'd1) begin
+				char_index <= 8'd176;
 				char_data <= target_regs[0][1];
-			end else if (count == 2) begin
-				char_index <= 8'd179;
+				count <= count + 32'd1;
+			end else if (count == 32'd2) begin
+				char_index <= 8'd178;
 				char_data <= target_regs[0][2];
-			end else if (count == 3) begin
-				char_index <= 8'd180;
+				count <= count + 32'd1;
+			end else if (count == 32'd3) begin
+				char_index <= 8'd179;
 				char_data <= target_regs[0][3];
-			end else if (count == 4) begin
-				char_index <= 8'd182;
+				count <= count + 32'd1;
+			end else if (count == 32'd4) begin
+				char_index <= 8'd181;
 				char_data <= target_regs[0][4];
-			end else if (count == 5) begin
-				char_index <= 8'd183;
+				count <= count + 32'd1;
+			end else if (count == 32'd5) begin
+				char_index <= 8'd182;
 				char_data <= target_regs[0][5];
-			end else if (count == 6) begin
-				char_index <= 8'd185;
+				count <= count + 32'd1;
+			end else if (count == 32'd6) begin
+				char_index <= 8'd184;
 				char_data <= target_regs[0][6];
-			end else if (count == 7) begin
-				char_index <= 8'd186;
+				count <= count + 32'd1;
+			end else if (count == 32'd7) begin
+				char_index <= 8'd185;
 				char_data <= target_regs[0][7];
-			end else if (count == 8) begin
-				char_index <= 8'd208;
+				count <= count + 32'd1;
+			end else if (count == 32'd8) begin
+				char_index <= 8'd207;
 				char_data <= target_regs[1][0];
-			end else if (count == 9) begin
-				char_index <= 8'd209;
+				count <= count + 32'd1;
+			end else if (count == 32'd9) begin
+				char_index <= 8'd208;
 				char_data <= target_regs[1][1];
-			end else if (count == 10) begin
-				char_index <= 8'd211;
+				count <= count + 32'd1;
+			end else if (count == 32'd10) begin
+				char_index <= 8'd210;
 				char_data <= target_regs[1][2];
-			end else if (count == 11) begin
-				char_index <= 8'd212;
+				count <= count + 32'd1;
+			end else if (count == 32'd11) begin
+				char_index <= 8'd211;
 				char_data <= target_regs[1][3];
-			end else if (count == 12) begin
-				char_index <= 8'd214;
+				count <= count + 32'd1;
+			end else if (count == 32'd12) begin
+				char_index <= 8'd213;
 				char_data <= target_regs[1][4];
-			end else if (count == 13) begin
-				char_index <= 8'd215;
+				count <= count + 32'd1;
+			end else if (count == 32'd13) begin
+				char_index <= 8'd214;
 				char_data <= target_regs[1][5];
-			end else if (count == 14) begin
-				char_index <= 8'd217;
+				count <= count + 32'd1;
+			end else if (count == 32'd14) begin
+				char_index <= 8'd216;
 				char_data <= target_regs[1][6];
-			end else if (count == 15) begin
-				char_index <= 8'd218;
+				count <= count + 32'd1;
+			end else if (count == 32'd15) begin
+				char_index <= 8'd217;
 				char_data <= target_regs[1][7];
-			end else if (count == 16) begin
-				char_index <= 8'd240;
+				count <= count + 32'd1;
+			end else if (count == 32'd16) begin
+				char_index <= 8'd239;
 				char_data <= target_regs[2][0];
-			end else if (count == 17) begin
-				char_index <= 8'd241;
+				count <= count + 32'd1;
+			end else if (count == 32'd17) begin
+				char_index <= 8'd240;
 				char_data <= target_regs[2][1];
-			end else if (count == 18) begin
-				char_index <= 8'd243;
+				count <= count + 32'd1;
+			end else if (count == 32'd18) begin
+				char_index <= 8'd242;
 				char_data <= target_regs[2][2];
-			end else if (count == 19) begin
-				char_index <= 8'd244;
+				count <= count + 32'd1;
+			end else if (count == 32'd19) begin
+				char_index <= 8'd243;
 				char_data <= target_regs[2][3];
-			end else if (count == 20) begin
-				char_index <= 8'd246;
+				count <= count + 32'd1;
+			end else if (count == 32'd20) begin
+				char_index <= 8'd245;
 				char_data <= target_regs[2][4];
-			end else if (count == 21) begin
-				char_index <= 8'd247;
+				count <= count + 32'd1;
+			end else if (count == 32'd21) begin
+				char_index <= 8'd246;
 				char_data <= target_regs[2][5];
-			end else if (count == 22) begin
-				char_index <= 8'd249;
+				count <= count + 32'd1;
+			end else if (count == 32'd22) begin
+				char_index <= 8'd248;
 				char_data <= target_regs[2][6];
-			end else if (count == 23) begin
-				char_index <= 8'd250;
+				count <= count + 32'd1;
+			end else if (count == 32'd23) begin
+				char_index <= 8'd249;
 				char_data <= target_regs[2][7];
-			end else if (count == 24) begin
+				count <= count + 32'd1;
+			end else if (count == 32'd24) begin
 				char_index <= 8'd116;
 				char_data <= target_regs[3][0];
-			end else if (count == 25) begin
+				count <= count + 32'd1;
+			end else if (count == 32'd25) begin
 				char_index <= 8'd117;
 				char_data <= target_regs[3][1];
-			end else if (count == 26) begin
+				count <= count + 32'd1;
+			end else if (count == 32'd26) begin
 				char_index <= 8'd119;
 				char_data <= target_regs[3][2];
-			end else if (count == 27) begin
+				count <= count + 32'd1;
+			end else if (count == 32'd27) begin
 				char_index <= 8'd120;
 				char_data <= target_regs[3][3];
-			end else if (count == 28) begin
+				count <= count + 32'd1;
+			end else if (count == 32'd28) begin
 				char_index <= 8'd122;
 				char_data <= target_regs[3][4];
-			end else if (count == 29) begin
+				count <= count + 32'd1;
+			end else if (count == 32'd29) begin
 				char_index <= 8'd123;
 				char_data <= target_regs[3][5];
-			end else if (count == 30) begin
+				count <= count + 32'd1;
+			end else if (count == 32'd30) begin
 				char_index <= 8'd125;
 				char_data <= target_regs[3][6];
-			end else if (count == 31) begin
-				char_index <= 8'd127;
+				count <= count + 32'd1;
+			end else if (count == 32'd31) begin
+				char_index <= 8'd126;
 				char_data <= target_regs[3][7];
+				count <= count + 32'd1;
 			end
-			count <= count + 1;
 		end
 	end
 

@@ -146,6 +146,7 @@ targets_printer_tracker tpt(
 	.targetx(targetx),
 	.targety(targety),
 	.queue(queue),
+//	.queue(clock),
 	
 	.finish(targets_dfinish),
 	.char_index(targets_d_char_index), 

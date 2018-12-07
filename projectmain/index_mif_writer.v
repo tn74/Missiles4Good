@@ -1,8 +1,13 @@
 module index_mif_writer(
 	clock,
+	
 	character_address,
 	character_clock,
 	character,
+	
+//	draw_address,
+//	draw_clock,
+//	draw_pixelad,
 	
 	mem_waddr,
 	mem_wdata,
@@ -18,13 +23,20 @@ module index_mif_writer(
 
 input clock;
 
-input[7:0] character;
-output character_clock;
 output[7:0] character_address;
+output character_clock;
+input[7:0] character;
 
-output[18:0] mem_waddr;
-output[2:0] mem_wdata;
-output mem_wenable; 
+
+//output[8:0] draw_address;
+//output draw_clock;
+//input[19:0] draw_pixelad;
+	
+
+
+output reg[18:0] mem_waddr;
+output reg[2:0] mem_wdata;
+output reg mem_wenable; 
 
 
 reg typer_busy;
@@ -44,6 +56,37 @@ begin
 	count <= 32'h00000000;
 end
 
+// ---------------------------------------------------------- Main Loop -----------------------------------------------------------
+
+always@(posedge clock)
+begin
+	if (count < 32'd256) begin
+		if (typer_finish) begin
+			typer_start <= 1'b1;
+			count <= count + 1;
+		end else begin
+			typer_start <= 1'b0;
+		end
+		mem_waddr <= typer_waddr;
+		mem_wdata <= typer_wdata;
+		mem_wenable <= typer_wenable;
+		
+	end else if (count < 32'd556) begin
+		count <= count + 1;
+		mem_waddr <= count[18:0];
+		mem_wdata <= 3'b001;
+		mem_wenable <= 1'b1;
+		
+	end else begin
+		count <= 32'h00000000;
+	end
+end
+
+// ---------------------------------------------------------- Character Printing -----------------------------------------------------------
+
+assign character_address = count[7:0];
+assign character_clock = ~clock;
+
 screencharindex_to_pixeladdress index2pixel(
 	.clock(clock),
 	.count(count),
@@ -62,26 +105,13 @@ typer_logic typer_inst(
 	 .mem_wenable(typer_wenable)
 );
 
+// ---------------------------------------------------------- Trajectory Drawing -----------------------------------------------------------
 
-always@(posedge clock)
-begin
-	if (count < 32'd256) begin
-		if (typer_finish) begin
-			typer_start <= 1'b1;
-			count <= count + 1;
-		end else begin
-			typer_start <= 1'b0;
-		end
-	end else begin
-		count <= 32'h00000000;
-	end
-end
 
-assign mem_waddr = typer_waddr;
-assign mem_wdata = typer_wdata;
-assign mem_wenable = typer_wenable;
-assign character_address = count[7:0];
-assign character_clock = ~clock;
+//draw_logic draw_logic_inst(
+//);
+
+
 
 
 // Debugging

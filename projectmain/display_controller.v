@@ -24,7 +24,9 @@ module display_controller(
 	trajectory_memloc_enable,
 	
 	ps2_line_content,
-	ps2_line_ready
+	ps2_line_ready,
+	
+	reset
 	
    
 );
@@ -43,7 +45,7 @@ output [7:0] r_data;
 input clock;
 input[31:0] velocity;
 input[31:0] angle;
-input fire;
+input fire, reset;
 	
 input[31:0] targetx_0, targetx_1, targetx_2, targetx_3;
 input[31:0] targety_0, targety_1, targety_2, targety_3;
@@ -180,6 +182,8 @@ index_mif_writer imw(
 	.draw_address(draw_address),
 	.draw_clock(draw_clock),
 	.draw_pixelad(draw_out),
+	
+	.reset(reset)
 );
 
 endmodule

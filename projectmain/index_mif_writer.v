@@ -1,5 +1,5 @@
 module index_mif_writer(
-	clock,
+	clock, reset,
 	
 	character_address,
 	character_clock,
@@ -21,7 +21,7 @@ module index_mif_writer(
 	
 );
 
-input clock;
+input clock, reset;
 
 output reg[18:0] mem_waddr;
 output reg[2:0] mem_wdata;
@@ -39,19 +39,36 @@ wire 				typer_finish, 		draw_finish;
 
 
 reg[31:0] count;
+reg resetting;
 
 initial
 begin
 	typer_start <= 1'b0;
 	typer_busy <= 1'b0;
 	count <= 32'h00000000;
+	resetting <= 1'b0;
 end
 
 // ---------------------------------------------------------- Main Loop -----------------------------------------------------------
 
-always@(posedge clock)
-begin
-	if (count < 32'd256) begin
+
+always@(posedge clock) begin
+	// Resetting logic
+	if (reset) begin
+		resetting <= 1'b1;
+		count <= 32'd0;
+	end else if (resetting) begin
+		if (count < 32'h25800) begin
+			mem_waddr <= count;
+			mem_wdata <= 3'b000;
+			mem_wenable <= 1'b1;
+			count <= count + 32'd1;
+		end else begin
+			resetting <= 1'b0;
+		end
+	
+	// Normal Logic
+	end else if (count < 32'd256) begin
 		if (typer_finish) begin
 			typer_start <= 1'b1;
 			count <= count + 1;

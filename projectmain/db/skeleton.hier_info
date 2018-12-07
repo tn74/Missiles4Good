@@ -5530,6 +5530,7 @@ ps2_line_content[253] => ps2_line_content[253].IN1
 ps2_line_content[254] => ps2_line_content[254].IN1
 ps2_line_content[255] => ps2_line_content[255].IN1
 ps2_line_ready => ps2_line_ready.IN1
+reset => reset.IN1
 
 
 |skeleton|display_controller:display_controller_inst|video_sync_generator:LTM_ins
@@ -15983,6 +15984,7 @@ rd_draw_out[15] <= draw_trajectories_mem:draw_traj_inst.q
 rd_draw_out[16] <= draw_trajectories_mem:draw_traj_inst.q
 rd_draw_out[17] <= draw_trajectories_mem:draw_traj_inst.q
 rd_draw_out[18] <= draw_trajectories_mem:draw_traj_inst.q
+reset_graph <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |skeleton|display_controller:display_controller_inst|trajectory_mif_writer:tmw|draw_trajectories_mem:draw_traj_inst
@@ -16624,6 +16626,64 @@ wren_a => ram_block1a18.ENA0
 
 |skeleton|display_controller:display_controller_inst|index_mif_writer:imw
 clock => clock.IN3
+reset => resetting.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => count.OUTPUTSELECT
+reset => typer_start.OUTPUTSELECT
+reset => draw_start.OUTPUTSELECT
+reset => mem_wenable~reg0.ENA
+reset => mem_wdata[0]~reg0.ENA
+reset => mem_wdata[1]~reg0.ENA
+reset => mem_wdata[2]~reg0.ENA
+reset => mem_waddr[0]~reg0.ENA
+reset => mem_waddr[1]~reg0.ENA
+reset => mem_waddr[2]~reg0.ENA
+reset => mem_waddr[3]~reg0.ENA
+reset => mem_waddr[4]~reg0.ENA
+reset => mem_waddr[5]~reg0.ENA
+reset => mem_waddr[6]~reg0.ENA
+reset => mem_waddr[7]~reg0.ENA
+reset => mem_waddr[8]~reg0.ENA
+reset => mem_waddr[9]~reg0.ENA
+reset => mem_waddr[10]~reg0.ENA
+reset => mem_waddr[11]~reg0.ENA
+reset => mem_waddr[12]~reg0.ENA
+reset => mem_waddr[13]~reg0.ENA
+reset => mem_waddr[14]~reg0.ENA
+reset => mem_waddr[15]~reg0.ENA
+reset => mem_waddr[16]~reg0.ENA
+reset => mem_waddr[17]~reg0.ENA
+reset => mem_waddr[18]~reg0.ENA
 character_address[0] <= count[0].DB_MAX_OUTPUT_PORT_TYPE
 character_address[1] <= count[1].DB_MAX_OUTPUT_PORT_TYPE
 character_address[2] <= count[2].DB_MAX_OUTPUT_PORT_TYPE

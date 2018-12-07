@@ -141,9 +141,8 @@ module skeleton(resetn,
 		.ps2_line_content(PS2_LINE_CONTENT),
 		.ps2_line_ready(PS2_LINE_READY),
 	   .trajectory_memloc(reg18),
-	   .trajectory_memloc_enable(reg17)
-//		.trajectory_memloc(19'h1ffff),
-//	   .trajectory_memloc_enable(1'b1)
+	   .trajectory_memloc_enable(reg17),
+		.reset(reset)
 	);
 		
 	angle_to_trig angle_to_trig(ANGLE, reg27, reg28);

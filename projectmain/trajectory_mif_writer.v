@@ -4,7 +4,8 @@ module trajectory_mif_writer(
 	trajectory_memloc_enable,
 	rd_draw_add,
 	rd_draw_clk,
-	rd_draw_out
+	rd_draw_out,
+	reset_graph
 );
 
 	input clock;
@@ -14,6 +15,7 @@ module trajectory_mif_writer(
 	input rd_draw_clk;
 	
 	output[18:0] rd_draw_out;
+	output reset_graph;
 
 
 	reg[31:0] count;
@@ -28,6 +30,8 @@ module trajectory_mif_writer(
 		end else 
 			count <= 32'd0;
 	end
+	
+	assign reset_graph = (count == 32'd300);
 
 	draw_trajectories_mem draw_traj_inst(
 		.rdaddress(rd_draw_add),

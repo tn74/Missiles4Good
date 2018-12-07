@@ -159,13 +159,15 @@ screencharacter_mif_writer smw(
 wire[18:0] draw_out;
 wire[8:0] draw_address;
 wire draw_clock;
+wire reset_graph;
 trajectory_mif_writer tmw (
 	.clock(clock),
 	.trajectory_memloc(trajectory_memloc),
 	.trajectory_memloc_enable(trajectory_memloc_enable),
 	.rd_draw_add(draw_address),
 	.rd_draw_clk(draw_clock),
-	.rd_draw_out(draw_out)
+	.rd_draw_out(draw_out),
+	.reset_graph(reset_graph),
 );
 	
 
@@ -183,7 +185,7 @@ index_mif_writer imw(
 	.draw_clock(draw_clock),
 	.draw_pixelad(draw_out),
 	
-	.reset(reset)
+	.reset(reset_graph)
 );
 
 endmodule

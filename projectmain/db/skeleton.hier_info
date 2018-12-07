@@ -5530,7 +5530,7 @@ ps2_line_content[253] => ps2_line_content[253].IN1
 ps2_line_content[254] => ps2_line_content[254].IN1
 ps2_line_content[255] => ps2_line_content[255].IN1
 ps2_line_ready => ps2_line_ready.IN1
-reset => reset.IN1
+reset => ~NO_FANOUT~
 
 
 |skeleton|display_controller:display_controller_inst|video_sync_generator:LTM_ins

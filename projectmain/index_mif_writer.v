@@ -120,7 +120,7 @@ assign draw_address = count - 32'd256;
 draw_logic draw_logic_inst(
 	.clock(clock),
 	
-	.pixeladdress(count[18:0]),
+	.pixeladdress(draw_pixelad),
 	
 	.start_drawing(draw_start),
 	.finished_drawing(draw_finish),

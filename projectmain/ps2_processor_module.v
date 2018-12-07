@@ -8,6 +8,7 @@ module ps2_processor_module(
 	velocity, 
 	angle,
 	fire,
+	queue,
 	reset
 );
 	input clock, key_pressed;
@@ -15,7 +16,7 @@ module ps2_processor_module(
 	output reg[255:0] ps2_line_content;
 	output reg ps2_line_ready;
 	output[31:0] velocity, angle;
-	output fire, reset;
+	output fire, reset, queue;
 	
 	reg[31:0] count;
 	
@@ -134,6 +135,7 @@ module ps2_processor_module(
 		.velocity(velocity), 
 		.angle(angle),
 		.fire(fire),
+		.queue(queue),
 		.reset(reset)
 	);
 endmodule

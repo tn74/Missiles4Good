@@ -3,6 +3,7 @@ module screencharacter_mif_writer (
 	velocity,
 	fire,
 	angle,
+	queue,
 	targetx,
 	targety,
 	ps2_line_content,
@@ -18,7 +19,7 @@ module screencharacter_mif_writer (
 	char_data_out
 );
 
-input clock, fire;
+input clock, fire, queue;
 input[31:0] velocity, angle;
 input[31:0] targetx, targety;
 input[255:0] ps2_line_content;
@@ -144,6 +145,8 @@ targets_printer_tracker tpt(
 	.start(targets_dstart),
 	.targetx(targetx),
 	.targety(targety),
+	.queue(queue),
+//	.queue(clock),
 	
 	.finish(targets_dfinish),
 	.char_index(targets_d_char_index), 

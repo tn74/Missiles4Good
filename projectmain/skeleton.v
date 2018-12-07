@@ -55,7 +55,7 @@ module skeleton(resetn,
 	wire[255:0] PS2_LINE_CONTENT;
 	wire PS2_LINE_READY;
 	wire[31:0] X0, X1, X2, X3, Y0, Y1, Y2, Y3;
-	wire FIRE;
+	wire FIRE, QUEUE;
 	
 	
 	
@@ -73,7 +73,7 @@ module skeleton(resetn,
 	// keyboard controller
 	PS2_Interface myps2(clock, resetn, ps2_clock, ps2_data, ps2_key_data, ps2_key_pressed, ps2_out);
 	ps2_cleaner cleaner(clock, ps2_key_data, ps2_out, input_character, input_made);
-	ps2_processor_module ps2process(clock, input_character, input_made, PS2_LINE_CONTENT, PS2_LINE_READY, VELOCITY, ANGLE, FIRE, reset);
+	ps2_processor_module ps2process(clock, input_character, input_made, PS2_LINE_CONTENT, PS2_LINE_READY, VELOCITY, ANGLE, FIRE, QUEUE, reset);
 	
 	// example for sending ps2 data to the first two seven segment displays
 	Hexadecimal_To_Seven_Segment hex1(ps2_out[3:0], seg1);
@@ -130,6 +130,7 @@ module skeleton(resetn,
 		.velocity(VELOCITY),
 	   .fire(FIRE),
 	   .angle(ANGLE),
+		.queue(QUEUE),
 	   .targetx_0(reg23),
 	   .targetx_1(reg24),
 	   .targetx_2(reg25),

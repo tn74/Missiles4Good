@@ -37,7 +37,7 @@ def generate_target_printing_code():
 		for digit in range(8):
 			if number < 3:
 				row_addr = 32 * (5 + number)
-				col_addr = 16 + digit
+				col_addr = 15 + digit
 				col_addr += digit // 2
 			address_map[number][digit] = row_addr + col_addr
 	address_map[3][0] = 116

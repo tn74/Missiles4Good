@@ -8,7 +8,7 @@ module ps2_cleaner(clock, ps2_key_received, ps2_last_key_received, ascii_charact
 	wire key_released, counter_finished;
 	assign key_released = (ps2_last_key_received == 8'hf0);
 	
-	reg key_released_reg, holding;
+	reg key_released_reg;
 	reg counter_start;
 	
 	counter2 counter(.clock(clock), .start(counter_start), .finish(counter_finished));
@@ -17,7 +17,6 @@ module ps2_cleaner(clock, ps2_key_received, ps2_last_key_received, ascii_charact
 	begin
 		counter_start <= 1'b0;
 		key_released_reg <= 1'b0;
-		holding <= 1'b0;
 	end
 	
 	always @(posedge clock)

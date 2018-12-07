@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "12/05/2018 23:58:25"
+// Generated on "12/07/2018 03:49:26"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          ps2_interpreter
 // 
@@ -34,17 +34,25 @@ reg [255:0] input_line;
 reg line_ready;
 // wires                                               
 wire [31:0] angle;
+wire autonomous_mode;
 wire fire;
+wire launch;
+wire queue;
+wire reset;
 wire [31:0] velocity;
 
 // assign statements (if any)                          
 ps2_interpreter i1 (
 // port map - connection between master ports and signals/registers   
 	.angle(angle),
+	.autonomous_mode(autonomous_mode),
 	.clock(clock),
 	.fire(fire),
 	.input_line(input_line),
+	.launch(launch),
 	.line_ready(line_ready),
+	.queue(queue),
+	.reset(reset),
 	.velocity(velocity)
 );
 initial 
@@ -78,26 +86,38 @@ end
 initial
 begin
 	input_line[252] = 1'b0;
+	input_line[252] = #20000 1'b1;
+	input_line[252] = #380000 1'b0;
 end 
 // input_line[ 251 ]
 initial
 begin
 	input_line[251] = 1'b0;
+	input_line[251] = #400000 1'b1;
+	input_line[251] = #80000 1'b0;
 end 
 // input_line[ 250 ]
 initial
 begin
 	input_line[250] = 1'b1;
+	input_line[250] = #20000 1'b0;
+	input_line[250] = #380000 1'b1;
 end 
 // input_line[ 249 ]
 initial
 begin
 	input_line[249] = 1'b1;
+	input_line[249] = #180000 1'b0;
+	input_line[249] = #60000 1'b1;
+	input_line[249] = #160000 1'b0;
+	input_line[249] = #80000 1'b1;
 end 
 // input_line[ 248 ]
 initial
 begin
 	input_line[248] = 1'b0;
+	input_line[248] = #20000 1'b1;
+	input_line[248] = #380000 1'b0;
 end 
 // input_line[ 247 ]
 initial
@@ -118,16 +138,22 @@ end
 initial
 begin
 	input_line[244] = 1'b0;
+	input_line[244] = #180000 1'b1;
+	input_line[244] = #60000 1'b0;
 end 
 // input_line[ 243 ]
 initial
 begin
 	input_line[243] = 1'b1;
+	input_line[243] = #20000 1'b0;
+	input_line[243] = #460000 1'b1;
 end 
 // input_line[ 242 ]
 initial
 begin
 	input_line[242] = 1'b0;
+	input_line[242] = #20000 1'b1;
+	input_line[242] = #380000 1'b0;
 end 
 // input_line[ 241 ]
 initial
@@ -158,6 +184,8 @@ end
 initial
 begin
 	input_line[236] = 1'b1;
+	input_line[236] = #180000 1'b0;
+	input_line[236] = #60000 1'b1;
 end 
 // input_line[ 235 ]
 initial
@@ -168,16 +196,24 @@ end
 initial
 begin
 	input_line[234] = 1'b0;
+	input_line[234] = #20000 1'b1;
+	input_line[234] = #460000 1'b0;
 end 
 // input_line[ 233 ]
 initial
 begin
 	input_line[233] = 1'b1;
+	input_line[233] = #20000 1'b0;
+	input_line[233] = #460000 1'b1;
 end 
 // input_line[ 232 ]
 initial
 begin
 	input_line[232] = 1'b0;
+	input_line[232] = #180000 1'b1;
+	input_line[232] = #60000 1'b0;
+	input_line[232] = #160000 1'b1;
+	input_line[232] = #80000 1'b0;
 end 
 // input_line[ 231 ]
 initial
@@ -188,36 +224,58 @@ end
 initial
 begin
 	input_line[230] = 1'b1;
+	input_line[230] = #20000 1'b0;
+	input_line[230] = #160000 1'b1;
+	input_line[230] = #60000 1'b0;
+	input_line[230] = #160000 1'b1;
 end 
 // input_line[ 229 ]
 initial
 begin
 	input_line[229] = 1'b0;
+	input_line[229] = #20000 1'b1;
+	input_line[229] = #160000 1'b0;
+	input_line[229] = #60000 1'b1;
+	input_line[229] = #160000 1'b0;
 end 
 // input_line[ 228 ]
 initial
 begin
 	input_line[228] = 1'b0;
+	input_line[228] = #180000 1'b1;
+	input_line[228] = #60000 1'b0;
 end 
 // input_line[ 227 ]
 initial
 begin
 	input_line[227] = 1'b0;
+	input_line[227] = #400000 1'b1;
+	input_line[227] = #80000 1'b0;
 end 
 // input_line[ 226 ]
 initial
 begin
 	input_line[226] = 1'b1;
+	input_line[226] = #20000 1'b0;
+	input_line[226] = #160000 1'b1;
+	input_line[226] = #60000 1'b0;
+	input_line[226] = #160000 1'b1;
 end 
 // input_line[ 225 ]
 initial
 begin
 	input_line[225] = 1'b0;
+	input_line[225] = #400000 1'b1;
+	input_line[225] = #80000 1'b0;
 end 
 // input_line[ 224 ]
 initial
 begin
 	input_line[224] = 1'b1;
+	input_line[224] = #20000 1'b0;
+	input_line[224] = #160000 1'b1;
+	input_line[224] = #60000 1'b0;
+	input_line[224] = #240000 1'b1;
 end 
 // input_line[ 223 ]
 initial
@@ -228,16 +286,24 @@ end
 initial
 begin
 	input_line[222] = 1'b1;
+	input_line[222] = #240000 1'b0;
+	input_line[222] = #100000 1'b1;
 end 
 // input_line[ 221 ]
 initial
 begin
 	input_line[221] = 1'b0;
+	input_line[221] = #240000 1'b1;
+	input_line[221] = #100000 1'b0;
 end 
 // input_line[ 220 ]
 initial
 begin
 	input_line[220] = 1'b0;
+	input_line[220] = #100000 1'b1;
+	input_line[220] = #80000 1'b0;
+	input_line[220] = #60000 1'b1;
+	input_line[220] = #160000 1'b0;
 end 
 // input_line[ 219 ]
 initial
@@ -248,16 +314,28 @@ end
 initial
 begin
 	input_line[218] = 1'b0;
+	input_line[218] = #100000 1'b1;
+	input_line[218] = #140000 1'b0;
+	input_line[218] = #100000 1'b1;
+	input_line[218] = #60000 1'b0;
 end 
 // input_line[ 217 ]
 initial
 begin
 	input_line[217] = 1'b0;
+	input_line[217] = #100000 1'b1;
+	input_line[217] = #80000 1'b0;
+	input_line[217] = #160000 1'b1;
+	input_line[217] = #140000 1'b0;
 end 
 // input_line[ 216 ]
 initial
 begin
 	input_line[216] = 1'b1;
+	input_line[216] = #100000 1'b0;
+	input_line[216] = #80000 1'b1;
+	input_line[216] = #60000 1'b0;
+	input_line[216] = #160000 1'b1;
 end 
 // input_line[ 215 ]
 initial
@@ -268,21 +346,29 @@ end
 initial
 begin
 	input_line[214] = 1'b0;
+	input_line[214] = #400000 1'b1;
+	input_line[214] = #80000 1'b0;
 end 
 // input_line[ 213 ]
 initial
 begin
 	input_line[213] = 1'b1;
+	input_line[213] = #400000 1'b0;
+	input_line[213] = #80000 1'b1;
 end 
 // input_line[ 212 ]
 initial
 begin
 	input_line[212] = 1'b0;
+	input_line[212] = #240000 1'b1;
+	input_line[212] = #100000 1'b0;
 end 
 // input_line[ 211 ]
 initial
 begin
 	input_line[211] = 1'b0;
+	input_line[211] = #400000 1'b1;
+	input_line[211] = #80000 1'b0;
 end 
 // input_line[ 210 ]
 initial
@@ -338,6 +424,8 @@ end
 initial
 begin
 	input_line[200] = 1'b1;
+	input_line[200] = #240000 1'b0;
+	input_line[200] = #100000 1'b1;
 end 
 // input_line[ 199 ]
 initial
@@ -363,6 +451,8 @@ end
 initial
 begin
 	input_line[195] = 1'b1;
+	input_line[195] = #240000 1'b0;
+	input_line[195] = #160000 1'b1;
 end 
 // input_line[ 194 ]
 initial
@@ -433,11 +523,19 @@ end
 initial
 begin
 	input_line[181] = 1'b0;
+	input_line[181] = #100000 1'b1;
+	input_line[181] = #80000 1'b0;
+	input_line[181] = #160000 1'b1;
+	input_line[181] = #60000 1'b0;
 end 
 // input_line[ 180 ]
 initial
 begin
 	input_line[180] = 1'b0;
+	input_line[180] = #100000 1'b1;
+	input_line[180] = #80000 1'b0;
+	input_line[180] = #160000 1'b1;
+	input_line[180] = #60000 1'b0;
 end 
 // input_line[ 179 ]
 initial
@@ -473,11 +571,19 @@ end
 initial
 begin
 	input_line[173] = 1'b0;
+	input_line[173] = #100000 1'b1;
+	input_line[173] = #80000 1'b0;
+	input_line[173] = #160000 1'b1;
+	input_line[173] = #60000 1'b0;
 end 
 // input_line[ 172 ]
 initial
 begin
 	input_line[172] = 1'b0;
+	input_line[172] = #100000 1'b1;
+	input_line[172] = #80000 1'b0;
+	input_line[172] = #160000 1'b1;
+	input_line[172] = #60000 1'b0;
 end 
 // input_line[ 171 ]
 initial
@@ -513,11 +619,15 @@ end
 initial
 begin
 	input_line[165] = 1'b0;
+	input_line[165] = #340000 1'b1;
+	input_line[165] = #60000 1'b0;
 end 
 // input_line[ 164 ]
 initial
 begin
 	input_line[164] = 1'b0;
+	input_line[164] = #340000 1'b1;
+	input_line[164] = #60000 1'b0;
 end 
 // input_line[ 163 ]
 initial
@@ -1344,6 +1454,16 @@ end
 initial
 begin
 	line_ready = 1'b0;
+	line_ready = #40000 1'b1;
+	line_ready = #20000 1'b0;
+	line_ready = #60000 1'b1;
+	line_ready = #20000 1'b0;
+	line_ready = #40000 1'b1;
+	line_ready = #60000 1'b0;
+	line_ready = #40000 1'b1;
+	line_ready = #20000 1'b0;
+	line_ready = #60000 1'b1;
+	line_ready = #20000 1'b0;
 	line_ready = #40000 1'b1;
 	line_ready = #20000 1'b0;
 end 

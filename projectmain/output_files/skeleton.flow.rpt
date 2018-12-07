@@ -1,5 +1,5 @@
 Flow report for skeleton
-Fri Dec 07 01:15:59 2018
+Fri Dec 07 03:59:24 2018
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -40,17 +40,17 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Fri Dec 07 01:15:59 2018       ;
+; Flow Status                        ; Successful - Fri Dec 07 03:59:24 2018       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; skeleton                                    ;
 ; Top-level Entity Name              ; skeleton                                    ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 14,408 / 114,480 ( 13 % )                   ;
-;     Total combinational functions  ; 13,469 / 114,480 ( 12 % )                   ;
-;     Dedicated logic registers      ; 3,497 / 114,480 ( 3 % )                     ;
-; Total registers                    ; 3497                                        ;
+; Total logic elements               ; 14,853 / 114,480 ( 13 % )                   ;
+;     Total combinational functions  ; 13,857 / 114,480 ( 12 % )                   ;
+;     Dedicated logic registers      ; 3,698 / 114,480 ( 3 % )                     ;
+; Total registers                    ; 3698                                        ;
 ; Total pins                         ; 157 / 529 ( 30 % )                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 1,347,184 / 3,981,312 ( 34 % )              ;
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/07/2018 01:10:37 ;
+; Start date & time ; 12/07/2018 03:56:14 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; skeleton            ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 154946507233334.154416303703408        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 154946507233334.154417297409100        ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --             ;
@@ -103,12 +103,12 @@ refer to the applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:01:03     ; 1.0                     ; 5023 MB             ; 00:01:12                           ;
-; Fitter                    ; 00:01:53     ; 1.1                     ; 5955 MB             ; 00:03:00                           ;
-; Assembler                 ; 00:00:04     ; 1.0                     ; 4768 MB             ; 00:00:04                           ;
-; TimeQuest Timing Analyzer ; 00:02:00     ; 2.4                     ; 5159 MB             ; 00:02:01                           ;
-; EDA Netlist Writer        ; 00:00:11     ; 1.0                     ; 4835 MB             ; 00:00:12                           ;
-; Total                     ; 00:05:11     ; --                      ; --                  ; 00:06:29                           ;
+; Analysis & Synthesis      ; 00:01:02     ; 1.0                     ; 5032 MB             ; 00:01:13                           ;
+; Fitter                    ; 00:01:26     ; 1.1                     ; 5926 MB             ; 00:02:38                           ;
+; Assembler                 ; 00:00:04     ; 1.0                     ; 4769 MB             ; 00:00:04                           ;
+; TimeQuest Timing Analyzer ; 00:00:13     ; 1.8                     ; 5106 MB             ; 00:00:14                           ;
+; EDA Netlist Writer        ; 00:00:12     ; 1.0                     ; 4837 MB             ; 00:00:12                           ;
+; Total                     ; 00:02:57     ; --                      ; --                  ; 00:04:21                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

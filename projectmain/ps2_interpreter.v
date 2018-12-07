@@ -1,11 +1,16 @@
-module ps2_interpreter (clock, input_line, line_ready, velocity,  angle, fire, reset);
+module ps2_interpreter (clock, input_line, line_ready, velocity,  angle, fire, reset, queue, launch, autonomous_mode);
 	
 	input[255:0] input_line;
 	input line_ready, clock;
 	
-	output reg[31:0] velocity;
-	output reg[31:0] angle;
-	output reg fire, reset;
+	output[31:0] velocity, angle;
+	output fire, autonomous_mode;
+	output reg reset, queue, launch;
+	
+	reg[31:0] velocity_user, angle_user;
+	wire[31:0] velocity_auto, angle_auto;
+	reg fire_user;
+	wire fire_auto;
 	
 	reg vready, aready;
 	wire[47:0] vascii, aascii;
@@ -13,8 +18,8 @@ module ps2_interpreter (clock, input_line, line_ready, velocity,  angle, fire, r
 	
 	initial
 	begin
-		velocity <= 32'd60;
-		angle <= 32'd70;
+		velocity_user <= 32'd60;
+		angle_user <= 32'd70;
 	end
 	
 	// ------------------------- Readys ---------------------------------
@@ -29,15 +34,25 @@ module ps2_interpreter (clock, input_line, line_ready, velocity,  angle, fire, r
 		else 
 			vready <= 1'b0;
 			
-		if (line_ready & input_line[255: 255 - 31] == 32'h46495245)
-			fire <= 1'b1;
+		if (line_ready & input_line[255: 255 - 31] == 32'h46495245) // FIRE
+			fire_user <= 1'b1;
 		else
-			fire <= 1'b0;
+			fire_user <= 1'b0;
 			
-		if (line_ready & input_line[255: 255 - 39] == 40'h5245534554)
+		if (line_ready & input_line[255: 255 - 39] == 40'h5245534554) // RESET
 			reset <= 1'b1;
 		else
 			reset <= 1'b0;
+			
+		if (line_ready & input_line[255: 255 - 47] == 48'h4c41554e4348) // LAUNCH
+			launch <= 1'b1;
+		else
+			launch <= 1'b0;
+			
+		if (line_ready & input_line[255: 255 - 39] == 40'h5155455545) // QUEUE
+			queue <= 1'b1;
+		else
+			queue <= 1'b0;
 	end
 	
 	
@@ -46,7 +61,7 @@ module ps2_interpreter (clock, input_line, line_ready, velocity,  angle, fire, r
 	assign vascii[39:0] = input_line[255 - 6 * 8: 255 - 11 * 8 + 1];
 	ascii6digit_to_number(vascii, vt);
 	always @(posedge vready) begin
-		velocity <= vt;
+		velocity_user <= vt;
 	end
 	
 	// Angle
@@ -54,10 +69,25 @@ module ps2_interpreter (clock, input_line, line_ready, velocity,  angle, fire, r
 	assign aascii[23:0] = input_line[255 - 6 * 8: 255 - 9 * 8 + 1];
 	ascii6digit_to_number(aascii, at);
 	always @(posedge aready) begin
-		angle <= at;
+		angle_user <= at;
 	end
 	
 	
+	// Autonomus Launcher
+	multi_launcher auto_launch(
+	.clock(clock), 
+	.queue(queue),
+	.takeover(launch),
+	.angle_in(angle_user), .velocity_in(velocity_user), 
+	
+	.angle_out(angle_auto), .velocity_out(velocity_auto), .fire_out(fire_auto),
+//	target0, target1, target2,
+	.autonomous_mode(autonomous_mode)
+	); 
+	
+	assign velocity = autonomous_mode ? velocity_auto : velocity_user;
+	assign angle = autonomous_mode ? angle_auto : angle_user;
+	assign fire = autonomous_mode ? fire_auto : fire_user;
 	
 	
 endmodule

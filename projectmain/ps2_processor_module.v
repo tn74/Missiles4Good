@@ -17,9 +17,6 @@ module ps2_processor_module(
 	output[31:0] velocity, angle;
 	output fire, reset;
 	
-//	assign velocity = 32'hff;
-//	assign angle = 32'hff;
-	
 	reg[31:0] count;
 	
 	initial

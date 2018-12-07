@@ -30,7 +30,7 @@ def generate_ps2processormodule_write_char():
 
 
 
-def generate_transfer_code():
+def generate_target_printing_code():
 	address_map = {}
 	for number in range(4):
 		address_map[number] = {}
@@ -55,15 +55,13 @@ def generate_transfer_code():
 	for number, d in address_map.items():
 		for digit, address in d.items():
 			line = "end else if (count == {}) begin\n".format(count)
-			line = line + "\tchar_index <= 8'd{}\n".format(address)
-			line = line + "\tchar_data <= taget_regs[{}][{}]\n".format(number, digit)
+			line = line + "\tchar_index <= 8'd{};\n".format(address)
+			line = line + "\tchar_data <= taget_regs[{}][{}];\n".format(number, digit)
 			count = count + 1
 			lines.append(line)
 	lines[0] = lines[0][9:]
 	lines.append("end")
-	save_to_file(lines, "impact_digit_transfer.txt")
-
-
+	save_to_file(lines, "target_digit_printing.txt")
 
 def save_to_file(lines, filename):
 	with open(filename, "w") as f:
@@ -74,4 +72,6 @@ def save_to_file(lines, filename):
 # generate_ps2_lines_initiator()
 # genereat_ps2_line_scroll()
 # generate_ps2processormodule_write_char()
-generate_transfer_code()
+generate_target_printing_code()
+
+

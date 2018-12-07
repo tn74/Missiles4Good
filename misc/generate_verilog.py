@@ -72,7 +72,7 @@ def save_to_file(lines, filename):
 # generate_ps2_line_updater()
 # generate_ps2_lines_initiator()
 # genereat_ps2_line_scroll()
-# generate_ps2processormodule_write_char()
+generate_ps2processormodule_write_char()
 generate_target_printing_code()
 
 

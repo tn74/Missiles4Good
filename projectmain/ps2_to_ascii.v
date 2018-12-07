@@ -80,6 +80,8 @@ module ps2_to_ascii (in, out);
 			out = 8'h38;
 		else if (in == 8'h46) // 9
 			out = 8'h39;
+		else if (in == 8'h66) // Backspace
+			out = 8'h08;
 		else 
 			out = 8'h00;
 	end

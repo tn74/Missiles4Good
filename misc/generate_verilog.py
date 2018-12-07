@@ -54,9 +54,10 @@ def generate_target_printing_code():
 	count = 0
 	for number, d in address_map.items():
 		for digit, address in d.items():
-			line = "end else if (count == {}) begin\n".format(count)
+			line = "end else if (count == 32'd{}) begin\n".format(count)
 			line = line + "\tchar_index <= 8'd{};\n".format(address)
 			line = line + "\tchar_data <= target_regs[{}][{}];\n".format(number, digit)
+			line = line + "\tcount <= count + 32'd1;\n"
 			count = count + 1
 			lines.append(line)
 	lines[0] = lines[0][9:]

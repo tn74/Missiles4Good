@@ -123,7 +123,7 @@ end else if (count == 32'd30) begin
 	char_data <= target_regs[3][6];
 	count <= count + 32'd1;
 end else if (count == 32'd31) begin
-	char_index <= 8'd127;
+	char_index <= 8'd126;
 	char_data <= target_regs[3][7];
 	count <= count + 32'd1;
 end

@@ -47,7 +47,7 @@ def generate_target_printing_code():
 	address_map[3][4] = 122
 	address_map[3][5] = 123
 	address_map[3][6] = 125
-	address_map[3][7] = 127
+	address_map[3][7] = 126
 	
 
 	lines = []

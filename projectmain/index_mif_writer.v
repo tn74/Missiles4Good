@@ -5,9 +5,9 @@ module index_mif_writer(
 	character_clock,
 	character,
 	
-//	draw_address,
-//	draw_clock,
-//	draw_pixelad,
+	draw_address,
+	draw_clock,
+	draw_pixelad,
 	
 	mem_waddr,
 	mem_wdata,
@@ -28,9 +28,9 @@ output character_clock;
 input[7:0] character;
 
 
-//output[8:0] draw_address;
-//output draw_clock;
-//input[19:0] draw_pixelad;
+output[8:0] draw_address;
+output draw_clock;
+input[18:0] draw_pixelad;
 	
 
 
@@ -40,11 +40,13 @@ output reg mem_wenable;
 
 
 reg typer_busy;
-wire[18:0] typer_waddr, top_left_corner_address;
-wire[2:0] typer_wdata;
-wire typer_wenable;
-reg typer_start;
-wire typer_finish;
+
+
+wire[18:0] 		typer_waddr, 		draw_waddr;
+wire[2:0] 		typer_wdata, 		draw_wdata;
+wire 				typer_wenable, 	draw_wenable;
+reg 				typer_start, 		draw_start;
+wire 				typer_finish, 		draw_finish;
 
 
 reg[31:0] count;
@@ -72,8 +74,13 @@ begin
 		mem_wenable <= typer_wenable;
 		
 	end else if (count < 32'd556) begin
-		count <= count + 1;
-		mem_waddr <= count[18:0];
+		if (draw_finish) begin
+			draw_start <= 1'b1;
+			count <= count + 1;
+		end else begin
+			draw_start <= 1'b0;
+		end
+		mem_waddr <= draw_waddr;
 		mem_wdata <= 3'b001;
 		mem_wenable <= 1'b1;
 		
@@ -86,7 +93,7 @@ end
 
 assign character_address = count[7:0];
 assign character_clock = ~clock;
-
+wire[18:0] top_left_corner_address;
 screencharindex_to_pixeladdress index2pixel(
 	.clock(clock),
 	.count(count),
@@ -108,8 +115,19 @@ typer_logic typer_inst(
 // ---------------------------------------------------------- Trajectory Drawing -----------------------------------------------------------
 
 
-//draw_logic draw_logic_inst(
-//);
+draw_logic draw_logic_inst(
+	.clock(clock),
+	
+	.pixeladdress(count[18:0]),
+	
+	.start_drawing(draw_start),
+	.finished_drawing(draw_finish),
+	
+	.mem_waddr(draw_waddr),
+	.mem_wdata(draw_wdata),
+	.mem_wenable(draw_wenable)
+	
+);
 
 
 

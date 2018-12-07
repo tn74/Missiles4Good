@@ -154,14 +154,14 @@ screencharacter_mif_writer smw(
 	.rd_out(character)			 // Output
 );
 
-//wire[18:0] trajectory_out
-//trajectory_mif_writer tmw (
-//	.trajectory_memloc(trajectory_memloc),
-//	.trajectory_memloc_enable(trajectory_memloc_enable)
-//	.rd_add(character_address),
-//	.rd_clk(character_clock),
-//	.rd_out(character_out)
-//);
+wire[18:0] trajectory_out
+trajectory_mif_writer tmw (
+	.trajectory_memloc(trajectory_memloc),
+	.trajectory_memloc_enable(trajectory_memloc_enable)
+	.rd_add(character_address),
+	.rd_clk(character_clock),
+	.rd_out(character_out)
+);
 	
 
 index_mif_writer imw(

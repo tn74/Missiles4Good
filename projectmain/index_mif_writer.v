@@ -23,17 +23,6 @@ module index_mif_writer(
 
 input clock;
 
-output[7:0] character_address;
-output character_clock;
-input[7:0] character;
-
-
-output[8:0] draw_address;
-output draw_clock;
-input[18:0] draw_pixelad;
-	
-
-
 output reg[18:0] mem_waddr;
 output reg[2:0] mem_wdata;
 output reg mem_wenable; 
@@ -81,8 +70,9 @@ begin
 			draw_start <= 1'b0;
 		end
 		mem_waddr <= draw_waddr;
-		mem_wdata <= 3'b001;
-		mem_wenable <= 1'b1;
+		mem_wdata <= 3'b010;
+		mem_wenable <= ~draw_finish;
+
 		
 	end else begin
 		count <= 32'h00000000;
@@ -91,9 +81,14 @@ end
 
 // ---------------------------------------------------------- Character Printing -----------------------------------------------------------
 
+output[7:0] character_address;
+output character_clock;
+input[7:0] character;
+
 assign character_address = count[7:0];
 assign character_clock = ~clock;
 wire[18:0] top_left_corner_address;
+
 screencharindex_to_pixeladdress index2pixel(
 	.clock(clock),
 	.count(count),
@@ -115,6 +110,13 @@ typer_logic typer_inst(
 // ---------------------------------------------------------- Trajectory Drawing -----------------------------------------------------------
 
 
+output[8:0] draw_address;
+output draw_clock;
+input[18:0] draw_pixelad;
+
+assign draw_clock = ~clock;
+assign draw_address = count - 32'd256;
+
 draw_logic draw_logic_inst(
 	.clock(clock),
 	
@@ -126,7 +128,6 @@ draw_logic draw_logic_inst(
 	.mem_waddr(draw_waddr),
 	.mem_wdata(draw_wdata),
 	.mem_wenable(draw_wenable)
-	
 );
 
 

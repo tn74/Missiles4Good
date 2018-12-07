@@ -22,7 +22,7 @@ def genereat_ps2_line_scroll():
 def generate_ps2processormodule_write_char():
 	lines = []
 	for i in range(0, 32):
-		lines.append("end else if (count == 32'd{} | last_cycle_backspace) begin\n".format(i))
+		lines.append("end else if (count == 32'd{}) begin\n".format(i))
 		lines.append("\tps2_line_content[{}:{}] <= ascii_char;\n".format(255 - i * 8, 255 - i * 8 - 7))
 	lines.append("end\n")
 	lines[0] = lines[0][9:]

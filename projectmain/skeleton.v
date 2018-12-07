@@ -68,12 +68,12 @@ module skeleton(resetn,
 	//assign clock = inclock;
 	
 	// your processor
-	processor myprocessor(clock, ~resetn, /*ps2_key_pressed, ps2_out, lcd_write_en, lcd_write_data,*/ debug_data_in, debug_addr);
+	//processor myprocessor(clock, ~resetn, /*ps2_key_pressed, ps2_out, lcd_write_en, lcd_write_data,*/ debug_data_in, debug_addr);
 	
 	// keyboard controller
 	PS2_Interface myps2(clock, resetn, ps2_clock, ps2_data, ps2_key_data, ps2_key_pressed, ps2_out);
 	ps2_cleaner cleaner(clock, ps2_key_data, ps2_out, input_character, input_made);
-	ps2_processor_module ps2process(clock, input_character, input_made, PS2_LINE_CONTENT, PS2_LINE_READY, VELOCITY, ANGLE, FIRE);
+	ps2_processor_module ps2process(clock, input_character, input_made, PS2_LINE_CONTENT, PS2_LINE_READY, VELOCITY, ANGLE, FIRE, reset);
 	
 	// example for sending ps2 data to the first two seven segment displays
 	Hexadecimal_To_Seven_Segment hex1(ps2_out[3:0], seg1);
@@ -159,7 +159,7 @@ module skeleton(resetn,
     wire [31:0] q_imem;
     imem my_imem(
         .address    (address_imem),            // address of data
-        .clock      (~clock),                  // you may need to invert the clock
+        .clock      (~inclock),                  // you may need to invert the clock
         .q          (q_imem)                   // the raw instruction
     );
 
@@ -172,7 +172,7 @@ module skeleton(resetn,
     wire [31:0] q_dmem;
     dmem my_dmem(
         .address    (address_dmem),       // address of data
-        .clock      (~clock),                  // may need to invert the clock
+        .clock      (~inclock),                  // may need to invert the clock
         .data	    (data),    // data you want to write
         .wren	    (wren),      // write enable
         .q          (q_dmem)    // data from dmem
@@ -185,7 +185,7 @@ module skeleton(resetn,
     wire [31:0] data_writeReg;
     wire [31:0] data_readRegA, data_readRegB;
     regfile my_regfile(
-        clock,
+        inclock,
         ctrl_writeEnable,
         reset,
         ctrl_writeReg,
@@ -198,10 +198,11 @@ module skeleton(resetn,
 		  reg23, reg22, reg21, reg20, reg19, reg18, reg17
     );
 	 
+	 
     /** PROCESSOR **/
     processor my_processor(
         // Control signals
-        clock,                          // I: The master clock
+        inclock,                          // I: The master clock
         reset,                          // I: A reset signal
 
         // Imem

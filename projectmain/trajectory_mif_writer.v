@@ -22,13 +22,11 @@ module trajectory_mif_writer(
 		count <= 32'd0;
 	end
 	
-	always @(posedge clock) begin
-	if (trajectory_memloc_enable) begin
-		if (count < 300) begin
+	always @(posedge trajectory_memloc_enable) begin
+		if (count < 400) begin
 			count <= count + 32'd1;
 		end else 
 			count <= 32'd0;
-		end
 	end
 
 	draw_trajectories_mem draw_traj_inst(
@@ -38,7 +36,7 @@ module trajectory_mif_writer(
 
 		.data(trajectory_memloc),
 		.wraddress(count[8:0]),
-		.wrclock(clock),
+		.wrclock(~clock),
 		.wren(trajectory_memloc_enable),
 	);
 

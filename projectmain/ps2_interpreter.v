@@ -1,11 +1,11 @@
-module ps2_interpreter (clock, input_line, line_ready, velocity,  angle, fire);
+module ps2_interpreter (clock, input_line, line_ready, velocity,  angle, fire, reset);
 	
 	input[255:0] input_line;
 	input line_ready, clock;
 	
 	output reg[31:0] velocity;
 	output reg[31:0] angle;
-	output reg fire;
+	output reg fire, reset;
 	
 	reg vready, aready;
 	wire[47:0] vascii, aascii;
@@ -33,6 +33,11 @@ module ps2_interpreter (clock, input_line, line_ready, velocity,  angle, fire);
 			fire <= 1'b1;
 		else
 			fire <= 1'b0;
+			
+		if (line_ready & input_line[255: 255 - 39] == 40'h5245534554)
+			reset <= 1'b1;
+		else
+			reset <= 1'b0;
 	end
 	
 	

@@ -12,3 +12,4 @@ Warning (10273): Verilog HDL warning at regfile.v(47): extended using "x" or "z"
 Warning (10273): Verilog HDL warning at regfile.v(48): extended using "x" or "z" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/calculations/regfile.v Line: 48
 Warning (10273): Verilog HDL warning at regfile.v(49): extended using "x" or "z" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/calculations/regfile.v Line: 49
 Warning (10273): Verilog HDL warning at regfile.v(50): extended using "x" or "z" File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/calculations/regfile.v Line: 50
+Warning (10268): Verilog HDL information at ps2_processor_module.v(52): always construct contains both blocking and non-blocking assignments File: C:/Users/tn74/Documents/ECE350/Missiles/projectmain/ps2_processor_module.v Line: 52
